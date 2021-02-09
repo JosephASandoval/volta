@@ -4,7 +4,6 @@ module.exports = {
   entry: "./frontend/volta.jsx",
   output: {
     path: path.resolve(__dirname, "app", "assets", "javascripts"),
-    // puts bundle.js into the correct folder for rails to use
     filename: "./bundle.js",
   },
   module: {
