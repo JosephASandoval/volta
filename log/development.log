@@ -1,5 +1,37 @@
 Started GET "/" for ::1 at 2021-02-08 17:42:53 -0800
 
-ActiveRecord::NoDatabaseError - FATAL:  database "fsp_development" does not exist:
+ActiveRecord::NoDatabaseError - FATAL:  database "volta_development" does not exist:
 
 Started POST "/__better_errors/b6a0c94a99a73548/variables" for ::1 at 2021-02-08 17:42:54 -0800
+  [1m[35m (256.8ms)[0m  [1m[35mCREATE DATABASE "volta_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (216.5ms)[0m  [1m[35mCREATE DATABASE "volta_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-02-08 18:23:23 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (7.1ms)
+Completed 200 OK in 33ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-08 18:23:30 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-08 18:32:35 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2844ms (Views: 2840.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-08 18:32:57 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 644ms (Views: 640.8ms | ActiveRecord: 0.0ms)
+
+
