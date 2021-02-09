@@ -1,0 +1,5 @@
+Started GET "/" for ::1 at 2021-02-08 17:42:53 -0800
+
+ActiveRecord::NoDatabaseError - FATAL:  database "fsp_development" does not exist:
+
+Started POST "/__better_errors/b6a0c94a99a73548/variables" for ::1 at 2021-02-08 17:42:54 -0800
