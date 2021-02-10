@@ -1,6 +1,6 @@
 import React from "react";
 
-class SignupForm extends React.Component {
+class Signup extends React.Component {
   constructor(props) {
     super(props);
 
@@ -16,10 +16,9 @@ class SignupForm extends React.Component {
   }
 
   update(field) {
-    return (e) =>
-      this.setState({
-        [field]: e.currentTarget.value,
-      });
+    return (e) => {
+      this.setState({ [field]: e.currentTarget.value });
+    };
   }
 
   handleSubmit(e) {
@@ -85,4 +84,4 @@ class SignupForm extends React.Component {
   }
 }
 
-export default SignupForm;
+export default Signup;
