@@ -82,6 +82,7 @@ function Index() {
         />
         <Item
           title="Accessories"
+          desc=""
           descLink=""
           backgroundImg={window.accessoriesURL}
           alt="Accessories"
