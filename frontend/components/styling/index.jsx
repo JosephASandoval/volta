@@ -8,6 +8,54 @@ function Index() {
       <Header />
       <div className="app_itemsContainer">
         <Item
+          title="Model S"
+          desc="Order Online for Touchless Delivery"
+          descLink=""
+          backgroundImg={window.modelSURL}
+          alt="Model S"
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Model Y"
+          desc="Order Online for Touchless Delivery"
+          descLink=""
+          backgroundImg={window.modelYURL}
+          alt="Model Y"
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Model 3"
+          desc="Order Online for Touchless Delivery"
+          descLink=""
+          backgroundImg={window.model3URL}
+          alt="Model 3"
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Model X"
+          desc="Order Online for Touchless Delivery"
+          descLink=""
+          backgroundImg={window.modelXURL}
+          alt="Model X"
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
           title="Lowest Cost Solar Panels in America"
           desc="Money-back guarantee"
           descLink=""
@@ -21,56 +69,8 @@ function Index() {
           first
         />
         <Item
-          title="Model S"
-          desc="70,000"
-          descLink=""
-          backgroundImg={window.modelSURL}
-          alt="Model S"
-          leftBtnTxt="CUSTOM ORDER"
-          leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
-          rightBtnLink=""
-          twoButtons="true"
-        />
-        <Item
-          title="Model 3"
-          desc="70,000"
-          descLink=""
-          backgroundImg={window.model3URL}
-          alt="Model 3"
-          leftBtnTxt="CUSTOM ORDER"
-          leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
-          rightBtnLink=""
-          twoButtons="true"
-        />
-        <Item
-          title="Model X"
-          desc="70,000"
-          descLink=""
-          backgroundImg={window.modelXURL}
-          alt="Model X"
-          leftBtnTxt="CUSTOM ORDER"
-          leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
-          rightBtnLink=""
-          twoButtons="true"
-        />
-        <Item
-          title="Model Y"
-          desc="70,000"
-          descLink=""
-          backgroundImg={window.modelYURL}
-          alt="Model Y"
-          leftBtnTxt="CUSTOM ORDER"
-          leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
-          rightBtnLink=""
-          twoButtons="true"
-        />
-        <Item
           title="Solar for New Roofs"
-          desc="70,000"
+          desc="Solar Roof Cost Less Than a New Roof Plus Solar Panels"
           descLink=""
           backgroundImg={window.solarRoofURL}
           alt="Solar Roof"
@@ -82,7 +82,6 @@ function Index() {
         />
         <Item
           title="Accessories"
-          desc="70,000"
           descLink=""
           backgroundImg={window.accessoriesURL}
           alt="Accessories"
