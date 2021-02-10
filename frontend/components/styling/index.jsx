@@ -4,9 +4,9 @@ import Item from "./item";
 
 function Index() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <div className="app_itemsContainer">
+      <div>
         <Item
           title="Model S"
           desc="Order Online for Touchless Delivery"
