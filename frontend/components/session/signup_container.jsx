@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { signup } from "../../actions/session_actions";
-import SignupForm from "./signup_form";
+import Signup from "./signup";
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -8,4 +8,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(SignupForm);
+export default connect(null, mapDispatchToProps)(Signup);
