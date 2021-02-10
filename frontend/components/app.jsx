@@ -4,11 +4,11 @@ import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
 import { Route, Link } from "react-router-dom";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
-import Header from "./header/header";
+import Index from "./styling/index";
 
 const App = () => (
   <div>
-    <Header />
+    <Index />
     <Route path="/" component={GreetingContainer} />
     <Route path="/signup" component={SignupContainer} />
     <Route path="/login" component={LoginContainer} />
