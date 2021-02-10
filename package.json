@@ -46,5 +46,6 @@
     "node": "10.13.0",
     "npm": "6.4.1"
   },
-  "homepage": "https://github.com/JosephASandoval/volta#readme"
+  "homepage": "https://github.com/JosephASandoval/volta#readme",
+  "devDependencies": {}
 }
