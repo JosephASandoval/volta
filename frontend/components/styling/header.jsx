@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
-      <div className="header__logo">
+      <div className="header_logo">
         <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
       </div>
 
