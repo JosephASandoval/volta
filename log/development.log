@@ -1892,3 +1892,85 @@ Sass::SyntaxError - Undefined variable: "$serif".:
   app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4279790002296226810_70119333870560'
 
 Started POST "/__better_errors/6acf7992982ee937/variables" for ::1 at 2021-02-10 10:13:46 -0800
+Started GET "/" for ::1 at 2021-02-10 11:08:26 -0800
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial shared/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/josephsandoval/Desktop/volta/app/views":
+  app/views/static_pages/root.html.erb:3:in `_app_views_static_pages_root_html_erb___1932466833896750964_70125129798260'
+
+Started POST "/__better_errors/2d5916c76765f7ed/variables" for ::1 at 2021-02-10 11:08:28 -0800
+Started GET "/" for ::1 at 2021-02-10 11:09:03 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 922ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Undefined variable: "$serif".:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1794562538787764532_70125168894340'
+
+Started POST "/__better_errors/a63b8ccab5dd3b59/variables" for ::1 at 2021-02-10 11:09:05 -0800
+Started GET "/" for ::1 at 2021-02-10 11:10:36 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Undefined variable: "$serif".:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1794562538787764532_70125171404640'
+
+Started POST "/__better_errors/3fb7a3bdd0f2907e/variables" for ::1 at 2021-02-10 11:10:37 -0800
+Started GET "/" for ::1 at 2021-02-10 11:11:22 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Undefined variable: "$light-blue".:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1794562538787764532_70125134480160'
+
+Started POST "/__better_errors/0a272bd919a2c6dc/variables" for ::1 at 2021-02-10 11:11:23 -0800
+Started GET "/" for ::1 at 2021-02-10 11:12:51 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Undefined variable: "$gray".:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1794562538787764532_70125141932300'
+
+Started POST "/__better_errors/c5ea800e0642c23b/variables" for ::1 at 2021-02-10 11:12:53 -0800
+Started GET "/" for ::1 at 2021-02-10 11:13:11 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Undefined variable: "$gray".:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1794562538787764532_70125142814620'
+
+Started POST "/__better_errors/25a4825777ccabab/variables" for ::1 at 2021-02-10 11:13:12 -0800
+Started GET "/" for ::1 at 2021-02-10 11:13:31 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3254ms (Views: 3249.8ms | ActiveRecord: 0.0ms)
+
+

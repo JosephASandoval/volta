@@ -10,31 +10,29 @@
   z-index: 100;
 }
 
-.header__logo {
+.header_logo {
   height: 24px;
   width: 100px;
   margin-top: 7px;
 }
 
-.header__center {
+.header_center {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.header__center > p {
+.header_center > p {
   margin: 10px;
   text-transform: uppercase;
 }
 
-.header__right {
+.header_right {
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
 }
 
-.header__right > p {
+.header_right > p {
   margin: 10px;
 }
-
-
