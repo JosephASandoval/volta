@@ -1974,3 +1974,54 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 3254ms (Views: 3249.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-02-10 11:41:22 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - File to import not found or unreadable: base/colors.scss.
+Load paths:
+  /Users/josephsandoval/Desktop/volta/app/assets/config
+  /Users/josephsandoval/Desktop/volta/app/assets/images
+  /Users/josephsandoval/Desktop/volta/app/assets/javascripts
+  /Users/josephsandoval/Desktop/volta/app/assets/stylesheets
+  /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/josephsandoval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/josephsandoval/Desktop/volta/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1794562538787764532_70125232546540'
+
+Started POST "/__better_errors/db3c2a1b94e68ee2/variables" for ::1 at 2021-02-10 11:41:23 -0800
+Started GET "/" for ::1 at 2021-02-10 11:41:45 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 351ms (Views: 344.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-10 11:43:03 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 600ms (Views: 595.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-10 11:46:46 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1024ms (Views: 1018.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-10 11:51:35 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 172ms (Views: 160.6ms | ActiveRecord: 0.0ms)
+
+
