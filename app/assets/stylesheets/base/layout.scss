@@ -6,27 +6,27 @@ html {
 body {
 	width: 80%;
 	margin: 0 auto;
-	font-family: $serif;
+	font-family: serif;
 	font-size: 12px;
 }
 
 button {
-	background-color: $light-blue;
-	border-color: $dark-blue;
+	background-color: blue;
+	border-color: blue;
 	color: white;
 	font-weight: bold;
 	padding: 7px 9px;
 	border-radius: 3px;
 	transition: background-color 0.3s;
-	font-family: $sans-serif;
+	font-family: sans-serif;
 	text-transform: uppercase;
 	font-size: 11px;
 	text-align: center;
 }
 
 button:hover {
-	background-color: $blue;
-  border-color: $darkest-blue;
+	background-color: blue;
+  border-color: blue;
 }
 
 a:hover {
@@ -64,8 +64,8 @@ img {
 
 small {
 	font-size: 9px;
-	color: $gray;
-	font-family: $sans-serif;
+	color: gray;
+	font-family: sans-serif;
 }
 
 /*
@@ -75,7 +75,7 @@ small {
 hr {
 	border: 0;
 	height: 1px;
-	background-color: $light-gray;
+	background-color: gray;
 }
 
 .hr-top, .hr-bottom {
@@ -112,9 +112,9 @@ hr {
 
 .input-wrapper input {
 	flex: 1;
-	font-family: $sans-serif;
+	font-family: sans-serif;
 	padding: 0 10px;
-	border: 1px solid $gray;
+	border: 1px solid gray;
 	border-right: none;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
