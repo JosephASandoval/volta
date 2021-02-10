@@ -1,9 +1,16 @@
 import React from "react";
 import SignupFormContainer from "./session/signup_form_container";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 export default () => (
   <div>
-    <Route path="/signup" component={SignupFormContainer} />
+    <header>
+      <Route path="/" className="header-link">
+        <h1>Welcome to Volta!</h1>
+        <Link to="/signup">Create Account</Link>
+      </Route>
+    </header>
+    <Route path="/signup" component={SignupFormContainer}>
+    </Route>
   </div>
 );
