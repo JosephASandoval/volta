@@ -3,6 +3,9 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
+      <div className="header__logo">
+        <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+      </div>
 
       <div className="header_center">
         <p>Model S</p>
