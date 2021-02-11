@@ -9,7 +9,7 @@ import Index from "./homepage/index";
 const App = () => (
   <div>
     <Route exact path="/" component={Index} />
-    <Route path="/home" component={GreetingContainer} />
+    <Route path="/greeting" component={GreetingContainer} />
     <Route path="/signup" component={SignupContainer} />
     <Route path="/login" component={LoginContainer} />
   </div>

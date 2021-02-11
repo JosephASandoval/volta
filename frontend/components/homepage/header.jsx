@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header_logo">
-        <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+        <Link to="/">
+          <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+        </Link>
       </div>
 
       <div className="header_center">
@@ -19,8 +21,12 @@ const Header = () => {
 
       <div className="header_right">
         <p>Shop</p>
-        <p><Link to="/signup">Tesla Account</Link></p>
-        <p><i className="fas fa-bars"></i></p>
+        <p>
+          <Link to="/greeting">Tesla Account</Link>
+        </p>
+        <p>
+          <i className="fas fa-bars"></i>
+        </p>
       </div>
     </div>
   );

@@ -10,14 +10,26 @@ const Greeting = ({ currentUser, logout }) => {
         &nbsp;or&nbsp;
         <Link to="/signup">Sign up!</Link>
       </nav>
+
+      <div className="header_logo">
+        <Link to="/">
+          <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+        </Link>
+      </div>
+
     </div>
   );
   const personalGreeting = () => (
     <div>
       <h2>Hi, {currentUser.username}!</h2>
-      <button onClick={logout}>
-        Log Out
-      </button>
+      <button onClick={logout}>Log Out</button>
+
+      <div className="header_logo">
+        <Link to="/">
+          <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+        </Link>
+      </div>
+      
     </div>
   );
 
