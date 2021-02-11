@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<Root store={store} />, rootEl);
 
   // testing
-  window.store = store;
   window.login = login;
   window.logout = logout;
   window.signup = signup;

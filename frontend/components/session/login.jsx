@@ -25,11 +25,24 @@ class Login extends React.Component {
       .then(() => this.props.history.push("/greeting"));
   }
 
+  renderErrors() {
+    return (
+      <ul>
+        {this.props.errors.map((error, idx) => (
+          <li key={`error-${idx}`}>{error}</li>
+        ))}
+      </ul>
+    );
+  }
+
   render() {
     return (
       <div className="session-form">
         <h2>Log In!</h2>
-        <form onSubmit={this.handleSubmit}>
+        <br />
+        <form onSubmit={this.handleSubmit} className="login-form-box">
+          {this.renderErrors()}
+          <br />
           <label>
             Email:
             <input
@@ -38,7 +51,7 @@ class Login extends React.Component {
               onChange={this.update("email")}
             />
           </label>
-
+          <br />
           <label>
             Password:
             <input
@@ -46,16 +59,16 @@ class Login extends React.Component {
               value={this.state.password}
               onChange={this.update("password")}
             />
-            <button type="submit">SIGN IN</button>
           </label>
+          <br />
+          <button type="submit">SIGN IN</button>
         </form>
-
+        <br />
         <div className="header_logo">
           <Link to="/">
             <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
           </Link>
         </div>
-        
       </div>
     );
   }
