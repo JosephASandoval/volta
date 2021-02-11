@@ -18,6 +18,8 @@ function Index() {
           rightBtnTxt="LEARN MORE"
           rightBtnLink=""
           twoButtons="true"
+          first
+          car
         />
         <Item
           title="Model Y"
@@ -30,6 +32,7 @@ function Index() {
           rightBtnTxt="LEARN MORE"
           rightBtnLink=""
           twoButtons="true"
+          car
         />
         <Item
           title="Model 3"
@@ -42,6 +45,7 @@ function Index() {
           rightBtnTxt="LEARN MORE"
           rightBtnLink=""
           twoButtons="true"
+          car
         />
         <Item
           title="Model X"
@@ -54,6 +58,7 @@ function Index() {
           rightBtnTxt="LEARN MORE"
           rightBtnLink=""
           twoButtons="true"
+          car
         />
         <Item
           title="Lowest Cost Solar Panels in America"
@@ -66,7 +71,6 @@ function Index() {
           rightBtnTxt="LEARN MORE"
           rightBtnLink=""
           twoButtons="true"
-          first
         />
         <Item
           title="Solar for New Roofs"
