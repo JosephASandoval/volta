@@ -4,7 +4,7 @@ import Item from "./item";
 
 function Index() {
   return (
-    <div>
+    <div className="app_itemsContainer">
       <Header />
       <div>
         <Item
@@ -15,11 +15,10 @@ function Index() {
           alt="Model S"
           leftBtnTxt="CUSTOM ORDER"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
+          rightBtnTxt="EXISTING INVENTORY"
           rightBtnLink=""
           twoButtons="true"
           first
-          car
         />
         <Item
           title="Model Y"
@@ -32,7 +31,6 @@ function Index() {
           rightBtnTxt="LEARN MORE"
           rightBtnLink=""
           twoButtons="true"
-          car
         />
         <Item
           title="Model 3"
@@ -42,10 +40,9 @@ function Index() {
           alt="Model 3"
           leftBtnTxt="CUSTOM ORDER"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
+          rightBtnTxt="EXISTING INVENTORY"
           rightBtnLink=""
           twoButtons="true"
-          car
         />
         <Item
           title="Model X"
@@ -55,10 +52,9 @@ function Index() {
           alt="Model X"
           leftBtnTxt="CUSTOM ORDER"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
+          rightBtnTxt="EXISTING INVENTORY"
           rightBtnLink=""
           twoButtons="true"
-          car
         />
         <Item
           title="Lowest Cost Solar Panels in America"
@@ -90,11 +86,9 @@ function Index() {
           descLink=""
           backgroundImg={window.accessoriesURL}
           alt="Accessories"
-          leftBtnTxt="CUSTOM ORDER"
+          leftBtnTxt="SHOP NOW"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
-          rightBtnLink=""
-          twoButtons="true"
+          twoButtons="false"
         />
       </div>
     </div>
