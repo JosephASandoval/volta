@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
 
       <div className="header_right">
         <p>Shop</p>
-        <p>Tesla Account</p>
+        <p><Link to="/signup">Tesla Account</Link></p>
         <p><i className="fas fa-bars"></i></p>
       </div>
     </div>
