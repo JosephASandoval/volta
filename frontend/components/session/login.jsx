@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Login extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Login extends React.Component {
     e.preventDefault();
     this.props
       .loginUser(this.state)
-      .then(() => this.props.history.push("/"));
+      .then(() => this.props.history.push("/greeting"));
   }
 
   render() {
@@ -48,6 +49,13 @@ class Login extends React.Component {
             <button type="submit">SIGN IN</button>
           </label>
         </form>
+
+        <div className="header_logo">
+          <Link to="/">
+            <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+          </Link>
+        </div>
+        
       </div>
     );
   }

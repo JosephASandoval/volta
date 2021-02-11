@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Signup extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class Signup extends React.Component {
     e.preventDefault();
     this.props
       .createNewUser(this.state)
-      .then(() => this.props.history.push("/"));
+      .then(() => this.props.history.push("/greeting"));
   }
 
   render() {
@@ -79,6 +80,13 @@ class Signup extends React.Component {
             <button type="submit">CREATE ACCOUNT</button>
           </label>
         </form>
+
+        <div className="header_logo">
+          <Link to="/">
+            <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+          </Link>
+        </div>
+
       </div>
     );
   }
