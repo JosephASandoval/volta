@@ -25,15 +25,28 @@ class Signup extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props
-      .createNewUser(this.state)
+      .signupUser(this.state)
       .then(() => this.props.history.push("/greeting"));
+  }
+
+  renderErrors() {
+    return (
+      <ul>
+        {this.props.errors.map((error, idx) => (
+          <li key={`error-${idx}`}>{error}</li>
+        ))}
+      </ul>
+    );
   }
 
   render() {
     return (
       <div className="session-form">
         <h2>Create Account</h2>
-        <form onSubmit={this.handleSubmit}>
+        <br />
+        <form onSubmit={this.handleSubmit} className="login-form-box">
+          {this.renderErrors()}
+          <br />
           <label>
             First Name:
             <input
@@ -42,7 +55,7 @@ class Signup extends React.Component {
               onChange={this.update("first_name")}
             />
           </label>
-
+          <br />
           <label>
             Last Name:
             <input
@@ -51,7 +64,7 @@ class Signup extends React.Component {
               onChange={this.update("last_name")}
             />
           </label>
-
+          <br />
           <label>
             Username:
             <input
@@ -60,7 +73,7 @@ class Signup extends React.Component {
               onChange={this.update("username")}
             />
           </label>
-
+          <br />
           <label>
             Email:
             <input
@@ -69,7 +82,7 @@ class Signup extends React.Component {
               onChange={this.update("email")}
             />
           </label>
-
+          <br />
           <label>
             Password:
             <input
@@ -77,16 +90,16 @@ class Signup extends React.Component {
               value={this.state.password}
               onChange={this.update("password")}
             />
-            <button type="submit">CREATE ACCOUNT</button>
           </label>
+          <br />
+          <button type="submit">CREATE ACCOUNT</button>
         </form>
-
+        <br />
         <div className="header_logo">
           <Link to="/">
             <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
           </Link>
         </div>
-
       </div>
     );
   }

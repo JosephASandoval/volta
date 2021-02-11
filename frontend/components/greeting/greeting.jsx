@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
-    <div>
-      <h1>Welcome to Volta!</h1>
-      <nav className="btn">
+    <nav className="login-form-container">
+      <nav className="login-form">
         <Link to="/login">Login</Link>
         &nbsp;or&nbsp;
         <Link to="/signup">Sign up!</Link>
@@ -16,25 +15,24 @@ const Greeting = ({ currentUser, logout }) => {
           <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
         </Link>
       </div>
-
-    </div>
+    </nav>
   );
   const personalGreeting = () => (
-    <div>
-      <h2>Hi, {currentUser.username}!</h2>
-      <button onClick={logout}>Log Out</button>
+    <hgroup className="hr">
+      <h2 className="header-name">Hi, {currentUser.username}!</h2>
+      <button className="review-button" onClick={logout}>
+        Log Out
+      </button>
 
       <div className="header_logo">
         <Link to="/">
           <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
         </Link>
       </div>
-      
-    </div>
+    </hgroup>
   );
 
   return currentUser ? personalGreeting() : sessionLinks();
 };
 
 export default Greeting;
-
