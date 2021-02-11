@@ -84,13 +84,11 @@ function Index() {
           title="Accessories"
           desc=""
           descLink=""
-          backgroundImg={window.solarPanelsURL}
+          backgroundImg={window.accessoriesURL}
           alt="Accessories"
           leftBtnTxt="SHOP NOW"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
-          rightBtnLink=""
-          twoButtons="true"
+          twoButtons="false"
         />
       </div>
     </div>
