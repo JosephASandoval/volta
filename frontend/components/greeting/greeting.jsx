@@ -5,7 +5,7 @@ const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <div>
       <h1>Welcome to Volta!</h1>
-      <nav className="login-signup">
+      <nav className="btn">
         <Link to="/login">Login</Link>
         &nbsp;or&nbsp;
         <Link to="/signup">Sign up!</Link>

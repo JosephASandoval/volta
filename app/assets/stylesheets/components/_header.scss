@@ -5,15 +5,15 @@
   position: fixed;
   width: 98vw;
   top: 0;
-  margin: 15px;
-  margin-top: 15px;
-  z-index: 100;
+  margin-top: 10px;
+  margin: 10px;
+  z-index: 50;
 }
 
 .header_logo {
-  height: 24px;
   width: 100px;
-  margin-top: 7px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .header_center {
@@ -24,7 +24,7 @@
 
 .header_center > p {
   font-size: 14px;
-  margin: 10px;
+  margin: 10px 15px 10px 15px;
   text-transform: uppercase;
 }
 
