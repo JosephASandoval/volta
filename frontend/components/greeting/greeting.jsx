@@ -21,7 +21,7 @@ const Greeting = ({ currentUser, logout }) => {
     <hgroup className="hr">
       <h2 className="header-name">Hi, {currentUser.username}!</h2>
       <button className="review-button" onClick={logout}>
-        Log Out
+        <Link to="/">Log Out</Link>
       </button>
 
       <div className="header_logo">

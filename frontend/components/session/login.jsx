@@ -38,13 +38,13 @@ class Login extends React.Component {
   render() {
     return (
       <div className="session-form">
-        <h2>Log In!</h2>
+        <h2>Sign In</h2>
         <br />
         <form onSubmit={this.handleSubmit} className="login-form-box">
           {this.renderErrors()}
           <br />
           <label>
-            Email:
+            Email Address
             <input
               type="text"
               value={this.state.email}
@@ -53,7 +53,7 @@ class Login extends React.Component {
           </label>
           <br />
           <label>
-            Password:
+            Password
             <input
               type="password"
               value={this.state.password}
@@ -61,7 +61,14 @@ class Login extends React.Component {
             />
           </label>
           <br />
-          <button type="submit">SIGN IN</button>
+          <button type="submit" className="button-boarder">SIGN IN</button>
+          &nbsp;or&nbsp;
+          <div className="button-boarder">
+            <p>
+              <Link to="/signup">CREATE ACCOUNT</Link>
+            </p>
+          </div>
+
         </form>
         <br />
         <div className="header_logo">

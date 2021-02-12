@@ -22,7 +22,7 @@ const Header = () => {
       <div className="header_right">
         <p>Shop</p>
         <p>
-          <Link to="/greeting">Tesla Account</Link>
+          <Link to="/login">Tesla Account</Link>
         </p>
         <p>
           <i className="fas fa-bars"></i>

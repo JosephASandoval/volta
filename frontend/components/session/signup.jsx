@@ -93,6 +93,12 @@ class Signup extends React.Component {
           </label>
           <br />
           <button type="submit">CREATE ACCOUNT</button>
+          &nbsp;or&nbsp;
+          <div className="button-boarder">
+            <p>
+              <Link to="/login">SIGN IN</Link>
+            </p>
+          </div>
         </form>
         <br />
         <div className="header_logo">
