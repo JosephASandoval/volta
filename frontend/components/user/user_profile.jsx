@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const UserProfile = ({ currentUser, logout }) => {
   return (
     <hgroup>
-      <h2>{currentUser.username}'s Tesla</h2>
+      <h2>{currentUser.firstName}'s Tesla</h2>
       <button onClick={logout}>
         <Link to="/">Log Out</Link>
       </button>
