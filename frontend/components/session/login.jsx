@@ -11,6 +11,7 @@ class Login extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemo = this.handleDemo.bind(this);
+    this.handleErrors = this.handleErrors.bind(this);
   }
 
   update(field) {
@@ -24,6 +25,11 @@ class Login extends React.Component {
     this.props
       .loginUser(this.state)
       .then(() => this.props.history.push("/greeting"));
+  }
+
+  handleErrors(e) {
+    e.preventDefault();
+    this.props.removeErrors();
   }
 
   handleDemo(e) {
@@ -71,20 +77,21 @@ class Login extends React.Component {
               onChange={this.update("password")}
             />
           </label>
+
           <br />
-          <button className="button-boarder" onClick={this.handleSubmit}>
-            SIGN IN
-          </button>
-          &nbsp;or&nbsp;
+
           <div className="button-boarder">
-            <p>
-              <Link to="/signup">CREATE ACCOUNT</Link>
-            </p>
+            <button onClick={this.handleSubmit}>SIGN IN</button>
+
+            &nbsp;or&nbsp;
+
+            <Link to="/signup" onClick={this.handleErrors}>
+              CREATE ACCOUNT
+            </Link>
+            
+            &nbsp;or&nbsp;
+            <button onClick={this.handleDemo}>DEMO LOGIN</button>
           </div>
-          &nbsp;or&nbsp;
-          <button className="button-boarder" onClick={this.handleDemo}>
-            DEMO LOGIN
-          </button>
         </form>
         <br />
         <div className="header_logo">
