@@ -1,10 +1,13 @@
 import React from "react";
+import { Route, Switch, Link } from "react-router-dom";
+import { AuthRoute, ProtectedRoute } from "../util/route_util";
+
+// Components
+import Index from "./homepage/index";
 import GreetingContainer from "./greeting/greeting_container";
 import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
-import { Route } from "react-router-dom";
-import { AuthRoute, ProtectedRoute } from "../util/route_util";
-import Index from "./homepage/index";
+
 
 const App = () => (
   <div>
