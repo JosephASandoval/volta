@@ -14,10 +14,6 @@ class Login extends React.Component {
     this.handleErrors = this.handleErrors.bind(this);
   }
 
-  // componentDidMount() {
-  //     this.handleErrors;
-  // }
-
   update(field) {
     return (e) => {
       this.setState({ [field]: e.currentTarget.value });
@@ -60,7 +56,7 @@ class Login extends React.Component {
       <div className="session-form">
         <h2>Sign In</h2>
         <br />
-        <form className="login-form-box">
+        <form className="form-box">
           {this.renderErrors()}
           <br />
           <label>
@@ -83,15 +79,17 @@ class Login extends React.Component {
 
           <br />
 
-          <div className="button-boarder">
+          <div>
             <button onClick={this.handleSubmit}>SIGN IN</button>
+            <br />
             &nbsp;or&nbsp;
-
+            <br />
             <Link to="/signup" onClick={this.handleErrors}>
               CREATE ACCOUNT
             </Link>
-
+            <br />
             &nbsp;or&nbsp;
+            <br />
             <button onClick={this.handleDemo}>DEMO LOGIN</button>
           </div>
         </form>
