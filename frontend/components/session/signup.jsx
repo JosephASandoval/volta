@@ -27,7 +27,7 @@ class Signup extends React.Component {
     e.preventDefault();
     this.props
       .signupUser(this.state)
-      .then(() => this.props.history.push("/greeting"));
+      .then(() => this.props.history.push("/useraccount"));
   }
 
   handleErrors(e) {
@@ -46,10 +46,10 @@ class Signup extends React.Component {
 
   render() {
     return (
-      <div className="session-form">
+      <div className="session_form">
         <h2>Create Account</h2>
         <br />
-        <form className="form-box">
+        <form className="form_box">
           {this.renderErrors()}
           <br />
           <label>
