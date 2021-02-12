@@ -49,7 +49,7 @@ class Signup extends React.Component {
       <div className="session-form">
         <h2>Create Account</h2>
         <br />
-        <form className="login-form-box">
+        <form className="form-box">
           {this.renderErrors()}
           <br />
           <label>
@@ -99,12 +99,14 @@ class Signup extends React.Component {
 
           <br />
 
-          <div className="button-boarder">
+          <div>
             <button onClick={this.handleSubmit}>CREATE ACCOUNT</button>
+            <br />
             &nbsp;or&nbsp;
-
-            <Link to="/login" onClick={this.handleErrors}>SIGN IN</Link>
-            
+            <br />
+            <Link to="/login" onClick={this.handleErrors}>
+              SIGN IN
+            </Link>
           </div>
         </form>
         <br />
