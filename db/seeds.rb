@@ -8,18 +8,10 @@
 
 User.delete_all
 
-u1 = User.create!(
-  username: 'user1',
+demo = User.create!(
+  username: 'demouser',
   password: 'password',
-  email: 'user1@gmail.com',
-  first_name: 'user',
-  last_name: '1'
-)
-
-u2 = User.create!(
-  username: 'user2',
-  password: 'password',
-  email: 'user2@gmail.com',
-  first_name: 'user',
-  last_name: '2'
+  email: 'demouser@gmail.com',
+  first_name: 'demo',
+  last_name: 'user'
 )
