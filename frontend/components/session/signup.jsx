@@ -31,7 +31,6 @@ class Signup extends React.Component {
   }
 
   handleErrors(e) {
-    e.preventDefault();
     this.props.removeErrors();
   }
 

@@ -14,6 +14,10 @@ class Login extends React.Component {
     this.handleErrors = this.handleErrors.bind(this);
   }
 
+  // componentDidMount() {
+  //     this.handleErrors;
+  // }
+
   update(field) {
     return (e) => {
       this.setState({ [field]: e.currentTarget.value });
@@ -28,7 +32,6 @@ class Login extends React.Component {
   }
 
   handleErrors(e) {
-    e.preventDefault();
     this.props.removeErrors();
   }
 
@@ -82,13 +85,12 @@ class Login extends React.Component {
 
           <div className="button-boarder">
             <button onClick={this.handleSubmit}>SIGN IN</button>
-
             &nbsp;or&nbsp;
 
             <Link to="/signup" onClick={this.handleErrors}>
               CREATE ACCOUNT
             </Link>
-            
+
             &nbsp;or&nbsp;
             <button onClick={this.handleDemo}>DEMO LOGIN</button>
           </div>
