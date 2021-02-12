@@ -13,9 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let preloadedState = undefined;
   if (window.currentUser) {
     preloadedState = {
-      session: {
-        currentUser: window.currentUser,
+      entities: {
+        users: {
+          [window.currentUser.id]: window.currentUser
+        }
       },
+      session: {
+        currentUserId: window.currentUser.id
+      }
     };
   }
 
@@ -30,3 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.dispatch = store.dispatch;
   // testing 
 });
+
