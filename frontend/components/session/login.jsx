@@ -10,6 +10,7 @@ class Login extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   update(field) {
@@ -22,6 +23,16 @@ class Login extends React.Component {
     e.preventDefault();
     this.props
       .loginUser(this.state)
+      .then(() => this.props.history.push("/greeting"));
+  }
+
+  handleDemo(e) {
+    e.preventDefault();
+    this.props
+      .loginUser({
+        email: "demouser@gmail.com",
+        password: "password",
+      })
       .then(() => this.props.history.push("/greeting"));
   }
 
@@ -40,7 +51,7 @@ class Login extends React.Component {
       <div className="session-form">
         <h2>Sign In</h2>
         <br />
-        <form onSubmit={this.handleSubmit} className="login-form-box">
+        <form className="login-form-box">
           {this.renderErrors()}
           <br />
           <label>
@@ -61,14 +72,19 @@ class Login extends React.Component {
             />
           </label>
           <br />
-          <button type="submit" className="button-boarder">SIGN IN</button>
+          <button className="button-boarder" onClick={this.handleSubmit}>
+            SIGN IN
+          </button>
           &nbsp;or&nbsp;
           <div className="button-boarder">
             <p>
               <Link to="/signup">CREATE ACCOUNT</Link>
             </p>
           </div>
-
+          &nbsp;or&nbsp;
+          <button className="button-boarder" onClick={this.handleDemo}>
+            DEMO LOGIN
+          </button>
         </form>
         <br />
         <div className="header_logo">
