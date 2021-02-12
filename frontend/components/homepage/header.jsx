@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({currentUser}) => {
+const Header = ({ currentUser }) => {
   return currentUser ? (
     <div className="header">
       <div className="header_logo">
@@ -22,7 +22,7 @@ const Header = ({currentUser}) => {
       <div className="header_right">
         <p>Shop</p>
         <p>
-          <Link to="/greeting">Tesla Account</Link>
+          <Link to="/useraccount">Tesla Account</Link>
         </p>
         <p>
           <i className="fas fa-bars"></i>

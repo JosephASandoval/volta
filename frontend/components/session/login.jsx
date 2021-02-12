@@ -24,7 +24,7 @@ class Login extends React.Component {
     e.preventDefault();
     this.props
       .loginUser(this.state)
-      .then(() => this.props.history.push("/greeting"));
+      .then(() => this.props.history.push("/useraccount"));
   }
 
   handleErrors(e) {
@@ -38,7 +38,7 @@ class Login extends React.Component {
         email: "demouser@gmail.com",
         password: "password",
       })
-      .then(() => this.props.history.push("/greeting"));
+      .then(() => this.props.history.push("/useraccount"));
   }
 
   renderErrors() {
@@ -53,10 +53,10 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="session-form">
+      <div className="session_form">
         <h2>Sign In</h2>
         <br />
-        <form className="form-box">
+        <form className="form_box">
           {this.renderErrors()}
           <br />
           <label>
