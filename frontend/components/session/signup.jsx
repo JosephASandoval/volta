@@ -14,6 +14,7 @@ class Signup extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleErrors = this.handleErrors.bind(this);
   }
 
   update(field) {
@@ -27,6 +28,11 @@ class Signup extends React.Component {
     this.props
       .signupUser(this.state)
       .then(() => this.props.history.push("/greeting"));
+  }
+
+  handleErrors(e) {
+    e.preventDefault();
+    this.props.removeErrors();
   }
 
   renderErrors() {
@@ -44,7 +50,7 @@ class Signup extends React.Component {
       <div className="session-form">
         <h2>Create Account</h2>
         <br />
-        <form onSubmit={this.handleSubmit} className="login-form-box">
+        <form className="login-form-box">
           {this.renderErrors()}
           <br />
           <label>
@@ -91,15 +97,18 @@ class Signup extends React.Component {
               onChange={this.update("password")}
             />
           </label>
+
           <br />
-          <button type="submit">CREATE ACCOUNT</button>
-          &nbsp;or&nbsp;
+
           <div className="button-boarder">
-            <p>
-              <Link to="/login">SIGN IN</Link>
-            </p>
+            <button onClick={this.handleSubmit}>CREATE ACCOUNT</button>
+            &nbsp;or&nbsp;
+
+            <Link to="/login" onClick={this.handleErrors}>SIGN IN</Link>
+            
           </div>
         </form>
+        <br />
         <br />
         <div className="header_logo">
           <Link to="/">
