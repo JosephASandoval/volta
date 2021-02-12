@@ -1,11 +1,11 @@
 import React from "react";
 
-const NoMatch = () => {
+const NotFound = () => {
   return (
-    <div className="no-match">
+    <div className="not-found">
       <h1>Page Not Found</h1>
     </div>
   )
 }
 
-export default NoMatch;
+export default NotFound;
