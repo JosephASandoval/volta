@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./header";
+import HeaderContainer from "./header_container";
 import Item from "./item";
 
 function Index() {
   return (
     <div className="app_itemsContainer">
-      <Header />
+      <HeaderContainer />
       <div>
         <Item
           title="Model S"
