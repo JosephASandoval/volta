@@ -19,22 +19,22 @@ const Item = ({
         backgroundImage: `url(${backgroundImg})`,
       }}
     >
-      <div className="item_container">
-        <div className="item_text">
+      <div className="item__container">
+        <div className="item__text">
           <p>{title}</p>
-          <div className="item_textDesc">
+          <div className="item__textDesc">
             <p>{desc}</p>
           </div>
         </div>
-        <div className="item_btn_container">
-          <div className="item_buttons">
+        <div className="item__buttonContainer">
+          <div className="item__buttons">
             <Button imp="primary" text={leftBtnTxt} link={leftBtnLink} />
             {twoButtons && (
               <Button imp="secondary" text={rightBtnTxt} link={rightBtnLink} />
             )}
           </div>
           {first && (
-            <div className="item_expand">
+            <div className="item__expand">
               <img src={window.downArrowURL} />
             </div>
           )}
