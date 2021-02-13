@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TeslaLogo from "./tesla_logo";
+
 
 class Signup extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      first_name: "",
-      last_name: "",
+      firstName: "",
+      lastName: "",
       username: "",
       email: "",
       password: "",
@@ -47,49 +49,44 @@ class Signup extends React.Component {
   render() {
     return (
       <div className="session_form">
-        <h2>Create Account</h2>
-        <br />
+        <TeslaLogo />
+        <h1>Create Account</h1>
         <form className="form_box">
           {this.renderErrors()}
-          <br />
           <label>
-            First Name:
+            First Name
             <input
               type="text"
-              value={this.state.first_name}
-              onChange={this.update("first_name")}
+              value={this.state.firstName}
+              onChange={this.update("firstName")}
             />
           </label>
-          <br />
           <label>
-            Last Name:
+            Last Name
             <input
               type="text"
-              value={this.state.last_name}
-              onChange={this.update("last_name")}
+              value={this.state.lastName}
+              onChange={this.update("lastName")}
             />
           </label>
-          <br />
           <label>
-            Username:
+            Username
             <input
               type="text"
               value={this.state.username}
               onChange={this.update("username")}
             />
           </label>
-          <br />
           <label>
-            Email:
+            Email
             <input
               type="text"
               value={this.state.email}
               onChange={this.update("email")}
             />
           </label>
-          <br />
           <label>
-            Password:
+            Password
             <input
               type="password"
               value={this.state.password}
@@ -97,25 +94,14 @@ class Signup extends React.Component {
             />
           </label>
 
-          <br />
-
           <div>
             <button onClick={this.handleSubmit}>CREATE ACCOUNT</button>
-            <br />
             &nbsp;or&nbsp;
-            <br />
             <Link to="/login" onClick={this.handleErrors}>
               SIGN IN
             </Link>
           </div>
         </form>
-        <br />
-        <br />
-        <div className="header_logo">
-          <Link to="/">
-            <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
-          </Link>
-        </div>
       </div>
     );
   }
