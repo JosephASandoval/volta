@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TeslaLogo from "./tesla_logo";
 
 class Login extends React.Component {
   constructor(props) {
@@ -54,11 +55,10 @@ class Login extends React.Component {
   render() {
     return (
       <div className="session_form">
-        <h2>Sign In</h2>
-        <br />
+        <TeslaLogo />
+        <h1>Sign In</h1>
         <form className="form_box">
           {this.renderErrors()}
-          <br />
           <label>
             Email Address
             <input
@@ -67,7 +67,6 @@ class Login extends React.Component {
               onChange={this.update("email")}
             />
           </label>
-          <br />
           <label>
             Password
             <input
@@ -77,28 +76,16 @@ class Login extends React.Component {
             />
           </label>
 
-          <br />
-
           <div>
-            <button onClick={this.handleSubmit}>SIGN IN</button>
-            <br />
-            &nbsp;or&nbsp;
-            <br />
             <Link to="/signup" onClick={this.handleErrors}>
               CREATE ACCOUNT
             </Link>
-            <br />
             &nbsp;or&nbsp;
-            <br />
+            <button onClick={this.handleSubmit}>SIGN IN</button>
+            &nbsp;or&nbsp;
             <button onClick={this.handleDemo}>DEMO LOGIN</button>
           </div>
         </form>
-        <br />
-        <div className="header_logo">
-          <Link to="/">
-            <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
-          </Link>
-        </div>
       </div>
     );
   }

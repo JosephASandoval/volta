@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const UserProfile = ({ currentUser, logout }) => {
   return (
-    <hgroup>
+    <div>
       <h2>{currentUser.firstName}'s Tesla</h2>
       <button onClick={logout}>
         <Link to="/">Log Out</Link>
@@ -11,10 +11,10 @@ const UserProfile = ({ currentUser, logout }) => {
 
       <div className="header_logo">
         <Link to="/">
-          <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+          <img src={window.voltaLogoURL} alt="Tesla Logo" />
         </Link>
       </div>
-    </hgroup>
+    </div>
   );
 };
 

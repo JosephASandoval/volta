@@ -6,7 +6,7 @@ const Header = ({ currentUser }) => {
     <div className="header">
       <div className="header_logo">
         <Link to="/">
-          <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+          <img src={window.voltaLogoURL} alt="Tesla Logo" />
         </Link>
       </div>
 
@@ -22,7 +22,7 @@ const Header = ({ currentUser }) => {
       <div className="header_right">
         <p>Shop</p>
         <p>
-          <Link to="/useraccount">Tesla Account</Link>
+          <Link to="/useraccount">Volta Account</Link>
         </p>
         <p>
           <i className="fas fa-bars"></i>
@@ -33,7 +33,7 @@ const Header = ({ currentUser }) => {
     <div className="header">
       <div className="header_logo">
         <Link to="/">
-          <img src={window.teslaLogoSmallURL} alt="Tesla Logo" />
+          <img src={window.voltaLogoURL} alt="Tesla Logo" />
         </Link>
       </div>
 
