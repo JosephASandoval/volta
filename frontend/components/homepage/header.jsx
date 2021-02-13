@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Header = ({ currentUser }) => {
   return currentUser ? (
     <div className="header">
-      <div className="header_logo">
+      <div className="header__logo">
         <Link to="/">
           <img src={window.voltaLogoURL} alt="Volta Logo" />
         </Link>
       </div>
 
-      <div className="header_center">
+      <div className="header__center">
         <p>Model S</p>
         <p>Model 3</p>
         <p>Model X</p>
@@ -19,7 +19,7 @@ const Header = ({ currentUser }) => {
         <p>Solar Panels</p>
       </div>
 
-      <div className="header_right">
+      <div className="header__right">
         <p>Shop</p>
         <p>
           <Link to="/userProfile">Volta Account</Link>
@@ -31,13 +31,13 @@ const Header = ({ currentUser }) => {
     </div>
   ) : (
     <div className="header">
-      <div className="header_logo">
+      <div className="header__logo">
         <Link to="/">
           <img src={window.voltaLogoURL} alt="Volta Logo" />
         </Link>
       </div>
 
-      <div className="header_center">
+      <div className="header__center">
         <p>Model S</p>
         <p>Model 3</p>
         <p>Model X</p>
@@ -46,7 +46,7 @@ const Header = ({ currentUser }) => {
         <p>Solar Panels</p>
       </div>
 
-      <div className="header_right">
+      <div className="header__right">
         <p>Shop</p>
         <p>
           <Link to="/login">Volta Account</Link>

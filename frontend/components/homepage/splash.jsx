@@ -4,7 +4,7 @@ import Item from "./item";
 
 function Splash() {
   return (
-    <div className="scroll_snap">
+    <div className="scroll-snap">
       <HeaderContainer />
       <div>
         <Item
