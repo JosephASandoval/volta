@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TeslaLogo from "./tesla_logo";
+import VoltaLogo from "./volta_logo";
 
 class Signup extends React.Component {
   constructor(props) {
@@ -48,7 +48,7 @@ class Signup extends React.Component {
   render() {
     return (
       <div className="session_form">
-        <TeslaLogo />
+        <VoltaLogo />
         <h1>Create Account</h1>
         <form className="form_box">
           {this.renderErrors()}
