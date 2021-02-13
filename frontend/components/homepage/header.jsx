@@ -22,7 +22,7 @@ const Header = ({ currentUser }) => {
       <div className="header_right">
         <p>Shop</p>
         <p>
-          <Link to="/useraccount">Volta Account</Link>
+          <Link to="/userProfile">Volta Account</Link>
         </p>
         <p>
           <i className="fas fa-bars"></i>
