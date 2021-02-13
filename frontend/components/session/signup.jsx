@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TeslaLogo from "./tesla_logo";
 
-
 class Signup extends React.Component {
   constructor(props) {
     super(props);
@@ -29,7 +28,7 @@ class Signup extends React.Component {
     e.preventDefault();
     this.props
       .signupUser(this.state)
-      .then(() => this.props.history.push("/useraccount"));
+      .then(() => this.props.history.push("/"));
   }
 
   handleErrors(e) {

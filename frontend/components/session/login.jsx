@@ -25,7 +25,7 @@ class Login extends React.Component {
     e.preventDefault();
     this.props
       .loginUser(this.state)
-      .then(() => this.props.history.push("/useraccount"));
+      .then(() => this.props.history.push("/"));
   }
 
   handleErrors(e) {
@@ -39,7 +39,7 @@ class Login extends React.Component {
         email: "demouser@gmail.com",
         password: "password",
       })
-      .then(() => this.props.history.push("/useraccount"));
+      .then(() => this.props.history.push("/"));
   }
 
   renderErrors() {
