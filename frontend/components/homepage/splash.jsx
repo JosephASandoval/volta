@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./header";
+import HeaderContainer from "./header_container";
 import Item from "./item";
 import Menu from "./menu";
 
@@ -9,7 +9,7 @@ function Splash() {
 
   return (
     <div className="scroll-snap">
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <HeaderContainer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       {isMenuOpen && <Menu />}
       <div>
         <Item

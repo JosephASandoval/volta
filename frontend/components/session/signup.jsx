@@ -31,7 +31,7 @@ class Signup extends React.Component {
       .then(() => this.props.history.push("/"));
   }
 
-  handleErrors(e) {
+  handleErrors() {
     this.props.removeErrors();
   }
 
@@ -93,13 +93,11 @@ class Signup extends React.Component {
             />
           </label>
 
-          <div>
-            <button onClick={this.handleSubmit}>CREATE ACCOUNT</button>
-            &nbsp;or&nbsp;
-            <Link to="/login" onClick={this.handleErrors}>
-              SIGN IN
-            </Link>
-          </div>
+          <button onClick={this.handleSubmit}>CREATE ACCOUNT</button>
+          &nbsp;or&nbsp;
+          <Link to="/login" onClick={this.handleErrors}>
+            SIGN IN
+          </Link>
         </form>
       </div>
     );
