@@ -13,31 +13,17 @@ const Item = ({
   first,
 }) => {
   return (
-    <div
-      className="item"
-      style={{
-        backgroundImage: `url(${backgroundImg})`,
-      }}
-    >
-      <div className="item__container">
-        <div className="item__text">
-          <p>{title}</p>
-          <div className="item__textDesc">
-            <p>{desc}</p>
-          </div>
+    <div className="item" style={{ backgroundImage: `url(${backgroundImg})` }}>
+      <div className="item__info">
+        <div className="item__infoText">
+          <h1>{title}</h1>
+          <h4>
+            {desc} <span>Touchless Delivery</span>
+          </h4>
         </div>
-        <div className="item__buttonContainer">
-          <div className="item__buttons">
-            <Button imp="primary" text={leftBtnTxt} link={leftBtnLink} />
-            {twoButtons && (
-              <Button imp="secondary" text={rightBtnTxt} link={rightBtnLink} />
-            )}
-          </div>
-          {first && (
-            <div className="item__expand">
-              <img src={window.downArrowURL} />
-            </div>
-          )}
+        <div className="item__actions">
+          <button className="item__buttonPrimary">custom order</button>
+          <button className="item__buttonSecondary">existing inventory</button>
         </div>
       </div>
     </div>
