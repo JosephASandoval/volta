@@ -1,8 +1,8 @@
 .header {
   display: flex;
+  position: fixed;
   background-color: transparent;
   background: none;
-  position: fixed;
   width: 98vw;
   top: 0;
   margin-top: 10px;
@@ -16,13 +16,14 @@
   margin-left: 10px;
 }
 
-.header__center {
-  flex: 1;
+.header__links {
   display: flex;
+  gap: 15px;
+  flex: 1;
   justify-content: center;
 }
 
-.header__center > p {
+.header__links > p {
   font-size: 14px;
   margin: 10px 15px 10px 15px;
   text-transform: uppercase;

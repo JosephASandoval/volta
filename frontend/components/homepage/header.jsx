@@ -10,7 +10,7 @@ const Header = ({ currentUser }) => {
         </Link>
       </div>
 
-      <div className="header__center">
+      <div className="header__links">
         <p>Model S</p>
         <p>Model 3</p>
         <p>Model X</p>
@@ -37,20 +37,22 @@ const Header = ({ currentUser }) => {
         </Link>
       </div>
 
-      <div className="header__center">
-        <p>Model S</p>
-        <p>Model 3</p>
-        <p>Model X</p>
-        <p>Model Y</p>
-        <p>Solar Roof</p>
-        <p>Solar Panels</p>
+      <div className="header__links">
+        <Link to="/">Model S</Link>
+        <Link to="/">Model 3</Link>
+        <Link to="/">Model X</Link>
+        <Link to="/">Model Y</Link>
+        <Link to="/">Solar Roof</Link>
+        <Link to="/">Solar Panels</Link>
       </div>
 
       <div className="header__right">
-        <p>Shop</p>
-        <p>
-          <Link to="/login">Volta Account</Link>
-        </p>
+        <Link to="/" className={isMenuOpen && "header__link--hidden"}>
+          Shop
+        </Link>
+        <Link to="/login" className={isMenuOpen && "header__link--hidden"}>
+          Volta Account
+        </Link>
         <p>
           <i className="fas fa-bars"></i>
         </p>
