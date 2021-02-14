@@ -22,8 +22,12 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
       </div>
 
       <div className="header__right">
-        <Link to="/">Shop</Link>
-        <Link to="/login">Volta Account</Link>
+        <Link to="/" className={isMenuOpen ? "header__link--hidden" : ""}>
+          Shop
+        </Link>
+        <Link to="/login" className={isMenuOpen ? "header__link--hidden": ""}>
+          Volta Account
+        </Link>
         <div
           className="header__menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
