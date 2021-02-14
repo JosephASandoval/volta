@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import VoltaLogo from "./volta_logo";
+import LanguageOutlinedIcon from "@material-ui/icons/LanguageOutlined";
 
 class Login extends React.Component {
   constructor(props) {
@@ -23,9 +24,7 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props
-      .loginUser(this.state)
-      .then(() => this.props.history.push("/"));
+    this.props.loginUser(this.state).then(() => this.props.history.push("/"));
   }
 
   handleErrors() {
@@ -54,37 +53,65 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="session_form">
-        <VoltaLogo />
-        <h1>Sign In</h1>
-        <form className="form_box">
-          {this.renderErrors()}
-          <label>
-            Email Address
+      <div className="login">
+        <div className="login__header">
+          <VoltaLogo />
+          <div className="login__language">
+            <LanguageOutlinedIcon /> <span>en-US</span>
+          </div>
+        </div>
+        <div className="login__info">
+          <h1>Sign In</h1>
+          <form className="login__form">
+            {this.renderErrors()}
+            <label>Email Address</label>
             <input
               type="text"
               value={this.state.email}
               onChange={this.update("email")}
             />
-          </label>
-          <label>
-            Password
+            <label>Password</label>
             <input
               type="password"
               value={this.state.password}
               onChange={this.update("password")}
             />
-          </label>
 
+            <button
+              className="buttonPrimary"
+              type="submit"
+              onClick={this.handleSubmit}
+            >
+              SIGN IN
+            </button>
+          </form>
 
-          <Link to="/signup" onClick={this.handleErrors}>
-            CREATE ACCOUNT
+          <div className="login__divider">
+            <hr /> <span>OR</span> <hr />
+          </div>
+
+          <Link to="/signup">
+            <button
+              className="buttonSecondary"
+              type="submit"
+              onClick={this.handleErrors}
+            >
+              CREATE ACCOUNT
+            </button>
           </Link>
-          &nbsp;or&nbsp;
-          <button onClick={this.handleSubmit}>SIGN IN</button>
-          &nbsp;or&nbsp;
-          <button onClick={this.handleDemo}>DEMO LOGIN</button>
-        </form>
+
+          <div className="login__divider">
+            <hr /> <span>OR</span> <hr />
+          </div>
+
+          <button
+            className="buttonSecondary"
+            type="submit"
+            onClick={this.handleDemo}
+          >
+            DEMO LOGIN
+          </button>
+        </div>
       </div>
     );
   }

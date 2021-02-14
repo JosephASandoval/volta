@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import VoltaLogo from "./volta_logo";
+import LanguageOutlinedIcon from "@material-ui/icons/LanguageOutlined";
 
 class Signup extends React.Component {
   constructor(props) {
@@ -26,9 +27,7 @@ class Signup extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props
-      .signupUser(this.state)
-      .then(() => this.props.history.push("/"));
+    this.props.signupUser(this.state).then(() => this.props.history.push("/"));
   }
 
   handleErrors() {
@@ -47,58 +46,62 @@ class Signup extends React.Component {
 
   render() {
     return (
-      <div className="session_form">
-        <VoltaLogo />
-        <h1>Create Account</h1>
-        <form className="form_box">
-          {this.renderErrors()}
-          <label>
-            First Name
+      <div className="signup">
+        <div className="signup__header">
+          <VoltaLogo />
+          <div className="signup__language">
+            <LanguageOutlinedIcon /> <span>en-US</span>
+          </div>
+        </div>
+
+        <div className="signup__info">
+          <h1>Create Account</h1>
+          <form className="signup__form">
+            {this.renderErrors()}
+            <label>First Name</label>
             <input
               type="text"
               value={this.state.firstName}
               onChange={this.update("firstName")}
             />
-          </label>
-          <label>
-            Last Name
+            <label>Last Name</label>
             <input
               type="text"
               value={this.state.lastName}
               onChange={this.update("lastName")}
             />
-          </label>
-          <label>
-            Username
+            <label>Username</label>
             <input
               type="text"
               value={this.state.username}
               onChange={this.update("username")}
             />
-          </label>
-          <label>
-            Email
+            <label>Email Address</label>
             <input
               type="text"
               value={this.state.email}
               onChange={this.update("email")}
             />
-          </label>
-          <label>
-            Password
+            <label>Password</label>
             <input
               type="password"
               value={this.state.password}
               onChange={this.update("password")}
             />
-          </label>
 
-          <button onClick={this.handleSubmit}>CREATE ACCOUNT</button>
-          &nbsp;or&nbsp;
+            <button type="submit" onClick={this.handleSubmit}>
+              Create Account
+            </button>
+          </form>
+
+          <div className="signup__divider">
+            <hr /> <span>OR</span> <hr />
+          </div>
+
           <Link to="/login" onClick={this.handleErrors}>
-            SIGN IN
+            <button>Sign In</button>
           </Link>
-        </form>
+        </div>
       </div>
     );
   }
