@@ -13,25 +13,15 @@ const App = () => {
   return (
     <div>
       <Switch>
-        <Route exact path="/">
-          <Splash />
-        </Route>
+        <Route exact path="/" component={Splash} />
 
-        <AuthRoute path="/signup">
-          <SignupContainer />
-        </AuthRoute>
+        <AuthRoute exact path="/signup" component={SignupContainer} />
 
-        <AuthRoute path="/login">
-          <LoginContainer />
-        </AuthRoute>
+        <AuthRoute exact path="/login" component={LoginContainer} />
 
-        <Route path="/userProfile">
-          <UserProfileContainer />
-        </Route>
+        <Route exact path="/userProfile" component={UserProfileContainer} />
 
-        <Route path="*">
-          <NotFound />
-        </Route>
+        <Route path="*" component={NotFound} />
       </Switch>
     </div>
   );
