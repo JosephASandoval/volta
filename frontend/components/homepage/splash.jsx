@@ -1,11 +1,14 @@
-import React from "react";
-import HeaderContainer from "./header_container";
+import React, { useState } from "react";
+import Header from "./header";
 import Item from "./item";
 
 function Splash() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="scroll-snap">
-      <HeaderContainer />
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
       <div>
         <Item
           title="Model S"
