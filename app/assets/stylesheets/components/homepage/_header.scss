@@ -3,39 +3,56 @@
   position: fixed;
   background-color: transparent;
   background: none;
-  width: 98vw;
+  z-index: 2;
   top: 0;
-  margin-top: 10px;
-  margin: 10px;
-  z-index: 50;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  padding-top: 15px;
 }
 
 .header__logo {
+  object-fit: contain;
   width: 100px;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 .header__links {
   display: flex;
   gap: 15px;
-  flex: 1;
-  justify-content: center;
 }
 
-.header__links > p {
-  font-size: 14px;
-  margin: 10px 15px 10px 15px;
+.header__links > a {
+  text-decoration: none;
   text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .header__right {
   display: flex;
-  justify-content: flex-end;
-  text-transform: uppercase;
+  align-items: center;
+  gap: 15px;
 }
 
-.header__right > p {
+.header__right > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
   font-size: 14px;
-  margin: 10px;
+  z-index: 0;
+  position: relative;
+}
+
+.header__link--hidden {
+  visibility: hidden;
+}
+
+.header__menu > .MuiSvgIcon-root {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
