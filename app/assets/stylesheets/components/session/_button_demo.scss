@@ -1,0 +1,18 @@
+.buttonDemo {
+  background-color: transparent;
+  border: 3px solid #E82127;
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #E82127;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.buttonDemo:hover {
+  background-color: #E82127;
+  color: white;
+}

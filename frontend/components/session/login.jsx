@@ -64,14 +64,16 @@ class Login extends React.Component {
           <h1>Sign In</h1>
           <form className="login__form">
             {this.renderErrors()}
-            <label>Email Address</label>
+            <label htmlFor="email">Email Address</label>
             <input
-              type="text"
+              id="email"
+              type="email"
               value={this.state.email}
               onChange={this.update("email")}
             />
-            <label>Password</label>
+            <label htmlFor="password">Password</label>
             <input
+              id="password"
               type="password"
               value={this.state.password}
               onChange={this.update("password")}
@@ -82,7 +84,7 @@ class Login extends React.Component {
               type="submit"
               onClick={this.handleSubmit}
             >
-              SIGN IN
+              Sign In
             </button>
           </form>
 
@@ -96,7 +98,7 @@ class Login extends React.Component {
               type="submit"
               onClick={this.handleErrors}
             >
-              CREATE ACCOUNT
+              Create Account
             </button>
           </Link>
 
@@ -105,11 +107,11 @@ class Login extends React.Component {
           </div>
 
           <button
-            className="buttonSecondary"
+            className="buttonDemo"
             type="submit"
             onClick={this.handleDemo}
           >
-            DEMO LOGIN
+            Demo Login
           </button>
         </div>
       </div>

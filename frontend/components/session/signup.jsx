@@ -58,32 +58,37 @@ class Signup extends React.Component {
           <h1>Create Account</h1>
           <form className="signup__form">
             {this.renderErrors()}
-            <label>First Name</label>
+            <label htmlFor="firstName">First Name</label>
             <input
+              id="firstName"
               type="text"
               value={this.state.firstName}
               onChange={this.update("firstName")}
             />
-            <label>Last Name</label>
+            <label htmlFor="lastName">Last Name</label>
             <input
+              id="lastName"
               type="text"
               value={this.state.lastName}
               onChange={this.update("lastName")}
             />
-            <label>Username</label>
+            <label htmlFor="username">Username</label>
             <input
+              id="username"
               type="text"
               value={this.state.username}
               onChange={this.update("username")}
             />
-            <label>Email Address</label>
+            <label htmlFor="email">Email Address</label>
             <input
-              type="text"
+              id="email"
+              type="email"
               value={this.state.email}
               onChange={this.update("email")}
             />
-            <label>Password</label>
+            <label htmlFor="password">Password</label>
             <input
+              id="password"
               type="password"
               value={this.state.password}
               onChange={this.update("password")}
