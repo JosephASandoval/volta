@@ -14,52 +14,52 @@ function Splash() {
       <div>
         <Item
           title="Model S"
-          desc="Order Online for Touchless Delivery"
+          desc="Order Online for"
           descLink=""
           backgroundImg={window.modelSURL}
           alt="Model S"
-          leftBtnTxt="CUSTOM ORDER"
+          leftBtnTxt="Custom Order"
           leftBtnLink=""
-          rightBtnTxt="EXISTING INVENTORY"
+          rightBtnTxt="Existing Inventory"
           rightBtnLink=""
-          twoButtons="true"
           first
+          car
         />
         <Item
           title="Model Y"
-          desc="Order Online for Touchless Delivery"
+          desc="Order Online for"
           descLink=""
           backgroundImg={window.modelYURL}
           alt="Model Y"
-          leftBtnTxt="CUSTOM ORDER"
+          leftBtnTxt="Custom Order"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
+          rightBtnTxt="Learn More"
           rightBtnLink=""
-          twoButtons="true"
+          car
         />
         <Item
           title="Model 3"
-          desc="Order Online for Touchless Delivery"
+          desc="Order Online for"
           descLink=""
           backgroundImg={window.model3URL}
           alt="Model 3"
-          leftBtnTxt="CUSTOM ORDER"
+          leftBtnTxt="Custom Order"
           leftBtnLink=""
-          rightBtnTxt="EXISTING INVENTORY"
+          rightBtnTxt="Existing Inventory"
           rightBtnLink=""
-          twoButtons="true"
+          car
         />
         <Item
           title="Model X"
-          desc="Order Online for Touchless Delivery"
+          desc="Order Online for"
           descLink=""
           backgroundImg={window.modelXURL}
           alt="Model X"
-          leftBtnTxt="CUSTOM ORDER"
+          leftBtnTxt="Custom Order"
           leftBtnLink=""
-          rightBtnTxt="EXISTING INVENTORY"
+          rightBtnTxt="Existing Inventory"
           rightBtnLink=""
-          twoButtons="true"
+          car
         />
         <Item
           title="Lowest Cost Solar Panels in America"
@@ -67,11 +67,10 @@ function Splash() {
           descLink=""
           backgroundImg={window.solarPanelsURL}
           alt="Solar Panels"
-          leftBtnTxt="ORDER NOW"
+          leftBtnTxt="Order Now"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
+          rightBtnTxt="Learn More"
           rightBtnLink=""
-          twoButtons="true"
         />
         <Item
           title="Solar for New Roofs"
@@ -79,11 +78,10 @@ function Splash() {
           descLink=""
           backgroundImg={window.solarRoofURL}
           alt="Solar Roof"
-          leftBtnTxt="CUSTOM ORDER"
+          leftBtnTxt="Custom Order"
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
+          rightBtnTxt="Learn More"
           rightBtnLink=""
-          twoButtons="true"
         />
         <Item
           title="Accessories"
@@ -91,9 +89,9 @@ function Splash() {
           descLink=""
           backgroundImg={window.accessoriesURL}
           alt="Accessories"
-          leftBtnTxt="SHOP NOW"
+          leftBtnTxt="Shop Now"
           leftBtnLink=""
-          twoButtons="false"
+          oneButton
         />
       </div>
     </div>
