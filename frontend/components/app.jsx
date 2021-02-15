@@ -19,7 +19,11 @@ const App = () => {
 
         <AuthRoute exact path="/login" component={LoginContainer} />
 
-        <Route exact path="/userProfile" component={UserProfileContainer} />
+        <ProtectedRoute
+          exact
+          path="/userProfile"
+          component={UserProfileContainer}
+        />
 
         <Route path="*" component={NotFound} />
       </Switch>
