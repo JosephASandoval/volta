@@ -1,0 +1,17 @@
+.buttonGray {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 50px;
+  color: #171a20;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 30px;
+  transition: all 0.4s;
+}
+
+.buttonGray:hover {
+  background-color: #ececec;
+}

@@ -1,0 +1,72 @@
+.noCar {
+  display: grid;
+  place-items: center;
+  border-top: 1px solid #d0d1d2;
+}
+
+.noCar__image > img {
+  object-fit: contain;
+  width: 1000px;
+}
+
+.noCar__model {
+  font-weight: 400;
+  font-size: 34px;
+  font-size: xx-large;
+  margin-top: -180px;
+  text-transform: capitalize;
+}
+
+.noCar__powerWall {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+
+.noCar__powerWallImage > img {
+  object-fit: contain;
+  width: 300px;
+}
+
+.noCar__powerWallModel {
+  font-weight: 400;
+  font-size: 34px;
+  font-size: xx-large;
+  text-transform: capitalize;
+  margin-left: 33px;
+  margin-bottom: 30px;
+}
+
+.noCar__powerWallAction > button {
+  width: 230px;
+  margin-bottom: 250px;
+}
+
+.noCar__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: -40px;
+}
+
+.noCar__actions > button {
+  width: 230px;
+  margin-bottom: 30px;
+}
+
+.noCar__info {
+  max-width: 350px;
+  text-align: center;
+  font-size: smaller;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #393c41;
+}
+
+.noCar__info > span {
+  color: #3e6be2;
+  cursor: pointer;
+}
