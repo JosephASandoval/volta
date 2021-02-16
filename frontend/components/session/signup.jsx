@@ -7,8 +7,8 @@ class Signup extends React.Component {
     super(props);
 
     this.state = {
-      firstName: "",
-      lastName: "",
+      first_name: "",
+      last_name: "",
       username: "",
       email: "",
       password: "",
@@ -58,22 +58,22 @@ class Signup extends React.Component {
         </div>
 
         <div className="signup__info">
+          {this.renderErrors()}
           <h1>Create Account</h1>
           <form className="signup__form">
-            {this.renderErrors()}
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="first_name">First Name</label>
             <input
-              id="firstName"
+              id="first_name"
               type="text"
-              value={this.state.firstName}
-              onChange={this.update("firstName")}
+              value={this.state.first_name}
+              onChange={this.update("first_name")}
             />
-            <label htmlFor="lastName">Last Name</label>
+            <label htmlFor="last_name">Last Name</label>
             <input
-              id="lastName"
+              id="last_name"
               type="text"
-              value={this.state.lastName}
-              onChange={this.update("lastName")}
+              value={this.state.last_name}
+              onChange={this.update("last_name")}
             />
             <label htmlFor="username">Username</label>
             <input
