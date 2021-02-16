@@ -84,7 +84,8 @@ class Signup extends React.Component {
             <label htmlFor="username">Username</label>
             <input
               className={
-                this.props.errors.includes("Username can't be blank")
+                this.props.errors.includes("Username can't be blank") ||
+                this.props.errors.includes("Username has already been taken")
                   ? "signup__inputErrors"
                   : "signup__input"
               }
@@ -93,14 +94,18 @@ class Signup extends React.Component {
               value={this.state.username}
               onChange={this.update("username")}
             />
-            {this.props.errors.includes("Username can't be blank") && (
+            {(this.props.errors.includes("Username can't be blank") && (
               <p>Username required</p>
-            )}
+            )) ||
+              (this.props.errors.includes(
+                "Username has already been taken"
+              ) && <p>Username has already been taken</p>)}
 
             <label htmlFor="email">Email Address</label>
             <input
               className={
-                this.props.errors.includes("Email can't be blank")
+                this.props.errors.includes("Email is invalid") ||
+                this.props.errors.includes("Email has already been taken")
                   ? "signup__inputErrors"
                   : "signup__input"
               }
@@ -109,9 +114,12 @@ class Signup extends React.Component {
               value={this.state.email}
               onChange={this.update("email")}
             />
-            {this.props.errors.includes("Email can't be blank") && (
+            {(this.props.errors.includes("Email is invalid") && (
               <p>Please enter a valid email address</p>
-            )}
+            )) ||
+              (this.props.errors.includes("Email has already been taken") && (
+                <p>Email has already been taken</p>
+              ))}
 
             <label htmlFor="password">Password</label>
             <input
@@ -127,9 +135,13 @@ class Signup extends React.Component {
               value={this.state.password}
               onChange={this.update("password")}
             />
-            {this.props.errors.includes(
-              "Password is too short (minimum is 6 characters)"
-            ) && <p>Password required</p>}
+            {this.state.password.length > 0 && this.state.password.length < 6
+              ? this.props.errors.includes(
+                  "Password is too short (minimum is 6 characters)"
+                ) && <p>Password is too short (minimum is 6 characters)</p>
+              : this.props.errors.includes(
+                  "Password is too short (minimum is 6 characters)"
+                ) && <p>Password required</p>}
 
             <button type="submit" onClick={this.handleSubmit}>
               Create Account

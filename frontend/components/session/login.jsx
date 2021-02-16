@@ -54,6 +54,9 @@ class Login extends React.Component {
         </div>
         <div className="login__info">
           <h1>Sign In</h1>
+          {this.props.errors.includes("Invalid username or password") && (
+            <p>Invalid username or password</p>
+          )}
           <form className="login__form">
             <label htmlFor="email">Email Address</label>
             <input
@@ -67,14 +70,11 @@ class Login extends React.Component {
               value={this.state.email}
               onChange={this.update("email")}
             />
-            {this.props.errors.length !== 0 &&
-              this.state.email.length === 0 && <p>Email required</p>}
 
             <label htmlFor="password">Password</label>
             <input
               className={
-                this.props.errors.length !== 0 &&
-                this.state.password.length === 0
+                this.props.errors.length !== 0 && this.state.email.length === 0
                   ? "login__inputErrors"
                   : "login__input"
               }
@@ -83,8 +83,6 @@ class Login extends React.Component {
               value={this.state.password}
               onChange={this.update("password")}
             />
-            {this.props.errors.length !== 0 &&
-              this.state.password.length === 0 && <p>Password required</p>}
 
             <button
               className="buttonPrimary"
