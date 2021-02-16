@@ -39,18 +39,6 @@ class Login extends React.Component {
       .then(() => this.props.history.push("/"));
   }
 
-  // renderErrors() {
-  //   return (
-  //     <div className="login__errors">
-  //       <ul>
-  //         {this.props.errors.map((error, idx) => (
-  //           <li key={`error-${idx}`}>{error}</li>
-  //         ))}
-  //       </ul>
-  //     </div>
-  //   );
-  // }
-
   render() {
     return (
       <div className="login">
@@ -65,32 +53,38 @@ class Login extends React.Component {
           </div>
         </div>
         <div className="login__info">
-          {/* {this.renderErrors()} */}
           <h1>Sign In</h1>
-          <form
-            className={
-              this.props.errors.length !== 0
-                ? "login__formErrors"
-                : "login__form"
-            }
-          >
+          <form className="login__form">
             <label htmlFor="email">Email Address</label>
             <input
+              className={
+                this.props.errors.length !== 0 && this.state.email.length === 0
+                  ? "login__inputErrors"
+                  : "login__input"
+              }
               id="email"
               type="email"
               value={this.state.email}
               onChange={this.update("email")}
             />
-            {this.props.errors.length !== 0 && <p>Email required</p>}
+            {this.props.errors.length !== 0 &&
+              this.state.email.length === 0 && <p>Email required</p>}
 
             <label htmlFor="password">Password</label>
             <input
+              className={
+                this.props.errors.length !== 0 &&
+                this.state.password.length === 0
+                  ? "login__inputErrors"
+                  : "login__input"
+              }
               id="password"
               type="password"
               value={this.state.password}
               onChange={this.update("password")}
             />
-            {this.props.errors.length !== 0 && <p>Password required</p>}
+            {this.props.errors.length !== 0 &&
+              this.state.password.length === 0 && <p>Password required</p>}
 
             <button
               className="buttonPrimary"

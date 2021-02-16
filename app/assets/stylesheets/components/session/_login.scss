@@ -74,21 +74,6 @@
   margin-top: 40px;
 }
 
-.login__form > input {
-  background-color: #f4f4f4;
-  border: 1px solid #f4f4f4;
-  outline: none;
-  border-radius: 50px;
-  padding: 12px 20px;
-  color: #393c41;
-  font-weight: 600;
-}
-
-.login__form > input:focus {
-  border: 1px solid #d6d6d7;
-  transition: all 0.2s;
-}
-
 .login__form > button {
   background-color: #3e6ae1;
   border: none;
@@ -108,23 +93,23 @@
   background-color: #3457b1;
 }
 
+.login__input {
+  background-color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  outline: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  color: #393c41;
+  font-weight: 600;
+}
+
+.login__input:focus {
+  border: 1px solid #d6d6d7;
+  transition: all 0.2s;
+}
+
 ///Errors
-
-.login__formErrors {
-  display: flex;
-  flex-direction: column;
-}
-
-.login__formErrors > label {
-  color: #5c5e62;
-  font-weight: 500;
-  font-size: 15px;
-  padding-left: 20px;
-  margin-bottom: 7px;
-  margin-top: 40px;
-}
-
-.login__formErrors > input {
+.login__inputErrors {
   background-color: #f4f4f4;
   border: 1px solid #B74134;
   outline: none;
@@ -134,26 +119,7 @@
   font-weight: 600;
 }
 
-.login__formErrors > button {
-  background-color: #3e6ae1;
-  border: none;
-  padding: 12px 40px;
-  border-radius: 50px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  margin-bottom: 17px;
-  margin-top: 20px;
-  transition: all 0.4s;
-}
-
-.login__formErrors > button:hover {
-  background-color: #3457b1;
-}
-
-.login__formErrors > p {
+.login__form > p {
   font-size: 12px;
   font-weight: 500;
   color: #B74134;
@@ -161,7 +127,6 @@
   margin-top: 8px;
   margin-right: 20px;
 }
-
 ///Errors
 
 .login__divider {
@@ -199,8 +164,4 @@
 .login__info > a > button:hover {
   background-color: #171a20;
   color: white;
-}
-
-.login__errors {
-  font-size: 34px;
 }

@@ -70,21 +70,6 @@
   margin-top: 40px;
 }
 
-.signup__form > input {
-  background-color: #f4f4f4;
-  border: 1px solid #f4f4f4;
-  outline: none;
-  border-radius: 50px;
-  padding: 12px 20px;
-  color: #393c41;
-  font-weight: 600;
-}
-
-.signup__form > input:focus {
-  border: 1px solid #d6d6d7;
-  transition: all 0.2s;
-}
-
 .signup__form > button {
   background-color: #3e6ae1;
   border: none;
@@ -104,23 +89,23 @@
   background-color: #3457b1;
 }
 
+.signup__input {
+  background-color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  outline: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  color: #393c41;
+  font-weight: 600;
+}
+
+.signup__input:focus {
+  border: 1px solid #d6d6d7;
+  transition: all 0.2s;
+}
+
 ///Errors
-
-.signup__formErrors {
-  display: flex;
-  flex-direction: column;
-}
-
-.signup__formErrors > label {
-  color: #5c5e62;
-  font-weight: 500;
-  font-size: 15px;
-  padding-left: 20px;
-  margin-bottom: 7px;
-  margin-top: 40px;
-}
-
-.signup__formErrors > input {
+.signup__inputErrors {
   background-color: #f4f4f4;
   border: 1px solid #B74134;
   outline: none;
@@ -130,31 +115,7 @@
   font-weight: 600;
 }
 
-.signup__formErrors > input:focus {
-  border: 1px solid #d6d6d7;
-  transition: all 0.2s;
-}
-
-.signup__formErrors > button {
-  background-color: #3e6ae1;
-  border: none;
-  padding: 12px 40px;
-  border-radius: 50px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  margin-bottom: 35px;
-  margin-top: 10px;
-  transition: all 0.4s;
-}
-
-.signup__formErrors > button:hover {
-  background-color: #3457b1;
-}
-
-.signup__formErrors > p {
+.signup__form > p {
   font-size: 12px;
   font-weight: 500;
   color: #B74134;
@@ -162,7 +123,6 @@
   margin-top: 8px;
   margin-right: 20px;
 }
-
 ///Errors
 
 .signup__divider {
