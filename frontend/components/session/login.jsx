@@ -61,7 +61,7 @@ class Login extends React.Component {
             <label htmlFor="email">Email Address</label>
             <input
               className={
-                this.props.errors.length !== 0 && this.state.email.length === 0
+                this.props.errors.length > 0
                   ? "login__inputErrors"
                   : "login__input"
               }
@@ -74,7 +74,7 @@ class Login extends React.Component {
             <label htmlFor="password">Password</label>
             <input
               className={
-                this.props.errors.length !== 0 && this.state.email.length === 0
+                this.props.errors.length > 0
                   ? "login__inputErrors"
                   : "login__input"
               }
