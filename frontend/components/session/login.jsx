@@ -12,7 +12,10 @@ class Login extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemo = this.handleDemo.bind(this);
-    this.handleErrors = this.handleErrors.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.removeErrors();
   }
 
   update(field) {
@@ -24,10 +27,6 @@ class Login extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.loginUser(this.state).then(() => this.props.history.push("/"));
-  }
-
-  handleErrors() {
-    this.props.removeErrors();
   }
 
   handleDemo(e) {
@@ -64,9 +63,9 @@ class Login extends React.Component {
           </div>
         </div>
         <div className="login__info">
+          {this.renderErrors()}
           <h1>Sign In</h1>
           <form className="login__form">
-            {this.renderErrors()}
             <label htmlFor="email">Email Address</label>
             <input
               id="email"
@@ -99,7 +98,6 @@ class Login extends React.Component {
             <button
               className="buttonSecondary"
               type="submit"
-              onClick={this.handleErrors}
             >
               Create Account
             </button>
