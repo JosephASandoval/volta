@@ -7,14 +7,14 @@ import CloseIcon from "@material-ui/icons/Close";
 const NotFound = ({ currentUser, logout }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="userProfile">
-      <div className="userProfile__header">
-        <div className="userProfile__logo">
+    <div className="notFound">
+      <div className="notFound__header">
+        <div className="notFound__logo">
           <Link to="/">
             <img src={window.voltaLogoURL} alt="Volta Logo" />
           </Link>
         </div>
-        <div className="userProfile__links">
+        <div className="notFound__links">
           <Link to="/">Model S</Link>
           <Link to="/">Model 3</Link>
           <Link to="/">Model X</Link>
@@ -23,7 +23,7 @@ const NotFound = ({ currentUser, logout }) => {
           <Link to="/">Solar Panels</Link>
         </div>
 
-        <div className="userProfile__right">
+        <div className="notFound__right">
           <Link to="/">Shop</Link>
           {currentUser ? (
             <Link to="/userProfile">Volta Account</Link>
@@ -38,11 +38,11 @@ const NotFound = ({ currentUser, logout }) => {
             <Link to="/">Log out</Link>
           )}
           <div
-            className="userProfile__menu"
+            className="notFound__menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <CloseIcon className="userProfile__closeMenu" />
+              <CloseIcon className="notFound__closeMenu" />
             ) : (
               <MenuIcon />
             )}
@@ -50,8 +50,16 @@ const NotFound = ({ currentUser, logout }) => {
         </div>
       </div>
       {isMenuOpen && <Menu />}
-      <div className="not-found">
-        <h1>Page Not Found</h1>
+      <div className="notFound__container">
+        <div className="notFound__firstMessage">
+          <h1>404</h1>
+          <div className="notFound__secondMessage">
+            <p>I'm afraid I can't do that.</p>
+          </div>
+        </div>
+        <div className="notFound__starman">
+          <img src={window.starmanURL} alt="starman" />
+        </div>
       </div>
     </div>
   );
