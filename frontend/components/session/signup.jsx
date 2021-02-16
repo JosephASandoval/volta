@@ -67,6 +67,8 @@ class Signup extends React.Component {
               value={this.state.first_name}
               onChange={this.update("first_name")}
             />
+            <p>Please enter a first name using letters only</p>
+
             <label htmlFor="last_name">Last Name</label>
             <input
               id="last_name"
@@ -74,6 +76,8 @@ class Signup extends React.Component {
               value={this.state.last_name}
               onChange={this.update("last_name")}
             />
+            <p>Please enter a last name using letters only</p>
+
             <label htmlFor="username">Username</label>
             <input
               id="username"
@@ -81,6 +85,8 @@ class Signup extends React.Component {
               value={this.state.username}
               onChange={this.update("username")}
             />
+            <p>Username required</p>
+
             <label htmlFor="email">Email Address</label>
             <input
               id="email"
@@ -88,6 +94,8 @@ class Signup extends React.Component {
               value={this.state.email}
               onChange={this.update("email")}
             />
+            <p>Please enter a valid email address</p>
+
             <label htmlFor="password">Password</label>
             <input
               id="password"
@@ -95,6 +103,7 @@ class Signup extends React.Component {
               value={this.state.password}
               onChange={this.update("password")}
             />
+            <p>Password required</p>
 
             <button type="submit" onClick={this.handleSubmit}>
               Create Account
