@@ -17,7 +17,9 @@
 
 .login__logo > a > img {
   object-fit: contain;
-  width: 100px;
+  width: 130px;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .login__language {
@@ -51,7 +53,13 @@
 .login__info > h1 {
   font-weight: 500;
   font-size: 34px;
-  margin-left: -10px;
+  margin-left: -3px;
+  margin-bottom: 10px;
+  margin-top: -25px;
+}
+
+.login__info > a {
+  margin-bottom: 15px;
 }
 
 .login__form {
@@ -64,10 +72,11 @@
   font-weight: 500;
   font-size: 15px;
   padding-left: 20px;
+  margin-bottom: 7px;
 }
 
 .login__form > input {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   background-color: #f4f4f4;
   border: 1px solid #f4f4f4;
   outline: none;
@@ -92,7 +101,8 @@
   font-weight: bold;
   cursor: pointer;
   outline: none;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
+  margin-top: 20px;
   transition: all 0.4s;
 }
 
