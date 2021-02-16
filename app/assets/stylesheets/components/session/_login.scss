@@ -15,6 +15,11 @@
   top: 0;
 }
 
+.login__logo > a > img {
+  object-fit: contain;
+  width: 100px;
+}
+
 .login__language {
   display: flex;
   gap: 5px;
