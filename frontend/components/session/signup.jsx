@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import VoltaLogo from "./volta_logo";
 import LanguageOutlinedIcon from "@material-ui/icons/LanguageOutlined";
 
 class Signup extends React.Component {
@@ -48,7 +47,11 @@ class Signup extends React.Component {
     return (
       <div className="signup">
         <div className="signup__header">
-          <VoltaLogo />
+          <div className="signup__logo">
+            <Link to="/">
+              <img src={window.voltaLogoURL} alt="Volta Logo" />
+            </Link>
+          </div>
           <div className="signup__language">
             <LanguageOutlinedIcon /> <span>en-US</span>
           </div>
