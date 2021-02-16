@@ -56,6 +56,12 @@ const NotFound = ({ currentUser, logout }) => {
           <div className="notFound__secondMessage">
             <p>I'm afraid I can't do that.</p>
           </div>
+          <div className="notFound__thirdMessage">
+            <p>
+              Join Starman back at the <Link to="/">homepage</Link> or visit
+              Support for help.
+            </p>
+          </div>
         </div>
         <div className="notFound__starman">
           <img src={window.starmanURL} alt="starman" />

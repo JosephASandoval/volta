@@ -76,6 +76,28 @@
   flex: 1;
 }
 
+.notFound__thirdMessage {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #393c41;
+  margin-top: 2%;
+  margin-left: 0;
+  flex: 1;
+}
+
+.notFound__thirdMessage > p > a {
+  padding-bottom: 4px;
+  padding-top: 15px;
+  color: #393c41;
+  cursor: pointer;
+}
+
+.notFound__thirdMessage > p > a:hover {
+  border-bottom-width: 2px;
+  color: black;
+}
+
 .notFound__starman {
   object-fit: contain;
   width: 50%;
