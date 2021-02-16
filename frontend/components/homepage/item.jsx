@@ -30,7 +30,9 @@ const Item = ({
         </div>
         {first && (
           <div className="item__downArrow">
-            <img src={window.downArrowURL} alt="Down Arrow" />
+            <div className="box bounce">
+              <img src={window.downArrowURL} alt="Down Arrow" />
+            </div>
           </div>
         )}
       </div>
