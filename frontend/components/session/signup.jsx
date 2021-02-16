@@ -32,15 +32,15 @@ class Signup extends React.Component {
     this.props.signupUser(this.state).then(() => this.props.history.push("/"));
   }
 
-  renderErrors() {
-    return (
-      <ul>
-        {this.props.errors.map((error, idx) => (
-          <li key={`error-${idx}`}>{error}</li>
-        ))}
-      </ul>
-    );
-  }
+  // renderErrors() {
+  //   return (
+  //     <ul>
+  //       {this.props.errors.map((error, idx) => (
+  //         <li key={`error-${idx}`}>{error}</li>
+  //       ))}
+  //     </ul>
+  //   );
+  // }
 
   render() {
     return (
@@ -57,9 +57,15 @@ class Signup extends React.Component {
         </div>
 
         <div className="signup__info">
-          {this.renderErrors()}
+          {/* {this.renderErrors()} */}
           <h1>Create Account</h1>
-          <form className="signup__form">
+          <form
+            className={
+              this.props.errors.length !== 0
+                ? "signup__formErrors"
+                : "signup__form"
+            }
+          >
             <label htmlFor="first_name">First Name</label>
             <input
               id="first_name"
@@ -67,7 +73,9 @@ class Signup extends React.Component {
               value={this.state.first_name}
               onChange={this.update("first_name")}
             />
-            <p>Please enter a first name using letters only</p>
+            {this.props.errors.length !== 0 && (
+              <p>Please enter a first name using letters only</p>
+            )}
 
             <label htmlFor="last_name">Last Name</label>
             <input
@@ -76,7 +84,9 @@ class Signup extends React.Component {
               value={this.state.last_name}
               onChange={this.update("last_name")}
             />
-            <p>Please enter a last name using letters only</p>
+            {this.props.errors.length !== 0 && (
+              <p>Please enter a last name using letters only</p>
+            )}
 
             <label htmlFor="username">Username</label>
             <input
@@ -85,7 +95,7 @@ class Signup extends React.Component {
               value={this.state.username}
               onChange={this.update("username")}
             />
-            <p>Username required</p>
+            {this.props.errors.length !== 0 && <p>Username required</p>}
 
             <label htmlFor="email">Email Address</label>
             <input
@@ -94,7 +104,9 @@ class Signup extends React.Component {
               value={this.state.email}
               onChange={this.update("email")}
             />
-            <p>Please enter a valid email address</p>
+            {this.props.errors.length !== 0 && (
+              <p>Please enter a valid email address</p>
+            )}
 
             <label htmlFor="password">Password</label>
             <input
@@ -103,7 +115,7 @@ class Signup extends React.Component {
               value={this.state.password}
               onChange={this.update("password")}
             />
-            <p>Password required</p>
+            {this.props.errors.length !== 0 && <p>Password required</p>}
 
             <button type="submit" onClick={this.handleSubmit}>
               Create Account
