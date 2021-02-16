@@ -27,7 +27,7 @@ const UserProfile = ({ currentUser, logout }) => {
 
         <div className="userProfile__right">
           <Link to="/">Shop</Link>
-          <Link to="/">Volta Account</Link>
+          <Link to="/userProfile">Volta Account</Link>
           <Link to="/" onClick={logout}>
             Log out
           </Link>
