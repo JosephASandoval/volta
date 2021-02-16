@@ -15,7 +15,10 @@ class Signup extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleErrors = this.handleErrors.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.removeErrors();
   }
 
   update(field) {
@@ -27,10 +30,6 @@ class Signup extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.signupUser(this.state).then(() => this.props.history.push("/"));
-  }
-
-  handleErrors() {
-    this.props.removeErrors();
   }
 
   renderErrors() {
@@ -106,7 +105,7 @@ class Signup extends React.Component {
             <hr /> <span>OR</span> <hr />
           </div>
 
-          <Link to="/login" onClick={this.handleErrors}>
+          <Link to="/login">
             <button>Sign In</button>
           </Link>
         </div>
