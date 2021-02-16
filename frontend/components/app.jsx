@@ -7,7 +7,7 @@ import Splash from "./homepage/splash";
 import UserProfileContainer from "./user_profile/user_profile_container";
 import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
-import NotFound from "./notfound/notfound";
+import NotFoundContainer from "./notfound/notfound_container";
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
           component={UserProfileContainer}
         />
 
-        <Route path="*" component={NotFound} />
+        <Route path="*" component={NotFoundContainer} />
       </Switch>
     </div>
   );
