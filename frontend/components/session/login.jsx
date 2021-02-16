@@ -39,15 +39,17 @@ class Login extends React.Component {
       .then(() => this.props.history.push("/"));
   }
 
-  renderErrors() {
-    return (
-      <ul>
-        {this.props.errors.map((error, idx) => (
-          <li key={`error-${idx}`}>{error}</li>
-        ))}
-      </ul>
-    );
-  }
+  // renderErrors() {
+  //   return (
+  //     <div className="login__errors">
+  //       <ul>
+  //         {this.props.errors.map((error, idx) => (
+  //           <li key={`error-${idx}`}>{error}</li>
+  //         ))}
+  //       </ul>
+  //     </div>
+  //   );
+  // }
 
   render() {
     return (
@@ -63,9 +65,15 @@ class Login extends React.Component {
           </div>
         </div>
         <div className="login__info">
-          {this.renderErrors()}
+          {/* {this.renderErrors()} */}
           <h1>Sign In</h1>
-          <form className="login__form">
+          <form
+            className={
+              this.props.errors.length !== 0
+                ? "login__formErrors"
+                : "login__form"
+            }
+          >
             <label htmlFor="email">Email Address</label>
             <input
               id="email"
@@ -73,6 +81,8 @@ class Login extends React.Component {
               value={this.state.email}
               onChange={this.update("email")}
             />
+            {this.props.errors.length !== 0 && <p>Email required</p>}
+
             <label htmlFor="password">Password</label>
             <input
               id="password"
@@ -80,6 +90,7 @@ class Login extends React.Component {
               value={this.state.password}
               onChange={this.update("password")}
             />
+            {this.props.errors.length !== 0 && <p>Password required</p>}
 
             <button
               className="buttonPrimary"
@@ -95,10 +106,7 @@ class Login extends React.Component {
           </div>
 
           <Link to="/signup">
-            <button
-              className="buttonSecondary"
-              type="submit"
-            >
+            <button className="buttonSecondary" type="submit">
               Create Account
             </button>
           </Link>
