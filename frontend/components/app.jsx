@@ -25,6 +25,8 @@ const App = () => {
           component={UserProfileContainer}
         />
 
+        {/* <ProtectedRoute exact path="/products/:productId" component={} /> */}
+
         <Route path="*" component={NotFoundContainer} />
       </Switch>
     </div>
