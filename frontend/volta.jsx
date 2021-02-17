@@ -4,7 +4,11 @@ import Root from "./components/root";
 import configureStore from "./store/store";
 
 // testing
-import { login, signup, logout } from "./util/session_api_util";
+import {
+  createProduct,
+  fetchProduct,
+  fetchAllProducts,
+} from "./util/product_api_util";
 // testing
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -27,11 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<Root store={store} />, rootEl);
 
   // testing
-  window.login = login;
-  window.logout = logout;
-  window.signup = signup;
+  window.createProduct = createProduct;
+  window.fetchProduct = fetchProduct;
+  window.fetchAllProducts = fetchAllProducts;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  // testing 
+  // testing
 });
-
