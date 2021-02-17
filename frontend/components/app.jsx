@@ -27,13 +27,13 @@ const App = () => {
           component={UserProfileContainer}
         />
 
-        <ProtectedRoute
+        <Route
           exact
           path="/products"
           component={ProductIndexContainer}
         />
 
-        <ProtectedRoute
+        <Route
           exact
           path="/products/:productId"
           component={ModelSContainer}

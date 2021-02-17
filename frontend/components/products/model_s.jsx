@@ -18,12 +18,14 @@ class ModelS extends React.Component {
         <h1>{product.name}</h1>
         <p>{product.price}</p>
         <p>{product.exterior}</p>
-        <p>{product.interior_color}</p>
-        <p>{product.interior_name}</p>
-        <p>{product.wheel_type}</p>
-        <p>{product.self_driving}</p>
+        <p>{product.interiorColor}</p>
+        <p>{product.interiorName}</p>
+        <p>{product.wheelType}</p>
+        <p>{product.selfDriving}</p>
         <p>{product.view}</p>
-        <p>{product.image_link}</p>
+        <a href={product.imageLink}>Image</a>
+        <br/>
+        <br/>
         <Link to={`/products`}>Back to all Products</Link>
       </div>
     );
