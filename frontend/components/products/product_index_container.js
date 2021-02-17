@@ -1,25 +1,17 @@
-// import { connect } from "react-redux";
-// import ProductIndex from "./product_index";
+import { connect } from "react-redux";
+import { requestAllProducts } from "../../actions/product_actions";
+import ProductIndex from "./product_index";
 
-// import { receiveAllProducts, createProduct } from "../actions/product_actions";
+const mapStateToProps = (state) => {
+  return {
+    products: Object.values(state.entities.products),
+  };
+};
 
-// const mapStateToProps = (state) => {
-//   const selectProductsByName = (products, name) => {
-//     const productsArr = Object.values(products);
-//     return productsArr.filter((product) => product.name === name);
-//   };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    requestAllProducts: () => dispatch(requestAllProducts()),
+  };
+};
 
-//   return {
-//     products: Object.values(state.products),
-//     modelS: selectProductsByName(state.products, "Model S"),
-//   };
-// };
-
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     receiveAllProducts: () => dispatch(receiveAllProducts()),
-//     createProduct: (product) => dispatch(createProduct(product)),
-//   };
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(ProductIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductIndex);

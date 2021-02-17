@@ -1,25 +1,30 @@
-// import React from "react";
-// import ProductForm from "./product_form";
-// import ProductItem from "./product_item";
+import React from "react";
+import ProductIndexItem from "./product_index_item";
 
-// class ProductIndex extends React.Component {
-//   componentDidMount() {
-//     this.props.receiveAllProducts();
-//   }
+class ProductIndex extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-//   render() {
-//     return (
-//       <div className="">
-//         <h1>All Voltas</h1>
-//         <div>
-//           {this.props.products.map((product) => (
-//             <ProductItem key={product.id} product={product} />
-//           ))}
-//         </div>
-//         <ProductForm createProduct={this.props.createProduct} />
-//       </div>
-//     );
-//   }
-// }
+  componentDidMount() {
+    this.props.requestAllProducts();
+  }
 
-// export default ProductIndex;
+  render() {
+    const { products } = this.props;
+    return (
+      <div>
+        <ul>
+          {products.map((product) => (
+            <ProductIndexItem
+              product={product}
+              key={product.id}
+            />
+          ))}
+        </ul>
+      </div>
+    );
+  }
+}
+
+export default ProductIndex;

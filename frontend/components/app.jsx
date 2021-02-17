@@ -8,6 +8,8 @@ import UserProfileContainer from "./user_profile/user_profile_container";
 import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
 import NotFoundContainer from "./notfound/notfound_container";
+import ProductIndexContainer from "./products/product_index_container"
+import ModelSContainer from "./products/model_s_container";
 
 const App = () => {
   return (
@@ -25,7 +27,17 @@ const App = () => {
           component={UserProfileContainer}
         />
 
-        {/* <ProtectedRoute exact path="/products/:productId" component={} /> */}
+        <ProtectedRoute
+          exact
+          path="/products"
+          component={ProductIndexContainer}
+        />
+
+        <ProtectedRoute
+          exact
+          path="/products/:productId"
+          component={ModelSContainer}
+        />
 
         <Route path="*" component={NotFoundContainer} />
       </Switch>

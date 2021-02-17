@@ -1,1 +1,1 @@
-json.extract! product, :id, :name, :price, :exterior_color, :interior_color, :wheel_type, :trim, :self_driving
+json.extract! product, :id, :name, :price, :exterior, :interior_color, :interior_name, :wheel_type, :self_driving, :view, :image_link

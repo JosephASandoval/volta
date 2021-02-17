@@ -1,19 +1,19 @@
 import {
-  RECEIVE_PRODUCT,
   RECEIVE_ALL_PRODUCTS,
+  RECEIVE_PRODUCT,
 } from "../actions/product_actions";
 
 const productsReducer = (oldState = {}, action) => {
 
   Object.freeze(oldState);
-  const nextState = Object.assign({}, oldState);
+  let nextState = Object.assign({}, oldState);
 
   switch (action.type) {
+    case RECEIVE_ALL_PRODUCTS:
+      return Object.assign({}, oldState, action.products);
     case RECEIVE_PRODUCT:
       nextState[action.product.id] = action.product;
       return nextState;
-    case RECEIVE_ALL_PRODUCTS:
-      return Object.assign(nextState, action.products);
     default:
       return oldState;
   }
