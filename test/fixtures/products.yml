@@ -4,7 +4,7 @@
 #
 #  id             :bigint           not null, primary key
 #  name           :string           not null
-#  price          :integer          not null
+#  price          :float            not null
 #  exterior_color :string           not null
 #  interior_color :string           not null
 #  wheel_type     :string           not null

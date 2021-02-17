@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_02_17_000954) do
 
   create_table "products", force: :cascade do |t|
     t.string "name", null: false
-    t.integer "price", null: false
+    t.float "price", null: false
     t.string "exterior_color", null: false
     t.string "interior_color", null: false
     t.string "wheel_type", null: false
