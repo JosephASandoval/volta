@@ -13,17 +13,17 @@ ActiveRecord::Base.transaction do
   puts "Creating users..."
 
   demo = User.create!(
-    username: 'demouser',
-    password: 'password',
-    email: 'demouser@gmail.com',
-    first_name: 'demo',
-    last_name: 'user'
+    username: "demouser",
+    password: "password",
+    email: "demouser@gmail.com",
+    first_name: "demo",
+    last_name: "user"
   )
 
   puts "Creating products..."
 
   models = Product.create!(
-    name: 'Model S',
+    name: "Model S",
     price: 80000,
     exterior_color: "Red Multi-Coat",
     interior_color: "Black and White",
