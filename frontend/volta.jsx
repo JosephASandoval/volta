@@ -5,7 +5,6 @@ import configureStore from "./store/store";
 
 // testing
 import {
-  createProduct,
   fetchProduct,
   fetchAllProducts,
 } from "./util/product_api_util";
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<Root store={store} />, rootEl);
 
   // testing
-  window.createProduct = createProduct;
   window.fetchProduct = fetchProduct;
   window.fetchAllProducts = fetchAllProducts;
   window.getState = store.getState;
