@@ -35,12 +35,30 @@ class ProductButton extends React.Component {
 
         {/* update exterior */}
         <button
-          className="buttonDemo"
+          className="buttonPrimary"
           type="submit"
-          value="Red Multi-Coat"
+          value="Pearl White Multi-Coat"
           onClick={this.handleExterior}
         >
-          Change exterior to Red
+          Pearl White Multi-Coat
+        </button>
+
+        <button
+          className="buttonPrimary"
+          type="submit"
+          value="Solid Black"
+          onClick={this.handleExterior}
+        >
+          Solid Black
+        </button>
+
+        <button
+          className="buttonPrimary"
+          type="submit"
+          value="Midnight Silver Metallic"
+          onClick={this.handleExterior}
+        >
+          Midnight Silver Metallic
         </button>
 
         <button
@@ -49,7 +67,16 @@ class ProductButton extends React.Component {
           value="Deep Blue Metallic"
           onClick={this.handleExterior}
         >
-          Change exterior to blue
+          Deep Blue Metallic
+        </button>
+
+        <button
+          className="buttonPrimary"
+          type="submit"
+          value="Red Multi-Coat"
+          onClick={this.handleExterior}
+        >
+          Red Multi-Coat
         </button>
 
         {/* Update Id */}
