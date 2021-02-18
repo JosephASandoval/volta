@@ -10,6 +10,7 @@ import LoginContainer from "./session/login_container";
 import NotFoundContainer from "./notfound/notfound_container";
 import ProductIndexContainer from "./products/product_index_container"
 import ProductShowContainer from "./products/product_show_container";
+import CarContainer from "./cars/car_container"
 
 const App = () => {
   return (
@@ -31,6 +32,12 @@ const App = () => {
           exact
           path="/products"
           component={ProductIndexContainer}
+        />
+
+        <Route
+          exact
+          path="/cars"
+          component={CarContainer}
         />
 
         <Route
