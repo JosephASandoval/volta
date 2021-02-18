@@ -6,7 +6,7 @@ class ProductButton extends React.Component {
     super(props);
 
     this.handleId = this.handleId.bind(this);
-    // this.handelExterior = this.handleExterior.bind(this);
+    this.handleExterior = this.handleExterior.bind(this);
   }
 
   handleId(e) {
@@ -14,11 +14,15 @@ class ProductButton extends React.Component {
     this.props.updateId();
   }
 
-  // handleExterior(e) {
-  //   e.preventDefault();
-  //   // this.setState({ exterior: e.currentTarget.value });
-  //   this.props.updateExterior();
-  // }
+  handleExterior(e) {
+    e.preventDefault();
+    // this.setState({ exterior: e.currentTarget.value });
+    this.props.updateExterior(e.currentTarget.value);
+
+    // return (e) => {
+    //   this.setState({ [field]: e.currentTarget.value });
+    // };
+  }
 
   render() {
     return (
@@ -30,7 +34,7 @@ class ProductButton extends React.Component {
         </div>
 
         {/* update exterior */}
-        {/* <button
+        <button
           className="buttonDemo"
           type="submit"
           value="Red Multi-Coat"
@@ -46,7 +50,7 @@ class ProductButton extends React.Component {
           onClick={this.handleExterior}
         >
           Change exterior to blue
-        </button> */}
+        </button>
 
         {/* Update Id */}
         <button

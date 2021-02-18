@@ -1,10 +1,11 @@
 import React from "react";
 import CarButton from "./car_button";
 
+const all_views = ["front", "side", "rear", "rim", "interior"]
 class CarParent extends React.Component {
   constructor(props) {
     super(props);
-
+  
     this.state = {
       id: 1,
       currentCar:
@@ -14,32 +15,54 @@ class CarParent extends React.Component {
       interior_color: "All Black",
       wheel_type: '19"Tempest Wheels',
       self_driving: false,
-      view: "front",
+      view: 0,
     };
 
     this.updateId = this.updateId.bind(this);
-    // this.updateExterior = this.updateExterior.bind(this);
+    this.updateExterior = this.updateExterior.bind(this);
   }
 
   componentDidMount() {
     this.props.requestAllProducts();
   }
 
-  // updateExterior() {
-  //   console.log(this.state.exterior);
-  //   let targetColor = this.state.exterior;
-  //   let result = this.props.products.filter((data) => {
-  //     return data["exterior"] === targetColor;
-  //   });
+  updateExterior(exterior) {
+    console.log(exterior);
 
-  //   console.log(result);
-  //   let imageLink = result[0].imageLink;
-  //   console.log(imageLink);
-  //   this.setState({
-  //     exterior: this.state.exterior,
-  //     currentCar: imageLink,
-  //   });
-  // }
+    let targetName = this.state.name;
+    let targetExterior = exterior;
+    let targetInteriorColor = this.state.interior_color;
+    let targetWheelType = this.state.wheel_type;
+    let targetSelfDriving = this.state.self_driving;
+    let targetView = this.state.view;
+
+    if (targetView === 4){
+      targetView = 0;
+    }
+    let result = this.props.products.filter((data) => {
+      return (
+        data["name"] === targetName &&
+        data["exterior"] === targetExterior &&
+        data["interiorColor"] === targetInteriorColor &&
+        data["wheelType"] === targetWheelType &&
+        data["selfDriving"] === targetSelfDriving &&
+        data["view"] === all_views[targetView]
+      ) 
+    });
+
+    console.log(result);
+
+    let imageLink = result[0].imageLink;
+    let newId = result[0].id;
+
+    console.log(imageLink);
+
+    this.setState({
+      id: newId,
+      exterior: exterior,
+      currentCar: imageLink,
+    });
+  }
 
   updateId() {
     console.log(this.state.id);
@@ -51,8 +74,11 @@ class CarParent extends React.Component {
     });
 
     console.log(result);
+
     let imageLink = result[0].imageLink;
-    console.log(imageLink);
+
+    // console.log(imageLink);
+
     this.setState({
       id: this.state.id + 1,
       currentCar: imageLink,
