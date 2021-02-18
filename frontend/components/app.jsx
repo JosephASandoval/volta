@@ -9,7 +9,7 @@ import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
 import NotFoundContainer from "./notfound/notfound_container";
 import ProductIndexContainer from "./products/product_index_container"
-import ModelSContainer from "./products/model_s_container";
+import ProductShowContainer from "./products/product_show_container";
 
 const App = () => {
   return (
@@ -36,7 +36,7 @@ const App = () => {
         <Route
           exact
           path="/products/:productId"
-          component={ModelSContainer}
+          component={ProductShowContainer}
         />
 
         <Route path="*" component={NotFoundContainer} />
