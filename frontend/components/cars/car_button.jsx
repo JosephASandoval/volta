@@ -5,21 +5,22 @@ class ProductButton extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleId = this.handleId.bind(this);
+    // this.handelExterior = this.handleExterior.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.props.requestAllProducts();
-  // }
-
-  handleSubmit(e) {
+  handleId(e) {
     e.preventDefault();
     this.props.updateId();
-    
   }
 
+  // handleExterior(e) {
+  //   e.preventDefault();
+  //   // this.setState({ exterior: e.currentTarget.value });
+  //   this.props.updateExterior();
+  // }
+
   render() {
-    const { products } = this.props;
     return (
       <div>
         <div>
@@ -27,12 +28,33 @@ class ProductButton extends React.Component {
             <img src={window.voltaLogoURL} alt="Volta Logo" />
           </Link>
         </div>
+
+        {/* update exterior */}
+        {/* <button
+          className="buttonDemo"
+          type="submit"
+          value="Red Multi-Coat"
+          onClick={this.handleExterior}
+        >
+          Change exterior to Red
+        </button>
+
         <button
           className="buttonPrimary"
           type="submit"
-          onClick={this.handleSubmit}
+          value="Deep Blue Metallic"
+          onClick={this.handleExterior}
         >
-          Submit
+          Change exterior to blue
+        </button> */}
+
+        {/* Update Id */}
+        <button
+          className="buttonSecondary"
+          type="submit"
+          onClick={this.handleId}
+        >
+          Increment Id
         </button>
       </div>
     );
