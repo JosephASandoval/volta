@@ -10,9 +10,12 @@ class ProductIndexItem extends React.Component {
     const { product } = this.props;
 
     return (
-      <div>
+      <div className="test">
         <li>
-          <Link to={`/products/${product.id}`}>{product.name}</Link>
+          <img src={product.imageLink} alt=""/>
+          <Link to={`/products/${product.id}`} className="buttonTest">
+            Buy Now!
+          </Link>
         </li>
       </div>
     );
