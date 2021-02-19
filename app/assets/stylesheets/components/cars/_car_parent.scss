@@ -1,0 +1,26 @@
+.carParent > img {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  width: 82%;
+}
+
+.carParent__price {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: -20px;
+  padding-left: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 200px;
+  margin-left: 250px;
+  background-color: #F4F4F4;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+
+.carParent__priceDesc {
+  border-left: thick solid #ff0000;
+}
