@@ -30,7 +30,31 @@
   scrollbar-width: none; /* Firefox */
 }
 
+// header
+.carButton__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carButton__header > h1 {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 // paint
+.carButton__paint {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .carButton__paint > button {
   background-color: white;
   border: solid 1px white;
@@ -41,12 +65,8 @@
 }
 
 .carButton__paint > button > img {
-  display: flex;
-  flex-direction: row;
-  place-items: center;
-  width: 30%;
-  height: 30%;
-
+  width: 45px;
+  height: 45px;
   padding: 2px;
   border: solid 1px white;
   border-radius: 100%;
@@ -60,6 +80,13 @@
 }
 
 // wheels
+.carButton__wheels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .carButton__wheels > button {
   background-color: white;
   border: solid 1px white;
@@ -70,12 +97,8 @@
 }
 
 .carButton__wheels > button > img {
-  display: flex;
-  flex-direction: row;
-  place-items: center;
-  width: 30%;
-  height: 30%;
-
+  width: 45px;
+  height: 45px;
   padding: 2px;
   border: solid 1px white;
   border-radius: 100%;
@@ -89,6 +112,13 @@
 }
 
 // interior
+.carButton__interior {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .carButton__interior > button {
   background-color: white;
   border: solid 1px white;
@@ -99,12 +129,8 @@
 }
 
 .carButton__interior > button > img {
-  display: flex;
-  flex-direction: row;
-  place-items: center;
-  width: 30%;
-  height: 30%;
-
+  width: 45px;
+  height: 45px;
   padding: 2px;
   border: solid 1px white;
   border-radius: 100%;
