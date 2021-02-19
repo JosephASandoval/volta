@@ -38,8 +38,15 @@
   align-items: center;
 }
 
+.carButton__column > h1 {
+  font-size: 28px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 .carButton__header > h1 {
   font-size: 40px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +69,7 @@
   cursor: pointer;
   outline: none;
   padding: 5px;
+  padding-bottom: 100px;
 }
 
 .carButton__paint > button > img {
@@ -94,6 +102,7 @@
   cursor: pointer;
   outline: none;
   padding: 5px;
+  padding-bottom: 100px;
 }
 
 .carButton__wheels > button > img {
@@ -126,6 +135,7 @@
   cursor: pointer;
   outline: none;
   padding: 5px;
+  padding-bottom: 100px;
 }
 
 .carButton__interior > button > img {
@@ -144,6 +154,50 @@
 }
 
 // self driving
+.carButton__selfDriving {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carButton__selfDriving > h1 {
+  font-size: 28px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.carButton__selfDriving > h6 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  width: 40%;
+  margin: auto;
+}
+
+.carButton__selfDriving > ul {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.carButton__selfDriving > ul > li {
+  font-size: 14px;
+  color: #5C5E62;
+  list-style-position: inside;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.carButton__selfDriving > p {
+  font-size: 12px;
+  color: #5C5E62;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
 .carButton_selfDriving .carButton__primary {
   background-color: #3e6ae1;
   border: none;

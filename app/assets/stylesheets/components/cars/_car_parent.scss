@@ -25,6 +25,9 @@
   margin-top: 500px;
   display: flex;
   gap: 1000px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .carParent__itemActions > button {
