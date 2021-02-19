@@ -1,10 +1,39 @@
-.carParent > img {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 100px;
-  width: 82%;
+.carParent {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box; /* So the width will be 100% + 17px */
 }
 
+// car image
+.carParent > img {
+  // display: flex;
+  // justify-content: flex-start;
+  // padding-right: 100px;
+  // margin-bottom: 100px;
+  // width: 85%;
+
+  display: inline;
+  margin: auto -300px;
+  float: left;
+  width: 100%;
+  // position: fixed;
+}
+
+.carParent button {
+  z-index: 101;
+  display: flex;
+  margin: auto;
+  float: center;
+  width: 20%; 
+}
+
+//purch price box
 .carParent__price {
   display: flex;
   justify-content: center;
@@ -20,7 +49,28 @@
   font-size: 14px;
 }
 
-
 .carParent__priceDesc {
-  border-left: thick solid #ff0000;
+  margin-left: 10px;
+}
+
+.carParent__purch {
+  border-right: 2px solid #D0D1D2;
+  padding-right: 10px;
+}
+
+.carParent__purchSecond {
+  padding-left: 10px;
+  padding-right: 5px;
+  color: #D0D1D2;
+  font-size: 12px;
+}
+
+.carParent__purchSecond > span {
+  color: #D0D1D2;
+  font-size: 12px;
+}
+
+span.input:last-of-type {
+  color: #D0D1D2;
+  font-size: 12px;
 }
