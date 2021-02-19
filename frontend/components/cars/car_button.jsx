@@ -51,21 +51,100 @@ class CarButton extends React.Component {
           <h1>Model S</h1>
           <p>Estimated Delivery: 5-11 weeks</p>
 
-          {/* <h1>Paint</h1>
-          <img src={window.paintWhiteURL} alt="Paint White" />
-          <img src={window.paintBlackURL} alt="Paint Black" />
-          <img src={window.paintMidnightSilverURL} alt="Paint MidnightSilver" />
-          <img src={window.paintBlueURL} alt="Paint Blue" />
-          <img src={window.paintRedURL} alt="Paint Red" />
+          {/* update exterior */}
+          <div className="carButton__paint">
+            <h1>Paint</h1>
+            <button
+              type="submit"
+              value="Pearl White Multi-Coat"
+              onClick={this.handleExterior}
+            >
+              <img src={window.paintWhiteURL} alt="Paint White" />
+            </button>
 
-          <h1>Wheels</h1>
-          <img src={window.tempestURL} alt='19" Tempest' />
-          <img src={window.arachnidURL} alt='21" Arachnid' />
+            <button
+              type="submit"
+              value="Solid Black"
+              onClick={this.handleExterior}
+            >
+              <img src={window.paintBlackURL} alt="Paint Black" />
+            </button>
 
-          <h1>Interior</h1>
-          <img src={window.interiorBlackURL} alt="Interior Black" />
-          <img src={window.interiorWhiteURL} alt="Interior White" />
-          <img src={window.interiorCreamURL} alt="Interior Cream" /> */}
+            <button
+              type="submit"
+              value="Midnight Silver Metallic"
+              onClick={this.handleExterior}
+            >
+              <img
+                src={window.paintMidnightSilverURL}
+                alt="Paint MidnightSilver"
+              />
+            </button>
+
+            <button
+              type="submit"
+              value="Deep Blue Metallic"
+              onClick={this.handleExterior}
+            >
+              <img src={window.paintBlueURL} alt="Paint Blue" />
+            </button>
+
+            <button
+              type="submit"
+              value="Red Multi-Coat"
+              onClick={this.handleExterior}
+            >
+              <img src={window.paintRedURL} alt="Paint Red" />
+            </button>
+          </div>
+
+          {/* update wheel type */}
+          <div className="carButton__wheels">
+            <h1>Wheels</h1>
+            <button
+              type="submit"
+              value='19"Tempest Wheels'
+              onClick={this.handleWheelType}
+            >
+              <img src={window.tempestURL} alt='19" Tempest' />
+            </button>
+
+            <button
+              type="submit"
+              value='21" Arachnid Wheels'
+              onClick={this.handleWheelType}
+            >
+              <img src={window.arachnidURL} alt='21" Arachnid' />
+            </button>
+          </div>
+
+          {/* update interior */}
+          <div className="carButton__interior">
+            <h1>Interior</h1>
+            <button
+              type="submit"
+              value="All Black"
+              onClick={this.handleInteriorColor}
+            >
+              <img src={window.interiorBlackURL} alt="Interior Black" />
+            </button>
+
+            <button
+              type="submit"
+              value="Black and White"
+              onClick={this.handleInteriorColor}
+            >
+              <img src={window.interiorWhiteURL} alt="Interior White" />
+            </button>
+
+            <button
+              type="submit"
+              value="Cream"
+              onClick={this.handleInteriorColor}
+            >
+              <img src={window.interiorCreamURL} alt="Interior Cream" />
+            </button>
+          </div>
 
           <h1>Full Self-Driving Capability</h1>
           <p>$10,000</p>
@@ -87,10 +166,32 @@ class CarButton extends React.Component {
             jurisdictions. As these self-driving features evolve, your car will
             be continuously upgraded through over-the-air software updates.
           </p>
-          <div className="item__actions">
+
+          {/* Update self driving */}
+          <div className="carButton_selfDriving">
+            <button
+              className="carButton__primary"
+              type="submit"
+              value="true"
+              onClick={this.handleSelfDriving}
+            >
+              Add
+            </button>
+
+            <button
+              className="carButton__secondary"
+              type="submit"
+              value="false"
+              onClick={this.handleSelfDriving}
+            >
+              Feature Details
+            </button>
+          </div>
+
+          {/* <div className="item__actions">
             <button className="item__buttonPrimary">Add</button>
             <button className="item__buttonSecondary">Feature Details</button>
-          </div>
+          </div> */}
 
           <h1>Order Your Model S</h1>
           <p>Estimated Delivery: 5-11 weeks</p>
@@ -100,7 +201,7 @@ class CarButton extends React.Component {
         </div>
 
         {/* update exterior */}
-        <button
+        {/* <button
           className="buttonTest"
           type="submit"
           value="Pearl White Multi-Coat"
@@ -116,18 +217,18 @@ class CarButton extends React.Component {
           onClick={this.handleExterior}
         >
           Solid Black
-        </button>
+        </button> */}
 
-        <button
+        {/* <button
           className="buttonTest"
           type="submit"
           value="Midnight Silver Metallic"
           onClick={this.handleExterior}
         >
           Midnight Silver Metallic
-        </button>
+        </button> */}
 
-        <button
+        {/* <button
           className="buttonTest"
           type="submit"
           value="Deep Blue Metallic"
@@ -143,10 +244,10 @@ class CarButton extends React.Component {
           onClick={this.handleExterior}
         >
           Red Multi-Coat
-        </button>
+        </button> */}
 
         {/* update view */}
-        <button
+        {/* <button
           className="buttonTest"
           type="submit"
           value="right"
@@ -162,10 +263,10 @@ class CarButton extends React.Component {
           onClick={this.handleView}
         >
           Left -
-        </button>
+        </button> */}
 
         {/* update interior color */}
-        <button
+        {/* <button
           className="buttonTest"
           type="submit"
           value="All Black"
@@ -190,10 +291,10 @@ class CarButton extends React.Component {
           onClick={this.handleInteriorColor}
         >
           Cream
-        </button>
+        </button> */}
 
         {/* update wheel type */}
-        <button
+        {/* <button
           className="buttonTest"
           type="submit"
           value='19"Tempest Wheels'
@@ -209,10 +310,10 @@ class CarButton extends React.Component {
           onClick={this.handleWheelType}
         >
           21" Arachnid Wheels
-        </button>
+        </button> */}
 
         {/* Update self driving */}
-        <button
+        {/* <button
           className="buttonTest"
           type="submit"
           value="true"
@@ -228,7 +329,7 @@ class CarButton extends React.Component {
           onClick={this.handleSelfDriving}
         >
           false self driving
-        </button>
+        </button> */}
       </div>
     );
   }

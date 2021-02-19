@@ -3,7 +3,6 @@ import CarButton from "./car_button";
 import CarMainHeader from "./car_main_header";
 import NumberFormat from "react-number-format";
 
-
 const all_views = ["front", "side", "rear", "rim", "interior"];
 
 class CarParent extends React.Component {
@@ -28,6 +27,8 @@ class CarParent extends React.Component {
     this.updateWheelType = this.updateWheelType.bind(this);
     this.updateSelfDriving = this.updateSelfDriving.bind(this);
     this.updateView = this.updateView.bind(this);
+
+    this.handleView = this.handleView.bind(this);
   }
 
   componentDidMount() {
@@ -178,6 +179,11 @@ class CarParent extends React.Component {
     });
   }
 
+  handleView(e) {
+    e.preventDefault();
+    this.updateView(e.currentTarget.value);
+  }
+
   render() {
     return (
       <div>
@@ -185,7 +191,26 @@ class CarParent extends React.Component {
           <CarMainHeader />
         </div>
 
+        {/* update view */}
+
         <div className="carParent">
+          <button
+            className="buttonTest"
+            type="submit"
+            value="right"
+            onClick={this.handleView}
+          >
+            Right +
+          </button>
+
+          <button
+            className="buttonTest"
+            type="submit"
+            value="left"
+            onClick={this.handleView}
+          >
+            Left -
+          </button>
           <img src={this.state.imageLink} alt="image" />
         </div>
 
@@ -197,9 +222,17 @@ class CarParent extends React.Component {
             prefix={"$"}
           />
           <div className="carParent__priceDesc">
-            <span>Purch</span>
+            <span className="carParent__purch">Purchase price</span>
+            <span className="carParent__purchSecond">
+              <NumberFormat
+                value={this.state.price - 5500}
+                displayType={"text"}
+                thousandSeparator={true}
+                prefix={"$"}
+              />
+            </span>
+            <span className="input">After potential savings</span>
           </div>
-          
         </div>
 
         <CarButton
@@ -207,7 +240,7 @@ class CarParent extends React.Component {
           updateInteriorColor={this.updateInteriorColor}
           updateWheelType={this.updateWheelType}
           updateSelfDriving={this.updateSelfDriving}
-          updateView={this.updateView}
+          // updateView={this.updateView}
         />
       </div>
     );
