@@ -2,6 +2,9 @@ import React from "react";
 import CarButton from "./car_button";
 import CarMainHeader from "./car_main_header";
 import NumberFormat from "react-number-format";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+
 
 const all_views = ["front", "side", "rear", "rim", "interior"];
 
@@ -192,26 +195,45 @@ class CarParent extends React.Component {
         </div>
 
         {/* update view */}
-
         <div className="carParent">
-          <button
-            className="buttonTest"
-            type="submit"
-            value="right"
-            onClick={this.handleView}
+          <div
+            className="carParent__item"
+            style={{ backgroundImage: `url(${this.state.imageLink})` }}
           >
-            Right +
-          </button>
+            <div className="carParent__itemActions">
+              <button
+                className="carParent__button"
+                type="submit"
+                value="left"
+                onClick={this.handleView}
+              >
+                <ArrowBackIosIcon />
+              </button>
 
-          <button
-            className="buttonTest"
-            type="submit"
-            value="left"
-            onClick={this.handleView}
-          >
-            Left -
-          </button>
-          <img src={this.state.imageLink} alt="image" />
+              <button
+                className="carParent__button"
+                type="submit"
+                value="right"
+                onClick={this.handleView}
+              >
+                <ArrowForwardIosIcon />
+              </button>
+            </div>
+          </div>
+
+          {/*
+          <h1>{title}</h1>
+          <h4>
+            {desc} <span>Touchless Delivery</span>
+          </h4>
+        </div>
+        <div className="item__actions">
+          <button className="item__buttonPrimary">{leftBtnTxt}</button>
+          <button className="item__buttonSecondary">{rightBtnTxt}</button>
+        </div>
+          */}
+
+          {/* <img src={this.state.imageLink} alt="image" /> */}
         </div>
 
         <div className="carParent__price">
