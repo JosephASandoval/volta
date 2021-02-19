@@ -148,9 +148,11 @@ class CarButton extends React.Component {
               <img src={window.interiorCreamURL} alt="Interior Cream" />
             </button>
           </div>
+        </div>
 
+        <div className="carButton__selfDriving">
           <h1>Full Self-Driving Capability</h1>
-          <p>$10,000</p>
+          <h6>$10,000</h6>
           <ul>
             <li>Navigate on Autopilot</li>
             <li>Auto Lane Change</li>
@@ -193,8 +195,8 @@ class CarButton extends React.Component {
 
           <h1>Order Your Model S</h1>
           <p>Estimated Delivery: 5-11 weeks</p>
-          <div className="item__actions">
-            <button className="item__buttonPrimary">Continue to Payment</button>
+          <div className="carButton_selfDriving">
+            <button className="carButton__primary">Continue to Payment</button>
           </div>
         </div>
       </div>
