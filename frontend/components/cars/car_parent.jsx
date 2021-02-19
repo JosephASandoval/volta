@@ -1,5 +1,9 @@
 import React from "react";
 import CarButton from "./car_button";
+import CarMainHeader from "./car_main_header";
+import CarRight from "./car_right";
+
+
 
 const all_views = ["front", "side", "rear", "rim", "interior"];
 
@@ -178,6 +182,8 @@ class CarParent extends React.Component {
   render() {
     return (
       <div>
+        <CarMainHeader />
+        <CarRight />
         <CarButton
           updateExterior={this.updateExterior}
           updateInteriorColor={this.updateInteriorColor}
@@ -185,11 +191,10 @@ class CarParent extends React.Component {
           updateSelfDriving={this.updateSelfDriving}
           updateView={this.updateView}
         />
-        <p>{this.state.id}</p>
         <p>{this.state.price}</p>
-        <li>
+        <ul>
           <img src={this.state.imageLink} alt="image" />
-        </li>
+        </ul>
       </div>
     );
   }
