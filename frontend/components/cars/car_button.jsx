@@ -40,20 +40,23 @@ class CarButton extends React.Component {
   render() {
     return (
       <div className="carButton">
-        <div className="">
-          <div>
-            <p>
-              $1,500 Clean Fuel Reward is now available for California
-              residents.
-            </p>
+        <div className="carButton__column">
+          {/* <div>
+              <p>
+                $1,500 Clean Fuel Reward is now available for California
+                residents.
+              </p>
+            </div> */}
+
+          <div className="carButton__header">
+            <h1>Model S</h1>
+            <p>Estimated Delivery: 5-11 weeks</p>
           </div>
 
-          <h1>Model S</h1>
-          <p>Estimated Delivery: 5-11 weeks</p>
-
           {/* update exterior */}
+
+          <h1>Paint</h1>
           <div className="carButton__paint">
-            <h1>Paint</h1>
             <button
               type="submit"
               value="Pearl White Multi-Coat"
@@ -99,8 +102,8 @@ class CarButton extends React.Component {
           </div>
 
           {/* update wheel type */}
+          <h1>Wheels</h1>
           <div className="carButton__wheels">
-            <h1>Wheels</h1>
             <button
               type="submit"
               value='19"Tempest Wheels'
@@ -119,8 +122,8 @@ class CarButton extends React.Component {
           </div>
 
           {/* update interior */}
+          <h1>Interior</h1>
           <div className="carButton__interior">
-            <h1>Interior</h1>
             <button
               type="submit"
               value="All Black"
@@ -188,148 +191,12 @@ class CarButton extends React.Component {
             </button>
           </div>
 
-          {/* <div className="item__actions">
-            <button className="item__buttonPrimary">Add</button>
-            <button className="item__buttonSecondary">Feature Details</button>
-          </div> */}
-
           <h1>Order Your Model S</h1>
           <p>Estimated Delivery: 5-11 weeks</p>
           <div className="item__actions">
             <button className="item__buttonPrimary">Continue to Payment</button>
           </div>
         </div>
-
-        {/* update exterior */}
-        {/* <button
-          className="buttonTest"
-          type="submit"
-          value="Pearl White Multi-Coat"
-          onClick={this.handleExterior}
-        >
-          Pearl White Multi-Coat
-        </button>
-
-        <button
-          className="buttonTest"
-          type="submit"
-          value="Solid Black"
-          onClick={this.handleExterior}
-        >
-          Solid Black
-        </button> */}
-
-        {/* <button
-          className="buttonTest"
-          type="submit"
-          value="Midnight Silver Metallic"
-          onClick={this.handleExterior}
-        >
-          Midnight Silver Metallic
-        </button> */}
-
-        {/* <button
-          className="buttonTest"
-          type="submit"
-          value="Deep Blue Metallic"
-          onClick={this.handleExterior}
-        >
-          Deep Blue Metallic
-        </button>
-
-        <button
-          className="buttonTest"
-          type="submit"
-          value="Red Multi-Coat"
-          onClick={this.handleExterior}
-        >
-          Red Multi-Coat
-        </button> */}
-
-        {/* update view */}
-        {/* <button
-          className="buttonTest"
-          type="submit"
-          value="right"
-          onClick={this.handleView}
-        >
-          Right +
-        </button>
-
-        <button
-          className="buttonTest"
-          type="submit"
-          value="left"
-          onClick={this.handleView}
-        >
-          Left -
-        </button> */}
-
-        {/* update interior color */}
-        {/* <button
-          className="buttonTest"
-          type="submit"
-          value="All Black"
-          onClick={this.handleInteriorColor}
-        >
-          All Black
-        </button>
-
-        <button
-          className="buttonTest"
-          type="submit"
-          value="Black and White"
-          onClick={this.handleInteriorColor}
-        >
-          Black and White
-        </button>
-
-        <button
-          className="buttonTest"
-          type="submit"
-          value="Cream"
-          onClick={this.handleInteriorColor}
-        >
-          Cream
-        </button> */}
-
-        {/* update wheel type */}
-        {/* <button
-          className="buttonTest"
-          type="submit"
-          value='19"Tempest Wheels'
-          onClick={this.handleWheelType}
-        >
-          19" Tempest Wheels
-        </button>
-
-        <button
-          className="buttonTest"
-          type="submit"
-          value='21" Arachnid Wheels'
-          onClick={this.handleWheelType}
-        >
-          21" Arachnid Wheels
-        </button> */}
-
-        {/* Update self driving */}
-        {/* <button
-          className="buttonTest"
-          type="submit"
-          value="true"
-          onClick={this.handleSelfDriving}
-        >
-          true self driving
-        </button>
-
-        <button
-          className="buttonTest"
-          type="submit"
-          value="false"
-          onClick={this.handleSelfDriving}
-        >
-          false self driving
-        </button> */}
       </div>
     );
   }
