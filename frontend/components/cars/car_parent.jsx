@@ -1,78 +1,177 @@
 import React from "react";
 import CarButton from "./car_button";
 
-const all_views = ["front", "side", "rear", "rim", "interior"]
+const all_views = ["front", "side", "rear", "rim", "interior"];
+
 class CarParent extends React.Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       id: 1,
       imageLink:
-      "https://static-assets.tesla.com/configurator/compositor?&options=$MTS10,$PPSW,$WS90,$IBE00&view=FRONT34&model=ms&size=1920&bkba_opt=1&version=v0028d202102110441&crop=0,0,0,0&version=v0028d202102110441",
+        "https://static-assets.tesla.com/configurator/compositor?&options=$MTS10,$PPSW,$WS90,$IBE00&view=FRONT34&model=ms&size=1920&bkba_opt=1&version=v0028d202102110441&crop=0,0,0,0&version=v0028d202102110441",
       name: "Model S",
       price: 78490,
       exterior: "Pearl White Multi-Coat",
-      interior_color: "All Black",
-      wheel_type: '19"Tempest Wheels',
-      self_driving: false,
+      interiorColor: "All Black",
+      wheelType: '19"Tempest Wheels',
+      selfDriving: false,
       view: 0,
     };
 
-    this.updateId = this.updateId.bind(this);
     this.updateExterior = this.updateExterior.bind(this);
+    this.updateInteriorColor = this.updateInteriorColor.bind(this);
+    this.updateWheelType = this.updateWheelType.bind(this);
+    this.updateSelfDriving = this.updateSelfDriving.bind(this);
+    this.updateView = this.updateView.bind(this);
   }
 
   componentDidMount() {
     this.props.requestAllProducts();
   }
 
+  // update exterior
   updateExterior(exterior) {
     console.log(exterior);
-
-    let targetView = this.state.view;
-
-    if (targetView === 4){
-      targetView = 0; //reverse for interior like the website
-    }
 
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
         data["exterior"] === exterior &&
-        data["interiorColor"] === this.state.interior_color &&
-        data["wheelType"] === this.state.wheel_type &&
-        data["selfDriving"] === this.state.self_driving &&
-        data["view"] === all_views[targetView]
-      ); 
+        data["interiorColor"] === this.state.interiorColor &&
+        data["wheelType"] === this.state.wheelType &&
+        data["selfDriving"] === this.state.selfDriving &&
+        data["view"] === all_views[this.state.view]
+      );
     });
 
     this.setState({
       id: result[0].id,
+      imageLink: result[0].imageLink,
+      name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior, //same as parameter passed in
-      imageLink: result[0].imageLink,
+      interiorColor: result[0].interiorColor,
+      wheelType: result[0].wheelType,
+      selfDriving: result[0].selfDriving,
     });
   }
 
-  updateId() {
-    console.log(this.state.id);
-
-    let targetid = this.state.id + 1;
+  // update interior
+  updateInteriorColor(interiorColor) {
+    console.log(interiorColor);
 
     let result = this.props.products.filter((data) => {
-      return data["id"] === targetid;
+      return (
+        data["name"] === this.state.name &&
+        data["exterior"] === this.state.exterior &&
+        data["interiorColor"] === interiorColor &&
+        data["wheelType"] === this.state.wheelType &&
+        data["selfDriving"] === this.state.selfDriving &&
+        data["view"] === all_views[this.state.view]
+      );
     });
 
-    console.log(result);
+    this.setState({
+      id: result[0].id,
+      imageLink: result[0].imageLink,
+      name: result[0].name,
+      price: result[0].price,
+      exterior: result[0].exterior,
+      interiorColor: result[0].interiorColor,
+      wheelType: result[0].wheelType,
+      selfDriving: result[0].selfDriving,
+    });
+  }
 
-    let imageLink = result[0].imageLink;
-
-    // console.log(imageLink);
+  // update wheel type
+  updateWheelType(wheelType) {
+    console.log(wheelType);
+    let result = this.props.products.filter((data) => {
+      return (
+        data["name"] === this.state.name &&
+        data["exterior"] === this.state.exterior &&
+        data["interiorColor"] === this.state.interiorColor &&
+        data["wheelType"] === wheelType &&
+        data["selfDriving"] === this.state.selfDriving &&
+        data["view"] === all_views[this.state.view]
+      );
+    });
 
     this.setState({
-      id: this.state.id + 1,
-      imageLink: imageLink,
+      id: result[0].id,
+      imageLink: result[0].imageLink,
+      name: result[0].name,
+      price: result[0].price,
+      exterior: result[0].exterior,
+      interiorColor: result[0].interiorColor,
+      wheelType: result[0].wheelType,
+      selfDriving: result[0].selfDriving,
+    });
+  }
+
+  // update self driving
+  updateSelfDriving(selfDriving) {
+    console.log(selfDriving);
+
+    let result = this.props.products.filter((data) => {
+      return (
+        data["name"] === this.state.name &&
+        data["exterior"] === this.state.exterior &&
+        data["interiorColor"] === this.state.interiorColor &&
+        data["wheelType"] === this.state.wheelType &&
+        data["selfDriving"] === (selfDriving === "true") &&
+        data["view"] === all_views[this.state.view]
+      );
+    });
+
+    this.setState({
+      id: result[0].id,
+      imageLink: result[0].imageLink,
+      name: result[0].name,
+      price: result[0].price,
+      exterior: result[0].exterior,
+      interiorColor: result[0].interiorColor,
+      wheelType: result[0].wheelType,
+      selfDriving: result[0].selfDriving,
+    });
+  }
+  // update view
+  updateView(view) {
+    console.log(view);
+
+    let targetView = this.state.view;
+
+    if (view === "right") {
+      targetView += 1;
+    } else {
+      targetView -= 1;
+    }
+
+    targetView = (targetView + 5) % 5;
+
+    let result = this.props.products.filter((data) => {
+      return (
+        data["name"] === this.state.name &&
+        data["exterior"] === this.state.exterior &&
+        data["interiorColor"] === this.state.interiorColor &&
+        data["wheelType"] === this.state.wheelType &&
+        data["selfDriving"] === this.state.selfDriving &&
+        data["view"] === all_views[targetView]
+      );
+    });
+
+    this.setState({
+      id: result[0].id,
+      imageLink: result[0].imageLink,
+      name: result[0].name,
+      price: result[0].price,
+      exterior: result[0].exterior,
+      interiorColor: result[0].interiorColor,
+      wheelType: result[0].wheelType,
+      selfDriving: result[0].selfDriving,
+      view: targetView,
     });
   }
 
@@ -80,12 +179,16 @@ class CarParent extends React.Component {
     return (
       <div>
         <CarButton
-          updateId={this.updateId}
           updateExterior={this.updateExterior}
+          updateInteriorColor={this.updateInteriorColor}
+          updateWheelType={this.updateWheelType}
+          updateSelfDriving={this.updateSelfDriving}
+          updateView={this.updateView}
         />
         <p>{this.state.id}</p>
+        <p>{this.state.price}</p>
         <li>
-          <img src={this.state.imageLink} alt="" />
+          <img src={this.state.imageLink} alt="image" />
         </li>
       </div>
     );
