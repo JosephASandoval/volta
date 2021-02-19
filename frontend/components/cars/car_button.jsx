@@ -40,11 +40,6 @@ class CarButton extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <Link to="/">
-            <img src={window.voltaLogoURL} alt="Volta Logo" />
-          </Link>
-        </div>
 
         {/* update exterior */}
         <button

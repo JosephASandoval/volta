@@ -13,7 +13,7 @@ const Header = ({ currentUser, isMenuOpen, setIsMenuOpen }) => {
       </div>
 
       <div className="header__links">
-        <Link to="/products">Model S</Link>
+        <Link to="/cars">Model S</Link>
         <Link to="/">Model 3</Link>
         <Link to="/">Model X</Link>
         <Link to="/">Model Y</Link>
