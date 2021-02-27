@@ -25,4 +25,6 @@ class Product < ApplicationRecord
   validates :self_driving, inclusion: { in: [true, false] }
   validates :view, presence: true
   validates :image_link, presence: true
+
+  # has_many_attached :photos
 end
