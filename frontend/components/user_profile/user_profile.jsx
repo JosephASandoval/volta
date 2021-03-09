@@ -7,7 +7,7 @@ import NoCar from "./no_car";
 
 const UserProfile = ({ currentUser, logout }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   return (
     <div className="userProfile">
       <div className="userProfile__header">
@@ -45,6 +45,9 @@ const UserProfile = ({ currentUser, logout }) => {
       </div>
       {isMenuOpen && <Menu />}
       <div className="userProfile__info">
+        <div className="userProfile__photo">
+          <img src={currentUser.photoUrl} alt="Spaceman" />
+        </div>
         <div className="userProfile__person">
           <h4>{currentUser.firstName + "'s"} Volta</h4>
         </div>
