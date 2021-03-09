@@ -5,7 +5,6 @@ import NumberFormat from "react-number-format";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
-
 const all_views = ["front", "side", "rear", "rim", "interior"];
 
 class CarParent extends React.Component {
@@ -13,9 +12,7 @@ class CarParent extends React.Component {
     super(props);
 
     this.state = {
-      id: 1,
-      imageLink:
-        "https://static-assets.tesla.com/configurator/compositor?&options=$MTS10,$PPSW,$WS90,$IBE00&view=FRONT34&model=ms&size=1920&bkba_opt=1&version=v0028d202102110441&crop=0,0,0,0&version=v0028d202102110441",
+      id: 1805,
       name: "Model S",
       price: 78490,
       exterior: "Pearl White Multi-Coat",
@@ -23,6 +20,8 @@ class CarParent extends React.Component {
       wheelType: '19"Tempest Wheels',
       selfDriving: false,
       view: 0,
+      photoUrl:
+        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a95980f3d8b656dc55ec8b2f902f0e4fc0834e6/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
     };
 
     this.updateExterior = this.updateExterior.bind(this);
@@ -55,7 +54,7 @@ class CarParent extends React.Component {
 
     this.setState({
       id: result[0].id,
-      imageLink: result[0].imageLink,
+      photoUrl: result[0].photoUrl,
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior, //same as parameter passed in
@@ -82,7 +81,7 @@ class CarParent extends React.Component {
 
     this.setState({
       id: result[0].id,
-      imageLink: result[0].imageLink,
+      photoUrl: result[0].photoUrl,
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
@@ -108,7 +107,7 @@ class CarParent extends React.Component {
 
     this.setState({
       id: result[0].id,
-      imageLink: result[0].imageLink,
+      photoUrl: result[0].photoUrl,
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
@@ -135,7 +134,7 @@ class CarParent extends React.Component {
 
     this.setState({
       id: result[0].id,
-      imageLink: result[0].imageLink,
+      photoUrl: result[0].photoUrl,
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
@@ -171,7 +170,7 @@ class CarParent extends React.Component {
 
     this.setState({
       id: result[0].id,
-      imageLink: result[0].imageLink,
+      photoUrl: result[0].photoUrl,
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
@@ -198,7 +197,7 @@ class CarParent extends React.Component {
         <div className="carParent">
           <div
             className="carParent__item"
-            style={{ backgroundImage: `url(${this.state.imageLink})` }}
+            style={{ backgroundImage: `url(${this.state.photoUrl})` }}
           >
             <div className="carParent__itemActions">
               <button
@@ -262,7 +261,6 @@ class CarParent extends React.Component {
           updateInteriorColor={this.updateInteriorColor}
           updateWheelType={this.updateWheelType}
           updateSelfDriving={this.updateSelfDriving}
-          // updateView={this.updateView}
         />
       </div>
     );

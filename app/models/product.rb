@@ -11,7 +11,6 @@
 #  wheel_type     :string           not null
 #  self_driving   :boolean          not null
 #  view           :string           not null
-#  image_link     :string           not null
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
 #
@@ -24,7 +23,6 @@ class Product < ApplicationRecord
   validates :wheel_type, presence: true
   validates :self_driving, inclusion: { in: [true, false] }
   validates :view, presence: true
-  validates :image_link, presence: true
 
-  # has_many_attached :photos
+  has_one_attached :photo
 end

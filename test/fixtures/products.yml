@@ -11,7 +11,6 @@
 #  wheel_type     :string           not null
 #  self_driving   :boolean          not null
 #  view           :string           not null
-#  image_link     :string           not null
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
 #
