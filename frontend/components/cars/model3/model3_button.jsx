@@ -1,6 +1,6 @@
 import React from "react";
 
-class ModelsButton extends React.Component {
+class Model3Button extends React.Component {
   constructor(props) {
     super(props);
 
@@ -203,4 +203,4 @@ class ModelsButton extends React.Component {
   }
 }
 
-export default ModelsButton;
+export default Model3Button;
