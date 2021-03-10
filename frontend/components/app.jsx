@@ -8,7 +8,10 @@ import UserProfileContainer from "./user_profile/user_profile_container";
 import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
 import NotFoundContainer from "./notfound/notfound_container";
-import ModelsContainer from "./cars/models_container"
+import ModelsContainer from "./cars/models/models_container";
+// import Model3Container from "./cars/model3/model3_container";
+// import ModelxContainer from "./cars/modelx/modelx_container";
+// import ModelyContainer from "./cars/modely/modely_container";
 
 const App = () => {
   return (
@@ -26,11 +29,13 @@ const App = () => {
           component={UserProfileContainer}
         />
 
-        <Route
-          exact
-          path="/models"
-          component={ModelsContainer}
-        />
+        <Route exact path="/models" component={ModelsContainer} />
+
+        {/* <Route exact path="/model3" component={Model3Container} />
+
+        <Route exact path="/modelx" component={ModelxContainer} />
+
+        <Route exact path="/modely" component={ModelyContainer} /> */}
 
         <Route path="*" component={NotFoundContainer} />
       </Switch>

@@ -17,7 +17,7 @@ class ModelsParent extends React.Component {
       price: 78490,
       exterior: "Pearl White Multi-Coat",
       interiorColor: "All Black",
-      wheelType: '19"Tempest Wheels',
+      wheelType: '19" Tempest Wheels',
       selfDriving: false,
       view: 0,
       photoUrl:
