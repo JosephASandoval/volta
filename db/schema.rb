@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_09_191349) do
+ActiveRecord::Schema.define(version: 2021_03_10_040336) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,8 +40,7 @@ ActiveRecord::Schema.define(version: 2021_03_09_191349) do
     t.string "name", null: false
     t.float "price", null: false
     t.string "exterior", null: false
-    t.string "interior_color", null: false
-    t.string "interior_name", null: false
+    t.string "interior", null: false
     t.string "wheel_type", null: false
     t.boolean "self_driving", null: false
     t.string "view", null: false

@@ -16,7 +16,7 @@ class ModelxParent extends React.Component {
       name: "Model S",
       price: 78490,
       exterior: "Pearl White Multi-Coat",
-      interiorColor: "All Black",
+      interior: "All Black",
       wheelType: '19"Tempest Wheels',
       selfDriving: false,
       view: 0,
@@ -25,7 +25,7 @@ class ModelxParent extends React.Component {
     };
 
     this.updateExterior = this.updateExterior.bind(this);
-    this.updateInteriorColor = this.updateInteriorColor.bind(this);
+    this.updateInterior = this.updateInterior.bind(this);
     this.updateWheelType = this.updateWheelType.bind(this);
     this.updateSelfDriving = this.updateSelfDriving.bind(this);
     this.updateView = this.updateView.bind(this);
@@ -45,7 +45,7 @@ class ModelxParent extends React.Component {
       return (
         data["name"] === this.state.name &&
         data["exterior"] === exterior &&
-        data["interiorColor"] === this.state.interiorColor &&
+        data["interior"] === this.state.interior &&
         data["wheelType"] === this.state.wheelType &&
         data["selfDriving"] === this.state.selfDriving &&
         data["view"] === all_views[this.state.view]
@@ -58,21 +58,21 @@ class ModelxParent extends React.Component {
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior, //same as parameter passed in
-      interiorColor: result[0].interiorColor,
+      interior: result[0].interior,
       wheelType: result[0].wheelType,
       selfDriving: result[0].selfDriving,
     });
   }
 
   // update interior
-  updateInteriorColor(interiorColor) {
-    console.log(interiorColor);
+  updateInterior(interior) {
+    console.log(interior);
 
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
         data["exterior"] === this.state.exterior &&
-        data["interiorColor"] === interiorColor &&
+        data["interior"] === interior &&
         data["wheelType"] === this.state.wheelType &&
         data["selfDriving"] === this.state.selfDriving &&
         data["view"] === all_views[this.state.view]
@@ -85,7 +85,7 @@ class ModelxParent extends React.Component {
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
-      interiorColor: result[0].interiorColor,
+      interior: result[0].interior,
       wheelType: result[0].wheelType,
       selfDriving: result[0].selfDriving,
     });
@@ -98,7 +98,7 @@ class ModelxParent extends React.Component {
       return (
         data["name"] === this.state.name &&
         data["exterior"] === this.state.exterior &&
-        data["interiorColor"] === this.state.interiorColor &&
+        data["interior"] === this.state.interior &&
         data["wheelType"] === wheelType &&
         data["selfDriving"] === this.state.selfDriving &&
         data["view"] === all_views[this.state.view]
@@ -111,7 +111,7 @@ class ModelxParent extends React.Component {
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
-      interiorColor: result[0].interiorColor,
+      interior: result[0].interior,
       wheelType: result[0].wheelType,
       selfDriving: result[0].selfDriving,
     });
@@ -125,7 +125,7 @@ class ModelxParent extends React.Component {
       return (
         data["name"] === this.state.name &&
         data["exterior"] === this.state.exterior &&
-        data["interiorColor"] === this.state.interiorColor &&
+        data["interior"] === this.state.interior &&
         data["wheelType"] === this.state.wheelType &&
         data["selfDriving"] === (selfDriving === "true") &&
         data["view"] === all_views[this.state.view]
@@ -138,7 +138,7 @@ class ModelxParent extends React.Component {
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
-      interiorColor: result[0].interiorColor,
+      interior: result[0].interior,
       wheelType: result[0].wheelType,
       selfDriving: result[0].selfDriving,
     });
@@ -161,7 +161,7 @@ class ModelxParent extends React.Component {
       return (
         data["name"] === this.state.name &&
         data["exterior"] === this.state.exterior &&
-        data["interiorColor"] === this.state.interiorColor &&
+        data["interior"] === this.state.interior &&
         data["wheelType"] === this.state.wheelType &&
         data["selfDriving"] === this.state.selfDriving &&
         data["view"] === all_views[targetView]
@@ -174,7 +174,7 @@ class ModelxParent extends React.Component {
       name: result[0].name,
       price: result[0].price,
       exterior: result[0].exterior,
-      interiorColor: result[0].interiorColor,
+      interior: result[0].interior,
       wheelType: result[0].wheelType,
       selfDriving: result[0].selfDriving,
       view: targetView,
@@ -258,7 +258,7 @@ class ModelxParent extends React.Component {
 
         <ModelxButton
           updateExterior={this.updateExterior}
-          updateInteriorColor={this.updateInteriorColor}
+          updateInterior={this.updateInterior}
           updateWheelType={this.updateWheelType}
           updateSelfDriving={this.updateSelfDriving}
         />

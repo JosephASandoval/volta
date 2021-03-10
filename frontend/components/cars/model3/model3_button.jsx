@@ -5,7 +5,7 @@ class Model3Button extends React.Component {
     super(props);
 
     this.handleExterior = this.handleExterior.bind(this);
-    this.handleInteriorColor = this.handleInteriorColor.bind(this);
+    this.handleInterior = this.handleInterior.bind(this);
     this.handleWheelType = this.handleWheelType.bind(this);
     this.handleSelfDriving = this.handleSelfDriving.bind(this);
     this.handleView = this.handleView.bind(this);
@@ -16,9 +16,9 @@ class Model3Button extends React.Component {
     this.props.updateExterior(e.currentTarget.value);
   }
 
-  handleInteriorColor(e) {
+  handleInterior(e) {
     e.preventDefault();
-    this.props.updateInteriorColor(e.currentTarget.value);
+    this.props.updateInterior(e.currentTarget.value);
   }
 
   handleWheelType(e) {
@@ -126,7 +126,7 @@ class Model3Button extends React.Component {
             <button
               type="submit"
               value="All Black"
-              onClick={this.handleInteriorColor}
+              onClick={this.handleInterior}
             >
               <img src={window.interiorBlackURL} alt="Interior Black" />
             </button>
@@ -134,7 +134,7 @@ class Model3Button extends React.Component {
             <button
               type="submit"
               value="Black and White"
-              onClick={this.handleInteriorColor}
+              onClick={this.handleInterior}
             >
               <img src={window.interiorWhiteURL} alt="Interior White" />
             </button>
@@ -142,7 +142,7 @@ class Model3Button extends React.Component {
             <button
               type="submit"
               value="Cream"
-              onClick={this.handleInteriorColor}
+              onClick={this.handleInterior}
             >
               <img src={window.interiorCreamURL} alt="Interior Cream" />
             </button>
