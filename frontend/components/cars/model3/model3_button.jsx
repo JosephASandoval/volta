@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-class CarButton extends React.Component {
+class Model3Button extends React.Component {
   constructor(props) {
     super(props);
 
@@ -204,4 +203,4 @@ class CarButton extends React.Component {
   }
 }
 
-export default CarButton;
+export default Model3Button;

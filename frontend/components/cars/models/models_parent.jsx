@@ -1,13 +1,13 @@
 import React from "react";
-import CarButton from "./car_button";
-import CarMainHeader from "./car_main_header";
+import ModelsButton from "./models_button";
+import ModelsHeader from "./models_header";
 import NumberFormat from "react-number-format";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const all_views = ["front", "side", "rear", "rim", "interior"];
 
-class CarParent extends React.Component {
+class ModelsParent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,7 +17,7 @@ class CarParent extends React.Component {
       price: 78490,
       exterior: "Pearl White Multi-Coat",
       interiorColor: "All Black",
-      wheelType: '19"Tempest Wheels',
+      wheelType: '19" Tempest Wheels',
       selfDriving: false,
       view: 0,
       photoUrl:
@@ -190,7 +190,7 @@ class CarParent extends React.Component {
     return (
       <div>
         <div>
-          <CarMainHeader />
+          <ModelsHeader />
         </div>
 
         {/* update view */}
@@ -256,7 +256,7 @@ class CarParent extends React.Component {
           </div>
         </div>
 
-        <CarButton
+        <ModelsButton
           updateExterior={this.updateExterior}
           updateInteriorColor={this.updateInteriorColor}
           updateWheelType={this.updateWheelType}
@@ -267,4 +267,4 @@ class CarParent extends React.Component {
   }
 }
 
-export default CarParent;
+export default ModelsParent;

@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import { requestAllProducts } from "../../actions/product_actions";
-import CarParent from "./car_parent";
+import { requestAllProducts } from "../../../actions/product_actions";
+import ModelsParent from "./models_parent";
 
 const mapStateToProps = (state) => {
   return {
@@ -14,4 +14,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CarParent);
+export default connect(mapStateToProps, mapDispatchToProps)(ModelsParent);
