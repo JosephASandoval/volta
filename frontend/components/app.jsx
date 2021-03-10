@@ -8,7 +8,7 @@ import UserProfileContainer from "./user_profile/user_profile_container";
 import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
 import NotFoundContainer from "./notfound/notfound_container";
-import CarContainer from "./cars/car_container"
+import ModelsContainer from "./cars/models_container"
 
 const App = () => {
   return (
@@ -28,8 +28,8 @@ const App = () => {
 
         <Route
           exact
-          path="/cars"
-          component={CarContainer}
+          path="/models"
+          component={ModelsContainer}
         />
 
         <Route path="*" component={NotFoundContainer} />

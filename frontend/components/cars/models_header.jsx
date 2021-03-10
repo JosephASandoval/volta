@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import LanguageOutlinedIcon from "@material-ui/icons/LanguageOutlined";
 
 
-function CarMainHeader() {
+function ModelsHeader() {
   return (
     <div className="carMainHeader">
       <div className="carMainHeader__header">
@@ -20,4 +20,4 @@ function CarMainHeader() {
   );
 }
 
-export default CarMainHeader;
+export default ModelsHeader;
