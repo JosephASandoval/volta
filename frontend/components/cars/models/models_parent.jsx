@@ -12,7 +12,7 @@ class ModelsParent extends React.Component {
     super(props);
 
     this.state = {
-      id: 1805,
+      id: 3129,
       name: "Model S",
       price: 78490,
       exterior: "Pearl White Multi-Coat",
@@ -21,7 +21,7 @@ class ModelsParent extends React.Component {
       selfDriving: false,
       view: 0,
       photoUrl:
-        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a95980f3d8b656dc55ec8b2f902f0e4fc0834e6/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
+        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamdGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2bd87a5aa007051477694a822dd9d9d28090c14f/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
     };
 
     this.updateExterior = this.updateExterior.bind(this);

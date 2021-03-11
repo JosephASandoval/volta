@@ -12,16 +12,16 @@ class ModelyParent extends React.Component {
     super(props);
 
     this.state = {
-      id: 1805,
-      name: "Model S",
-      price: 78490,
+      id: 3929,
+      name: "Model Y",
+      price: 47490,
       exterior: "Pearl White Multi-Coat",
       interior: "All Black",
-      wheelType: '19"Tempest Wheels',
+      wheelType: '19" Gemini Wheels',
       selfDriving: false,
       view: 0,
       photoUrl:
-        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a95980f3d8b656dc55ec8b2f902f0e4fc0834e6/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
+        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGdJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--88e492ac17d72073e9a418dcd7531f57705417d8/model_y_-MTY03_-PPSW_-WY19B_-INYPB_false_FRONT34.jpg",
     };
 
     this.updateExterior = this.updateExterior.bind(this);

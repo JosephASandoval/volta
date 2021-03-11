@@ -12,16 +12,16 @@ class Model3Parent extends React.Component {
     super(props);
 
     this.state = {
-      id: 1805,
-      name: "Model S",
-      price: 78490,
+      id: 3729,
+      name: "Model 3",
+      price: 35490,
       exterior: "Pearl White Multi-Coat",
       interior: "All Black",
-      wheelType: '19"Tempest Wheels',
+      wheelType: '18" Aero Wheels',
       selfDriving: false,
       view: 0,
       photoUrl:
-        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a95980f3d8b656dc55ec8b2f902f0e4fc0834e6/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
+        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcEFIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6da7e8b1fcae778e1bd2996526a3e4a1f74a4bf7/model_3_-MT314_-PPSW_-W40B_-IBB0_false_STUD_FRONT34.jpg",
     };
 
     this.updateExterior = this.updateExterior.bind(this);

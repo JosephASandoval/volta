@@ -21,3911 +21,12026 @@ ActiveRecord::Base.transaction do
     first_name: "demo",
     last_name: "user"
   )
-
   file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/spaceman.jpg")
-
   demo.photo.attach(io: file, filename: 'spaceman.jpg')
 
   puts "Creating Model S..."
 
-  car0 = Product.create!(
+	car_s_0 = Product.create!(
 		name: "Model S",
 		price: 78490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car0_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_FRONT34.jpg")
-	car0.photo.attach(io: car0_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_0_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_0.photo.attach(io: car_s_0_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_FRONT34.jpg")
 
-	car1 = Product.create!(
+	car_s_1 = Product.create!(
 		name: "Model S",
 		price: 78490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car1_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_REAR34.jpg")
-	car1.photo.attach(io: car1_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_1_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_1.photo.attach(io: car_s_1_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_SIDE.jpg")
 
-	car2 = Product.create!(
+	car_s_2 = Product.create!(
 		name: "Model S",
 		price: 78490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car2_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_SIDE.jpg")
-	car2.photo.attach(io: car2_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_2_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_2.photo.attach(io: car_s_2_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_REAR34.jpg")
 
-	car3 = Product.create!(
+	car_s_3 = Product.create!(
 		name: "Model S",
 		price: 78490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car3_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
-	car3.photo.attach(io: car3_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_3_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_3.photo.attach(io: car_s_3_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car4 = Product.create!(
+	car_s_4 = Product.create!(
 		name: "Model S",
 		price: 78490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car4_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_INTERIOR.jpg")
-	car4.photo.attach(io: car4_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_4_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_4.photo.attach(io: car_s_4_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_false_INTERIOR.jpg")
 
-	car2 = Product.create!(
+	car_s_5 = Product.create!(
 		name: "Model S",
 		price: 88490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car2_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_FRONT34.jpg")
-	car2.photo.attach(io: car2_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_5_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_5.photo.attach(io: car_s_5_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_FRONT34.jpg")
 
-	car3 = Product.create!(
+	car_s_6 = Product.create!(
 		name: "Model S",
 		price: 88490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "rear",
+		view: "side",
 	)
-	car3_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_REAR34.jpg")
-	car3.photo.attach(io: car3_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_6_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_6.photo.attach(io: car_s_6_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_SIDE.jpg")
 
-	car4 = Product.create!(
+	car_s_7 = Product.create!(
 		name: "Model S",
 		price: 88490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "side",
+		view: "rear",
 	)
-	car4_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_SIDE.jpg")
-	car4.photo.attach(io: car4_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_7_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_7.photo.attach(io: car_s_7_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_REAR34.jpg")
 
-	car5 = Product.create!(
+	car_s_8 = Product.create!(
 		name: "Model S",
 		price: 88490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car5_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
-	car5.photo.attach(io: car5_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_8_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_8.photo.attach(io: car_s_8_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car6 = Product.create!(
+	car_s_9 = Product.create!(
 		name: "Model S",
 		price: 88490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car6_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_INTERIOR.jpg")
-	car6.photo.attach(io: car6_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_9_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_9.photo.attach(io: car_s_9_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IBE00_true_INTERIOR.jpg")
 
-	car10 = Product.create!(
+	car_s_10 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car10_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_FRONT34.jpg")
-	car10.photo.attach(io: car10_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_10_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_10.photo.attach(io: car_s_10_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_FRONT34.jpg")
 
-	car11 = Product.create!(
+	car_s_11 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car11_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_REAR34.jpg")
-	car11.photo.attach(io: car11_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_REAR34.jpg")
-
-	car12 = Product.create!(
-		name: "Model S",
-		price: 80490,
-		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car12_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_SIDE.jpg")
-	car12.photo.attach(io: car12_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_11_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_11.photo.attach(io: car_s_11_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_SIDE.jpg")
 
-	car13 = Product.create!(
+	car_s_12 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_12_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_REAR34.jpg")
+	car_s_12.photo.attach(io: car_s_12_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_REAR34.jpg")
+
+	car_s_13 = Product.create!(
+		name: "Model S",
+		price: 80490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car13_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
-	car13.photo.attach(io: car13_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_13_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_13.photo.attach(io: car_s_13_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car14 = Product.create!(
+	car_s_14 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car14_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_INTERIOR.jpg")
-	car14.photo.attach(io: car14_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_14_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_14.photo.attach(io: car_s_14_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_false_INTERIOR.jpg")
 
-	car12 = Product.create!(
+	car_s_15 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car12_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_FRONT34.jpg")
-	car12.photo.attach(io: car12_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_15_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_15.photo.attach(io: car_s_15_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_FRONT34.jpg")
 
-	car13 = Product.create!(
+	car_s_16 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car13_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_REAR34.jpg")
-	car13.photo.attach(io: car13_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_REAR34.jpg")
-
-	car14 = Product.create!(
-		name: "Model S",
-		price: 90490,
-		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car14_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_SIDE.jpg")
-	car14.photo.attach(io: car14_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_16_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_16.photo.attach(io: car_s_16_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_SIDE.jpg")
 
-	car15 = Product.create!(
+	car_s_17 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_17_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_REAR34.jpg")
+	car_s_17.photo.attach(io: car_s_17_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_REAR34.jpg")
+
+	car_s_18 = Product.create!(
+		name: "Model S",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car15_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
-	car15.photo.attach(io: car15_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_18_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_18.photo.attach(io: car_s_18_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car16 = Product.create!(
+	car_s_19 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car16_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_INTERIOR.jpg")
-	car16.photo.attach(io: car16_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_19_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_19.photo.attach(io: car_s_19_file, filename: "model_s_$MTS10_$PPSW_$WS90_$IWW00_true_INTERIOR.jpg")
 
-	car20 = Product.create!(
+	car_s_20 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car20_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_FRONT34.jpg")
-	car20.photo.attach(io: car20_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_20_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_20.photo.attach(io: car_s_20_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_FRONT34.jpg")
 
-	car21 = Product.create!(
+	car_s_21 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car21_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_REAR34.jpg")
-	car21.photo.attach(io: car21_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_REAR34.jpg")
-
-	car22 = Product.create!(
-		name: "Model S",
-		price: 80490,
-		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car22_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_SIDE.jpg")
-	car22.photo.attach(io: car22_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_21_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_21.photo.attach(io: car_s_21_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_SIDE.jpg")
 
-	car23 = Product.create!(
+	car_s_22 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_22_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_REAR34.jpg")
+	car_s_22.photo.attach(io: car_s_22_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_REAR34.jpg")
+
+	car_s_23 = Product.create!(
+		name: "Model S",
+		price: 80490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car23_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
-	car23.photo.attach(io: car23_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_23_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_23.photo.attach(io: car_s_23_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car24 = Product.create!(
+	car_s_24 = Product.create!(
 		name: "Model S",
 		price: 80490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car24_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_INTERIOR.jpg")
-	car24.photo.attach(io: car24_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_24_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_24.photo.attach(io: car_s_24_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_false_INTERIOR.jpg")
 
-	car22 = Product.create!(
+	car_s_25 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car22_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_FRONT34.jpg")
-	car22.photo.attach(io: car22_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_25_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_25.photo.attach(io: car_s_25_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_FRONT34.jpg")
 
-	car23 = Product.create!(
+	car_s_26 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car23_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_REAR34.jpg")
-	car23.photo.attach(io: car23_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_REAR34.jpg")
-
-	car24 = Product.create!(
-		name: "Model S",
-		price: 90490,
-		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car24_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_SIDE.jpg")
-	car24.photo.attach(io: car24_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_26_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_26.photo.attach(io: car_s_26_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_SIDE.jpg")
 
-	car25 = Product.create!(
+	car_s_27 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_27_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_REAR34.jpg")
+	car_s_27.photo.attach(io: car_s_27_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_REAR34.jpg")
+
+	car_s_28 = Product.create!(
+		name: "Model S",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car25_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
-	car25.photo.attach(io: car25_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_28_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_28.photo.attach(io: car_s_28_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car26 = Product.create!(
+	car_s_29 = Product.create!(
 		name: "Model S",
 		price: 90490,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car26_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_INTERIOR.jpg")
-	car26.photo.attach(io: car26_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_29_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_29.photo.attach(io: car_s_29_file, filename: "model_s_$MTS10_$PPSW_$WS90_$ICW00_true_INTERIOR.jpg")
 
-	car30 = Product.create!(
+	car_s_30 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car30_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_FRONT34.jpg")
-	car30.photo.attach(io: car30_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_30_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_30.photo.attach(io: car_s_30_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_FRONT34.jpg")
 
-	car31 = Product.create!(
+	car_s_31 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car31_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_REAR34.jpg")
-	car31.photo.attach(io: car31_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_31_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_31.photo.attach(io: car_s_31_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_SIDE.jpg")
 
-	car32 = Product.create!(
+	car_s_32 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car32_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_SIDE.jpg")
-	car32.photo.attach(io: car32_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_32_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_32.photo.attach(io: car_s_32_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_REAR34.jpg")
 
-	car33 = Product.create!(
+	car_s_33 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car33_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
-	car33.photo.attach(io: car33_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_33_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_33.photo.attach(io: car_s_33_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car34 = Product.create!(
+	car_s_34 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car34_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_INTERIOR.jpg")
-	car34.photo.attach(io: car34_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_34_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_34.photo.attach(io: car_s_34_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_false_INTERIOR.jpg")
 
-	car32 = Product.create!(
+	car_s_35 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car32_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_FRONT34.jpg")
-	car32.photo.attach(io: car32_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_35_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_35.photo.attach(io: car_s_35_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_FRONT34.jpg")
 
-	car33 = Product.create!(
+	car_s_36 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
-		view: "rear",
+		view: "side",
 	)
-	car33_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_REAR34.jpg")
-	car33.photo.attach(io: car33_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_REAR34.jpg")
+	car_s_36_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_36.photo.attach(io: car_s_36_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_SIDE.jpg")
 
-	car34 = Product.create!(
+	car_s_37 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
-		view: "side",
+		view: "rear",
 	)
-	car34_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_SIDE.jpg")
-	car34.photo.attach(io: car34_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_37_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_REAR34.jpg")
+	car_s_37.photo.attach(io: car_s_37_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_REAR34.jpg")
 
-	car35 = Product.create!(
+	car_s_38 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car35_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
-	car35.photo.attach(io: car35_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_38_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_38.photo.attach(io: car_s_38_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car36 = Product.create!(
+	car_s_39 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car36_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_INTERIOR.jpg")
-	car36.photo.attach(io: car36_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_39_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_39.photo.attach(io: car_s_39_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IBE00_true_INTERIOR.jpg")
 
-	car40 = Product.create!(
+	car_s_40 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car40_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_FRONT34.jpg")
-	car40.photo.attach(io: car40_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_40_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_40.photo.attach(io: car_s_40_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_FRONT34.jpg")
 
-	car41 = Product.create!(
+	car_s_41 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car41_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_REAR34.jpg")
-	car41.photo.attach(io: car41_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_REAR34.jpg")
+	car_s_41_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_41.photo.attach(io: car_s_41_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_SIDE.jpg")
 
-	car42 = Product.create!(
+	car_s_42 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car42_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_SIDE.jpg")
-	car42.photo.attach(io: car42_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_42_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_REAR34.jpg")
+	car_s_42.photo.attach(io: car_s_42_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_REAR34.jpg")
 
-	car43 = Product.create!(
+	car_s_43 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car43_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
-	car43.photo.attach(io: car43_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_43_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_43.photo.attach(io: car_s_43_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car44 = Product.create!(
+	car_s_44 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car44_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_INTERIOR.jpg")
-	car44.photo.attach(io: car44_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_44_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_44.photo.attach(io: car_s_44_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_false_INTERIOR.jpg")
 
-	car42 = Product.create!(
+	car_s_45 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car42_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_FRONT34.jpg")
-	car42.photo.attach(io: car42_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_45_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_45.photo.attach(io: car_s_45_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_FRONT34.jpg")
 
-	car43 = Product.create!(
+	car_s_46 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car43_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_REAR34.jpg")
-	car43.photo.attach(io: car43_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_REAR34.jpg")
-
-	car44 = Product.create!(
-		name: "Model S",
-		price: 94990,
-		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car44_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_SIDE.jpg")
-	car44.photo.attach(io: car44_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_46_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_46.photo.attach(io: car_s_46_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_SIDE.jpg")
 
-	car45 = Product.create!(
+	car_s_47 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_47_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_REAR34.jpg")
+	car_s_47.photo.attach(io: car_s_47_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_REAR34.jpg")
+
+	car_s_48 = Product.create!(
+		name: "Model S",
+		price: 94990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car45_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
-	car45.photo.attach(io: car45_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_48_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_48.photo.attach(io: car_s_48_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car46 = Product.create!(
+	car_s_49 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car46_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_INTERIOR.jpg")
-	car46.photo.attach(io: car46_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_49_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_49.photo.attach(io: car_s_49_file, filename: "model_s_$MTS10_$PPSW_$WS10_$IWW00_true_INTERIOR.jpg")
 
-	car50 = Product.create!(
+	car_s_50 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car50_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_FRONT34.jpg")
-	car50.photo.attach(io: car50_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_50_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_50.photo.attach(io: car_s_50_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_FRONT34.jpg")
 
-	car51 = Product.create!(
+	car_s_51 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car51_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_REAR34.jpg")
-	car51.photo.attach(io: car51_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_REAR34.jpg")
+	car_s_51_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_51.photo.attach(io: car_s_51_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_SIDE.jpg")
 
-	car52 = Product.create!(
+	car_s_52 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car52_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_SIDE.jpg")
-	car52.photo.attach(io: car52_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_52_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_REAR34.jpg")
+	car_s_52.photo.attach(io: car_s_52_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_REAR34.jpg")
 
-	car53 = Product.create!(
+	car_s_53 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car53_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
-	car53.photo.attach(io: car53_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_53_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_53.photo.attach(io: car_s_53_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car54 = Product.create!(
+	car_s_54 = Product.create!(
 		name: "Model S",
 		price: 84990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car54_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_INTERIOR.jpg")
-	car54.photo.attach(io: car54_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_54_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_54.photo.attach(io: car_s_54_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_false_INTERIOR.jpg")
 
-	car52 = Product.create!(
+	car_s_55 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car52_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_FRONT34.jpg")
-	car52.photo.attach(io: car52_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_55_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_55.photo.attach(io: car_s_55_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_FRONT34.jpg")
 
-	car53 = Product.create!(
+	car_s_56 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
-		view: "rear",
+		view: "side",
 	)
-	car53_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_REAR34.jpg")
-	car53.photo.attach(io: car53_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_REAR34.jpg")
+	car_s_56_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_56.photo.attach(io: car_s_56_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_SIDE.jpg")
 
-	car54 = Product.create!(
+	car_s_57 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
-		view: "side",
+		view: "rear",
 	)
-	car54_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_SIDE.jpg")
-	car54.photo.attach(io: car54_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_57_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_REAR34.jpg")
+	car_s_57.photo.attach(io: car_s_57_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_REAR34.jpg")
 
-	car55 = Product.create!(
+	car_s_58 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car55_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
-	car55.photo.attach(io: car55_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_58_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_58.photo.attach(io: car_s_58_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car56 = Product.create!(
+	car_s_59 = Product.create!(
 		name: "Model S",
 		price: 94990,
 		exterior: "Pearl White Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car56_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_INTERIOR.jpg")
-	car56.photo.attach(io: car56_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_59_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSW_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_59.photo.attach(io: car_s_59_file, filename: "model_s_$MTS10_$PPSW_$WS10_$ICW00_true_INTERIOR.jpg")
 
-	car60 = Product.create!(
+	car_s_60 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car60_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_FRONT34.jpg")
-	car60.photo.attach(io: car60_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_60_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_60.photo.attach(io: car_s_60_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_FRONT34.jpg")
 
-	car61 = Product.create!(
+	car_s_61 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car61_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_REAR34.jpg")
-	car61.photo.attach(io: car61_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_61_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_61.photo.attach(io: car_s_61_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_SIDE.jpg")
 
-	car62 = Product.create!(
+	car_s_62 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car62_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_SIDE.jpg")
-	car62.photo.attach(io: car62_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_62_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_62.photo.attach(io: car_s_62_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_REAR34.jpg")
 
-	car63 = Product.create!(
+	car_s_63 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car63_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
-	car63.photo.attach(io: car63_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_63_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_63.photo.attach(io: car_s_63_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car64 = Product.create!(
+	car_s_64 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car64_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_INTERIOR.jpg")
-	car64.photo.attach(io: car64_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_64_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_64.photo.attach(io: car_s_64_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_false_INTERIOR.jpg")
 
-	car62 = Product.create!(
+	car_s_65 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car62_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_FRONT34.jpg")
-	car62.photo.attach(io: car62_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_65_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_65.photo.attach(io: car_s_65_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_FRONT34.jpg")
 
-	car63 = Product.create!(
+	car_s_66 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "rear",
+		view: "side",
 	)
-	car63_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_REAR34.jpg")
-	car63.photo.attach(io: car63_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_66_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_66.photo.attach(io: car_s_66_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_SIDE.jpg")
 
-	car64 = Product.create!(
+	car_s_67 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "side",
+		view: "rear",
 	)
-	car64_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_SIDE.jpg")
-	car64.photo.attach(io: car64_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_67_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_67.photo.attach(io: car_s_67_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_REAR34.jpg")
 
-	car65 = Product.create!(
+	car_s_68 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car65_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
-	car65.photo.attach(io: car65_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_68_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_68.photo.attach(io: car_s_68_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car66 = Product.create!(
+	car_s_69 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car66_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_INTERIOR.jpg")
-	car66.photo.attach(io: car66_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_69_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_69.photo.attach(io: car_s_69_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IBE00_true_INTERIOR.jpg")
 
-	car70 = Product.create!(
+	car_s_70 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car70_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_FRONT34.jpg")
-	car70.photo.attach(io: car70_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_70_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_70.photo.attach(io: car_s_70_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_FRONT34.jpg")
 
-	car71 = Product.create!(
+	car_s_71 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car71_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_REAR34.jpg")
-	car71.photo.attach(io: car71_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_REAR34.jpg")
-
-	car72 = Product.create!(
-		name: "Model S",
-		price: 81990,
-		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car72_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_SIDE.jpg")
-	car72.photo.attach(io: car72_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_71_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_71.photo.attach(io: car_s_71_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_SIDE.jpg")
 
-	car73 = Product.create!(
+	car_s_72 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_72_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_REAR34.jpg")
+	car_s_72.photo.attach(io: car_s_72_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_REAR34.jpg")
+
+	car_s_73 = Product.create!(
+		name: "Model S",
+		price: 81990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car73_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
-	car73.photo.attach(io: car73_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_73_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_73.photo.attach(io: car_s_73_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car74 = Product.create!(
+	car_s_74 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car74_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_INTERIOR.jpg")
-	car74.photo.attach(io: car74_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_74_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_74.photo.attach(io: car_s_74_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_false_INTERIOR.jpg")
 
-	car72 = Product.create!(
+	car_s_75 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car72_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_FRONT34.jpg")
-	car72.photo.attach(io: car72_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_75_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_75.photo.attach(io: car_s_75_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_FRONT34.jpg")
 
-	car73 = Product.create!(
+	car_s_76 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car73_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_REAR34.jpg")
-	car73.photo.attach(io: car73_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_REAR34.jpg")
-
-	car74 = Product.create!(
-		name: "Model S",
-		price: 91990,
-		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car74_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_SIDE.jpg")
-	car74.photo.attach(io: car74_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_76_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_76.photo.attach(io: car_s_76_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_SIDE.jpg")
 
-	car75 = Product.create!(
+	car_s_77 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_77_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_REAR34.jpg")
+	car_s_77.photo.attach(io: car_s_77_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_REAR34.jpg")
+
+	car_s_78 = Product.create!(
+		name: "Model S",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car75_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
-	car75.photo.attach(io: car75_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_78_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_78.photo.attach(io: car_s_78_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car76 = Product.create!(
+	car_s_79 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car76_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_INTERIOR.jpg")
-	car76.photo.attach(io: car76_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_79_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_79.photo.attach(io: car_s_79_file, filename: "model_s_$MTS10_$PBSB_$WS90_$IWW00_true_INTERIOR.jpg")
 
-	car80 = Product.create!(
+	car_s_80 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car80_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_FRONT34.jpg")
-	car80.photo.attach(io: car80_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_80_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_80.photo.attach(io: car_s_80_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_FRONT34.jpg")
 
-	car81 = Product.create!(
+	car_s_81 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car81_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_REAR34.jpg")
-	car81.photo.attach(io: car81_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_REAR34.jpg")
-
-	car82 = Product.create!(
-		name: "Model S",
-		price: 81990,
-		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car82_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_SIDE.jpg")
-	car82.photo.attach(io: car82_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_81_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_81.photo.attach(io: car_s_81_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_SIDE.jpg")
 
-	car83 = Product.create!(
+	car_s_82 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_82_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_REAR34.jpg")
+	car_s_82.photo.attach(io: car_s_82_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_REAR34.jpg")
+
+	car_s_83 = Product.create!(
+		name: "Model S",
+		price: 81990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car83_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
-	car83.photo.attach(io: car83_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_83_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_83.photo.attach(io: car_s_83_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car84 = Product.create!(
+	car_s_84 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car84_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_INTERIOR.jpg")
-	car84.photo.attach(io: car84_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_84_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_84.photo.attach(io: car_s_84_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_false_INTERIOR.jpg")
 
-	car82 = Product.create!(
+	car_s_85 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car82_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_FRONT34.jpg")
-	car82.photo.attach(io: car82_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_85_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_85.photo.attach(io: car_s_85_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_FRONT34.jpg")
 
-	car83 = Product.create!(
+	car_s_86 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car83_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_REAR34.jpg")
-	car83.photo.attach(io: car83_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_REAR34.jpg")
-
-	car84 = Product.create!(
-		name: "Model S",
-		price: 91990,
-		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car84_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_SIDE.jpg")
-	car84.photo.attach(io: car84_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_86_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_86.photo.attach(io: car_s_86_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_SIDE.jpg")
 
-	car85 = Product.create!(
+	car_s_87 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_87_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_REAR34.jpg")
+	car_s_87.photo.attach(io: car_s_87_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_REAR34.jpg")
+
+	car_s_88 = Product.create!(
+		name: "Model S",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car85_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
-	car85.photo.attach(io: car85_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_88_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_88.photo.attach(io: car_s_88_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car86 = Product.create!(
+	car_s_89 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car86_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_INTERIOR.jpg")
-	car86.photo.attach(io: car86_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_89_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_89.photo.attach(io: car_s_89_file, filename: "model_s_$MTS10_$PBSB_$WS90_$ICW00_true_INTERIOR.jpg")
 
-	car90 = Product.create!(
+	car_s_90 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car90_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_FRONT34.jpg")
-	car90.photo.attach(io: car90_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_90_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_90.photo.attach(io: car_s_90_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_FRONT34.jpg")
 
-	car91 = Product.create!(
+	car_s_91 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car91_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_REAR34.jpg")
-	car91.photo.attach(io: car91_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_91_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_91.photo.attach(io: car_s_91_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_SIDE.jpg")
 
-	car92 = Product.create!(
+	car_s_92 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car92_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_SIDE.jpg")
-	car92.photo.attach(io: car92_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_92_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_92.photo.attach(io: car_s_92_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_REAR34.jpg")
 
-	car93 = Product.create!(
+	car_s_93 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car93_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
-	car93.photo.attach(io: car93_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_93_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_93.photo.attach(io: car_s_93_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car94 = Product.create!(
+	car_s_94 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car94_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_INTERIOR.jpg")
-	car94.photo.attach(io: car94_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_94_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_94.photo.attach(io: car_s_94_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_false_INTERIOR.jpg")
 
-	car92 = Product.create!(
+	car_s_95 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car92_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_FRONT34.jpg")
-	car92.photo.attach(io: car92_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_95_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_95.photo.attach(io: car_s_95_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_FRONT34.jpg")
 
-	car93 = Product.create!(
+	car_s_96 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car93_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_REAR34.jpg")
-	car93.photo.attach(io: car93_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_REAR34.jpg")
-
-	car94 = Product.create!(
-		name: "Model S",
-		price: 94490,
-		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car94_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_SIDE.jpg")
-	car94.photo.attach(io: car94_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_96_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_96.photo.attach(io: car_s_96_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_SIDE.jpg")
 
-	car95 = Product.create!(
+	car_s_97 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_97_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_REAR34.jpg")
+	car_s_97.photo.attach(io: car_s_97_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_REAR34.jpg")
+
+	car_s_98 = Product.create!(
+		name: "Model S",
+		price: 94490,
+		exterior: "Solid Black",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car95_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
-	car95.photo.attach(io: car95_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_98_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_98.photo.attach(io: car_s_98_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car96 = Product.create!(
+	car_s_99 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Solid Black",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car96_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_INTERIOR.jpg")
-	car96.photo.attach(io: car96_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_99_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_99.photo.attach(io: car_s_99_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IBE00_true_INTERIOR.jpg")
 
-	car100 = Product.create!(
+	car_s_100 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car100_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_FRONT34.jpg")
-	car100.photo.attach(io: car100_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_100_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_100.photo.attach(io: car_s_100_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_FRONT34.jpg")
 
-	car101 = Product.create!(
+  puts "Creating Model S_1..."
+
+	car_s_101 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car101_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_REAR34.jpg")
-	car101.photo.attach(io: car101_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_REAR34.jpg")
-
-	car102 = Product.create!(
-		name: "Model S",
-		price: 86490,
-		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car102_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_SIDE.jpg")
-	car102.photo.attach(io: car102_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_101_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_101.photo.attach(io: car_s_101_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_SIDE.jpg")
 
-	car103 = Product.create!(
+	car_s_102 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_102_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_REAR34.jpg")
+	car_s_102.photo.attach(io: car_s_102_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_REAR34.jpg")
+
+	car_s_103 = Product.create!(
+		name: "Model S",
+		price: 86490,
+		exterior: "Solid Black",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car103_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
-	car103.photo.attach(io: car103_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_103_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_103.photo.attach(io: car_s_103_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car104 = Product.create!(
+	car_s_104 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car104_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_INTERIOR.jpg")
-	car104.photo.attach(io: car104_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_104_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_104.photo.attach(io: car_s_104_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_false_INTERIOR.jpg")
 
-	car102 = Product.create!(
+	car_s_105 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car102_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_FRONT34.jpg")
-	car102.photo.attach(io: car102_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_105_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_105.photo.attach(io: car_s_105_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_FRONT34.jpg")
 
-	car103 = Product.create!(
+	car_s_106 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car103_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_REAR34.jpg")
-	car103.photo.attach(io: car103_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_REAR34.jpg")
-
-	car104 = Product.create!(
-		name: "Model S",
-		price: 96490,
-		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car104_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_SIDE.jpg")
-	car104.photo.attach(io: car104_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_106_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_106.photo.attach(io: car_s_106_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_SIDE.jpg")
 
-	car105 = Product.create!(
+	car_s_107 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_107_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_REAR34.jpg")
+	car_s_107.photo.attach(io: car_s_107_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_REAR34.jpg")
+
+	car_s_108 = Product.create!(
+		name: "Model S",
+		price: 96490,
+		exterior: "Solid Black",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car105_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
-	car105.photo.attach(io: car105_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_108_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_108.photo.attach(io: car_s_108_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car106 = Product.create!(
+	car_s_109 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car106_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_INTERIOR.jpg")
-	car106.photo.attach(io: car106_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_109_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_109.photo.attach(io: car_s_109_file, filename: "model_s_$MTS10_$PBSB_$WS10_$IWW00_true_INTERIOR.jpg")
 
-	car110 = Product.create!(
+	car_s_110 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car110_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_FRONT34.jpg")
-	car110.photo.attach(io: car110_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_110_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_110.photo.attach(io: car_s_110_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_FRONT34.jpg")
 
-	car111 = Product.create!(
+	car_s_111 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car111_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_REAR34.jpg")
-	car111.photo.attach(io: car111_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_REAR34.jpg")
-
-	car112 = Product.create!(
-		name: "Model S",
-		price: 86490,
-		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car112_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_SIDE.jpg")
-	car112.photo.attach(io: car112_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_111_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_111.photo.attach(io: car_s_111_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_SIDE.jpg")
 
-	car113 = Product.create!(
+	car_s_112 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_112_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_REAR34.jpg")
+	car_s_112.photo.attach(io: car_s_112_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_REAR34.jpg")
+
+	car_s_113 = Product.create!(
+		name: "Model S",
+		price: 86490,
+		exterior: "Solid Black",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car113_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
-	car113.photo.attach(io: car113_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_113_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_113.photo.attach(io: car_s_113_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car114 = Product.create!(
+	car_s_114 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car114_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_INTERIOR.jpg")
-	car114.photo.attach(io: car114_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_114_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_114.photo.attach(io: car_s_114_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_false_INTERIOR.jpg")
 
-	car112 = Product.create!(
+	car_s_115 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car112_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_FRONT34.jpg")
-	car112.photo.attach(io: car112_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_115_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_115.photo.attach(io: car_s_115_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_FRONT34.jpg")
 
-	car113 = Product.create!(
+	car_s_116 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car113_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_REAR34.jpg")
-	car113.photo.attach(io: car113_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_REAR34.jpg")
-
-	car114 = Product.create!(
-		name: "Model S",
-		price: 96490,
-		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car114_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_SIDE.jpg")
-	car114.photo.attach(io: car114_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_116_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_116.photo.attach(io: car_s_116_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_SIDE.jpg")
 
-	car115 = Product.create!(
+	car_s_117 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_117_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_REAR34.jpg")
+	car_s_117.photo.attach(io: car_s_117_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_REAR34.jpg")
+
+	car_s_118 = Product.create!(
+		name: "Model S",
+		price: 96490,
+		exterior: "Solid Black",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car115_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
-	car115.photo.attach(io: car115_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_118_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_118.photo.attach(io: car_s_118_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car116 = Product.create!(
+	car_s_119 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Solid Black",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car116_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_INTERIOR.jpg")
-	car116.photo.attach(io: car116_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_119_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PBSB_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_119.photo.attach(io: car_s_119_file, filename: "model_s_$MTS10_$PBSB_$WS10_$ICW00_true_INTERIOR.jpg")
 
-	car120 = Product.create!(
+	car_s_120 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car120_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_FRONT34.jpg")
-	car120.photo.attach(io: car120_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_120_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_120.photo.attach(io: car_s_120_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_FRONT34.jpg")
 
-	car121 = Product.create!(
+	car_s_121 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car121_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_REAR34.jpg")
-	car121.photo.attach(io: car121_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_121_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_121.photo.attach(io: car_s_121_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_SIDE.jpg")
 
-	car122 = Product.create!(
+	car_s_122 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car122_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_SIDE.jpg")
-	car122.photo.attach(io: car122_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_122_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_122.photo.attach(io: car_s_122_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_REAR34.jpg")
 
-	car123 = Product.create!(
+	car_s_123 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car123_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
-	car123.photo.attach(io: car123_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_123_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_123.photo.attach(io: car_s_123_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car124 = Product.create!(
+	car_s_124 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car124_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_INTERIOR.jpg")
-	car124.photo.attach(io: car124_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_124_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_124.photo.attach(io: car_s_124_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_false_INTERIOR.jpg")
 
-	car122 = Product.create!(
+	car_s_125 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car122_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_FRONT34.jpg")
-	car122.photo.attach(io: car122_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_125_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_125.photo.attach(io: car_s_125_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_FRONT34.jpg")
 
-	car123 = Product.create!(
+	car_s_126 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "rear",
+		view: "side",
 	)
-	car123_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_REAR34.jpg")
-	car123.photo.attach(io: car123_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_126_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_126.photo.attach(io: car_s_126_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_SIDE.jpg")
 
-	car124 = Product.create!(
+	car_s_127 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "side",
+		view: "rear",
 	)
-	car124_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_SIDE.jpg")
-	car124.photo.attach(io: car124_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_127_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_127.photo.attach(io: car_s_127_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_REAR34.jpg")
 
-	car125 = Product.create!(
+	car_s_128 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car125_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
-	car125.photo.attach(io: car125_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_128_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_128.photo.attach(io: car_s_128_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car126 = Product.create!(
+	car_s_129 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car126_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_INTERIOR.jpg")
-	car126.photo.attach(io: car126_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_129_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_129.photo.attach(io: car_s_129_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IBE00_true_INTERIOR.jpg")
 
-	car130 = Product.create!(
+	car_s_130 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car130_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_FRONT34.jpg")
-	car130.photo.attach(io: car130_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_130_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_130.photo.attach(io: car_s_130_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_FRONT34.jpg")
 
-	car131 = Product.create!(
+	car_s_131 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car131_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_REAR34.jpg")
-	car131.photo.attach(io: car131_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_REAR34.jpg")
-
-	car132 = Product.create!(
-		name: "Model S",
-		price: 81990,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car132_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_SIDE.jpg")
-	car132.photo.attach(io: car132_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_131_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_131.photo.attach(io: car_s_131_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_SIDE.jpg")
 
-	car133 = Product.create!(
+	car_s_132 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_132_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_REAR34.jpg")
+	car_s_132.photo.attach(io: car_s_132_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_REAR34.jpg")
+
+	car_s_133 = Product.create!(
+		name: "Model S",
+		price: 81990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car133_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
-	car133.photo.attach(io: car133_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_133_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_133.photo.attach(io: car_s_133_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car134 = Product.create!(
+	car_s_134 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car134_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_INTERIOR.jpg")
-	car134.photo.attach(io: car134_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_134_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_134.photo.attach(io: car_s_134_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_false_INTERIOR.jpg")
 
-	car132 = Product.create!(
+	car_s_135 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car132_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_FRONT34.jpg")
-	car132.photo.attach(io: car132_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_135_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_135.photo.attach(io: car_s_135_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_FRONT34.jpg")
 
-	car133 = Product.create!(
+	car_s_136 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car133_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_REAR34.jpg")
-	car133.photo.attach(io: car133_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_REAR34.jpg")
-
-	car134 = Product.create!(
-		name: "Model S",
-		price: 91990,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car134_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_SIDE.jpg")
-	car134.photo.attach(io: car134_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_136_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_136.photo.attach(io: car_s_136_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_SIDE.jpg")
 
-	car135 = Product.create!(
+	car_s_137 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_137_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_REAR34.jpg")
+	car_s_137.photo.attach(io: car_s_137_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_REAR34.jpg")
+
+	car_s_138 = Product.create!(
+		name: "Model S",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car135_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
-	car135.photo.attach(io: car135_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_138_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_138.photo.attach(io: car_s_138_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car136 = Product.create!(
+	car_s_139 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car136_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_INTERIOR.jpg")
-	car136.photo.attach(io: car136_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_139_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_139.photo.attach(io: car_s_139_file, filename: "model_s_$MTS10_$PMNG_$WS90_$IWW00_true_INTERIOR.jpg")
 
-	car140 = Product.create!(
+	car_s_140 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car140_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_FRONT34.jpg")
-	car140.photo.attach(io: car140_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_140_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_140.photo.attach(io: car_s_140_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_FRONT34.jpg")
 
-	car141 = Product.create!(
+	car_s_141 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car141_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_REAR34.jpg")
-	car141.photo.attach(io: car141_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_REAR34.jpg")
-
-	car142 = Product.create!(
-		name: "Model S",
-		price: 81990,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car142_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_SIDE.jpg")
-	car142.photo.attach(io: car142_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_141_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_141.photo.attach(io: car_s_141_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_SIDE.jpg")
 
-	car143 = Product.create!(
+	car_s_142 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_142_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_REAR34.jpg")
+	car_s_142.photo.attach(io: car_s_142_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_REAR34.jpg")
+
+	car_s_143 = Product.create!(
+		name: "Model S",
+		price: 81990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car143_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
-	car143.photo.attach(io: car143_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_143_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_143.photo.attach(io: car_s_143_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car144 = Product.create!(
+	car_s_144 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car144_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_INTERIOR.jpg")
-	car144.photo.attach(io: car144_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_144_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_144.photo.attach(io: car_s_144_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_false_INTERIOR.jpg")
 
-	car142 = Product.create!(
+	car_s_145 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car142_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_FRONT34.jpg")
-	car142.photo.attach(io: car142_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_145_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_145.photo.attach(io: car_s_145_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_FRONT34.jpg")
 
-	car143 = Product.create!(
+	car_s_146 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car143_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_REAR34.jpg")
-	car143.photo.attach(io: car143_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_REAR34.jpg")
-
-	car144 = Product.create!(
-		name: "Model S",
-		price: 91990,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car144_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_SIDE.jpg")
-	car144.photo.attach(io: car144_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_146_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_146.photo.attach(io: car_s_146_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_SIDE.jpg")
 
-	car145 = Product.create!(
+	car_s_147 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_147_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_REAR34.jpg")
+	car_s_147.photo.attach(io: car_s_147_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_REAR34.jpg")
+
+	car_s_148 = Product.create!(
+		name: "Model S",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car145_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
-	car145.photo.attach(io: car145_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_148_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_148.photo.attach(io: car_s_148_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car146 = Product.create!(
+	car_s_149 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car146_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_INTERIOR.jpg")
-	car146.photo.attach(io: car146_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_149_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_149.photo.attach(io: car_s_149_file, filename: "model_s_$MTS10_$PMNG_$WS90_$ICW00_true_INTERIOR.jpg")
 
-	car150 = Product.create!(
+	car_s_150 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car150_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_FRONT34.jpg")
-	car150.photo.attach(io: car150_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_150_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_150.photo.attach(io: car_s_150_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_FRONT34.jpg")
 
-	car151 = Product.create!(
+	car_s_151 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car151_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_REAR34.jpg")
-	car151.photo.attach(io: car151_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_151_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_151.photo.attach(io: car_s_151_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_SIDE.jpg")
 
-	car152 = Product.create!(
+	car_s_152 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car152_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_SIDE.jpg")
-	car152.photo.attach(io: car152_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_152_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_152.photo.attach(io: car_s_152_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_REAR34.jpg")
 
-	car153 = Product.create!(
+	car_s_153 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car153_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
-	car153.photo.attach(io: car153_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_153_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_153.photo.attach(io: car_s_153_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car154 = Product.create!(
+	car_s_154 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car154_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_INTERIOR.jpg")
-	car154.photo.attach(io: car154_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_154_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_154.photo.attach(io: car_s_154_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_false_INTERIOR.jpg")
 
-	car152 = Product.create!(
+	car_s_155 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car152_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_FRONT34.jpg")
-	car152.photo.attach(io: car152_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_155_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_155.photo.attach(io: car_s_155_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_FRONT34.jpg")
 
-	car153 = Product.create!(
+	car_s_156 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car153_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_REAR34.jpg")
-	car153.photo.attach(io: car153_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_REAR34.jpg")
-
-	car154 = Product.create!(
-		name: "Model S",
-		price: 94490,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car154_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_SIDE.jpg")
-	car154.photo.attach(io: car154_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_156_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_156.photo.attach(io: car_s_156_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_SIDE.jpg")
 
-	car155 = Product.create!(
+	car_s_157 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_157_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_REAR34.jpg")
+	car_s_157.photo.attach(io: car_s_157_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_REAR34.jpg")
+
+	car_s_158 = Product.create!(
+		name: "Model S",
+		price: 94490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car155_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
-	car155.photo.attach(io: car155_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_158_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_158.photo.attach(io: car_s_158_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car156 = Product.create!(
+	car_s_159 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car156_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_INTERIOR.jpg")
-	car156.photo.attach(io: car156_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_159_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_159.photo.attach(io: car_s_159_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IBE00_true_INTERIOR.jpg")
 
-	car160 = Product.create!(
+	car_s_160 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car160_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_FRONT34.jpg")
-	car160.photo.attach(io: car160_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_160_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_160.photo.attach(io: car_s_160_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_FRONT34.jpg")
 
-	car161 = Product.create!(
+	car_s_161 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car161_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_REAR34.jpg")
-	car161.photo.attach(io: car161_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_REAR34.jpg")
-
-	car162 = Product.create!(
-		name: "Model S",
-		price: 86490,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car162_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_SIDE.jpg")
-	car162.photo.attach(io: car162_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_161_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_161.photo.attach(io: car_s_161_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_SIDE.jpg")
 
-	car163 = Product.create!(
+	car_s_162 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_162_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_REAR34.jpg")
+	car_s_162.photo.attach(io: car_s_162_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_REAR34.jpg")
+
+	car_s_163 = Product.create!(
+		name: "Model S",
+		price: 86490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car163_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
-	car163.photo.attach(io: car163_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_163_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_163.photo.attach(io: car_s_163_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car164 = Product.create!(
+	car_s_164 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car164_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_INTERIOR.jpg")
-	car164.photo.attach(io: car164_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_164_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_164.photo.attach(io: car_s_164_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_false_INTERIOR.jpg")
 
-	car162 = Product.create!(
+	car_s_165 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car162_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_FRONT34.jpg")
-	car162.photo.attach(io: car162_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_165_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_165.photo.attach(io: car_s_165_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_FRONT34.jpg")
 
-	car163 = Product.create!(
+	car_s_166 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car163_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_REAR34.jpg")
-	car163.photo.attach(io: car163_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_REAR34.jpg")
-
-	car164 = Product.create!(
-		name: "Model S",
-		price: 96490,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car164_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_SIDE.jpg")
-	car164.photo.attach(io: car164_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_166_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_166.photo.attach(io: car_s_166_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_SIDE.jpg")
 
-	car165 = Product.create!(
+	car_s_167 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_167_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_REAR34.jpg")
+	car_s_167.photo.attach(io: car_s_167_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_REAR34.jpg")
+
+	car_s_168 = Product.create!(
+		name: "Model S",
+		price: 96490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car165_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
-	car165.photo.attach(io: car165_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_168_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_168.photo.attach(io: car_s_168_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car166 = Product.create!(
+	car_s_169 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car166_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_INTERIOR.jpg")
-	car166.photo.attach(io: car166_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_169_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_169.photo.attach(io: car_s_169_file, filename: "model_s_$MTS10_$PMNG_$WS10_$IWW00_true_INTERIOR.jpg")
 
-	car170 = Product.create!(
+	car_s_170 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car170_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_FRONT34.jpg")
-	car170.photo.attach(io: car170_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_170_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_170.photo.attach(io: car_s_170_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_FRONT34.jpg")
 
-	car171 = Product.create!(
+	car_s_171 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car171_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_REAR34.jpg")
-	car171.photo.attach(io: car171_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_REAR34.jpg")
-
-	car172 = Product.create!(
-		name: "Model S",
-		price: 86490,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car172_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_SIDE.jpg")
-	car172.photo.attach(io: car172_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_171_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_171.photo.attach(io: car_s_171_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_SIDE.jpg")
 
-	car173 = Product.create!(
+	car_s_172 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_172_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_REAR34.jpg")
+	car_s_172.photo.attach(io: car_s_172_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_REAR34.jpg")
+
+	car_s_173 = Product.create!(
+		name: "Model S",
+		price: 86490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car173_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
-	car173.photo.attach(io: car173_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_173_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_173.photo.attach(io: car_s_173_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car174 = Product.create!(
+	car_s_174 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car174_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_INTERIOR.jpg")
-	car174.photo.attach(io: car174_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_174_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_174.photo.attach(io: car_s_174_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_false_INTERIOR.jpg")
 
-	car172 = Product.create!(
+	car_s_175 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car172_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_FRONT34.jpg")
-	car172.photo.attach(io: car172_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_175_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_175.photo.attach(io: car_s_175_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_FRONT34.jpg")
 
-	car173 = Product.create!(
+	car_s_176 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car173_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_REAR34.jpg")
-	car173.photo.attach(io: car173_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_REAR34.jpg")
-
-	car174 = Product.create!(
-		name: "Model S",
-		price: 96490,
-		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car174_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_SIDE.jpg")
-	car174.photo.attach(io: car174_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_176_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_176.photo.attach(io: car_s_176_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_SIDE.jpg")
 
-	car175 = Product.create!(
+	car_s_177 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_177_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_REAR34.jpg")
+	car_s_177.photo.attach(io: car_s_177_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_REAR34.jpg")
+
+	car_s_178 = Product.create!(
+		name: "Model S",
+		price: 96490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car175_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
-	car175.photo.attach(io: car175_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_178_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_178.photo.attach(io: car_s_178_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car176 = Product.create!(
+	car_s_179 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Midnight Silver Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car176_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_INTERIOR.jpg")
-	car176.photo.attach(io: car176_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_179_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PMNG_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_179.photo.attach(io: car_s_179_file, filename: "model_s_$MTS10_$PMNG_$WS10_$ICW00_true_INTERIOR.jpg")
 
-	car180 = Product.create!(
+	car_s_180 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car180_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_FRONT34.jpg")
-	car180.photo.attach(io: car180_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_180_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_180.photo.attach(io: car_s_180_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_FRONT34.jpg")
 
-	car181 = Product.create!(
+	car_s_181 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car181_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_REAR34.jpg")
-	car181.photo.attach(io: car181_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_181_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_181.photo.attach(io: car_s_181_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_SIDE.jpg")
 
-	car182 = Product.create!(
+	car_s_182 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car182_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_SIDE.jpg")
-	car182.photo.attach(io: car182_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_182_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_182.photo.attach(io: car_s_182_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_REAR34.jpg")
 
-	car183 = Product.create!(
+	car_s_183 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car183_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
-	car183.photo.attach(io: car183_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_183_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_183.photo.attach(io: car_s_183_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car184 = Product.create!(
+	car_s_184 = Product.create!(
 		name: "Model S",
 		price: 79990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car184_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_INTERIOR.jpg")
-	car184.photo.attach(io: car184_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_184_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_184.photo.attach(io: car_s_184_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_false_INTERIOR.jpg")
 
-	car182 = Product.create!(
+	car_s_185 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car182_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_FRONT34.jpg")
-	car182.photo.attach(io: car182_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_185_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_185.photo.attach(io: car_s_185_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_FRONT34.jpg")
 
-	car183 = Product.create!(
+	car_s_186 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "rear",
+		view: "side",
 	)
-	car183_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_REAR34.jpg")
-	car183.photo.attach(io: car183_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_186_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_186.photo.attach(io: car_s_186_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_SIDE.jpg")
 
-	car184 = Product.create!(
+	car_s_187 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "side",
+		view: "rear",
 	)
-	car184_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_SIDE.jpg")
-	car184.photo.attach(io: car184_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_187_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_187.photo.attach(io: car_s_187_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_REAR34.jpg")
 
-	car185 = Product.create!(
+	car_s_188 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car185_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
-	car185.photo.attach(io: car185_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_188_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_188.photo.attach(io: car_s_188_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car186 = Product.create!(
+	car_s_189 = Product.create!(
 		name: "Model S",
 		price: 89990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car186_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_INTERIOR.jpg")
-	car186.photo.attach(io: car186_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_189_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_189.photo.attach(io: car_s_189_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IBE00_true_INTERIOR.jpg")
 
-	car190 = Product.create!(
+	car_s_190 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car190_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_FRONT34.jpg")
-	car190.photo.attach(io: car190_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_190_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_190.photo.attach(io: car_s_190_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_FRONT34.jpg")
 
-	car191 = Product.create!(
+	car_s_191 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car191_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_REAR34.jpg")
-	car191.photo.attach(io: car191_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_REAR34.jpg")
-
-	car192 = Product.create!(
-		name: "Model S",
-		price: 81990,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car192_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_SIDE.jpg")
-	car192.photo.attach(io: car192_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_191_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_191.photo.attach(io: car_s_191_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_SIDE.jpg")
 
-	car193 = Product.create!(
+	car_s_192 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_192_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_REAR34.jpg")
+	car_s_192.photo.attach(io: car_s_192_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_REAR34.jpg")
+
+	car_s_193 = Product.create!(
+		name: "Model S",
+		price: 81990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car193_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
-	car193.photo.attach(io: car193_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_193_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_193.photo.attach(io: car_s_193_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car194 = Product.create!(
+	car_s_194 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car194_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_INTERIOR.jpg")
-	car194.photo.attach(io: car194_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_194_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_194.photo.attach(io: car_s_194_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_false_INTERIOR.jpg")
 
-	car192 = Product.create!(
+	car_s_195 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car192_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_FRONT34.jpg")
-	car192.photo.attach(io: car192_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_195_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_195.photo.attach(io: car_s_195_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_FRONT34.jpg")
 
-	car193 = Product.create!(
+	car_s_196 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car193_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_REAR34.jpg")
-	car193.photo.attach(io: car193_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_REAR34.jpg")
-
-	car194 = Product.create!(
-		name: "Model S",
-		price: 91990,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car194_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_SIDE.jpg")
-	car194.photo.attach(io: car194_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_196_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_196.photo.attach(io: car_s_196_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_SIDE.jpg")
 
-	car195 = Product.create!(
+	car_s_197 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_197_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_REAR34.jpg")
+	car_s_197.photo.attach(io: car_s_197_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_REAR34.jpg")
+
+	car_s_198 = Product.create!(
+		name: "Model S",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car195_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
-	car195.photo.attach(io: car195_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_198_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_198.photo.attach(io: car_s_198_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car196 = Product.create!(
+	car_s_199 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car196_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_INTERIOR.jpg")
-	car196.photo.attach(io: car196_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_199_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_199.photo.attach(io: car_s_199_file, filename: "model_s_$MTS10_$PPSB_$WS90_$IWW00_true_INTERIOR.jpg")
 
-	car200 = Product.create!(
+	car_s_200 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car200_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_FRONT34.jpg")
-	car200.photo.attach(io: car200_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_200_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_200.photo.attach(io: car_s_200_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_FRONT34.jpg")	
 
-	car201 = Product.create!(
+	puts "Creating Model S_2..."
+
+	car_s_201 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car201_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_REAR34.jpg")
-	car201.photo.attach(io: car201_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_REAR34.jpg")
-
-	car202 = Product.create!(
-		name: "Model S",
-		price: 81990,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car202_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_SIDE.jpg")
-	car202.photo.attach(io: car202_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_201_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_201.photo.attach(io: car_s_201_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_SIDE.jpg")
 
-	car203 = Product.create!(
+	car_s_202 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_202_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_REAR34.jpg")
+	car_s_202.photo.attach(io: car_s_202_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_REAR34.jpg")
+
+	car_s_203 = Product.create!(
+		name: "Model S",
+		price: 81990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car203_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
-	car203.photo.attach(io: car203_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_203_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_203.photo.attach(io: car_s_203_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car204 = Product.create!(
+	car_s_204 = Product.create!(
 		name: "Model S",
 		price: 81990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car204_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_INTERIOR.jpg")
-	car204.photo.attach(io: car204_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_204_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_204.photo.attach(io: car_s_204_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_false_INTERIOR.jpg")
 
-	car202 = Product.create!(
+	car_s_205 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car202_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_FRONT34.jpg")
-	car202.photo.attach(io: car202_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_205_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_205.photo.attach(io: car_s_205_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_FRONT34.jpg")
 
-	car203 = Product.create!(
+	car_s_206 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car203_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_REAR34.jpg")
-	car203.photo.attach(io: car203_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_REAR34.jpg")
-
-	car204 = Product.create!(
-		name: "Model S",
-		price: 91990,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car204_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_SIDE.jpg")
-	car204.photo.attach(io: car204_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_206_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_206.photo.attach(io: car_s_206_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_SIDE.jpg")
 
-	car205 = Product.create!(
+	car_s_207 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_207_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_REAR34.jpg")
+	car_s_207.photo.attach(io: car_s_207_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_REAR34.jpg")
+
+	car_s_208 = Product.create!(
+		name: "Model S",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car205_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
-	car205.photo.attach(io: car205_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_208_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_208.photo.attach(io: car_s_208_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car206 = Product.create!(
+	car_s_209 = Product.create!(
 		name: "Model S",
 		price: 91990,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car206_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_INTERIOR.jpg")
-	car206.photo.attach(io: car206_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_209_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_209.photo.attach(io: car_s_209_file, filename: "model_s_$MTS10_$PPSB_$WS90_$ICW00_true_INTERIOR.jpg")
 
-	car210 = Product.create!(
+	car_s_210 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car210_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_FRONT34.jpg")
-	car210.photo.attach(io: car210_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_210_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_210.photo.attach(io: car_s_210_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_FRONT34.jpg")
 
-	car211 = Product.create!(
+	car_s_211 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car211_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_REAR34.jpg")
-	car211.photo.attach(io: car211_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_211_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_211.photo.attach(io: car_s_211_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_SIDE.jpg")
 
-	car212 = Product.create!(
+	car_s_212 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car212_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_SIDE.jpg")
-	car212.photo.attach(io: car212_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_212_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_212.photo.attach(io: car_s_212_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_REAR34.jpg")
 
-	car213 = Product.create!(
+	car_s_213 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car213_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
-	car213.photo.attach(io: car213_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_213_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_213.photo.attach(io: car_s_213_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car214 = Product.create!(
+	car_s_214 = Product.create!(
 		name: "Model S",
 		price: 84490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car214_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_INTERIOR.jpg")
-	car214.photo.attach(io: car214_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_214_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_214.photo.attach(io: car_s_214_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_false_INTERIOR.jpg")
 
-	car212 = Product.create!(
+	car_s_215 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car212_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_FRONT34.jpg")
-	car212.photo.attach(io: car212_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_215_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_215.photo.attach(io: car_s_215_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_FRONT34.jpg")
 
-	car213 = Product.create!(
+	car_s_216 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car213_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_REAR34.jpg")
-	car213.photo.attach(io: car213_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_REAR34.jpg")
-
-	car214 = Product.create!(
-		name: "Model S",
-		price: 94490,
-		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car214_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_SIDE.jpg")
-	car214.photo.attach(io: car214_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_216_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_216.photo.attach(io: car_s_216_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_SIDE.jpg")
 
-	car215 = Product.create!(
+	car_s_217 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_217_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_REAR34.jpg")
+	car_s_217.photo.attach(io: car_s_217_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_REAR34.jpg")
+
+	car_s_218 = Product.create!(
+		name: "Model S",
+		price: 94490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car215_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
-	car215.photo.attach(io: car215_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_218_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_218.photo.attach(io: car_s_218_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car216 = Product.create!(
+	car_s_219 = Product.create!(
 		name: "Model S",
 		price: 94490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car216_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_INTERIOR.jpg")
-	car216.photo.attach(io: car216_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_219_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_219.photo.attach(io: car_s_219_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IBE00_true_INTERIOR.jpg")
 
-	car220 = Product.create!(
+	car_s_220 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car220_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_FRONT34.jpg")
-	car220.photo.attach(io: car220_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_220_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_220.photo.attach(io: car_s_220_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_FRONT34.jpg")
 
-	car221 = Product.create!(
+	car_s_221 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car221_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_REAR34.jpg")
-	car221.photo.attach(io: car221_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_REAR34.jpg")
-
-	car222 = Product.create!(
-		name: "Model S",
-		price: 86490,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car222_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_SIDE.jpg")
-	car222.photo.attach(io: car222_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_221_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_221.photo.attach(io: car_s_221_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_SIDE.jpg")
 
-	car223 = Product.create!(
+	car_s_222 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_222_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_REAR34.jpg")
+	car_s_222.photo.attach(io: car_s_222_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_REAR34.jpg")
+
+	car_s_223 = Product.create!(
+		name: "Model S",
+		price: 86490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car223_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
-	car223.photo.attach(io: car223_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_223_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_223.photo.attach(io: car_s_223_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car224 = Product.create!(
+	car_s_224 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car224_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_INTERIOR.jpg")
-	car224.photo.attach(io: car224_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_224_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_224.photo.attach(io: car_s_224_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_false_INTERIOR.jpg")
 
-	car222 = Product.create!(
+	car_s_225 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car222_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_FRONT34.jpg")
-	car222.photo.attach(io: car222_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_225_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_225.photo.attach(io: car_s_225_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_FRONT34.jpg")
 
-	car223 = Product.create!(
+	car_s_226 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car223_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_REAR34.jpg")
-	car223.photo.attach(io: car223_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_REAR34.jpg")
-
-	car224 = Product.create!(
-		name: "Model S",
-		price: 96490,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car224_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_SIDE.jpg")
-	car224.photo.attach(io: car224_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_226_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_226.photo.attach(io: car_s_226_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_SIDE.jpg")
 
-	car225 = Product.create!(
+	car_s_227 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_227_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_REAR34.jpg")
+	car_s_227.photo.attach(io: car_s_227_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_REAR34.jpg")
+
+	car_s_228 = Product.create!(
+		name: "Model S",
+		price: 96490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car225_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
-	car225.photo.attach(io: car225_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_228_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_228.photo.attach(io: car_s_228_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car226 = Product.create!(
+	car_s_229 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car226_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_INTERIOR.jpg")
-	car226.photo.attach(io: car226_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_229_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_229.photo.attach(io: car_s_229_file, filename: "model_s_$MTS10_$PPSB_$WS10_$IWW00_true_INTERIOR.jpg")
 
-	car230 = Product.create!(
+	car_s_230 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car230_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_FRONT34.jpg")
-	car230.photo.attach(io: car230_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_230_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_230.photo.attach(io: car_s_230_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_FRONT34.jpg")
 
-	car231 = Product.create!(
+	car_s_231 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car231_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_REAR34.jpg")
-	car231.photo.attach(io: car231_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_REAR34.jpg")
-
-	car232 = Product.create!(
-		name: "Model S",
-		price: 86490,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car232_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_SIDE.jpg")
-	car232.photo.attach(io: car232_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_231_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_231.photo.attach(io: car_s_231_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_SIDE.jpg")
 
-	car233 = Product.create!(
+	car_s_232 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_232_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_REAR34.jpg")
+	car_s_232.photo.attach(io: car_s_232_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_REAR34.jpg")
+
+	car_s_233 = Product.create!(
+		name: "Model S",
+		price: 86490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car233_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
-	car233.photo.attach(io: car233_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_233_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_233.photo.attach(io: car_s_233_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car234 = Product.create!(
+	car_s_234 = Product.create!(
 		name: "Model S",
 		price: 86490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car234_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_INTERIOR.jpg")
-	car234.photo.attach(io: car234_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_234_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_234.photo.attach(io: car_s_234_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_false_INTERIOR.jpg")
 
-	car232 = Product.create!(
+	car_s_235 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car232_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_FRONT34.jpg")
-	car232.photo.attach(io: car232_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_235_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_235.photo.attach(io: car_s_235_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_FRONT34.jpg")
 
-	car233 = Product.create!(
+	car_s_236 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car233_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_REAR34.jpg")
-	car233.photo.attach(io: car233_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_REAR34.jpg")
-
-	car234 = Product.create!(
-		name: "Model S",
-		price: 96490,
-		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car234_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_SIDE.jpg")
-	car234.photo.attach(io: car234_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_236_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_236.photo.attach(io: car_s_236_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_SIDE.jpg")
 
-	car235 = Product.create!(
+	car_s_237 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_237_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_REAR34.jpg")
+	car_s_237.photo.attach(io: car_s_237_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_REAR34.jpg")
+
+	car_s_238 = Product.create!(
+		name: "Model S",
+		price: 96490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car235_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
-	car235.photo.attach(io: car235_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_238_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_238.photo.attach(io: car_s_238_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car236 = Product.create!(
+	car_s_239 = Product.create!(
 		name: "Model S",
 		price: 96490,
 		exterior: "Deep Blue Metallic",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car236_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_INTERIOR.jpg")
-	car236.photo.attach(io: car236_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_239_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPSB_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_239.photo.attach(io: car_s_239_file, filename: "model_s_$MTS10_$PPSB_$WS10_$ICW00_true_INTERIOR.jpg")
 
-	car240 = Product.create!(
+	car_s_240 = Product.create!(
 		name: "Model S",
 		price: 80990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car240_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_FRONT34.jpg")
-	car240.photo.attach(io: car240_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_240_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_FRONT34.jpg")
+	car_s_240.photo.attach(io: car_s_240_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_FRONT34.jpg")
 
-	car241 = Product.create!(
+	car_s_241 = Product.create!(
 		name: "Model S",
 		price: 80990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car241_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_REAR34.jpg")
-	car241.photo.attach(io: car241_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_241_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_241.photo.attach(io: car_s_241_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_SIDE.jpg")
 
-	car242 = Product.create!(
+	car_s_242 = Product.create!(
 		name: "Model S",
 		price: 80990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car242_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_SIDE.jpg")
-	car242.photo.attach(io: car242_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_SIDE.jpg")
+	car_s_242_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_REAR34.jpg")
+	car_s_242.photo.attach(io: car_s_242_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_REAR34.jpg")
 
-	car243 = Product.create!(
+	car_s_243 = Product.create!(
 		name: "Model S",
 		price: 80990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car243_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
-	car243.photo.attach(io: car243_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_243_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_243.photo.attach(io: car_s_243_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car244 = Product.create!(
+	car_s_244 = Product.create!(
 		name: "Model S",
 		price: 80990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car244_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_INTERIOR.jpg")
-	car244.photo.attach(io: car244_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_244_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_false_INTERIOR.jpg")
+	car_s_244.photo.attach(io: car_s_244_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_false_INTERIOR.jpg")
 
-	car242 = Product.create!(
+	car_s_245 = Product.create!(
 		name: "Model S",
 		price: 90990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car242_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_FRONT34.jpg")
-	car242.photo.attach(io: car242_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_245_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_FRONT34.jpg")
+	car_s_245.photo.attach(io: car_s_245_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_FRONT34.jpg")
 
-	car243 = Product.create!(
+	car_s_246 = Product.create!(
 		name: "Model S",
 		price: 90990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "rear",
+		view: "side",
 	)
-	car243_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_REAR34.jpg")
-	car243.photo.attach(io: car243_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_246_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_246.photo.attach(io: car_s_246_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_SIDE.jpg")
 
-	car244 = Product.create!(
+	car_s_247 = Product.create!(
 		name: "Model S",
 		price: 90990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
-		view: "side",
+		view: "rear",
 	)
-	car244_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_SIDE.jpg")
-	car244.photo.attach(io: car244_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_SIDE.jpg")
+	car_s_247_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_REAR34.jpg")
+	car_s_247.photo.attach(io: car_s_247_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_REAR34.jpg")
 
-	car245 = Product.create!(
+	car_s_248 = Product.create!(
 		name: "Model S",
 		price: 90990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car245_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
-	car245.photo.attach(io: car245_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_248_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_248.photo.attach(io: car_s_248_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car246 = Product.create!(
+	car_s_249 = Product.create!(
 		name: "Model S",
 		price: 90990,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "All Black",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car246_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_INTERIOR.jpg")
-	car246.photo.attach(io: car246_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_249_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IBE00_true_INTERIOR.jpg")
+	car_s_249.photo.attach(io: car_s_249_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IBE00_true_INTERIOR.jpg")
 
-	car250 = Product.create!(
+	car_s_250 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car250_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_FRONT34.jpg")
-	car250.photo.attach(io: car250_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_250_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_FRONT34.jpg")
+	car_s_250.photo.attach(io: car_s_250_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_FRONT34.jpg")
 
-	car251 = Product.create!(
+	car_s_251 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car251_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_REAR34.jpg")
-	car251.photo.attach(io: car251_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_REAR34.jpg")
-
-	car252 = Product.create!(
-		name: "Model S",
-		price: 82990,
-		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car252_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_SIDE.jpg")
-	car252.photo.attach(io: car252_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_251_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_SIDE.jpg")
+	car_s_251.photo.attach(io: car_s_251_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_SIDE.jpg")
 
-	car253 = Product.create!(
+	car_s_252 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_252_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_REAR34.jpg")
+	car_s_252.photo.attach(io: car_s_252_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_REAR34.jpg")
+
+	car_s_253 = Product.create!(
+		name: "Model S",
+		price: 82990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car253_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
-	car253.photo.attach(io: car253_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_253_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_253.photo.attach(io: car_s_253_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car254 = Product.create!(
+	car_s_254 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car254_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_INTERIOR.jpg")
-	car254.photo.attach(io: car254_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_254_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_false_INTERIOR.jpg")
+	car_s_254.photo.attach(io: car_s_254_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_false_INTERIOR.jpg")
 
-	car252 = Product.create!(
+	car_s_255 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car252_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_FRONT34.jpg")
-	car252.photo.attach(io: car252_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_255_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_FRONT34.jpg")
+	car_s_255.photo.attach(io: car_s_255_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_FRONT34.jpg")
 
-	car253 = Product.create!(
+	car_s_256 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car253_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_REAR34.jpg")
-	car253.photo.attach(io: car253_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_REAR34.jpg")
-
-	car254 = Product.create!(
-		name: "Model S",
-		price: 92990,
-		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car254_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_SIDE.jpg")
-	car254.photo.attach(io: car254_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_256_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_SIDE.jpg")
+	car_s_256.photo.attach(io: car_s_256_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_SIDE.jpg")
 
-	car255 = Product.create!(
+	car_s_257 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_257_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_REAR34.jpg")
+	car_s_257.photo.attach(io: car_s_257_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_REAR34.jpg")
+
+	car_s_258 = Product.create!(
+		name: "Model S",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car255_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
-	car255.photo.attach(io: car255_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_258_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_258.photo.attach(io: car_s_258_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car256 = Product.create!(
+	car_s_259 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Black and White",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car256_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_INTERIOR.jpg")
-	car256.photo.attach(io: car256_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_259_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$IWW00_true_INTERIOR.jpg")
+	car_s_259.photo.attach(io: car_s_259_file, filename: "model_s_$MTS10_$PPMR_$WS90_$IWW00_true_INTERIOR.jpg")
 
-	car260 = Product.create!(
+	car_s_260 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car260_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_FRONT34.jpg")
-	car260.photo.attach(io: car260_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_260_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_FRONT34.jpg")
+	car_s_260.photo.attach(io: car_s_260_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_FRONT34.jpg")
 
-	car261 = Product.create!(
+	car_s_261 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car261_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_REAR34.jpg")
-	car261.photo.attach(io: car261_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_REAR34.jpg")
-
-	car262 = Product.create!(
-		name: "Model S",
-		price: 82990,
-		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car262_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_SIDE.jpg")
-	car262.photo.attach(io: car262_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_261_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_SIDE.jpg")
+	car_s_261.photo.attach(io: car_s_261_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_SIDE.jpg")
 
-	car263 = Product.create!(
+	car_s_262 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_262_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_REAR34.jpg")
+	car_s_262.photo.attach(io: car_s_262_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_REAR34.jpg")
+
+	car_s_263 = Product.create!(
+		name: "Model S",
+		price: 82990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car263_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
-	car263.photo.attach(io: car263_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_263_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_263.photo.attach(io: car_s_263_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car264 = Product.create!(
+	car_s_264 = Product.create!(
 		name: "Model S",
 		price: 82990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car264_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_INTERIOR.jpg")
-	car264.photo.attach(io: car264_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_264_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_false_INTERIOR.jpg")
+	car_s_264.photo.attach(io: car_s_264_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_false_INTERIOR.jpg")
 
-	car262 = Product.create!(
+	car_s_265 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car262_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_FRONT34.jpg")
-	car262.photo.attach(io: car262_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_265_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_FRONT34.jpg")
+	car_s_265.photo.attach(io: car_s_265_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_FRONT34.jpg")
 
-	car263 = Product.create!(
+	car_s_266 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car263_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_REAR34.jpg")
-	car263.photo.attach(io: car263_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_REAR34.jpg")
-
-	car264 = Product.create!(
-		name: "Model S",
-		price: 92990,
-		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car264_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_SIDE.jpg")
-	car264.photo.attach(io: car264_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_266_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_SIDE.jpg")
+	car_s_266.photo.attach(io: car_s_266_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_SIDE.jpg")
 
-	car265 = Product.create!(
+	car_s_267 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_267_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_REAR34.jpg")
+	car_s_267.photo.attach(io: car_s_267_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_REAR34.jpg")
+
+	car_s_268 = Product.create!(
+		name: "Model S",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car265_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
-	car265.photo.attach(io: car265_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_268_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_268.photo.attach(io: car_s_268_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car266 = Product.create!(
+	car_s_269 = Product.create!(
 		name: "Model S",
 		price: 92990,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "19\"Tempest Wheels",
+		interior: "Cream",
+		wheel_type: "19\" Tempest Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car266_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_INTERIOR.jpg")
-	car266.photo.attach(io: car266_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_269_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS90_$ICW00_true_INTERIOR.jpg")
+	car_s_269.photo.attach(io: car_s_269_file, filename: "model_s_$MTS10_$PPMR_$WS90_$ICW00_true_INTERIOR.jpg")
 
-	car270 = Product.create!(
+	car_s_270 = Product.create!(
 		name: "Model S",
 		price: 85490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car270_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_FRONT34.jpg")
-	car270.photo.attach(io: car270_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_270_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_FRONT34.jpg")
+	car_s_270.photo.attach(io: car_s_270_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_FRONT34.jpg")
 
-	car271 = Product.create!(
+	car_s_271 = Product.create!(
 		name: "Model S",
 		price: 85490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "rear",
+		view: "side",
 	)
-	car271_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_REAR34.jpg")
-	car271.photo.attach(io: car271_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_271_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_271.photo.attach(io: car_s_271_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_SIDE.jpg")
 
-	car272 = Product.create!(
+	car_s_272 = Product.create!(
 		name: "Model S",
 		price: 85490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
-		view: "side",
+		view: "rear",
 	)
-	car272_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_SIDE.jpg")
-	car272.photo.attach(io: car272_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_SIDE.jpg")
+	car_s_272_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_REAR34.jpg")
+	car_s_272.photo.attach(io: car_s_272_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_REAR34.jpg")
 
-	car273 = Product.create!(
+	car_s_273 = Product.create!(
 		name: "Model S",
 		price: 85490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car273_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
-	car273.photo.attach(io: car273_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_273_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
+	car_s_273.photo.attach(io: car_s_273_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_RIMCLOSEUP.jpg")
 
-	car274 = Product.create!(
+	car_s_274 = Product.create!(
 		name: "Model S",
 		price: 85490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car274_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_INTERIOR.jpg")
-	car274.photo.attach(io: car274_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_274_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_false_INTERIOR.jpg")
+	car_s_274.photo.attach(io: car_s_274_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_false_INTERIOR.jpg")
 
-	car272 = Product.create!(
+	car_s_275 = Product.create!(
 		name: "Model S",
 		price: 95490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car272_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_FRONT34.jpg")
-	car272.photo.attach(io: car272_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_275_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_FRONT34.jpg")
+	car_s_275.photo.attach(io: car_s_275_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_FRONT34.jpg")
 
-	car273 = Product.create!(
+	car_s_276 = Product.create!(
 		name: "Model S",
 		price: 95490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car273_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_REAR34.jpg")
-	car273.photo.attach(io: car273_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_REAR34.jpg")
-
-	car274 = Product.create!(
-		name: "Model S",
-		price: 95490,
-		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car274_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_SIDE.jpg")
-	car274.photo.attach(io: car274_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_276_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_SIDE.jpg")
+	car_s_276.photo.attach(io: car_s_276_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_SIDE.jpg")
 
-	car275 = Product.create!(
+	car_s_277 = Product.create!(
 		name: "Model S",
 		price: 95490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_277_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_REAR34.jpg")
+	car_s_277.photo.attach(io: car_s_277_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_REAR34.jpg")
+
+	car_s_278 = Product.create!(
+		name: "Model S",
+		price: 95490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car275_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
-	car275.photo.attach(io: car275_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_278_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
+	car_s_278.photo.attach(io: car_s_278_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_RIMCLOSEUP.jpg")
 
-	car276 = Product.create!(
+	car_s_279 = Product.create!(
 		name: "Model S",
 		price: 95490,
 		exterior: "Red Multi-Coat",
-		interior_color: "All Black",
-		interior_name: "Ebony Decor",
+		interior: "All Black",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car276_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_INTERIOR.jpg")
-	car276.photo.attach(io: car276_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_279_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IBE00_true_INTERIOR.jpg")
+	car_s_279.photo.attach(io: car_s_279_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IBE00_true_INTERIOR.jpg")
 
-	car280 = Product.create!(
+	car_s_280 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car280_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_FRONT34.jpg")
-	car280.photo.attach(io: car280_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_280_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_FRONT34.jpg")
+	car_s_280.photo.attach(io: car_s_280_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_FRONT34.jpg")
 
-	car281 = Product.create!(
+	car_s_281 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car281_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_REAR34.jpg")
-	car281.photo.attach(io: car281_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_REAR34.jpg")
-
-	car282 = Product.create!(
-		name: "Model S",
-		price: 87490,
-		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car282_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_SIDE.jpg")
-	car282.photo.attach(io: car282_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_281_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_SIDE.jpg")
+	car_s_281.photo.attach(io: car_s_281_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_SIDE.jpg")
 
-	car283 = Product.create!(
+	car_s_282 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_282_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_REAR34.jpg")
+	car_s_282.photo.attach(io: car_s_282_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_REAR34.jpg")
+
+	car_s_283 = Product.create!(
+		name: "Model S",
+		price: 87490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car283_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
-	car283.photo.attach(io: car283_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_283_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
+	car_s_283.photo.attach(io: car_s_283_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_RIMCLOSEUP.jpg")
 
-	car284 = Product.create!(
+	car_s_284 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car284_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_INTERIOR.jpg")
-	car284.photo.attach(io: car284_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_284_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_false_INTERIOR.jpg")
+	car_s_284.photo.attach(io: car_s_284_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_false_INTERIOR.jpg")
 
-	car282 = Product.create!(
+	car_s_285 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car282_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_FRONT34.jpg")
-	car282.photo.attach(io: car282_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_285_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_FRONT34.jpg")
+	car_s_285.photo.attach(io: car_s_285_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_FRONT34.jpg")
 
-	car283 = Product.create!(
+	car_s_286 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car283_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_REAR34.jpg")
-	car283.photo.attach(io: car283_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_REAR34.jpg")
-
-	car284 = Product.create!(
-		name: "Model S",
-		price: 97490,
-		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car284_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_SIDE.jpg")
-	car284.photo.attach(io: car284_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_286_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_SIDE.jpg")
+	car_s_286.photo.attach(io: car_s_286_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_SIDE.jpg")
 
-	car285 = Product.create!(
+	car_s_287 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_287_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_REAR34.jpg")
+	car_s_287.photo.attach(io: car_s_287_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_REAR34.jpg")
+
+	car_s_288 = Product.create!(
+		name: "Model S",
+		price: 97490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car285_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
-	car285.photo.attach(io: car285_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_288_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
+	car_s_288.photo.attach(io: car_s_288_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_RIMCLOSEUP.jpg")
 
-	car286 = Product.create!(
+	car_s_289 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Black and White",
-		interior_name: "Walnut Decor",
+		interior: "Black and White",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car286_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_INTERIOR.jpg")
-	car286.photo.attach(io: car286_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_289_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$IWW00_true_INTERIOR.jpg")
+	car_s_289.photo.attach(io: car_s_289_file, filename: "model_s_$MTS10_$PPMR_$WS10_$IWW00_true_INTERIOR.jpg")
 
-	car290 = Product.create!(
+	car_s_290 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "front",
 	)
-	car290_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_FRONT34.jpg")
-	car290.photo.attach(io: car290_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_290_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_FRONT34.jpg")
+	car_s_290.photo.attach(io: car_s_290_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_FRONT34.jpg")
 
-	car291 = Product.create!(
+	car_s_291 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: false,
-		view: "rear",
-	)
-	car291_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_REAR34.jpg")
-	car291.photo.attach(io: car291_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_REAR34.jpg")
-
-	car292 = Product.create!(
-		name: "Model S",
-		price: 87490,
-		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "side",
 	)
-	car292_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_SIDE.jpg")
-	car292.photo.attach(io: car292_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_291_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_SIDE.jpg")
+	car_s_291.photo.attach(io: car_s_291_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_SIDE.jpg")
 
-	car293 = Product.create!(
+	car_s_292 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_s_292_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_REAR34.jpg")
+	car_s_292.photo.attach(io: car_s_292_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_REAR34.jpg")
+
+	car_s_293 = Product.create!(
+		name: "Model S",
+		price: 87490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "rim",
 	)
-	car293_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
-	car293.photo.attach(io: car293_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_293_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
+	car_s_293.photo.attach(io: car_s_293_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_RIMCLOSEUP.jpg")
 
-	car294 = Product.create!(
+	car_s_294 = Product.create!(
 		name: "Model S",
 		price: 87490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: false,
 		view: "interior",
 	)
-	car294_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_INTERIOR.jpg")
-	car294.photo.attach(io: car294_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_294_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_false_INTERIOR.jpg")
+	car_s_294.photo.attach(io: car_s_294_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_false_INTERIOR.jpg")
 
-	car292 = Product.create!(
+	car_s_295 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "front",
 	)
-	car292_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_FRONT34.jpg")
-	car292.photo.attach(io: car292_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_295_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_FRONT34.jpg")
+	car_s_295.photo.attach(io: car_s_295_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_FRONT34.jpg")
 
-	car293 = Product.create!(
+	car_s_296 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
-		wheel_type: "21\" Arachnid Wheels",
-		self_driving: true,
-		view: "rear",
-	)
-	car293_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_REAR34.jpg")
-	car293.photo.attach(io: car293_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_REAR34.jpg")
-
-	car294 = Product.create!(
-		name: "Model S",
-		price: 97490,
-		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "side",
 	)
-	car294_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_SIDE.jpg")
-	car294.photo.attach(io: car294_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_296_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_SIDE.jpg")
+	car_s_296.photo.attach(io: car_s_296_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_SIDE.jpg")
 
-	car295 = Product.create!(
+	car_s_297 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
+		wheel_type: "21\" Arachnid Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_s_297_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_REAR34.jpg")
+	car_s_297.photo.attach(io: car_s_297_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_REAR34.jpg")
+
+	car_s_298 = Product.create!(
+		name: "Model S",
+		price: 97490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "rim",
 	)
-	car295_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
-	car295.photo.attach(io: car295_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_298_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
+	car_s_298.photo.attach(io: car_s_298_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_RIMCLOSEUP.jpg")
 
-	car296 = Product.create!(
+	car_s_299 = Product.create!(
 		name: "Model S",
 		price: 97490,
 		exterior: "Red Multi-Coat",
-		interior_color: "Cream",
-		interior_name: "Walnut Decor",
+		interior: "Cream",
 		wheel_type: "21\" Arachnid Wheels",
 		self_driving: true,
 		view: "interior",
 	)
-	car296_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_INTERIOR.jpg")
-	car296.photo.attach(io: car296_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_299_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/models/model_s_$MTS10_$PPMR_$WS10_$ICW00_true_INTERIOR.jpg")
+	car_s_299.photo.attach(io: car_s_299_file, filename: "model_s_$MTS10_$PPMR_$WS10_$ICW00_true_INTERIOR.jpg")
 
+	puts "Creating Model X..."
+
+	car_x_0 = Product.create!(
+		name: "Model X",
+		price: 88490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_0_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_false_FRONT34.jpg")
+	car_x_0.photo.attach(io: car_x_0_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_false_FRONT34.jpg")
+
+	car_x_1 = Product.create!(
+		name: "Model X",
+		price: 88490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_1_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_false_SIDE.jpg")
+	car_x_1.photo.attach(io: car_x_1_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_false_SIDE.jpg")
+
+	car_x_2 = Product.create!(
+		name: "Model X",
+		price: 88490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_2_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_false_REAR34.jpg")
+	car_x_2.photo.attach(io: car_x_2_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_false_REAR34.jpg")
+
+	car_x_3 = Product.create!(
+		name: "Model X",
+		price: 88490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_3_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_3.photo.attach(io: car_x_3_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_4 = Product.create!(
+		name: "Model X",
+		price: 88490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_4_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_false_INTERIOR.jpg")
+	car_x_4.photo.attach(io: car_x_4_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_false_INTERIOR.jpg")
+
+	car_x_5 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_5_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_true_FRONT34.jpg")
+	car_x_5.photo.attach(io: car_x_5_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_true_FRONT34.jpg")
+
+	car_x_6 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_6_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_true_SIDE.jpg")
+	car_x_6.photo.attach(io: car_x_6_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_true_SIDE.jpg")
+
+	car_x_7 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_7_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_true_REAR34.jpg")
+	car_x_7.photo.attach(io: car_x_7_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_true_REAR34.jpg")
+
+	car_x_8 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_8_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_8.photo.attach(io: car_x_8_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_9 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_9_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IBE00_true_INTERIOR.jpg")
+	car_x_9.photo.attach(io: car_x_9_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IBE00_true_INTERIOR.jpg")
+
+	car_x_10 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_10_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_false_FRONT34.jpg")
+	car_x_10.photo.attach(io: car_x_10_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_false_FRONT34.jpg")
+
+	car_x_11 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_11_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_false_SIDE.jpg")
+	car_x_11.photo.attach(io: car_x_11_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_false_SIDE.jpg")
+
+	car_x_12 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_12_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_false_REAR34.jpg")
+	car_x_12.photo.attach(io: car_x_12_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_false_REAR34.jpg")
+
+	car_x_13 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_13_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_13.photo.attach(io: car_x_13_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_14 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_14_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_false_INTERIOR.jpg")
+	car_x_14.photo.attach(io: car_x_14_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_false_INTERIOR.jpg")
+
+	car_x_15 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_15_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_true_FRONT34.jpg")
+	car_x_15.photo.attach(io: car_x_15_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_true_FRONT34.jpg")
+
+	car_x_16 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_16_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_true_SIDE.jpg")
+	car_x_16.photo.attach(io: car_x_16_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_true_SIDE.jpg")
+
+	car_x_17 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_17_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_true_REAR34.jpg")
+	car_x_17.photo.attach(io: car_x_17_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_true_REAR34.jpg")
+
+	car_x_18 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_18_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_18.photo.attach(io: car_x_18_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_19 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_19_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$IWW00_true_INTERIOR.jpg")
+	car_x_19.photo.attach(io: car_x_19_file, filename: "model_x_$MTX10_$PPSW_$WX00_$IWW00_true_INTERIOR.jpg")
+
+	car_x_20 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_20_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_false_FRONT34.jpg")
+	car_x_20.photo.attach(io: car_x_20_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_false_FRONT34.jpg")
+
+	car_x_21 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_21_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_false_SIDE.jpg")
+	car_x_21.photo.attach(io: car_x_21_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_false_SIDE.jpg")
+
+	car_x_22 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_22_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_false_REAR34.jpg")
+	car_x_22.photo.attach(io: car_x_22_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_false_REAR34.jpg")
+
+	car_x_23 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_23_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_23.photo.attach(io: car_x_23_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_24 = Product.create!(
+		name: "Model X",
+		price: 90490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_24_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_false_INTERIOR.jpg")
+	car_x_24.photo.attach(io: car_x_24_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_false_INTERIOR.jpg")
+
+	car_x_25 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_25_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_true_FRONT34.jpg")
+	car_x_25.photo.attach(io: car_x_25_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_true_FRONT34.jpg")
+
+	car_x_26 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_26_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_true_SIDE.jpg")
+	car_x_26.photo.attach(io: car_x_26_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_true_SIDE.jpg")
+
+	car_x_27 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_27_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_true_REAR34.jpg")
+	car_x_27.photo.attach(io: car_x_27_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_true_REAR34.jpg")
+
+	car_x_28 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_28_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_28.photo.attach(io: car_x_28_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_29 = Product.create!(
+		name: "Model X",
+		price: 100490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_29_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX00_$ICW00_true_INTERIOR.jpg")
+	car_x_29.photo.attach(io: car_x_29_file, filename: "model_x_$MTX10_$PPSW_$WX00_$ICW00_true_INTERIOR.jpg")
+
+	car_x_30 = Product.create!(
+		name: "Model X",
+		price: 93990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_30_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_false_FRONT34.jpg")
+	car_x_30.photo.attach(io: car_x_30_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_false_FRONT34.jpg")
+
+	car_x_31 = Product.create!(
+		name: "Model X",
+		price: 93990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_31_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_false_SIDE.jpg")
+	car_x_31.photo.attach(io: car_x_31_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_false_SIDE.jpg")
+
+	car_x_32 = Product.create!(
+		name: "Model X",
+		price: 93990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_32_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_false_REAR34.jpg")
+	car_x_32.photo.attach(io: car_x_32_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_false_REAR34.jpg")
+
+	car_x_33 = Product.create!(
+		name: "Model X",
+		price: 93990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_33_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_33.photo.attach(io: car_x_33_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_34 = Product.create!(
+		name: "Model X",
+		price: 93990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_34_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_false_INTERIOR.jpg")
+	car_x_34.photo.attach(io: car_x_34_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_false_INTERIOR.jpg")
+
+	car_x_35 = Product.create!(
+		name: "Model X",
+		price: 103990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_35_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_true_FRONT34.jpg")
+	car_x_35.photo.attach(io: car_x_35_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_true_FRONT34.jpg")
+
+	car_x_36 = Product.create!(
+		name: "Model X",
+		price: 103990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_36_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_true_SIDE.jpg")
+	car_x_36.photo.attach(io: car_x_36_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_true_SIDE.jpg")
+
+	car_x_37 = Product.create!(
+		name: "Model X",
+		price: 103990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_37_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_true_REAR34.jpg")
+	car_x_37.photo.attach(io: car_x_37_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_true_REAR34.jpg")
+
+	car_x_38 = Product.create!(
+		name: "Model X",
+		price: 103990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_38_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_38.photo.attach(io: car_x_38_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_39 = Product.create!(
+		name: "Model X",
+		price: 103990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_39_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IBE00_true_INTERIOR.jpg")
+	car_x_39.photo.attach(io: car_x_39_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IBE00_true_INTERIOR.jpg")
+
+	car_x_40 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_40_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_false_FRONT34.jpg")
+	car_x_40.photo.attach(io: car_x_40_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_false_FRONT34.jpg")
+
+	car_x_41 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_41_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_false_SIDE.jpg")
+	car_x_41.photo.attach(io: car_x_41_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_false_SIDE.jpg")
+
+	car_x_42 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_42_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_false_REAR34.jpg")
+	car_x_42.photo.attach(io: car_x_42_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_false_REAR34.jpg")
+
+	car_x_43 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_43_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_43.photo.attach(io: car_x_43_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_44 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_44_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_false_INTERIOR.jpg")
+	car_x_44.photo.attach(io: car_x_44_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_false_INTERIOR.jpg")
+
+	car_x_45 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_45_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_true_FRONT34.jpg")
+	car_x_45.photo.attach(io: car_x_45_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_true_FRONT34.jpg")
+
+	car_x_46 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_46_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_true_SIDE.jpg")
+	car_x_46.photo.attach(io: car_x_46_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_true_SIDE.jpg")
+
+	car_x_47 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_47_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_true_REAR34.jpg")
+	car_x_47.photo.attach(io: car_x_47_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_true_REAR34.jpg")
+
+	car_x_48 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_48_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_48.photo.attach(io: car_x_48_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_49 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_49_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$IWW00_true_INTERIOR.jpg")
+	car_x_49.photo.attach(io: car_x_49_file, filename: "model_x_$MTX10_$PPSW_$WX20_$IWW00_true_INTERIOR.jpg")
+
+	car_x_50 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_50_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_false_FRONT34.jpg")
+	car_x_50.photo.attach(io: car_x_50_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_false_FRONT34.jpg")
+
+	car_x_51 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_51_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_false_SIDE.jpg")
+	car_x_51.photo.attach(io: car_x_51_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_false_SIDE.jpg")
+
+	car_x_52 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_52_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_false_REAR34.jpg")
+	car_x_52.photo.attach(io: car_x_52_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_false_REAR34.jpg")
+
+	car_x_53 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_53_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_53.photo.attach(io: car_x_53_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_54 = Product.create!(
+		name: "Model X",
+		price: 95990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_54_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_false_INTERIOR.jpg")
+	car_x_54.photo.attach(io: car_x_54_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_false_INTERIOR.jpg")
+
+	car_x_55 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_55_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_true_FRONT34.jpg")
+	car_x_55.photo.attach(io: car_x_55_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_true_FRONT34.jpg")
+
+	car_x_56 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_56_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_true_SIDE.jpg")
+	car_x_56.photo.attach(io: car_x_56_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_true_SIDE.jpg")
+
+	car_x_57 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_57_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_true_REAR34.jpg")
+	car_x_57.photo.attach(io: car_x_57_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_true_REAR34.jpg")
+
+	car_x_58 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_58_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_58.photo.attach(io: car_x_58_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_59 = Product.create!(
+		name: "Model X",
+		price: 105990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_59_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSW_$WX20_$ICW00_true_INTERIOR.jpg")
+	car_x_59.photo.attach(io: car_x_59_file, filename: "model_x_$MTX10_$PPSW_$WX20_$ICW00_true_INTERIOR.jpg")
+
+	car_x_60 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_60_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_false_FRONT34.jpg")
+	car_x_60.photo.attach(io: car_x_60_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_false_FRONT34.jpg")
+
+	car_x_61 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_61_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_false_SIDE.jpg")
+	car_x_61.photo.attach(io: car_x_61_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_false_SIDE.jpg")
+
+	car_x_62 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_62_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_false_REAR34.jpg")
+	car_x_62.photo.attach(io: car_x_62_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_false_REAR34.jpg")
+
+	car_x_63 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_63_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_63.photo.attach(io: car_x_63_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_64 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_64_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_false_INTERIOR.jpg")
+	car_x_64.photo.attach(io: car_x_64_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_false_INTERIOR.jpg")
+
+	car_x_65 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_65_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_true_FRONT34.jpg")
+	car_x_65.photo.attach(io: car_x_65_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_true_FRONT34.jpg")
+
+	car_x_66 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_66_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_true_SIDE.jpg")
+	car_x_66.photo.attach(io: car_x_66_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_true_SIDE.jpg")
+
+	car_x_67 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_67_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_true_REAR34.jpg")
+	car_x_67.photo.attach(io: car_x_67_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_true_REAR34.jpg")
+
+	car_x_68 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_68_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_68.photo.attach(io: car_x_68_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_69 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_69_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IBE00_true_INTERIOR.jpg")
+	car_x_69.photo.attach(io: car_x_69_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IBE00_true_INTERIOR.jpg")
+
+	car_x_70 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_70_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_false_FRONT34.jpg")
+	car_x_70.photo.attach(io: car_x_70_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_false_FRONT34.jpg")
+
+	car_x_71 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_71_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_false_SIDE.jpg")
+	car_x_71.photo.attach(io: car_x_71_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_false_SIDE.jpg")
+
+	car_x_72 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_72_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_false_REAR34.jpg")
+	car_x_72.photo.attach(io: car_x_72_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_false_REAR34.jpg")
+
+	car_x_73 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_73_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_73.photo.attach(io: car_x_73_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_74 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_74_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_false_INTERIOR.jpg")
+	car_x_74.photo.attach(io: car_x_74_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_false_INTERIOR.jpg")
+
+	car_x_75 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_75_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_true_FRONT34.jpg")
+	car_x_75.photo.attach(io: car_x_75_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_true_FRONT34.jpg")
+
+	car_x_76 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_76_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_true_SIDE.jpg")
+	car_x_76.photo.attach(io: car_x_76_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_true_SIDE.jpg")
+
+	car_x_77 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_77_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_true_REAR34.jpg")
+	car_x_77.photo.attach(io: car_x_77_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_true_REAR34.jpg")
+
+	car_x_78 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_78_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_78.photo.attach(io: car_x_78_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_79 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_79_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$IWW00_true_INTERIOR.jpg")
+	car_x_79.photo.attach(io: car_x_79_file, filename: "model_x_$MTX10_$PBSB_$WX00_$IWW00_true_INTERIOR.jpg")
+
+	car_x_80 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_80_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_false_FRONT34.jpg")
+	car_x_80.photo.attach(io: car_x_80_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_false_FRONT34.jpg")
+
+	car_x_81 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_81_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_false_SIDE.jpg")
+	car_x_81.photo.attach(io: car_x_81_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_false_SIDE.jpg")
+
+	car_x_82 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_82_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_false_REAR34.jpg")
+	car_x_82.photo.attach(io: car_x_82_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_false_REAR34.jpg")
+
+	car_x_83 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_83_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_83.photo.attach(io: car_x_83_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_84 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_84_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_false_INTERIOR.jpg")
+	car_x_84.photo.attach(io: car_x_84_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_false_INTERIOR.jpg")
+
+	car_x_85 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_85_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_true_FRONT34.jpg")
+	car_x_85.photo.attach(io: car_x_85_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_true_FRONT34.jpg")
+
+	car_x_86 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_86_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_true_SIDE.jpg")
+	car_x_86.photo.attach(io: car_x_86_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_true_SIDE.jpg")
+
+	car_x_87 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_87_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_true_REAR34.jpg")
+	car_x_87.photo.attach(io: car_x_87_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_true_REAR34.jpg")
+
+	car_x_88 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_88_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_88.photo.attach(io: car_x_88_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_89 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_89_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX00_$ICW00_true_INTERIOR.jpg")
+	car_x_89.photo.attach(io: car_x_89_file, filename: "model_x_$MTX10_$PBSB_$WX00_$ICW00_true_INTERIOR.jpg")
+
+	car_x_90 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_90_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_false_FRONT34.jpg")
+	car_x_90.photo.attach(io: car_x_90_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_false_FRONT34.jpg")
+
+	car_x_91 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_91_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_false_SIDE.jpg")
+	car_x_91.photo.attach(io: car_x_91_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_false_SIDE.jpg")
+
+	car_x_92 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_92_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_false_REAR34.jpg")
+	car_x_92.photo.attach(io: car_x_92_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_false_REAR34.jpg")
+
+	car_x_93 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_93_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_93.photo.attach(io: car_x_93_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_94 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_94_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_false_INTERIOR.jpg")
+	car_x_94.photo.attach(io: car_x_94_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_false_INTERIOR.jpg")
+
+	car_x_95 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_95_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_true_FRONT34.jpg")
+	car_x_95.photo.attach(io: car_x_95_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_true_FRONT34.jpg")
+
+	car_x_96 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_96_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_true_SIDE.jpg")
+	car_x_96.photo.attach(io: car_x_96_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_true_SIDE.jpg")
+
+	car_x_97 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_97_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_true_REAR34.jpg")
+	car_x_97.photo.attach(io: car_x_97_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_true_REAR34.jpg")
+
+	car_x_98 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_98_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_98.photo.attach(io: car_x_98_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_99 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_99_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IBE00_true_INTERIOR.jpg")
+	car_x_99.photo.attach(io: car_x_99_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IBE00_true_INTERIOR.jpg")
+
+	car_x_100 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_100_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_false_FRONT34.jpg")
+	car_x_100.photo.attach(io: car_x_100_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_false_FRONT34.jpg")
+
+	puts "Creating Model X_1..."
+
+	car_x_101 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_101_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_false_SIDE.jpg")
+	car_x_101.photo.attach(io: car_x_101_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_false_SIDE.jpg")
+
+	car_x_102 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_102_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_false_REAR34.jpg")
+	car_x_102.photo.attach(io: car_x_102_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_false_REAR34.jpg")
+
+	car_x_103 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_103_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_103.photo.attach(io: car_x_103_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_104 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_104_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_false_INTERIOR.jpg")
+	car_x_104.photo.attach(io: car_x_104_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_false_INTERIOR.jpg")
+
+	car_x_105 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_105_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_true_FRONT34.jpg")
+	car_x_105.photo.attach(io: car_x_105_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_true_FRONT34.jpg")
+
+	car_x_106 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_106_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_true_SIDE.jpg")
+	car_x_106.photo.attach(io: car_x_106_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_true_SIDE.jpg")
+
+	car_x_107 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_107_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_true_REAR34.jpg")
+	car_x_107.photo.attach(io: car_x_107_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_true_REAR34.jpg")
+
+	car_x_108 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_108_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_108.photo.attach(io: car_x_108_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_109 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_109_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$IWW00_true_INTERIOR.jpg")
+	car_x_109.photo.attach(io: car_x_109_file, filename: "model_x_$MTX10_$PBSB_$WX20_$IWW00_true_INTERIOR.jpg")
+
+	car_x_110 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_110_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_false_FRONT34.jpg")
+	car_x_110.photo.attach(io: car_x_110_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_false_FRONT34.jpg")
+
+	car_x_111 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_111_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_false_SIDE.jpg")
+	car_x_111.photo.attach(io: car_x_111_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_false_SIDE.jpg")
+
+	car_x_112 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_112_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_false_REAR34.jpg")
+	car_x_112.photo.attach(io: car_x_112_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_false_REAR34.jpg")
+
+	car_x_113 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_113_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_113.photo.attach(io: car_x_113_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_114 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_114_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_false_INTERIOR.jpg")
+	car_x_114.photo.attach(io: car_x_114_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_false_INTERIOR.jpg")
+
+	car_x_115 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_115_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_true_FRONT34.jpg")
+	car_x_115.photo.attach(io: car_x_115_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_true_FRONT34.jpg")
+
+	car_x_116 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_116_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_true_SIDE.jpg")
+	car_x_116.photo.attach(io: car_x_116_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_true_SIDE.jpg")
+
+	car_x_117 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_117_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_true_REAR34.jpg")
+	car_x_117.photo.attach(io: car_x_117_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_true_REAR34.jpg")
+
+	car_x_118 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_118_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_118.photo.attach(io: car_x_118_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_119 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Solid Black",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_119_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PBSB_$WX20_$ICW00_true_INTERIOR.jpg")
+	car_x_119.photo.attach(io: car_x_119_file, filename: "model_x_$MTX10_$PBSB_$WX20_$ICW00_true_INTERIOR.jpg")
+
+	car_x_120 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_120_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_false_FRONT34.jpg")
+	car_x_120.photo.attach(io: car_x_120_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_false_FRONT34.jpg")
+
+	car_x_121 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_121_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_false_SIDE.jpg")
+	car_x_121.photo.attach(io: car_x_121_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_false_SIDE.jpg")
+
+	car_x_122 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_122_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_false_REAR34.jpg")
+	car_x_122.photo.attach(io: car_x_122_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_false_REAR34.jpg")
+
+	car_x_123 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_123_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_123.photo.attach(io: car_x_123_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_124 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_124_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_false_INTERIOR.jpg")
+	car_x_124.photo.attach(io: car_x_124_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_false_INTERIOR.jpg")
+
+	car_x_125 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_125_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_true_FRONT34.jpg")
+	car_x_125.photo.attach(io: car_x_125_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_true_FRONT34.jpg")
+
+	car_x_126 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_126_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_true_SIDE.jpg")
+	car_x_126.photo.attach(io: car_x_126_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_true_SIDE.jpg")
+
+	car_x_127 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_127_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_true_REAR34.jpg")
+	car_x_127.photo.attach(io: car_x_127_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_true_REAR34.jpg")
+
+	car_x_128 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_128_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_128.photo.attach(io: car_x_128_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_129 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_129_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IBE00_true_INTERIOR.jpg")
+	car_x_129.photo.attach(io: car_x_129_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IBE00_true_INTERIOR.jpg")
+
+	car_x_130 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_130_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_false_FRONT34.jpg")
+	car_x_130.photo.attach(io: car_x_130_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_false_FRONT34.jpg")
+
+	car_x_131 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_131_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_false_SIDE.jpg")
+	car_x_131.photo.attach(io: car_x_131_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_false_SIDE.jpg")
+
+	car_x_132 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_132_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_false_REAR34.jpg")
+	car_x_132.photo.attach(io: car_x_132_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_false_REAR34.jpg")
+
+	car_x_133 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_133_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_133.photo.attach(io: car_x_133_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_134 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_134_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_false_INTERIOR.jpg")
+	car_x_134.photo.attach(io: car_x_134_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_false_INTERIOR.jpg")
+
+	car_x_135 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_135_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_true_FRONT34.jpg")
+	car_x_135.photo.attach(io: car_x_135_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_true_FRONT34.jpg")
+
+	car_x_136 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_136_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_true_SIDE.jpg")
+	car_x_136.photo.attach(io: car_x_136_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_true_SIDE.jpg")
+
+	car_x_137 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_137_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_true_REAR34.jpg")
+	car_x_137.photo.attach(io: car_x_137_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_true_REAR34.jpg")
+
+	car_x_138 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_138_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_138.photo.attach(io: car_x_138_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_139 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_139_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$IWW00_true_INTERIOR.jpg")
+	car_x_139.photo.attach(io: car_x_139_file, filename: "model_x_$MTX10_$PMNG_$WX00_$IWW00_true_INTERIOR.jpg")
+
+	car_x_140 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_140_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_false_FRONT34.jpg")
+	car_x_140.photo.attach(io: car_x_140_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_false_FRONT34.jpg")
+
+	car_x_141 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_141_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_false_SIDE.jpg")
+	car_x_141.photo.attach(io: car_x_141_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_false_SIDE.jpg")
+
+	car_x_142 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_142_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_false_REAR34.jpg")
+	car_x_142.photo.attach(io: car_x_142_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_false_REAR34.jpg")
+
+	car_x_143 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_143_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_143.photo.attach(io: car_x_143_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_144 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_144_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_false_INTERIOR.jpg")
+	car_x_144.photo.attach(io: car_x_144_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_false_INTERIOR.jpg")
+
+	car_x_145 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_145_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_true_FRONT34.jpg")
+	car_x_145.photo.attach(io: car_x_145_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_true_FRONT34.jpg")
+
+	car_x_146 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_146_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_true_SIDE.jpg")
+	car_x_146.photo.attach(io: car_x_146_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_true_SIDE.jpg")
+
+	car_x_147 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_147_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_true_REAR34.jpg")
+	car_x_147.photo.attach(io: car_x_147_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_true_REAR34.jpg")
+
+	car_x_148 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_148_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_148.photo.attach(io: car_x_148_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_149 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_149_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX00_$ICW00_true_INTERIOR.jpg")
+	car_x_149.photo.attach(io: car_x_149_file, filename: "model_x_$MTX10_$PMNG_$WX00_$ICW00_true_INTERIOR.jpg")
+
+	car_x_150 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_150_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_false_FRONT34.jpg")
+	car_x_150.photo.attach(io: car_x_150_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_false_FRONT34.jpg")
+
+	car_x_151 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_151_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_false_SIDE.jpg")
+	car_x_151.photo.attach(io: car_x_151_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_false_SIDE.jpg")
+
+	car_x_152 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_152_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_false_REAR34.jpg")
+	car_x_152.photo.attach(io: car_x_152_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_false_REAR34.jpg")
+
+	car_x_153 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_153_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_153.photo.attach(io: car_x_153_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_154 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_154_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_false_INTERIOR.jpg")
+	car_x_154.photo.attach(io: car_x_154_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_false_INTERIOR.jpg")
+
+	car_x_155 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_155_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_true_FRONT34.jpg")
+	car_x_155.photo.attach(io: car_x_155_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_true_FRONT34.jpg")
+
+	car_x_156 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_156_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_true_SIDE.jpg")
+	car_x_156.photo.attach(io: car_x_156_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_true_SIDE.jpg")
+
+	car_x_157 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_157_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_true_REAR34.jpg")
+	car_x_157.photo.attach(io: car_x_157_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_true_REAR34.jpg")
+
+	car_x_158 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_158_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_158.photo.attach(io: car_x_158_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_159 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_159_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IBE00_true_INTERIOR.jpg")
+	car_x_159.photo.attach(io: car_x_159_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IBE00_true_INTERIOR.jpg")
+
+	car_x_160 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_160_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_false_FRONT34.jpg")
+	car_x_160.photo.attach(io: car_x_160_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_false_FRONT34.jpg")
+
+	car_x_161 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_161_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_false_SIDE.jpg")
+	car_x_161.photo.attach(io: car_x_161_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_false_SIDE.jpg")
+
+	car_x_162 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_162_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_false_REAR34.jpg")
+	car_x_162.photo.attach(io: car_x_162_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_false_REAR34.jpg")
+
+	car_x_163 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_163_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_163.photo.attach(io: car_x_163_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_164 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_164_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_false_INTERIOR.jpg")
+	car_x_164.photo.attach(io: car_x_164_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_false_INTERIOR.jpg")
+
+	car_x_165 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_165_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_true_FRONT34.jpg")
+	car_x_165.photo.attach(io: car_x_165_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_true_FRONT34.jpg")
+
+	car_x_166 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_166_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_true_SIDE.jpg")
+	car_x_166.photo.attach(io: car_x_166_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_true_SIDE.jpg")
+
+	car_x_167 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_167_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_true_REAR34.jpg")
+	car_x_167.photo.attach(io: car_x_167_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_true_REAR34.jpg")
+
+	car_x_168 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_168_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_168.photo.attach(io: car_x_168_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_169 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_169_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$IWW00_true_INTERIOR.jpg")
+	car_x_169.photo.attach(io: car_x_169_file, filename: "model_x_$MTX10_$PMNG_$WX20_$IWW00_true_INTERIOR.jpg")
+
+	car_x_170 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_170_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_false_FRONT34.jpg")
+	car_x_170.photo.attach(io: car_x_170_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_false_FRONT34.jpg")
+
+	car_x_171 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_171_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_false_SIDE.jpg")
+	car_x_171.photo.attach(io: car_x_171_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_false_SIDE.jpg")
+
+	car_x_172 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_172_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_false_REAR34.jpg")
+	car_x_172.photo.attach(io: car_x_172_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_false_REAR34.jpg")
+
+	car_x_173 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_173_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_173.photo.attach(io: car_x_173_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_174 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_174_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_false_INTERIOR.jpg")
+	car_x_174.photo.attach(io: car_x_174_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_false_INTERIOR.jpg")
+
+	car_x_175 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_175_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_true_FRONT34.jpg")
+	car_x_175.photo.attach(io: car_x_175_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_true_FRONT34.jpg")
+
+	car_x_176 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_176_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_true_SIDE.jpg")
+	car_x_176.photo.attach(io: car_x_176_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_true_SIDE.jpg")
+
+	car_x_177 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_177_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_true_REAR34.jpg")
+	car_x_177.photo.attach(io: car_x_177_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_true_REAR34.jpg")
+
+	car_x_178 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_178_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_178.photo.attach(io: car_x_178_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_179 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_179_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PMNG_$WX20_$ICW00_true_INTERIOR.jpg")
+	car_x_179.photo.attach(io: car_x_179_file, filename: "model_x_$MTX10_$PMNG_$WX20_$ICW00_true_INTERIOR.jpg")
+
+	car_x_180 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_180_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_false_FRONT34.jpg")
+	car_x_180.photo.attach(io: car_x_180_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_false_FRONT34.jpg")
+
+	car_x_181 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_181_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_false_SIDE.jpg")
+	car_x_181.photo.attach(io: car_x_181_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_false_SIDE.jpg")
+
+	car_x_182 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_182_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_false_REAR34.jpg")
+	car_x_182.photo.attach(io: car_x_182_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_false_REAR34.jpg")
+
+	car_x_183 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_183_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_183.photo.attach(io: car_x_183_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_184 = Product.create!(
+		name: "Model X",
+		price: 89990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_184_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_false_INTERIOR.jpg")
+	car_x_184.photo.attach(io: car_x_184_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_false_INTERIOR.jpg")
+
+	car_x_185 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_185_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_true_FRONT34.jpg")
+	car_x_185.photo.attach(io: car_x_185_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_true_FRONT34.jpg")
+
+	car_x_186 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_186_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_true_SIDE.jpg")
+	car_x_186.photo.attach(io: car_x_186_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_true_SIDE.jpg")
+
+	car_x_187 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_187_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_true_REAR34.jpg")
+	car_x_187.photo.attach(io: car_x_187_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_true_REAR34.jpg")
+
+	car_x_188 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_188_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_188.photo.attach(io: car_x_188_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_189 = Product.create!(
+		name: "Model X",
+		price: 99990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_189_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IBE00_true_INTERIOR.jpg")
+	car_x_189.photo.attach(io: car_x_189_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IBE00_true_INTERIOR.jpg")
+
+	car_x_190 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_190_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_false_FRONT34.jpg")
+	car_x_190.photo.attach(io: car_x_190_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_false_FRONT34.jpg")
+
+	car_x_191 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_191_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_false_SIDE.jpg")
+	car_x_191.photo.attach(io: car_x_191_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_false_SIDE.jpg")
+
+	car_x_192 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_192_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_false_REAR34.jpg")
+	car_x_192.photo.attach(io: car_x_192_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_false_REAR34.jpg")
+
+	car_x_193 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_193_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_193.photo.attach(io: car_x_193_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_194 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_194_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_false_INTERIOR.jpg")
+	car_x_194.photo.attach(io: car_x_194_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_false_INTERIOR.jpg")
+
+	car_x_195 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_195_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_true_FRONT34.jpg")
+	car_x_195.photo.attach(io: car_x_195_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_true_FRONT34.jpg")
+
+	car_x_196 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_196_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_true_SIDE.jpg")
+	car_x_196.photo.attach(io: car_x_196_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_true_SIDE.jpg")
+
+	car_x_197 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_197_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_true_REAR34.jpg")
+	car_x_197.photo.attach(io: car_x_197_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_true_REAR34.jpg")
+
+	car_x_198 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_198_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_198.photo.attach(io: car_x_198_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_199 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_199_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$IWW00_true_INTERIOR.jpg")
+	car_x_199.photo.attach(io: car_x_199_file, filename: "model_x_$MTX10_$PPSB_$WX00_$IWW00_true_INTERIOR.jpg")
+
+	car_x_200 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_200_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_false_FRONT34.jpg")
+	car_x_200.photo.attach(io: car_x_200_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_false_FRONT34.jpg")
+
+	puts "Creating Model X_2..."
+
+	car_x_201 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_201_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_false_SIDE.jpg")
+	car_x_201.photo.attach(io: car_x_201_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_false_SIDE.jpg")
+
+	car_x_202 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_202_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_false_REAR34.jpg")
+	car_x_202.photo.attach(io: car_x_202_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_false_REAR34.jpg")
+
+	car_x_203 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_203_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_203.photo.attach(io: car_x_203_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_204 = Product.create!(
+		name: "Model X",
+		price: 91990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_204_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_false_INTERIOR.jpg")
+	car_x_204.photo.attach(io: car_x_204_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_false_INTERIOR.jpg")
+
+	car_x_205 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_205_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_true_FRONT34.jpg")
+	car_x_205.photo.attach(io: car_x_205_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_true_FRONT34.jpg")
+
+	car_x_206 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_206_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_true_SIDE.jpg")
+	car_x_206.photo.attach(io: car_x_206_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_true_SIDE.jpg")
+
+	car_x_207 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_207_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_true_REAR34.jpg")
+	car_x_207.photo.attach(io: car_x_207_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_true_REAR34.jpg")
+
+	car_x_208 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_208_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_208.photo.attach(io: car_x_208_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_209 = Product.create!(
+		name: "Model X",
+		price: 101990,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_209_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX00_$ICW00_true_INTERIOR.jpg")
+	car_x_209.photo.attach(io: car_x_209_file, filename: "model_x_$MTX10_$PPSB_$WX00_$ICW00_true_INTERIOR.jpg")
+
+	car_x_210 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_210_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_false_FRONT34.jpg")
+	car_x_210.photo.attach(io: car_x_210_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_false_FRONT34.jpg")
+
+	car_x_211 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_211_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_false_SIDE.jpg")
+	car_x_211.photo.attach(io: car_x_211_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_false_SIDE.jpg")
+
+	car_x_212 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_212_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_false_REAR34.jpg")
+	car_x_212.photo.attach(io: car_x_212_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_false_REAR34.jpg")
+
+	car_x_213 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_213_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_213.photo.attach(io: car_x_213_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_214 = Product.create!(
+		name: "Model X",
+		price: 95490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_214_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_false_INTERIOR.jpg")
+	car_x_214.photo.attach(io: car_x_214_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_false_INTERIOR.jpg")
+
+	car_x_215 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_215_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_true_FRONT34.jpg")
+	car_x_215.photo.attach(io: car_x_215_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_true_FRONT34.jpg")
+
+	car_x_216 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_216_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_true_SIDE.jpg")
+	car_x_216.photo.attach(io: car_x_216_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_true_SIDE.jpg")
+
+	car_x_217 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_217_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_true_REAR34.jpg")
+	car_x_217.photo.attach(io: car_x_217_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_true_REAR34.jpg")
+
+	car_x_218 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_218_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_218.photo.attach(io: car_x_218_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_219 = Product.create!(
+		name: "Model X",
+		price: 105490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_219_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IBE00_true_INTERIOR.jpg")
+	car_x_219.photo.attach(io: car_x_219_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IBE00_true_INTERIOR.jpg")
+
+	car_x_220 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_220_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_false_FRONT34.jpg")
+	car_x_220.photo.attach(io: car_x_220_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_false_FRONT34.jpg")
+
+	car_x_221 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_221_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_false_SIDE.jpg")
+	car_x_221.photo.attach(io: car_x_221_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_false_SIDE.jpg")
+
+	car_x_222 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_222_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_false_REAR34.jpg")
+	car_x_222.photo.attach(io: car_x_222_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_false_REAR34.jpg")
+
+	car_x_223 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_223_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_223.photo.attach(io: car_x_223_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_224 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_224_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_false_INTERIOR.jpg")
+	car_x_224.photo.attach(io: car_x_224_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_false_INTERIOR.jpg")
+
+	car_x_225 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_225_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_true_FRONT34.jpg")
+	car_x_225.photo.attach(io: car_x_225_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_true_FRONT34.jpg")
+
+	car_x_226 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_226_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_true_SIDE.jpg")
+	car_x_226.photo.attach(io: car_x_226_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_true_SIDE.jpg")
+
+	car_x_227 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_227_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_true_REAR34.jpg")
+	car_x_227.photo.attach(io: car_x_227_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_true_REAR34.jpg")
+
+	car_x_228 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_228_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_228.photo.attach(io: car_x_228_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_229 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_229_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$IWW00_true_INTERIOR.jpg")
+	car_x_229.photo.attach(io: car_x_229_file, filename: "model_x_$MTX10_$PPSB_$WX20_$IWW00_true_INTERIOR.jpg")
+
+	car_x_230 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_230_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_false_FRONT34.jpg")
+	car_x_230.photo.attach(io: car_x_230_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_false_FRONT34.jpg")
+
+	car_x_231 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_231_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_false_SIDE.jpg")
+	car_x_231.photo.attach(io: car_x_231_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_false_SIDE.jpg")
+
+	car_x_232 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_232_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_false_REAR34.jpg")
+	car_x_232.photo.attach(io: car_x_232_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_false_REAR34.jpg")
+
+	car_x_233 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_233_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_233.photo.attach(io: car_x_233_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_234 = Product.create!(
+		name: "Model X",
+		price: 97490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_234_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_false_INTERIOR.jpg")
+	car_x_234.photo.attach(io: car_x_234_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_false_INTERIOR.jpg")
+
+	car_x_235 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_235_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_true_FRONT34.jpg")
+	car_x_235.photo.attach(io: car_x_235_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_true_FRONT34.jpg")
+
+	car_x_236 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_236_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_true_SIDE.jpg")
+	car_x_236.photo.attach(io: car_x_236_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_true_SIDE.jpg")
+
+	car_x_237 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_237_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_true_REAR34.jpg")
+	car_x_237.photo.attach(io: car_x_237_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_true_REAR34.jpg")
+
+	car_x_238 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_238_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_238.photo.attach(io: car_x_238_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_239 = Product.create!(
+		name: "Model X",
+		price: 107490,
+		exterior: "Deep Blue Metallic",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_239_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPSB_$WX20_$ICW00_true_INTERIOR.jpg")
+	car_x_239.photo.attach(io: car_x_239_file, filename: "model_x_$MTX10_$PPSB_$WX20_$ICW00_true_INTERIOR.jpg")
+
+	car_x_240 = Product.create!(
+		name: "Model X",
+		price: 90990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_240_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_false_FRONT34.jpg")
+	car_x_240.photo.attach(io: car_x_240_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_false_FRONT34.jpg")
+
+	car_x_241 = Product.create!(
+		name: "Model X",
+		price: 90990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_241_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_false_SIDE.jpg")
+	car_x_241.photo.attach(io: car_x_241_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_false_SIDE.jpg")
+
+	car_x_242 = Product.create!(
+		name: "Model X",
+		price: 90990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_242_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_false_REAR34.jpg")
+	car_x_242.photo.attach(io: car_x_242_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_false_REAR34.jpg")
+
+	car_x_243 = Product.create!(
+		name: "Model X",
+		price: 90990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_243_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_243.photo.attach(io: car_x_243_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_244 = Product.create!(
+		name: "Model X",
+		price: 90990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_244_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_false_INTERIOR.jpg")
+	car_x_244.photo.attach(io: car_x_244_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_false_INTERIOR.jpg")
+
+	car_x_245 = Product.create!(
+		name: "Model X",
+		price: 100990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_245_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_true_FRONT34.jpg")
+	car_x_245.photo.attach(io: car_x_245_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_true_FRONT34.jpg")
+
+	car_x_246 = Product.create!(
+		name: "Model X",
+		price: 100990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_246_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_true_SIDE.jpg")
+	car_x_246.photo.attach(io: car_x_246_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_true_SIDE.jpg")
+
+	car_x_247 = Product.create!(
+		name: "Model X",
+		price: 100990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_247_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_true_REAR34.jpg")
+	car_x_247.photo.attach(io: car_x_247_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_true_REAR34.jpg")
+
+	car_x_248 = Product.create!(
+		name: "Model X",
+		price: 100990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_248_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_248.photo.attach(io: car_x_248_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_249 = Product.create!(
+		name: "Model X",
+		price: 100990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_249_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IBE00_true_INTERIOR.jpg")
+	car_x_249.photo.attach(io: car_x_249_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IBE00_true_INTERIOR.jpg")
+
+	car_x_250 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_250_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_false_FRONT34.jpg")
+	car_x_250.photo.attach(io: car_x_250_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_false_FRONT34.jpg")
+
+	car_x_251 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_251_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_false_SIDE.jpg")
+	car_x_251.photo.attach(io: car_x_251_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_false_SIDE.jpg")
+
+	car_x_252 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_252_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_false_REAR34.jpg")
+	car_x_252.photo.attach(io: car_x_252_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_false_REAR34.jpg")
+
+	car_x_253 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_253_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_253.photo.attach(io: car_x_253_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_254 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_254_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_false_INTERIOR.jpg")
+	car_x_254.photo.attach(io: car_x_254_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_false_INTERIOR.jpg")
+
+	car_x_255 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_255_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_true_FRONT34.jpg")
+	car_x_255.photo.attach(io: car_x_255_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_true_FRONT34.jpg")
+
+	car_x_256 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_256_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_true_SIDE.jpg")
+	car_x_256.photo.attach(io: car_x_256_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_true_SIDE.jpg")
+
+	car_x_257 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_257_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_true_REAR34.jpg")
+	car_x_257.photo.attach(io: car_x_257_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_true_REAR34.jpg")
+
+	car_x_258 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_258_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_258.photo.attach(io: car_x_258_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_259 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_259_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$IWW00_true_INTERIOR.jpg")
+	car_x_259.photo.attach(io: car_x_259_file, filename: "model_x_$MTX10_$PPMR_$WX00_$IWW00_true_INTERIOR.jpg")
+
+	car_x_260 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_260_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_false_FRONT34.jpg")
+	car_x_260.photo.attach(io: car_x_260_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_false_FRONT34.jpg")
+
+	car_x_261 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_261_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_false_SIDE.jpg")
+	car_x_261.photo.attach(io: car_x_261_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_false_SIDE.jpg")
+
+	car_x_262 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_262_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_false_REAR34.jpg")
+	car_x_262.photo.attach(io: car_x_262_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_false_REAR34.jpg")
+
+	car_x_263 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_263_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_263.photo.attach(io: car_x_263_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_264 = Product.create!(
+		name: "Model X",
+		price: 92990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_264_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_false_INTERIOR.jpg")
+	car_x_264.photo.attach(io: car_x_264_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_false_INTERIOR.jpg")
+
+	car_x_265 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_265_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_true_FRONT34.jpg")
+	car_x_265.photo.attach(io: car_x_265_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_true_FRONT34.jpg")
+
+	car_x_266 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_266_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_true_SIDE.jpg")
+	car_x_266.photo.attach(io: car_x_266_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_true_SIDE.jpg")
+
+	car_x_267 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_267_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_true_REAR34.jpg")
+	car_x_267.photo.attach(io: car_x_267_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_true_REAR34.jpg")
+
+	car_x_268 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_268_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_268.photo.attach(io: car_x_268_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_269 = Product.create!(
+		name: "Model X",
+		price: 102990,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "20\" Cyberstream Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_269_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX00_$ICW00_true_INTERIOR.jpg")
+	car_x_269.photo.attach(io: car_x_269_file, filename: "model_x_$MTX10_$PPMR_$WX00_$ICW00_true_INTERIOR.jpg")
+
+	car_x_270 = Product.create!(
+		name: "Model X",
+		price: 96490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_270_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_false_FRONT34.jpg")
+	car_x_270.photo.attach(io: car_x_270_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_false_FRONT34.jpg")
+
+	car_x_271 = Product.create!(
+		name: "Model X",
+		price: 96490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_271_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_false_SIDE.jpg")
+	car_x_271.photo.attach(io: car_x_271_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_false_SIDE.jpg")
+
+	car_x_272 = Product.create!(
+		name: "Model X",
+		price: 96490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_272_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_false_REAR34.jpg")
+	car_x_272.photo.attach(io: car_x_272_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_false_REAR34.jpg")
+
+	car_x_273 = Product.create!(
+		name: "Model X",
+		price: 96490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_273_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+	car_x_273.photo.attach(io: car_x_273_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_false_RIMCLOSEUP.jpg")
+
+	car_x_274 = Product.create!(
+		name: "Model X",
+		price: 96490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_274_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_false_INTERIOR.jpg")
+	car_x_274.photo.attach(io: car_x_274_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_false_INTERIOR.jpg")
+
+	car_x_275 = Product.create!(
+		name: "Model X",
+		price: 106490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_275_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_true_FRONT34.jpg")
+	car_x_275.photo.attach(io: car_x_275_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_true_FRONT34.jpg")
+
+	car_x_276 = Product.create!(
+		name: "Model X",
+		price: 106490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_276_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_true_SIDE.jpg")
+	car_x_276.photo.attach(io: car_x_276_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_true_SIDE.jpg")
+
+	car_x_277 = Product.create!(
+		name: "Model X",
+		price: 106490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_277_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_true_REAR34.jpg")
+	car_x_277.photo.attach(io: car_x_277_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_true_REAR34.jpg")
+
+	car_x_278 = Product.create!(
+		name: "Model X",
+		price: 106490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_278_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+	car_x_278.photo.attach(io: car_x_278_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_true_RIMCLOSEUP.jpg")
+
+	car_x_279 = Product.create!(
+		name: "Model X",
+		price: 106490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_279_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IBE00_true_INTERIOR.jpg")
+	car_x_279.photo.attach(io: car_x_279_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IBE00_true_INTERIOR.jpg")
+
+	car_x_280 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_280_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_false_FRONT34.jpg")
+	car_x_280.photo.attach(io: car_x_280_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_false_FRONT34.jpg")
+
+	car_x_281 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_281_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_false_SIDE.jpg")
+	car_x_281.photo.attach(io: car_x_281_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_false_SIDE.jpg")
+
+	car_x_282 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_282_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_false_REAR34.jpg")
+	car_x_282.photo.attach(io: car_x_282_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_false_REAR34.jpg")
+
+	car_x_283 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_283_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+	car_x_283.photo.attach(io: car_x_283_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_false_RIMCLOSEUP.jpg")
+
+	car_x_284 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_284_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_false_INTERIOR.jpg")
+	car_x_284.photo.attach(io: car_x_284_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_false_INTERIOR.jpg")
+
+	car_x_285 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_285_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_true_FRONT34.jpg")
+	car_x_285.photo.attach(io: car_x_285_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_true_FRONT34.jpg")
+
+	car_x_286 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_286_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_true_SIDE.jpg")
+	car_x_286.photo.attach(io: car_x_286_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_true_SIDE.jpg")
+
+	car_x_287 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_287_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_true_REAR34.jpg")
+	car_x_287.photo.attach(io: car_x_287_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_true_REAR34.jpg")
+
+	car_x_288 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_288_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+	car_x_288.photo.attach(io: car_x_288_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_true_RIMCLOSEUP.jpg")
+
+	car_x_289 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_289_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$IWW00_true_INTERIOR.jpg")
+	car_x_289.photo.attach(io: car_x_289_file, filename: "model_x_$MTX10_$PPMR_$WX20_$IWW00_true_INTERIOR.jpg")
+
+	car_x_290 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_x_290_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_false_FRONT34.jpg")
+	car_x_290.photo.attach(io: car_x_290_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_false_FRONT34.jpg")
+
+	car_x_291 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_x_291_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_false_SIDE.jpg")
+	car_x_291.photo.attach(io: car_x_291_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_false_SIDE.jpg")
+
+	car_x_292 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_x_292_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_false_REAR34.jpg")
+	car_x_292.photo.attach(io: car_x_292_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_false_REAR34.jpg")
+
+	car_x_293 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_x_293_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+	car_x_293.photo.attach(io: car_x_293_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_false_RIMCLOSEUP.jpg")
+
+	car_x_294 = Product.create!(
+		name: "Model X",
+		price: 98490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_x_294_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_false_INTERIOR.jpg")
+	car_x_294.photo.attach(io: car_x_294_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_false_INTERIOR.jpg")
+
+	car_x_295 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_x_295_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_true_FRONT34.jpg")
+	car_x_295.photo.attach(io: car_x_295_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_true_FRONT34.jpg")
+
+	car_x_296 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_x_296_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_true_SIDE.jpg")
+	car_x_296.photo.attach(io: car_x_296_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_true_SIDE.jpg")
+
+	car_x_297 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_x_297_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_true_REAR34.jpg")
+	car_x_297.photo.attach(io: car_x_297_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_true_REAR34.jpg")
+
+	car_x_298 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_x_298_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+	car_x_298.photo.attach(io: car_x_298_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_true_RIMCLOSEUP.jpg")
+
+	car_x_299 = Product.create!(
+		name: "Model X",
+		price: 108490,
+		exterior: "Red Multi-Coat",
+		interior: "Cream",
+		wheel_type: "22\" Turbine Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_x_299_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modelx/model_x_$MTX10_$PPMR_$WX20_$ICW00_true_INTERIOR.jpg")
+	car_x_299.photo.attach(io: car_x_299_file, filename: "model_x_$MTX10_$PPMR_$WX20_$ICW00_true_INTERIOR.jpg")
+
+	puts "Creating Model 3..."
+
+	car_3_0 = Product.create!(
+		name: "Model 3",
+		price: 35490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_0_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_0.photo.attach(io: car_3_0_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_1 = Product.create!(
+		name: "Model 3",
+		price: 35490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_1_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_1.photo.attach(io: car_3_1_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_2 = Product.create!(
+		name: "Model 3",
+		price: 35490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_2_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_2.photo.attach(io: car_3_2_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_3 = Product.create!(
+		name: "Model 3",
+		price: 35490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_3_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_3.photo.attach(io: car_3_3_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_4 = Product.create!(
+		name: "Model 3",
+		price: 35490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_4_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_4.photo.attach(io: car_3_4_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_5 = Product.create!(
+		name: "Model 3",
+		price: 45490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_5_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_5.photo.attach(io: car_3_5_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_6 = Product.create!(
+		name: "Model 3",
+		price: 45490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_6_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_6.photo.attach(io: car_3_6_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_7 = Product.create!(
+		name: "Model 3",
+		price: 45490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_7_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_7.photo.attach(io: car_3_7_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_8 = Product.create!(
+		name: "Model 3",
+		price: 45490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_8_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_8.photo.attach(io: car_3_8_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_9 = Product.create!(
+		name: "Model 3",
+		price: 45490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_9_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_9.photo.attach(io: car_3_9_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_10 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_10_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_10.photo.attach(io: car_3_10_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_11 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_11_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_11.photo.attach(io: car_3_11_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_12 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_12_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_12.photo.attach(io: car_3_12_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_13 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_13_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_13.photo.attach(io: car_3_13_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_14 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_14_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_14.photo.attach(io: car_3_14_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_15 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_15_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_15.photo.attach(io: car_3_15_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_16 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_16_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_16.photo.attach(io: car_3_16_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_17 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_17_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_17.photo.attach(io: car_3_17_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_18 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_18_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_18.photo.attach(io: car_3_18_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_19 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_19_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_19.photo.attach(io: car_3_19_file, filename: "model_3_$MT314_$PPSW_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_20 = Product.create!(
+		name: "Model 3",
+		price: 36990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_20_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_20.photo.attach(io: car_3_20_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_21 = Product.create!(
+		name: "Model 3",
+		price: 36990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_21_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_21.photo.attach(io: car_3_21_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_22 = Product.create!(
+		name: "Model 3",
+		price: 36990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_22_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_22.photo.attach(io: car_3_22_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_23 = Product.create!(
+		name: "Model 3",
+		price: 36990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_23_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_23.photo.attach(io: car_3_23_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_24 = Product.create!(
+		name: "Model 3",
+		price: 36990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_24_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_24.photo.attach(io: car_3_24_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_25 = Product.create!(
+		name: "Model 3",
+		price: 46990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_25_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_25.photo.attach(io: car_3_25_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_26 = Product.create!(
+		name: "Model 3",
+		price: 46990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_26_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_26.photo.attach(io: car_3_26_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_27 = Product.create!(
+		name: "Model 3",
+		price: 46990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_27_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_27.photo.attach(io: car_3_27_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_28 = Product.create!(
+		name: "Model 3",
+		price: 46990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_28_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_28.photo.attach(io: car_3_28_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_29 = Product.create!(
+		name: "Model 3",
+		price: 46990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_29_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_29.photo.attach(io: car_3_29_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_30 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_30_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_30.photo.attach(io: car_3_30_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_31 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_31_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_31.photo.attach(io: car_3_31_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_32 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_32_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_32.photo.attach(io: car_3_32_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_33 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_33_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_33.photo.attach(io: car_3_33_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_34 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_34_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_34.photo.attach(io: car_3_34_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_35 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_35_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_35.photo.attach(io: car_3_35_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_36 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_36_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_36.photo.attach(io: car_3_36_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_37 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_37_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_37.photo.attach(io: car_3_37_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_38 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_38_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_38.photo.attach(io: car_3_38_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_39 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_39_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_39.photo.attach(io: car_3_39_file, filename: "model_3_$MT314_$PPSW_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_40 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_40_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_40.photo.attach(io: car_3_40_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_41 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_41_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_41.photo.attach(io: car_3_41_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_42 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_42_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_42.photo.attach(io: car_3_42_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_43 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_43_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_43.photo.attach(io: car_3_43_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_44 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_44_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_44.photo.attach(io: car_3_44_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_45 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_45_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_45.photo.attach(io: car_3_45_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_46 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_46_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_46.photo.attach(io: car_3_46_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_47 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_47_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_47.photo.attach(io: car_3_47_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_48 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_48_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_48.photo.attach(io: car_3_48_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_49 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_49_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_49.photo.attach(io: car_3_49_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_50 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_50_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_50.photo.attach(io: car_3_50_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_51 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_51_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_51.photo.attach(io: car_3_51_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_52 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_52_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_52.photo.attach(io: car_3_52_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_53 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_53_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_53.photo.attach(io: car_3_53_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_54 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_54_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_54.photo.attach(io: car_3_54_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_55 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_55_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_55.photo.attach(io: car_3_55_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_56 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_56_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_56.photo.attach(io: car_3_56_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_57 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_57_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_57.photo.attach(io: car_3_57_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_58 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_58_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_58.photo.attach(io: car_3_58_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_59 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_59_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_59.photo.attach(io: car_3_59_file, filename: "model_3_$MT314_$PBSB_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_60 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_60_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_60.photo.attach(io: car_3_60_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_61 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_61_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_61.photo.attach(io: car_3_61_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_62 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_62_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_62.photo.attach(io: car_3_62_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_63 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_63_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_63.photo.attach(io: car_3_63_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_64 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_64_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_64.photo.attach(io: car_3_64_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_65 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_65_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_65.photo.attach(io: car_3_65_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_66 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_66_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_66.photo.attach(io: car_3_66_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_67 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_67_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_67.photo.attach(io: car_3_67_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_68 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_68_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_68.photo.attach(io: car_3_68_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_69 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_69_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_69.photo.attach(io: car_3_69_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_70 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_70_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_70.photo.attach(io: car_3_70_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_71 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_71_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_71.photo.attach(io: car_3_71_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_72 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_72_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_72.photo.attach(io: car_3_72_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_73 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_73_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_73.photo.attach(io: car_3_73_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_74 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_74_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_74.photo.attach(io: car_3_74_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_75 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_75_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_75.photo.attach(io: car_3_75_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_76 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_76_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_76.photo.attach(io: car_3_76_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_77 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_77_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_77.photo.attach(io: car_3_77_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_78 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_78_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_78.photo.attach(io: car_3_78_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_79 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_79_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_79.photo.attach(io: car_3_79_file, filename: "model_3_$MT314_$PBSB_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_80 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_80_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_80.photo.attach(io: car_3_80_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_81 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_81_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_81.photo.attach(io: car_3_81_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_82 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_82_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_82.photo.attach(io: car_3_82_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_83 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_83_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_83.photo.attach(io: car_3_83_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_84 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_84_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_84.photo.attach(io: car_3_84_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_85 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_85_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_85.photo.attach(io: car_3_85_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_86 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_86_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_86.photo.attach(io: car_3_86_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_87 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_87_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_87.photo.attach(io: car_3_87_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_88 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_88_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_88.photo.attach(io: car_3_88_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_89 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_89_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_89.photo.attach(io: car_3_89_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_90 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_90_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_90.photo.attach(io: car_3_90_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_91 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_91_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_91.photo.attach(io: car_3_91_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_92 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_92_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_92.photo.attach(io: car_3_92_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_93 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_93_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_93.photo.attach(io: car_3_93_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_94 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_94_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_94.photo.attach(io: car_3_94_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_95 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_95_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_95.photo.attach(io: car_3_95_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_96 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_96_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_96.photo.attach(io: car_3_96_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_97 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_97_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_97.photo.attach(io: car_3_97_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_98 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_98_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_98.photo.attach(io: car_3_98_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_99 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_99_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_99.photo.attach(io: car_3_99_file, filename: "model_3_$MT314_$PMNG_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_100 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_100_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_100.photo.attach(io: car_3_100_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+
+	puts "Creating Model 3_1..."
+
+	car_3_101 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_101_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_101.photo.attach(io: car_3_101_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_102 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_102_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_102.photo.attach(io: car_3_102_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_103 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_103_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_103.photo.attach(io: car_3_103_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_104 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_104_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_104.photo.attach(io: car_3_104_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_105 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_105_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_105.photo.attach(io: car_3_105_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_106 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_106_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_106.photo.attach(io: car_3_106_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_107 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_107_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_107.photo.attach(io: car_3_107_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_108 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_108_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_108.photo.attach(io: car_3_108_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_109 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_109_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_109.photo.attach(io: car_3_109_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_110 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_110_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_110.photo.attach(io: car_3_110_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_111 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_111_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_111.photo.attach(io: car_3_111_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_112 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_112_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_112.photo.attach(io: car_3_112_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_113 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_113_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_113.photo.attach(io: car_3_113_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_114 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_114_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_114.photo.attach(io: car_3_114_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_115 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_115_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_115.photo.attach(io: car_3_115_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_116 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_116_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_116.photo.attach(io: car_3_116_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_117 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_117_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_117.photo.attach(io: car_3_117_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_118 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_118_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_118.photo.attach(io: car_3_118_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_119 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_119_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_119.photo.attach(io: car_3_119_file, filename: "model_3_$MT314_$PMNG_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_120 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_120_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_120.photo.attach(io: car_3_120_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_121 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_121_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_121.photo.attach(io: car_3_121_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_122 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_122_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_122.photo.attach(io: car_3_122_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_123 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_123_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_123.photo.attach(io: car_3_123_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_124 = Product.create!(
+		name: "Model 3",
+		price: 36490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_124_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_124.photo.attach(io: car_3_124_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_125 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_125_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_125.photo.attach(io: car_3_125_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_126 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_126_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_126.photo.attach(io: car_3_126_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_127 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_127_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_127.photo.attach(io: car_3_127_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_128 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_128_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_128.photo.attach(io: car_3_128_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_129 = Product.create!(
+		name: "Model 3",
+		price: 46490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_129_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_129.photo.attach(io: car_3_129_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_130 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_130_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_130.photo.attach(io: car_3_130_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_131 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_131_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_131.photo.attach(io: car_3_131_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_132 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_132_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_132.photo.attach(io: car_3_132_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_133 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_133_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_133.photo.attach(io: car_3_133_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_134 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_134_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_134.photo.attach(io: car_3_134_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_135 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_135_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_135.photo.attach(io: car_3_135_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_136 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_136_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_136.photo.attach(io: car_3_136_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_137 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_137_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_137.photo.attach(io: car_3_137_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_138 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_138_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_138.photo.attach(io: car_3_138_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_139 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_139_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_139.photo.attach(io: car_3_139_file, filename: "model_3_$MT314_$PPSB_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_140 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_140_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_140.photo.attach(io: car_3_140_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_141 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_141_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_141.photo.attach(io: car_3_141_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_142 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_142_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_142.photo.attach(io: car_3_142_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_143 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_143_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_143.photo.attach(io: car_3_143_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_144 = Product.create!(
+		name: "Model 3",
+		price: 37990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_144_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_144.photo.attach(io: car_3_144_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_145 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_145_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_145.photo.attach(io: car_3_145_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_146 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_146_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_146.photo.attach(io: car_3_146_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_147 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_147_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_147.photo.attach(io: car_3_147_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_148 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_148_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_148.photo.attach(io: car_3_148_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_149 = Product.create!(
+		name: "Model 3",
+		price: 47990,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_149_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_149.photo.attach(io: car_3_149_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_150 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_150_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_150.photo.attach(io: car_3_150_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_151 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_151_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_151.photo.attach(io: car_3_151_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_152 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_152_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_152.photo.attach(io: car_3_152_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_153 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_153_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_153.photo.attach(io: car_3_153_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_154 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_154_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_154.photo.attach(io: car_3_154_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_155 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_155_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_155.photo.attach(io: car_3_155_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_156 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_156_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_156.photo.attach(io: car_3_156_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_157 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_157_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_157.photo.attach(io: car_3_157_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_158 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_158_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_158.photo.attach(io: car_3_158_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_159 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_159_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_159.photo.attach(io: car_3_159_file, filename: "model_3_$MT314_$PPSB_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_160 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_160_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_160.photo.attach(io: car_3_160_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_161 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_161_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_161.photo.attach(io: car_3_161_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_162 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_162_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_162.photo.attach(io: car_3_162_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_163 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_163_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_163.photo.attach(io: car_3_163_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_164 = Product.create!(
+		name: "Model 3",
+		price: 37490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_164_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_164.photo.attach(io: car_3_164_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_165 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_165_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_165.photo.attach(io: car_3_165_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_166 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_166_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_166.photo.attach(io: car_3_166_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_167 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_167_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_167.photo.attach(io: car_3_167_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_168 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_168_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_168.photo.attach(io: car_3_168_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_169 = Product.create!(
+		name: "Model 3",
+		price: 47490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_169_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_169.photo.attach(io: car_3_169_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_170 = Product.create!(
+		name: "Model 3",
+		price: 38490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_170_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_170.photo.attach(io: car_3_170_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_171 = Product.create!(
+		name: "Model 3",
+		price: 38490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_171_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_171.photo.attach(io: car_3_171_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_172 = Product.create!(
+		name: "Model 3",
+		price: 38490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_172_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_172.photo.attach(io: car_3_172_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_173 = Product.create!(
+		name: "Model 3",
+		price: 38490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_173_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_173.photo.attach(io: car_3_173_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_174 = Product.create!(
+		name: "Model 3",
+		price: 38490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_174_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_174.photo.attach(io: car_3_174_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_175 = Product.create!(
+		name: "Model 3",
+		price: 48490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_175_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_175.photo.attach(io: car_3_175_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_176 = Product.create!(
+		name: "Model 3",
+		price: 48490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_176_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_176.photo.attach(io: car_3_176_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_177 = Product.create!(
+		name: "Model 3",
+		price: 48490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_177_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_177.photo.attach(io: car_3_177_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_178 = Product.create!(
+		name: "Model 3",
+		price: 48490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_178_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_178.photo.attach(io: car_3_178_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_179 = Product.create!(
+		name: "Model 3",
+		price: 48490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "18\" Aero Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_179_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_179.photo.attach(io: car_3_179_file, filename: "model_3_$MT314_$PPMR_$W40B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	car_3_180 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_180_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+	car_3_180.photo.attach(io: car_3_180_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_FRONT34.jpg")
+
+	car_3_181 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_181_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+	car_3_181.photo.attach(io: car_3_181_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_182 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_182_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_REAR34.jpg")
+	car_3_182.photo.attach(io: car_3_182_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_REAR34.jpg")
+
+	car_3_183 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_183_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_183.photo.attach(io: car_3_183_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_184 = Product.create!(
+		name: "Model 3",
+		price: 38990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_184_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+	car_3_184.photo.attach(io: car_3_184_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_false_STUD_INTERIOR.jpg")
+
+	car_3_185 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_185_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+	car_3_185.photo.attach(io: car_3_185_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_FRONT34.jpg")
+
+	car_3_186 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_186_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+	car_3_186.photo.attach(io: car_3_186_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_187 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_187_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_REAR34.jpg")
+	car_3_187.photo.attach(io: car_3_187_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_REAR34.jpg")
+
+	car_3_188 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_188_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_188.photo.attach(io: car_3_188_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_189 = Product.create!(
+		name: "Model 3",
+		price: 48990,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_189_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+	car_3_189.photo.attach(io: car_3_189_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBB0_true_STUD_INTERIOR.jpg")
+
+	car_3_190 = Product.create!(
+		name: "Model 3",
+		price: 39990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_3_190_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+	car_3_190.photo.attach(io: car_3_190_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_FRONT34.jpg")
+
+	car_3_191 = Product.create!(
+		name: "Model 3",
+		price: 39990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_3_191_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+	car_3_191.photo.attach(io: car_3_191_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_SIDEVIEW.jpg")
+
+	car_3_192 = Product.create!(
+		name: "Model 3",
+		price: 39990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_3_192_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_REAR34.jpg")
+	car_3_192.photo.attach(io: car_3_192_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_REAR34.jpg")
+
+	car_3_193 = Product.create!(
+		name: "Model 3",
+		price: 39990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_3_193_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+	car_3_193.photo.attach(io: car_3_193_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_RIMCLOSEUP.jpg")
+
+	car_3_194 = Product.create!(
+		name: "Model 3",
+		price: 39990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_3_194_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+	car_3_194.photo.attach(io: car_3_194_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_false_STUD_INTERIOR.jpg")
+
+	car_3_195 = Product.create!(
+		name: "Model 3",
+		price: 49990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_3_195_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+	car_3_195.photo.attach(io: car_3_195_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_FRONT34.jpg")
+
+	car_3_196 = Product.create!(
+		name: "Model 3",
+		price: 49990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_3_196_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+	car_3_196.photo.attach(io: car_3_196_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_SIDEVIEW.jpg")
+
+	car_3_197 = Product.create!(
+		name: "Model 3",
+		price: 49990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_3_197_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_REAR34.jpg")
+	car_3_197.photo.attach(io: car_3_197_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_REAR34.jpg")
+
+	car_3_198 = Product.create!(
+		name: "Model 3",
+		price: 49990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_3_198_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+	car_3_198.photo.attach(io: car_3_198_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_RIMCLOSEUP.jpg")
+
+	car_3_199 = Product.create!(
+		name: "Model 3",
+		price: 49990,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Sport Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_3_199_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/model3/model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+	car_3_199.photo.attach(io: car_3_199_file, filename: "model_3_$MT314_$PPMR_$W41B_$IBW0_true_STUD_INTERIOR.jpg")
+
+	puts "Creating Model Y..."
+
+	car_y_0 = Product.create!(
+		name: "Model Y",
+		price: 47490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_0_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_FRONT34.jpg")
+	car_y_0.photo.attach(io: car_y_0_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_FRONT34.jpg")
+
+	car_y_1 = Product.create!(
+		name: "Model Y",
+		price: 47490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_1_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_SIDE.jpg")
+	car_y_1.photo.attach(io: car_y_1_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_SIDE.jpg")
+
+	car_y_2 = Product.create!(
+		name: "Model Y",
+		price: 47490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_2_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_REAR34.jpg")
+	car_y_2.photo.attach(io: car_y_2_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_REAR34.jpg")
+
+	car_y_3 = Product.create!(
+		name: "Model Y",
+		price: 47490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_3_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_3.photo.attach(io: car_y_3_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_4 = Product.create!(
+		name: "Model Y",
+		price: 47490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_4_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_INTERIOR.jpg")
+	car_y_4.photo.attach(io: car_y_4_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_false_INTERIOR.jpg")
+
+	car_y_5 = Product.create!(
+		name: "Model Y",
+		price: 57490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_5_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_FRONT34.jpg")
+	car_y_5.photo.attach(io: car_y_5_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_FRONT34.jpg")
+
+	car_y_6 = Product.create!(
+		name: "Model Y",
+		price: 57490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_6_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_SIDE.jpg")
+	car_y_6.photo.attach(io: car_y_6_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_SIDE.jpg")
+
+	car_y_7 = Product.create!(
+		name: "Model Y",
+		price: 57490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_7_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_REAR34.jpg")
+	car_y_7.photo.attach(io: car_y_7_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_REAR34.jpg")
+
+	car_y_8 = Product.create!(
+		name: "Model Y",
+		price: 57490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_8_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_8.photo.attach(io: car_y_8_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_9 = Product.create!(
+		name: "Model Y",
+		price: 57490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_9_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_INTERIOR.jpg")
+	car_y_9.photo.attach(io: car_y_9_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPB_true_INTERIOR.jpg")
+
+	car_y_10 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_10_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_FRONT34.jpg")
+	car_y_10.photo.attach(io: car_y_10_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_FRONT34.jpg")
+
+	car_y_11 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_11_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_SIDE.jpg")
+	car_y_11.photo.attach(io: car_y_11_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_SIDE.jpg")
+
+	car_y_12 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_12_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_REAR34.jpg")
+	car_y_12.photo.attach(io: car_y_12_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_REAR34.jpg")
+
+	car_y_13 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_13_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_13.photo.attach(io: car_y_13_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_14 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_14_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_INTERIOR.jpg")
+	car_y_14.photo.attach(io: car_y_14_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_false_INTERIOR.jpg")
+
+	car_y_15 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_15_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_FRONT34.jpg")
+	car_y_15.photo.attach(io: car_y_15_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_FRONT34.jpg")
+
+	car_y_16 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_16_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_SIDE.jpg")
+	car_y_16.photo.attach(io: car_y_16_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_SIDE.jpg")
+
+	car_y_17 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_17_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_REAR34.jpg")
+	car_y_17.photo.attach(io: car_y_17_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_REAR34.jpg")
+
+	car_y_18 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_18_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_18.photo.attach(io: car_y_18_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_19 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_19_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_INTERIOR.jpg")
+	car_y_19.photo.attach(io: car_y_19_file, filename: "model_y_$MTY03_$PPSW_$WY19B_$INYPW_true_INTERIOR.jpg")
+
+	car_y_20 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_20_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_FRONT34.jpg")
+	car_y_20.photo.attach(io: car_y_20_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_FRONT34.jpg")
+
+	car_y_21 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_21_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_SIDE.jpg")
+	car_y_21.photo.attach(io: car_y_21_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_SIDE.jpg")
+
+	car_y_22 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_22_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_REAR34.jpg")
+	car_y_22.photo.attach(io: car_y_22_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_REAR34.jpg")
+
+	car_y_23 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_23_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_23.photo.attach(io: car_y_23_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_24 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_24_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_INTERIOR.jpg")
+	car_y_24.photo.attach(io: car_y_24_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_false_INTERIOR.jpg")
+
+	car_y_25 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_25_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_FRONT34.jpg")
+	car_y_25.photo.attach(io: car_y_25_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_FRONT34.jpg")
+
+	car_y_26 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_26_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_SIDE.jpg")
+	car_y_26.photo.attach(io: car_y_26_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_SIDE.jpg")
+
+	car_y_27 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_27_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_REAR34.jpg")
+	car_y_27.photo.attach(io: car_y_27_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_REAR34.jpg")
+
+	car_y_28 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_28_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_28.photo.attach(io: car_y_28_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_29 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_29_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_INTERIOR.jpg")
+	car_y_29.photo.attach(io: car_y_29_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPB_true_INTERIOR.jpg")
+
+	car_y_30 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_30_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_FRONT34.jpg")
+	car_y_30.photo.attach(io: car_y_30_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_FRONT34.jpg")
+
+	car_y_31 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_31_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_SIDE.jpg")
+	car_y_31.photo.attach(io: car_y_31_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_SIDE.jpg")
+
+	car_y_32 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_32_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_REAR34.jpg")
+	car_y_32.photo.attach(io: car_y_32_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_REAR34.jpg")
+
+	car_y_33 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_33_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_33.photo.attach(io: car_y_33_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_34 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_34_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_INTERIOR.jpg")
+	car_y_34.photo.attach(io: car_y_34_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_false_INTERIOR.jpg")
+
+	car_y_35 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_35_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_FRONT34.jpg")
+	car_y_35.photo.attach(io: car_y_35_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_FRONT34.jpg")
+
+	car_y_36 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_36_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_SIDE.jpg")
+	car_y_36.photo.attach(io: car_y_36_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_SIDE.jpg")
+
+	car_y_37 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_37_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_REAR34.jpg")
+	car_y_37.photo.attach(io: car_y_37_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_REAR34.jpg")
+
+	car_y_38 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_38_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_38.photo.attach(io: car_y_38_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_39 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Pearl White Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_39_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_INTERIOR.jpg")
+	car_y_39.photo.attach(io: car_y_39_file, filename: "model_y_$MTY03_$PPSW_$WY20P_$INYPW_true_INTERIOR.jpg")
+
+	car_y_40 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_40_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_FRONT34.jpg")
+	car_y_40.photo.attach(io: car_y_40_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_FRONT34.jpg")
+
+	car_y_41 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_41_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_SIDE.jpg")
+	car_y_41.photo.attach(io: car_y_41_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_SIDE.jpg")
+
+	car_y_42 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_42_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_REAR34.jpg")
+	car_y_42.photo.attach(io: car_y_42_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_REAR34.jpg")
+
+	car_y_43 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_43_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_43.photo.attach(io: car_y_43_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_44 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_44_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_INTERIOR.jpg")
+	car_y_44.photo.attach(io: car_y_44_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_false_INTERIOR.jpg")
+
+	car_y_45 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_45_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_FRONT34.jpg")
+	car_y_45.photo.attach(io: car_y_45_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_FRONT34.jpg")
+
+	car_y_46 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_46_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_SIDE.jpg")
+	car_y_46.photo.attach(io: car_y_46_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_SIDE.jpg")
+
+	car_y_47 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_47_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_REAR34.jpg")
+	car_y_47.photo.attach(io: car_y_47_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_REAR34.jpg")
+
+	car_y_48 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_48_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_48.photo.attach(io: car_y_48_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_49 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_49_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_INTERIOR.jpg")
+	car_y_49.photo.attach(io: car_y_49_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPB_true_INTERIOR.jpg")
+
+	car_y_50 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_50_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_FRONT34.jpg")
+	car_y_50.photo.attach(io: car_y_50_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_FRONT34.jpg")
+
+	car_y_51 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_51_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_SIDE.jpg")
+	car_y_51.photo.attach(io: car_y_51_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_SIDE.jpg")
+
+	car_y_52 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_52_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_REAR34.jpg")
+	car_y_52.photo.attach(io: car_y_52_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_REAR34.jpg")
+
+	car_y_53 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_53_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_53.photo.attach(io: car_y_53_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_54 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_54_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_INTERIOR.jpg")
+	car_y_54.photo.attach(io: car_y_54_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_false_INTERIOR.jpg")
+
+	car_y_55 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_55_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_FRONT34.jpg")
+	car_y_55.photo.attach(io: car_y_55_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_FRONT34.jpg")
+
+	car_y_56 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_56_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_SIDE.jpg")
+	car_y_56.photo.attach(io: car_y_56_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_SIDE.jpg")
+
+	car_y_57 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_57_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_REAR34.jpg")
+	car_y_57.photo.attach(io: car_y_57_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_REAR34.jpg")
+
+	car_y_58 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_58_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_58.photo.attach(io: car_y_58_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_59 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_59_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_INTERIOR.jpg")
+	car_y_59.photo.attach(io: car_y_59_file, filename: "model_y_$MTY03_$PBSB_$WY19B_$INYPW_true_INTERIOR.jpg")
+
+	car_y_60 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_60_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_FRONT34.jpg")
+	car_y_60.photo.attach(io: car_y_60_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_FRONT34.jpg")
+
+	car_y_61 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_61_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_SIDE.jpg")
+	car_y_61.photo.attach(io: car_y_61_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_SIDE.jpg")
+
+	car_y_62 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_62_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_REAR34.jpg")
+	car_y_62.photo.attach(io: car_y_62_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_REAR34.jpg")
+
+	car_y_63 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_63_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_63.photo.attach(io: car_y_63_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_64 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_64_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_INTERIOR.jpg")
+	car_y_64.photo.attach(io: car_y_64_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_false_INTERIOR.jpg")
+
+	car_y_65 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_65_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_FRONT34.jpg")
+	car_y_65.photo.attach(io: car_y_65_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_FRONT34.jpg")
+
+	car_y_66 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_66_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_SIDE.jpg")
+	car_y_66.photo.attach(io: car_y_66_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_SIDE.jpg")
+
+	car_y_67 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_67_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_REAR34.jpg")
+	car_y_67.photo.attach(io: car_y_67_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_REAR34.jpg")
+
+	car_y_68 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_68_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_68.photo.attach(io: car_y_68_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_69 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Solid Black",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_69_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_INTERIOR.jpg")
+	car_y_69.photo.attach(io: car_y_69_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPB_true_INTERIOR.jpg")
+
+	car_y_70 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_70_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_FRONT34.jpg")
+	car_y_70.photo.attach(io: car_y_70_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_FRONT34.jpg")
+
+	car_y_71 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_71_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_SIDE.jpg")
+	car_y_71.photo.attach(io: car_y_71_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_SIDE.jpg")
+
+	car_y_72 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_72_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_REAR34.jpg")
+	car_y_72.photo.attach(io: car_y_72_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_REAR34.jpg")
+
+	car_y_73 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_73_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_73.photo.attach(io: car_y_73_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_74 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_74_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_INTERIOR.jpg")
+	car_y_74.photo.attach(io: car_y_74_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_false_INTERIOR.jpg")
+
+	car_y_75 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_75_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_FRONT34.jpg")
+	car_y_75.photo.attach(io: car_y_75_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_FRONT34.jpg")
+
+	car_y_76 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_76_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_SIDE.jpg")
+	car_y_76.photo.attach(io: car_y_76_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_SIDE.jpg")
+
+	car_y_77 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_77_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_REAR34.jpg")
+	car_y_77.photo.attach(io: car_y_77_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_REAR34.jpg")
+
+	car_y_78 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_78_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_78.photo.attach(io: car_y_78_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_79 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Solid Black",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_79_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_INTERIOR.jpg")
+	car_y_79.photo.attach(io: car_y_79_file, filename: "model_y_$MTY03_$PBSB_$WY20P_$INYPW_true_INTERIOR.jpg")
+
+	car_y_80 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_80_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_FRONT34.jpg")
+	car_y_80.photo.attach(io: car_y_80_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_FRONT34.jpg")
+
+	car_y_81 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_81_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_SIDE.jpg")
+	car_y_81.photo.attach(io: car_y_81_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_SIDE.jpg")
+
+	car_y_82 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_82_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_REAR34.jpg")
+	car_y_82.photo.attach(io: car_y_82_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_REAR34.jpg")
+
+	car_y_83 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_83_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_83.photo.attach(io: car_y_83_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_84 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_84_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_INTERIOR.jpg")
+	car_y_84.photo.attach(io: car_y_84_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_false_INTERIOR.jpg")
+
+	car_y_85 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_85_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_FRONT34.jpg")
+	car_y_85.photo.attach(io: car_y_85_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_FRONT34.jpg")
+
+	car_y_86 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_86_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_SIDE.jpg")
+	car_y_86.photo.attach(io: car_y_86_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_SIDE.jpg")
+
+	car_y_87 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_87_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_REAR34.jpg")
+	car_y_87.photo.attach(io: car_y_87_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_REAR34.jpg")
+
+	car_y_88 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_88_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_88.photo.attach(io: car_y_88_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_89 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_89_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_INTERIOR.jpg")
+	car_y_89.photo.attach(io: car_y_89_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPB_true_INTERIOR.jpg")
+
+	car_y_90 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_90_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_FRONT34.jpg")
+	car_y_90.photo.attach(io: car_y_90_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_FRONT34.jpg")
+
+	car_y_91 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_91_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_SIDE.jpg")
+	car_y_91.photo.attach(io: car_y_91_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_SIDE.jpg")
+
+	car_y_92 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_92_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_REAR34.jpg")
+	car_y_92.photo.attach(io: car_y_92_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_REAR34.jpg")
+
+	car_y_93 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_93_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_93.photo.attach(io: car_y_93_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_94 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_94_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_INTERIOR.jpg")
+	car_y_94.photo.attach(io: car_y_94_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_false_INTERIOR.jpg")
+
+	car_y_95 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_95_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_FRONT34.jpg")
+	car_y_95.photo.attach(io: car_y_95_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_FRONT34.jpg")
+
+	car_y_96 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_96_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_SIDE.jpg")
+	car_y_96.photo.attach(io: car_y_96_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_SIDE.jpg")
+
+	car_y_97 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_97_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_REAR34.jpg")
+	car_y_97.photo.attach(io: car_y_97_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_REAR34.jpg")
+
+	car_y_98 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_98_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_98.photo.attach(io: car_y_98_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_99 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_99_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_INTERIOR.jpg")
+	car_y_99.photo.attach(io: car_y_99_file, filename: "model_y_$MTY03_$PMNG_$WY19B_$INYPW_true_INTERIOR.jpg")
+
+	car_y_100 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_100_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_FRONT34.jpg")
+	car_y_100.photo.attach(io: car_y_100_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_FRONT34.jpg")
+
+	puts "Creating Model Y_1..."
+
+	car_y_101 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_101_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_SIDE.jpg")
+	car_y_101.photo.attach(io: car_y_101_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_SIDE.jpg")
+
+	car_y_102 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_102_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_REAR34.jpg")
+	car_y_102.photo.attach(io: car_y_102_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_REAR34.jpg")
+
+	car_y_103 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_103_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_103.photo.attach(io: car_y_103_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_104 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_104_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_INTERIOR.jpg")
+	car_y_104.photo.attach(io: car_y_104_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_false_INTERIOR.jpg")
+
+	car_y_105 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_105_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_FRONT34.jpg")
+	car_y_105.photo.attach(io: car_y_105_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_FRONT34.jpg")
+
+	car_y_106 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_106_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_SIDE.jpg")
+	car_y_106.photo.attach(io: car_y_106_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_SIDE.jpg")
+
+	car_y_107 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_107_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_REAR34.jpg")
+	car_y_107.photo.attach(io: car_y_107_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_REAR34.jpg")
+
+	car_y_108 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_108_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_108.photo.attach(io: car_y_108_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_109 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Midnight Silver Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_109_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_INTERIOR.jpg")
+	car_y_109.photo.attach(io: car_y_109_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPB_true_INTERIOR.jpg")
+
+	car_y_110 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_110_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_FRONT34.jpg")
+	car_y_110.photo.attach(io: car_y_110_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_FRONT34.jpg")
+
+	car_y_111 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_111_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_SIDE.jpg")
+	car_y_111.photo.attach(io: car_y_111_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_SIDE.jpg")
+
+	car_y_112 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_112_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_REAR34.jpg")
+	car_y_112.photo.attach(io: car_y_112_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_REAR34.jpg")
+
+	car_y_113 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_113_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_113.photo.attach(io: car_y_113_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_114 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_114_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_INTERIOR.jpg")
+	car_y_114.photo.attach(io: car_y_114_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_false_INTERIOR.jpg")
+
+	car_y_115 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_115_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_FRONT34.jpg")
+	car_y_115.photo.attach(io: car_y_115_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_FRONT34.jpg")
+
+	car_y_116 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_116_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_SIDE.jpg")
+	car_y_116.photo.attach(io: car_y_116_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_SIDE.jpg")
+
+	car_y_117 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_117_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_REAR34.jpg")
+	car_y_117.photo.attach(io: car_y_117_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_REAR34.jpg")
+
+	car_y_118 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_118_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_118.photo.attach(io: car_y_118_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_119 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Midnight Silver Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_119_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_INTERIOR.jpg")
+	car_y_119.photo.attach(io: car_y_119_file, filename: "model_y_$MTY03_$PMNG_$WY20P_$INYPW_true_INTERIOR.jpg")
+
+	car_y_120 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_120_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_FRONT34.jpg")
+	car_y_120.photo.attach(io: car_y_120_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_FRONT34.jpg")
+
+	car_y_121 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_121_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_SIDE.jpg")
+	car_y_121.photo.attach(io: car_y_121_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_SIDE.jpg")
+
+	car_y_122 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_122_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_REAR34.jpg")
+	car_y_122.photo.attach(io: car_y_122_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_REAR34.jpg")
+
+	car_y_123 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_123_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_123.photo.attach(io: car_y_123_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_124 = Product.create!(
+		name: "Model Y",
+		price: 48490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_124_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_INTERIOR.jpg")
+	car_y_124.photo.attach(io: car_y_124_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_false_INTERIOR.jpg")
+
+	car_y_125 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_125_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_FRONT34.jpg")
+	car_y_125.photo.attach(io: car_y_125_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_FRONT34.jpg")
+
+	car_y_126 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_126_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_SIDE.jpg")
+	car_y_126.photo.attach(io: car_y_126_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_SIDE.jpg")
+
+	car_y_127 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_127_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_REAR34.jpg")
+	car_y_127.photo.attach(io: car_y_127_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_REAR34.jpg")
+
+	car_y_128 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_128_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_128.photo.attach(io: car_y_128_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_129 = Product.create!(
+		name: "Model Y",
+		price: 58490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_129_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_INTERIOR.jpg")
+	car_y_129.photo.attach(io: car_y_129_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPB_true_INTERIOR.jpg")
+
+	car_y_130 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_130_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_FRONT34.jpg")
+	car_y_130.photo.attach(io: car_y_130_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_FRONT34.jpg")
+
+	car_y_131 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_131_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_SIDE.jpg")
+	car_y_131.photo.attach(io: car_y_131_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_SIDE.jpg")
+
+	car_y_132 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_132_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_REAR34.jpg")
+	car_y_132.photo.attach(io: car_y_132_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_REAR34.jpg")
+
+	car_y_133 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_133_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_133.photo.attach(io: car_y_133_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_134 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_134_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_INTERIOR.jpg")
+	car_y_134.photo.attach(io: car_y_134_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_false_INTERIOR.jpg")
+
+	car_y_135 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_135_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_FRONT34.jpg")
+	car_y_135.photo.attach(io: car_y_135_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_FRONT34.jpg")
+
+	car_y_136 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_136_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_SIDE.jpg")
+	car_y_136.photo.attach(io: car_y_136_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_SIDE.jpg")
+
+	car_y_137 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_137_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_REAR34.jpg")
+	car_y_137.photo.attach(io: car_y_137_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_REAR34.jpg")
+
+	car_y_138 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_138_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_138.photo.attach(io: car_y_138_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_139 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_139_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_INTERIOR.jpg")
+	car_y_139.photo.attach(io: car_y_139_file, filename: "model_y_$MTY03_$PPSB_$WY19B_$INYPW_true_INTERIOR.jpg")
+
+	car_y_140 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_140_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_FRONT34.jpg")
+	car_y_140.photo.attach(io: car_y_140_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_FRONT34.jpg")
+
+	car_y_141 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_141_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_SIDE.jpg")
+	car_y_141.photo.attach(io: car_y_141_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_SIDE.jpg")
+
+	car_y_142 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_142_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_REAR34.jpg")
+	car_y_142.photo.attach(io: car_y_142_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_REAR34.jpg")
+
+	car_y_143 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_143_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_143.photo.attach(io: car_y_143_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_144 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_144_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_INTERIOR.jpg")
+	car_y_144.photo.attach(io: car_y_144_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_false_INTERIOR.jpg")
+
+	car_y_145 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_145_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_FRONT34.jpg")
+	car_y_145.photo.attach(io: car_y_145_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_FRONT34.jpg")
+
+	car_y_146 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_146_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_SIDE.jpg")
+	car_y_146.photo.attach(io: car_y_146_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_SIDE.jpg")
+
+	car_y_147 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_147_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_REAR34.jpg")
+	car_y_147.photo.attach(io: car_y_147_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_REAR34.jpg")
+
+	car_y_148 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_148_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_148.photo.attach(io: car_y_148_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_149 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Deep Blue Metallic",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_149_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_INTERIOR.jpg")
+	car_y_149.photo.attach(io: car_y_149_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPB_true_INTERIOR.jpg")
+
+	car_y_150 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_150_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_FRONT34.jpg")
+	car_y_150.photo.attach(io: car_y_150_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_FRONT34.jpg")
+
+	car_y_151 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_151_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_SIDE.jpg")
+	car_y_151.photo.attach(io: car_y_151_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_SIDE.jpg")
+
+	car_y_152 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_152_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_REAR34.jpg")
+	car_y_152.photo.attach(io: car_y_152_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_REAR34.jpg")
+
+	car_y_153 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_153_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_153.photo.attach(io: car_y_153_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_154 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_154_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_INTERIOR.jpg")
+	car_y_154.photo.attach(io: car_y_154_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_false_INTERIOR.jpg")
+
+	car_y_155 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_155_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_FRONT34.jpg")
+	car_y_155.photo.attach(io: car_y_155_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_FRONT34.jpg")
+
+	car_y_156 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_156_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_SIDE.jpg")
+	car_y_156.photo.attach(io: car_y_156_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_SIDE.jpg")
+
+	car_y_157 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_157_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_REAR34.jpg")
+	car_y_157.photo.attach(io: car_y_157_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_REAR34.jpg")
+
+	car_y_158 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_158_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_158.photo.attach(io: car_y_158_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_159 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Deep Blue Metallic",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_159_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_INTERIOR.jpg")
+	car_y_159.photo.attach(io: car_y_159_file, filename: "model_y_$MTY03_$PPSB_$WY20P_$INYPW_true_INTERIOR.jpg")
+
+	car_y_160 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_160_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_FRONT34.jpg")
+	car_y_160.photo.attach(io: car_y_160_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_FRONT34.jpg")
+
+	car_y_161 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_161_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_SIDE.jpg")
+	car_y_161.photo.attach(io: car_y_161_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_SIDE.jpg")
+
+	car_y_162 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_162_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_REAR34.jpg")
+	car_y_162.photo.attach(io: car_y_162_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_REAR34.jpg")
+
+	car_y_163 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_163_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_163.photo.attach(io: car_y_163_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_164 = Product.create!(
+		name: "Model Y",
+		price: 49490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_164_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_INTERIOR.jpg")
+	car_y_164.photo.attach(io: car_y_164_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_false_INTERIOR.jpg")
+
+	car_y_165 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_165_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_FRONT34.jpg")
+	car_y_165.photo.attach(io: car_y_165_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_FRONT34.jpg")
+
+	car_y_166 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_166_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_SIDE.jpg")
+	car_y_166.photo.attach(io: car_y_166_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_SIDE.jpg")
+
+	car_y_167 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_167_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_REAR34.jpg")
+	car_y_167.photo.attach(io: car_y_167_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_REAR34.jpg")
+
+	car_y_168 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_168_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_168.photo.attach(io: car_y_168_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_169 = Product.create!(
+		name: "Model Y",
+		price: 59490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_169_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_INTERIOR.jpg")
+	car_y_169.photo.attach(io: car_y_169_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPB_true_INTERIOR.jpg")
+
+	car_y_170 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_170_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_FRONT34.jpg")
+	car_y_170.photo.attach(io: car_y_170_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_FRONT34.jpg")
+
+	car_y_171 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_171_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_SIDE.jpg")
+	car_y_171.photo.attach(io: car_y_171_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_SIDE.jpg")
+
+	car_y_172 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_172_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_REAR34.jpg")
+	car_y_172.photo.attach(io: car_y_172_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_REAR34.jpg")
+
+	car_y_173 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_173_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_173.photo.attach(io: car_y_173_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_174 = Product.create!(
+		name: "Model Y",
+		price: 50490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_174_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_INTERIOR.jpg")
+	car_y_174.photo.attach(io: car_y_174_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_false_INTERIOR.jpg")
+
+	car_y_175 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_175_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_FRONT34.jpg")
+	car_y_175.photo.attach(io: car_y_175_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_FRONT34.jpg")
+
+	car_y_176 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_176_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_SIDE.jpg")
+	car_y_176.photo.attach(io: car_y_176_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_SIDE.jpg")
+
+	car_y_177 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_177_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_REAR34.jpg")
+	car_y_177.photo.attach(io: car_y_177_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_REAR34.jpg")
+
+	car_y_178 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_178_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_178.photo.attach(io: car_y_178_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_179 = Product.create!(
+		name: "Model Y",
+		price: 60490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "19\" Gemini Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_179_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_INTERIOR.jpg")
+	car_y_179.photo.attach(io: car_y_179_file, filename: "model_y_$MTY03_$PPMR_$WY19B_$INYPW_true_INTERIOR.jpg")
+
+	car_y_180 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_180_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_FRONT34.jpg")
+	car_y_180.photo.attach(io: car_y_180_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_FRONT34.jpg")
+
+	car_y_181 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_181_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_SIDE.jpg")
+	car_y_181.photo.attach(io: car_y_181_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_SIDE.jpg")
+
+	car_y_182 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_182_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_REAR34.jpg")
+	car_y_182.photo.attach(io: car_y_182_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_REAR34.jpg")
+
+	car_y_183 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_183_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+	car_y_183.photo.attach(io: car_y_183_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_RIMCLOSEUP.jpg")
+
+	car_y_184 = Product.create!(
+		name: "Model Y",
+		price: 51490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_184_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_INTERIOR.jpg")
+	car_y_184.photo.attach(io: car_y_184_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_false_INTERIOR.jpg")
+
+	car_y_185 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_185_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_FRONT34.jpg")
+	car_y_185.photo.attach(io: car_y_185_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_FRONT34.jpg")
+
+	car_y_186 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_186_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_SIDE.jpg")
+	car_y_186.photo.attach(io: car_y_186_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_SIDE.jpg")
+
+	car_y_187 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_187_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_REAR34.jpg")
+	car_y_187.photo.attach(io: car_y_187_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_REAR34.jpg")
+
+	car_y_188 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_188_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+	car_y_188.photo.attach(io: car_y_188_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_RIMCLOSEUP.jpg")
+
+	car_y_189 = Product.create!(
+		name: "Model Y",
+		price: 61490,
+		exterior: "Red Multi-Coat",
+		interior: "All Black",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_189_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_INTERIOR.jpg")
+	car_y_189.photo.attach(io: car_y_189_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPB_true_INTERIOR.jpg")
+
+	car_y_190 = Product.create!(
+		name: "Model Y",
+		price: 52490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "front",
+	)
+	car_y_190_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_FRONT34.jpg")
+	car_y_190.photo.attach(io: car_y_190_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_FRONT34.jpg")
+
+	car_y_191 = Product.create!(
+		name: "Model Y",
+		price: 52490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "side",
+	)
+	car_y_191_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_SIDE.jpg")
+	car_y_191.photo.attach(io: car_y_191_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_SIDE.jpg")
+
+	car_y_192 = Product.create!(
+		name: "Model Y",
+		price: 52490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rear",
+	)
+	car_y_192_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_REAR34.jpg")
+	car_y_192.photo.attach(io: car_y_192_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_REAR34.jpg")
+
+	car_y_193 = Product.create!(
+		name: "Model Y",
+		price: 52490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "rim",
+	)
+	car_y_193_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+	car_y_193.photo.attach(io: car_y_193_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_RIMCLOSEUP.jpg")
+
+	car_y_194 = Product.create!(
+		name: "Model Y",
+		price: 52490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: false,
+		view: "interior",
+	)
+	car_y_194_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_INTERIOR.jpg")
+	car_y_194.photo.attach(io: car_y_194_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_false_INTERIOR.jpg")
+
+	car_y_195 = Product.create!(
+		name: "Model Y",
+		price: 62490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "front",
+	)
+	car_y_195_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_FRONT34.jpg")
+	car_y_195.photo.attach(io: car_y_195_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_FRONT34.jpg")
+
+	car_y_196 = Product.create!(
+		name: "Model Y",
+		price: 62490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "side",
+	)
+	car_y_196_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_SIDE.jpg")
+	car_y_196.photo.attach(io: car_y_196_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_SIDE.jpg")
+
+	car_y_197 = Product.create!(
+		name: "Model Y",
+		price: 62490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rear",
+	)
+	car_y_197_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_REAR34.jpg")
+	car_y_197.photo.attach(io: car_y_197_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_REAR34.jpg")
+
+	car_y_198 = Product.create!(
+		name: "Model Y",
+		price: 62490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "rim",
+	)
+	car_y_198_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+	car_y_198.photo.attach(io: car_y_198_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_RIMCLOSEUP.jpg")
+
+	car_y_199 = Product.create!(
+		name: "Model Y",
+		price: 62490,
+		exterior: "Red Multi-Coat",
+		interior: "Black and White",
+		wheel_type: "20\" Induction Wheels",
+		self_driving: true,
+		view: "interior",
+	)
+	car_y_199_file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/modely/model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_INTERIOR.jpg")
+	car_y_199.photo.attach(io: car_y_199_file, filename: "model_y_$MTY03_$PPMR_$WY20P_$INYPW_true_INTERIOR.jpg")
 end

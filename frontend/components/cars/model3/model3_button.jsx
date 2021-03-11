@@ -48,7 +48,7 @@ class Model3Button extends React.Component {
             </div> */}
 
           <div className="carButton__header">
-            <h1>Model S</h1>
+            <h1>Model 3</h1>
             <p>Estimated Delivery: 5-11 weeks</p>
           </div>
 
@@ -105,18 +105,18 @@ class Model3Button extends React.Component {
           <div className="carButton__wheels">
             <button
               type="submit"
-              value='19"Tempest Wheels'
+              value='18" Aero Wheels'
               onClick={this.handleWheelType}
             >
-              <img src={window.tempestURL} alt='19" Tempest' />
+              <img src={window.aeroURL} alt='18" Aero' />
             </button>
 
             <button
               type="submit"
-              value='21" Arachnid Wheels'
+              value='19" Sport Wheels'
               onClick={this.handleWheelType}
             >
-              <img src={window.arachnidURL} alt='21" Arachnid' />
+              <img src={window.sportURL} alt='19" Sport' />
             </button>
           </div>
 
@@ -137,14 +137,6 @@ class Model3Button extends React.Component {
               onClick={this.handleInterior}
             >
               <img src={window.interiorWhiteURL} alt="Interior White" />
-            </button>
-
-            <button
-              type="submit"
-              value="Cream"
-              onClick={this.handleInterior}
-            >
-              <img src={window.interiorCreamURL} alt="Interior Cream" />
             </button>
           </div>
         </div>
@@ -192,7 +184,7 @@ class Model3Button extends React.Component {
             </button>
           </div>
 
-          <h1>Order Your Model S</h1>
+          <h1>Order Your Model 3</h1>
           <p>Estimated Delivery: 5-11 weeks</p>
           <div className="carButton_selfDriving">
             <button className="carButton__primary">Continue to Payment</button>
