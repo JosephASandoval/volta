@@ -1,4 +1,4 @@
-# volta
+# Volta
 
 [Live Site](https://sandoval-volta.herokuapp.com/#/)
 
