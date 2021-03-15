@@ -1,9 +1,9 @@
-# volta
+# Volta
 
 [Live Site](https://sandoval-volta.herokuapp.com/#/)
 
 ## Description
-Volta, a Tesla clone, is an ecommerce application that allows users to search for and "purchase" new and used Volta electric vehicles. Users can also publicly share short reviews and comments for all Volta products that can be viewed by other users.
+Volta, a Tesla clone, is an eCommerce web application that allows users to search for and "purchase" Volta electric vehicles. Users can also publicly share short reviews and comments for all Volta products that can be viewed by other users.
 
 ## Technology
 React.js, Redux and Ruby on Rails were used to allow my app to store products that users can shop, customize, buy, and leave reviews. Users can login to their profile page containing their purchases, reviews, and profile picuture.
