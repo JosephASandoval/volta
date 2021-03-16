@@ -9,6 +9,11 @@ Volta, a Tesla clone, is an eCommerce web application that allows users to searc
 React.js, Redux and Ruby on Rails were used to allow my app to store products that users can shop, customize, buy, and leave reviews. Users can login to their profile page containing their purchases, reviews, and profile picuture.
 
 ## Features
+### New account creation, login, and guest/demo login (complete)
+* Users can sign up, sign in, log out
+* Users can use a demo login to try the site
+* Users can't use certain features without logging in (creating comments & reviews)
+
 ### Product Listing and Customization (in progress)
 * Products are listed on the homepage
 * Homepage also includes links at the top for each product
