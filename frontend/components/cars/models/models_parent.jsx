@@ -20,8 +20,12 @@ class ModelsParent extends React.Component {
       wheelType: '19" Tempest Wheels',
       selfDriving: false,
       view: 0,
+      // photoUrl:
+      //   "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamdGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2bd87a5aa007051477694a822dd9d9d28090c14f/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
       photoUrl:
-        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamdGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2bd87a5aa007051477694a822dd9d9d28090c14f/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
+        this.props.products && this.props.products.length !== 0
+          ? this.props.products[0].photoUrl
+          : "",
     };
 
     this.updateExterior = this.updateExterior.bind(this);
@@ -201,7 +205,7 @@ class ModelsParent extends React.Component {
             className="carParent__item"
             style={{
               backgroundImage:
-                this.props.products.length !== 0
+                this.props.products && this.props.products.length !== 0
                   ? `url(${this.state.photoUrl})`
                   : `url(${window.model_s_firstURL})`,
             }}

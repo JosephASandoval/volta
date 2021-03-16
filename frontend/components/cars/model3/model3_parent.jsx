@@ -21,7 +21,9 @@ class Model3Parent extends React.Component {
       selfDriving: false,
       view: 0,
       photoUrl:
-        "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcEFIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6da7e8b1fcae778e1bd2996526a3e4a1f74a4bf7/model_3_-MT314_-PPSW_-W40B_-IBB0_false_STUD_FRONT34.jpg",
+        this.props.products && this.props.products.length !== 0
+          ? this.props.products[600].photoUrl
+          : "",
     };
 
     this.updateExterior = this.updateExterior.bind(this);
@@ -35,7 +37,7 @@ class Model3Parent extends React.Component {
 
   componentDidMount() {
     this.props.requestAllProducts().then(() => {
-      this.setState({ photoUrl: this.props.products[0].photoUrl });
+      this.setState({ photoUrl: this.props.products[600].photoUrl });
     });
   }
 
@@ -201,7 +203,7 @@ class Model3Parent extends React.Component {
             className="carParent__item"
             style={{
               backgroundImage:
-                this.props.products.length !== 0
+                this.props.products && this.props.products.length !== 0
                   ? `url(${this.state.photoUrl})`
                   : `url(${window.model_3_firstURL})`,
             }}
