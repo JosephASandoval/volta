@@ -20,8 +20,6 @@ class ModelsParent extends React.Component {
       wheelType: '19" Tempest Wheels',
       selfDriving: false,
       view: 0,
-      // photoUrl:
-      //   "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamdGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2bd87a5aa007051477694a822dd9d9d28090c14f/model_s_-MTS10_-PPSW_-WS90_-IBE00_false_FRONT34.jpg",
       photoUrl:
         this.props.products && this.props.products.length !== 0
           ? this.props.products[0].photoUrl
@@ -33,7 +31,7 @@ class ModelsParent extends React.Component {
     this.updateWheelType = this.updateWheelType.bind(this);
     this.updateSelfDriving = this.updateSelfDriving.bind(this);
     this.updateView = this.updateView.bind(this);
-
+    
     this.handleView = this.handleView.bind(this);
   }
 
@@ -45,8 +43,6 @@ class ModelsParent extends React.Component {
 
   // update exterior
   updateExterior(exterior) {
-    console.log(exterior);
-
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -63,7 +59,7 @@ class ModelsParent extends React.Component {
       photoUrl: result[0].photoUrl,
       name: result[0].name,
       price: result[0].price,
-      exterior: result[0].exterior, //same as parameter passed in
+      exterior: result[0].exterior,
       interior: result[0].interior,
       wheelType: result[0].wheelType,
       selfDriving: result[0].selfDriving,
@@ -72,8 +68,6 @@ class ModelsParent extends React.Component {
 
   // update interior
   updateInterior(interior) {
-    console.log(interior);
-
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -99,7 +93,6 @@ class ModelsParent extends React.Component {
 
   // update wheel type
   updateWheelType(wheelType) {
-    console.log(wheelType);
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -125,8 +118,6 @@ class ModelsParent extends React.Component {
 
   // update self driving
   updateSelfDriving(selfDriving) {
-    console.log(selfDriving);
-
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -151,8 +142,6 @@ class ModelsParent extends React.Component {
   }
   // update view
   updateView(view) {
-    console.log(view);
-
     let targetView = this.state.view;
 
     if (view === "right") {
@@ -230,20 +219,6 @@ class ModelsParent extends React.Component {
               </button>
             </div>
           </div>
-
-          {/*
-          <h1>{title}</h1>
-          <h4>
-            {desc} <span>Touchless Delivery</span>
-          </h4>
-        </div>
-        <div className="item__actions">
-          <button className="item__buttonPrimary">{leftBtnTxt}</button>
-          <button className="item__buttonSecondary">{rightBtnTxt}</button>
-        </div>
-          */}
-
-          {/* <img src={this.state.imageLink} alt="image" /> */}
         </div>
 
         <div className="carParent__price">

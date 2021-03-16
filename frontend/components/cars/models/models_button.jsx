@@ -53,7 +53,6 @@ class ModelsButton extends React.Component {
           </div>
 
           {/* update exterior */}
-
           <h1>Paint</h1>
           <div className="carButton__paint">
             <button

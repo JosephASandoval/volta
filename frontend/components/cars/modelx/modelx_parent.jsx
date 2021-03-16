@@ -43,8 +43,6 @@ class ModelxParent extends React.Component {
 
   // update exterior
   updateExterior(exterior) {
-    console.log(exterior);
-
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -61,7 +59,7 @@ class ModelxParent extends React.Component {
       photoUrl: result[0].photoUrl,
       name: result[0].name,
       price: result[0].price,
-      exterior: result[0].exterior, //same as parameter passed in
+      exterior: result[0].exterior,
       interior: result[0].interior,
       wheelType: result[0].wheelType,
       selfDriving: result[0].selfDriving,
@@ -70,8 +68,6 @@ class ModelxParent extends React.Component {
 
   // update interior
   updateInterior(interior) {
-    console.log(interior);
-
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -97,7 +93,6 @@ class ModelxParent extends React.Component {
 
   // update wheel type
   updateWheelType(wheelType) {
-    console.log(wheelType);
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -123,8 +118,6 @@ class ModelxParent extends React.Component {
 
   // update self driving
   updateSelfDriving(selfDriving) {
-    console.log(selfDriving);
-
     let result = this.props.products.filter((data) => {
       return (
         data["name"] === this.state.name &&
@@ -149,8 +142,6 @@ class ModelxParent extends React.Component {
   }
   // update view
   updateView(view) {
-    console.log(view);
-
     let targetView = this.state.view;
 
     if (view === "right") {
@@ -228,20 +219,6 @@ class ModelxParent extends React.Component {
               </button>
             </div>
           </div>
-
-          {/*
-          <h1>{title}</h1>
-          <h4>
-            {desc} <span>Touchless Delivery</span>
-          </h4>
-        </div>
-        <div className="item__actions">
-          <button className="item__buttonPrimary">{leftBtnTxt}</button>
-          <button className="item__buttonSecondary">{rightBtnTxt}</button>
-        </div>
-          */}
-
-          {/* <img src={this.state.imageLink} alt="image" /> */}
         </div>
 
         <div className="carParent__price">
