@@ -34,7 +34,9 @@ class ModelsParent extends React.Component {
   }
 
   componentDidMount() {
-    this.props.requestAllProducts();
+    this.props.requestAllProducts().then(() => {
+      this.setState({ photoUrl: this.props.products[0].photoUrl });
+    });
   }
 
   // update exterior
@@ -197,7 +199,12 @@ class ModelsParent extends React.Component {
         <div className="carParent">
           <div
             className="carParent__item"
-            style={{ backgroundImage: `url(${this.state.photoUrl})` }}
+            style={{
+              backgroundImage:
+                this.props.products.length !== 0
+                  ? `url(${this.state.photoUrl})`
+                  : `url(${window.model_s_firstURL})`,
+            }}
           >
             <div className="carParent__itemActions">
               <button
