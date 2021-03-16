@@ -31,7 +31,7 @@ class ModelsParent extends React.Component {
     this.updateWheelType = this.updateWheelType.bind(this);
     this.updateSelfDriving = this.updateSelfDriving.bind(this);
     this.updateView = this.updateView.bind(this);
-    
+
     this.handleView = this.handleView.bind(this);
   }
 

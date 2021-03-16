@@ -4,7 +4,6 @@ import {
 } from "../actions/product_actions";
 
 const productsReducer = (oldState = {}, action) => {
-
   Object.freeze(oldState);
   let nextState = Object.assign({}, oldState);
 
