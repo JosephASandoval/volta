@@ -4,13 +4,16 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
 const Header = ({
+  products,
   requestAllProducts,
   currentUser,
   isMenuOpen,
   setIsMenuOpen,
 }) => {
   useEffect(() => {
-    requestAllProducts();
+    if (products.length === 0) {
+      requestAllProducts();
+    }
   }, []);
 
   return (

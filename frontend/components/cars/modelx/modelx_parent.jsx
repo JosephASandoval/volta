@@ -36,9 +36,11 @@ class ModelxParent extends React.Component {
   }
 
   componentDidMount() {
-    this.props.requestAllProducts().then(() => {
-      this.setState({ photoUrl: this.props.products[300].photoUrl });
-    });
+    if (this.props.products.length === 0) {
+      this.props.requestAllProducts().then(() => {
+        this.setState({ photoUrl: this.props.products[300].photoUrl });
+      });
+    }
   }
 
   // update exterior

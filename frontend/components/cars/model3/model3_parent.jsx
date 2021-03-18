@@ -36,9 +36,11 @@ class Model3Parent extends React.Component {
   }
 
   componentDidMount() {
-    this.props.requestAllProducts().then(() => {
-      this.setState({ photoUrl: this.props.products[600].photoUrl });
-    });
+    if (this.props.products.length === 0) {
+      this.props.requestAllProducts().then(() => {
+        this.setState({ photoUrl: this.props.products[600].photoUrl });
+      });
+    }
   }
 
   // update exterior
