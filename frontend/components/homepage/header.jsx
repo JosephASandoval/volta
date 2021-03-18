@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
-const Header = ({ currentUser, isMenuOpen, setIsMenuOpen }) => {
+const Header = ({
+  requestAllProducts,
+  currentUser,
+  isMenuOpen,
+  setIsMenuOpen,
+}) => {
+  useEffect(() => {
+    requestAllProducts();
+  }, []);
+
   return (
     <div className="header">
       <div className="header__logo">
