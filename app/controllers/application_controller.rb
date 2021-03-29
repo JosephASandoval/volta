@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
     unless current_user
       render json: { base: ['invalid credentials'] }, status: 401
     end
-    # redirect_to new_session_url unless logged_in?
   end
 
   def logged_in?

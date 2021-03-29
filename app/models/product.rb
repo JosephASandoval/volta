@@ -23,4 +23,13 @@ class Product < ApplicationRecord
   validates :view, presence: true
 
   has_one_attached :photo
+
+  has_many :carts,
+    primary_key: :id,
+    foreign_key: :product_id,
+    class_name: :CartItem
+
+  has_many :buyers,
+    through: :carts,
+    source: :user
 end

@@ -21,6 +21,15 @@ class User < ApplicationRecord
   validates :session_token, presence: true, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
+  has_many :cartitems,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: :CartItem
+
+  has_many :products,
+    through: :cartitems,
+    source: :product
+
   has_one_attached :photo
 
   after_initialize :ensure_session_token
