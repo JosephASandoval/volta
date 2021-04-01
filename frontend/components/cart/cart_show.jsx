@@ -51,7 +51,7 @@ class CartShow extends React.Component {
       ) : (
         <div>
           <div className="total">
-            <span>Item(s) total:</span>
+            <span>Cart Total:</span>
             <span>${total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}</span>
           </div>
           <button className="checkout-btn">Proceed to checkout</button>
@@ -60,8 +60,7 @@ class CartShow extends React.Component {
 
     const len = this.sumQuantity();
 
-    const headerMsg =
-      len === 0 ? "Your cart is empty." : `${len} items in your cart.`;
+    const headerMsg = len === 0 ? "Cart is empty" : "";
 
     const cls = len === 0 ? "no-payment" : "payment-box";
 

@@ -39,33 +39,29 @@ class CartItem extends React.Component {
 
     return (
       <li key={item.id} className="items-li clrfx">
+        <div className="item__name">
+          <p>{item.name}</p>
+        </div>
         <div className="item-col photo">
           <Link to={`${item.name.split(" ").join("").toLowerCase()}`}>
             <img src={item.photoUrl} alt="" />
           </Link>
         </div>
-        <div className="item-col title">
-          <div>
-            <Link to={`${item.name.split(" ").join("").toLowerCase()}`}>
-              <p>{item.name}</p>
-            </Link>
-
-            <select
-              value={this.state.quantity}
-              onChange={this.handleChange}
-              className="qty-cart-page"
-            >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-
-          <button onClick={this.removeItem} className="remove-btn">
-            Remove
-          </button>
+        <button onClick={this.removeItem} className="remove-btn">
+          Remove
+        </button>
+        <div className="item-col">
+          <select
+            value={this.state.quantity}
+            onChange={this.handleChange}
+            className="qty-cart-page"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
 
         <div className="item-col price">
