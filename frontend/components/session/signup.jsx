@@ -15,6 +15,7 @@ class Signup extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   componentDidMount() {
@@ -29,7 +30,21 @@ class Signup extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.signupUser(this.state).then(() => this.props.history.push("/"));
+    this.props
+      .signupUser(this.state)
+      .then(() => this.props.history.push("/"))
+      .then(this.props.fetchCartItems);
+  }
+
+  handleDemo(e) {
+    e.preventDefault();
+    this.props
+      .loginUser({
+        email: "demouser@gmail.com",
+        password: "password",
+      })
+      .then(() => this.props.history.push("/"))
+      .then(this.props.fetchCartItems);
   }
 
   render() {
@@ -155,6 +170,18 @@ class Signup extends React.Component {
           <Link to="/login">
             <button>Sign In</button>
           </Link>
+
+          <div className="login__divider">
+            <hr /> <span>OR</span> <hr />
+          </div>
+
+          <button
+            className="buttonDemo"
+            type="submit"
+            onClick={this.handleDemo}
+          >
+            Demo Login
+          </button>
         </div>
       </div>
     );

@@ -1,14 +1,51 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 class ModelsButton extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = { value: 1 };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
 
     this.handleExterior = this.handleExterior.bind(this);
     this.handleInterior = this.handleInterior.bind(this);
     this.handleWheelType = this.handleWheelType.bind(this);
     this.handleSelfDriving = this.handleSelfDriving.bind(this);
     this.handleView = this.handleView.bind(this);
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+
+    const {
+      currentUser,
+      addCartItem,
+      updateCartItem,
+      productId,
+      userId,
+      cartItemId,
+    } = this.props;
+
+    const cartItem = {
+      product_id: productId,
+      user_id: userId,
+      quantity: this.state.value,
+    };
+
+    if (currentUser) {
+      const increase = true;
+      cartItemId
+        ? updateCartItem(cartItemId, cartItem, increase)
+        : addCartItem(cartItem);
+    } else {
+      this.props.history.push("/login");
+    }
+  }
+
+  handleChange(e) {
+    this.setState({ value: parseInt(e.target.value, 10) });
   }
 
   handleExterior(e) {
@@ -37,6 +74,10 @@ class ModelsButton extends React.Component {
   }
 
   render() {
+    const { product } = this.props;
+    if (product === undefined) return null;
+    if (!product.photoUrl) return null;
+
     return (
       <div className="carButton">
         <div className="carButton__column">
@@ -138,11 +179,7 @@ class ModelsButton extends React.Component {
               <img src={window.interiorWhiteURL} alt="Interior White" />
             </button>
 
-            <button
-              type="submit"
-              value="Cream"
-              onClick={this.handleInterior}
-            >
+            <button type="submit" value="Cream" onClick={this.handleInterior}>
               <img src={window.interiorCreamURL} alt="Interior Cream" />
             </button>
           </div>
@@ -196,10 +233,33 @@ class ModelsButton extends React.Component {
           <div className="carButton_selfDriving">
             <button className="carButton__primary">Continue to Payment</button>
           </div>
+          <div className="col col-1-3">
+            <aside className="aside">
+              <h1>{product.name}</h1>
+              <p>
+                ${product.price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+              </p>
+              <span>Qty:</span>
+              <select
+                value={this.state.value}
+                onChange={this.handleChange}
+                className="qty-show-page"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button className="add-to-cart-btn" onClick={this.handleClick}>
+                Add to cart
+              </button>
+            </aside>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default ModelsButton;
+export default withRouter(ModelsButton);

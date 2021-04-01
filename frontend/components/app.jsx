@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 // Components
@@ -12,12 +12,15 @@ import ModelsContainer from "./cars/models/models_container";
 import Model3Container from "./cars/model3/model3_container";
 import ModelxContainer from "./cars/modelx/modelx_container";
 import ModelyContainer from "./cars/modely/modely_container";
+import CartShowContainer from "./cart/cart_show_container";
 
 const App = () => {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={Splash} />
+
+        <Route path="/cart" component={CartShowContainer} />
 
         <AuthRoute exact path="/signup" component={SignupContainer} />
 

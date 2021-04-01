@@ -26,7 +26,10 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.loginUser(this.state).then(() => this.props.history.push("/"));
+    this.props
+      .loginUser(this.state)
+      .then(() => this.props.history.push("/"))
+      .then(this.props.fetchCartItems);
   }
 
   handleDemo(e) {
@@ -36,7 +39,8 @@ class Login extends React.Component {
         email: "demouser@gmail.com",
         password: "password",
       })
-      .then(() => this.props.history.push("/"));
+      .then(() => this.props.history.push("/"))
+      .then(this.props.fetchCartItems);
   }
 
   render() {

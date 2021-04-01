@@ -9,12 +9,24 @@ const Header = ({
   currentUser,
   isMenuOpen,
   setIsMenuOpen,
+  cartItemsLen,
 }) => {
   useEffect(() => {
     if (products.length === 0) {
       requestAllProducts();
     }
   }, []);
+
+  let cartItemsNum;
+  let clsName;
+
+  if (!cartItemsLen) {
+    cartItemsNum = "";
+    clsName = "hiding-notification";
+  } else {
+    cartItemsNum = cartItemsLen;
+    clsName = "notification";
+  }
 
   return (
     <div className="header">
@@ -37,6 +49,7 @@ const Header = ({
         <Link to="/" className={isMenuOpen ? "header__link--hidden" : ""}>
           Shop
         </Link>
+
         {currentUser ? (
           <Link
             to="/userProfile"
@@ -52,6 +65,12 @@ const Header = ({
             Volta Account
           </Link>
         )}
+        <Link to="/cart" className={isMenuOpen ? "header__link--hidden" : ""}>
+          <div className="shopping-cart-icon-container">
+            <span className={clsName}>{cartItemsNum}</span>
+            <img src={window.shoppingCartURL} alt="" className="shopping-cart-icon" />
+          </div>
+        </Link>
 
         <div
           className="header__menu"

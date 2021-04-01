@@ -2,6 +2,9 @@
   <script id="bootstrap-current-user" type="text/javascript">
   	window.currentUser = <%= render("api/users/user.json.jbuilder",
   		user: current_user).html_safe %>
+      
+    window.cartItems = <%= render("api/cart_items/cart_item.json.jbuilder", 
+      cart_items: current_user.cartitems).html_safe %>
   </script>
 <% end %>
 

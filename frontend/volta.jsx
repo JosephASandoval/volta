@@ -4,20 +4,16 @@ import Root from "./components/root";
 import configureStore from "./store/store";
 
 // testing
-import {
-  fetchProduct,
-  fetchAllProducts,
-} from "./util/product_api_util";
+import { fetchProduct, fetchAllProducts } from "./util/product_api_util";
 // testing
 
 document.addEventListener("DOMContentLoaded", () => {
-  const rootEl = document.getElementById("root");
-
   let store;
   if (window.currentUser) {
     const preloadedState = {
       entities: {
         users: { [window.currentUser.id]: window.currentUser },
+        cartItems: window.cartItems,
       },
       session: { id: window.currentUser.id },
     };
@@ -27,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     store = configureStore();
   }
 
+  const rootEl = document.getElementById("root");
   ReactDOM.render(<Root store={store} />, rootEl);
 
   // testing
