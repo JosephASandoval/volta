@@ -5,9 +5,20 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import NoCar from "./no_car";
 
-const UserProfile = ({ currentUser, logout }) => {
+const UserProfile = ({ currentUser, logout, cartItemsLen }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
+  let cartItemsNum;
+  let clsName;
+
+  if (!cartItemsLen) {
+    cartItemsNum = "";
+    clsName = "hiding-notification";
+  } else {
+    cartItemsNum = cartItemsLen;
+    clsName = "notification-inverse";
+  }
+
   return (
     <div className="userProfile">
       <div className="userProfile__header">
@@ -28,6 +39,16 @@ const UserProfile = ({ currentUser, logout }) => {
         <div className="userProfile__right">
           <Link to="/">Shop</Link>
           <Link to="/userProfile">Volta Account</Link>
+          <Link to="/cart" className={isMenuOpen ? "header__link--hidden" : ""}>
+            <div className="shopping-cart-icon-container">
+              <span className={clsName}>{cartItemsNum}</span>
+              <img
+                src={window.shoppingCartInverseURL}
+                alt=""
+                className="shopping-cart-icon"
+              />
+            </div>
+          </Link>
           <Link to="/" onClick={logout}>
             Log out
           </Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import CartItem from "./cart_item";
+import CartHeader from "./cart_header";
 import { withRouter } from "react-router-dom";
 
 class CartShow extends React.Component {
@@ -25,13 +26,15 @@ class CartShow extends React.Component {
   render() {
     const items = this.props.items.map((item) => {
       return (
-        <CartItem
-          key={item.id}
-          item={item}
-          updateCartItem={this.props.updateCartItem}
-          deleteCartItem={this.props.deleteCartItem}
-          products={this.props.products}
-        />
+        <div>
+          <CartItem
+            key={item.id}
+            item={item}
+            updateCartItem={this.props.updateCartItem}
+            deleteCartItem={this.props.deleteCartItem}
+            products={this.props.products}
+          />
+        </div>
       );
     });
 
@@ -64,6 +67,13 @@ class CartShow extends React.Component {
 
     return (
       <>
+        <div>
+          <CartHeader
+            currentUser={this.props.currentUser}
+            logout={this.props.logout}
+            cartItemsLen={this.props.cartItemsLen}
+          />
+        </div>
         <div className="cart-show-page clrfix">
           <div className="cart-col content">
             <div className="cart-title-msg">
