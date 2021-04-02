@@ -10,7 +10,8 @@
 
 .notFound__logo > a > img {
   object-fit: contain;
-  width: 80px;
+  width: 100px;
+  min-width: 100px;
   filter: brightness(0) invert(1);
 }
 

@@ -28,8 +28,21 @@ class Model3Button extends React.Component {
       cartItemId,
     } = this.props;
 
+    let newProductId;
+    if (productId % 5 === 0) {
+      newProductId = productId;
+    } else if ((productId + 1) % 5 === 0) {
+      newProductId = productId + 1;
+    } else if ((productId - 1) % 5 === 0) {
+      newProductId = productId - 1;
+    } else if ((productId - 2) % 5 === 0) {
+      newProductId = productId - 2;
+    } else if ((productId - 3) % 5 === 0) {
+      newProductId = productId - 3;
+    }
+
     const cartItem = {
-      product_id: productId,
+      product_id: newProductId,
       user_id: userId,
       quantity: this.state.value,
     };
