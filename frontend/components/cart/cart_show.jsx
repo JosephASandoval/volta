@@ -26,7 +26,7 @@ class CartShow extends React.Component {
   render() {
     const items = this.props.items.map((item) => {
       return (
-        <div>
+        <div className="item-group">
           <CartItem
             key={item.id}
             item={item}
@@ -45,16 +45,40 @@ class CartShow extends React.Component {
       );
     }
 
+    let tax = 0.0;
+    if (this.props.items.length !== 0) {
+      this.props.items.forEach(
+        (item) => (tax += 0.075 * parseFloat(item.totalPrice))
+      );
+    }
+
+    let final = 0.0;
+    if (this.props.items.length !== 0) {
+      final = total + tax;
+    }
+
     const checkout =
       total === 0.0 ? (
         ""
       ) : (
         <div>
           <div className="total">
-            <span>Cart Total:</span>
+            <span>Items Price:</span>
             <span>${total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}</span>
           </div>
-          <button className="checkout-btn">Proceed to checkout</button>
+          <div className="total">
+            <span>Tax Price:</span>
+            <span>${tax.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}</span>
+          </div>
+          <div className="total">
+            <span>Shipping Price:</span>
+            <span>${0.0}</span>
+          </div>
+          <div className="final">
+            <span>Total Price:</span>
+            <span>${final.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}</span>
+          </div>
+          <button className="checkout-btn">Checkout</button>
         </div>
       );
 

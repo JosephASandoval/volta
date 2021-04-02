@@ -7,14 +7,34 @@ class CartItem extends React.Component {
     this.state = { quantity: this.props.item.quantity };
 
     this.removeItem = this.removeItem.bind(this);
-    this.handleChange = this.handleChange.bind(this);
     this.updateDB = this.updateDB.bind(this);
+
+    this.increment = this.increment.bind(this);
+    this.decrement = this.decrement.bind(this);
   }
 
-  handleChange(e) {
-    this.setState({ quantity: parseInt(e.target.value) }, () => {
-      this.updateDB();
-    });
+  decrement() {
+    this.setState(
+      {
+        quantity:
+          this.props.item.quantity === 1 ? 1 : this.props.item.quantity - 1,
+      },
+      () => {
+        this.updateDB();
+      }
+    );
+  }
+
+  increment() {
+    this.setState(
+      {
+        quantity:
+          this.props.item.quantity === 10 ? 10 : this.props.item.quantity + 1,
+      },
+      () => {
+        this.updateDB();
+      }
+    );
   }
 
   updateDB() {
@@ -42,32 +62,34 @@ class CartItem extends React.Component {
         <div className="item__name">
           <p>{item.name}</p>
         </div>
-        <div className="item-col photo">
-          <Link to={`${item.name.split(" ").join("").toLowerCase()}`}>
-            <img src={item.photoUrl} alt="" />
-          </Link>
-        </div>
-        <button onClick={this.removeItem} className="remove-btn">
-          Remove
-        </button>
-        <div className="item-col">
-          <select
-            value={this.state.quantity}
-            onChange={this.handleChange}
-            className="qty-cart-page"
-          >
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
 
-        <div className="item-col price">
-          <p>
-            ${item.totalPrice.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
-          </p>
+        <div className="item-row">
+          <div className="item-col photo">
+            <Link to={`${item.name.split(" ").join("").toLowerCase()}`}>
+              <img src={item.photoUrl} alt="" />
+            </Link>
+          </div>
+
+          <div className="item-col bottom__cart">
+            <p>Quantity: </p>
+            <div className="inc-dec">
+              <button onClick={() => this.decrement()} className="remove">
+                -
+              </button>
+              <span>{this.state.quantity}</span>
+              <button onClick={() => this.increment()} className="add">
+                +
+              </button>
+            </div>
+            <p>Price: </p>
+            <div className="display-price">
+              ${item.totalPrice.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+            </div>
+
+            <button onClick={this.removeItem} className="buttonSecondary">
+              Remove
+            </button>
+          </div>
         </div>
       </li>
     );
