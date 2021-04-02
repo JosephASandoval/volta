@@ -53,7 +53,6 @@
   align-items: center;
 }
 
-
 // paint
 .carButton__paint {
   display: flex;
@@ -184,7 +183,7 @@
 
 .carButton__selfDriving > ul > li {
   font-size: 14px;
-  color: #5C5E62;
+  color: #5c5e62;
   list-style-position: inside;
   font-weight: 100;
   margin-bottom: 10px;
@@ -192,16 +191,16 @@
 
 .carButton__selfDriving > p {
   font-size: 12px;
-  color: #5C5E62;
+  color: #5c5e62;
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
 }
 
-.carButton_selfDriving .carButton__primary {
+.carButton__selfDrivingButton .carButton__primary {
   background-color: #3e6ae1;
   border: none;
-  padding: 12px 40px;
+  padding: 12px 20px;
   border-radius: 50px;
   color: white;
   text-transform: uppercase;
@@ -210,16 +209,17 @@
   outline: none;
   margin-bottom: 30px;
   transition: all 0.4s;
+  margin-right: 5px;
 }
 
-.carButton_selfDriving .carButton__primary:hover {
+.carButton__selfDrivingButton .carButton__primary:hover {
   background-color: #3457b1;
 }
 
-.carButton_selfDriving .carButton__secondary {
+.carButton__selfDrivingButton .carButton__secondary {
   background-color: #f4f4f4;
   border: none;
-  padding: 12px 40px;
+  padding: 12px 20px;
   border-radius: 50px;
   color: #171a20;
   text-transform: uppercase;
@@ -228,8 +228,9 @@
   outline: none;
   margin-bottom: 30px;
   transition: all 0.4s;
+  margin-left: 5px;
 }
 
-.carButton_selfDriving .carButton__secondary:hover {
+.carButton__selfDrivingButton .carButton__secondary:hover {
   background-color: #ececec;
 }

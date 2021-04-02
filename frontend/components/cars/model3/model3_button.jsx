@@ -50,8 +50,10 @@ class Model3Button extends React.Component {
     if (currentUser) {
       const increase = true;
       cartItemId
-        ? updateCartItem(cartItemId, cartItem, increase)
-        : addCartItem(cartItem);
+        ? updateCartItem(cartItemId, cartItem, increase).then(() =>
+            this.props.history.push("/cart")
+          )
+        : addCartItem(cartItem).then(() => this.props.history.push("/cart"));
     } else {
       this.props.history.push("/login");
     }
@@ -218,14 +220,14 @@ class Model3Button extends React.Component {
           </p>
 
           {/* Update self driving */}
-          <div className="carButton_selfDriving">
+          <div className="carButton__selfDrivingButton">
             <button
               className="carButton__primary"
               type="submit"
               value="true"
               onClick={this.handleSelfDriving}
             >
-              Add
+              Add Feature
             </button>
 
             <button
@@ -234,37 +236,17 @@ class Model3Button extends React.Component {
               value="false"
               onClick={this.handleSelfDriving}
             >
-              Feature Details
+              Remove Feature
             </button>
           </div>
 
           <h1>Order Your Model 3</h1>
           <p>Estimated Delivery: 5-11 weeks</p>
-          <div className="carButton_selfDriving">
-            <button className="carButton__primary">Continue to Payment</button>
-          </div>
-          <div className="col col-1-3">
-            <aside className="aside">
-              <h1>{product.name}</h1>
-              <p>
-                ${product.price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
-              </p>
-              <span>Qty:</span>
-              <select
-                value={this.state.value}
-                onChange={this.handleChange}
-                className="qty-show-page"
-              >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-              <button className="add-to-cart-btn" onClick={this.handleClick}>
-                Add to cart
-              </button>
-            </aside>
+
+          <div className="carButton__selfDrivingButton">
+            <button className="carButton__primary" onClick={this.handleClick}>
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
