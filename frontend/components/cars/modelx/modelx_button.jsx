@@ -22,10 +22,8 @@ class ModelxButton extends React.Component {
     const {
       currentUser,
       addCartItem,
-      updateCartItem,
       productId,
       userId,
-      cartItemId,
     } = this.props;
 
     let newProductId;
@@ -48,12 +46,7 @@ class ModelxButton extends React.Component {
     };
 
     if (currentUser) {
-      const increase = true;
-      cartItemId
-        ? updateCartItem(cartItemId, cartItem, increase).then(() =>
-            this.props.history.push("/cart")
-          )
-        : addCartItem(cartItem).then(() => this.props.history.push("/cart"));
+      addCartItem(cartItem).then(() => this.props.history.push("/cart"));
     } else {
       this.props.history.push("/login");
     }

@@ -1,10 +1,7 @@
 import { connect } from "react-redux";
 import { requestAllProducts } from "../../../actions/product_actions";
 import Model3Parent from "./model3_parent";
-import {
-  addCartItem,
-  updateCartItem,
-} from "../../../actions/cart_item_actions";
+import { addCartItem } from "../../../actions/cart_item_actions";
 import { logout } from "../../../actions/session_actions";
 
 const mapStateToProps = ({
@@ -21,7 +18,6 @@ const mapStateToProps = ({
     userId: session.id,
     currentUser: users[session.id],
     allProducts: products,
-    allCartItems: cartItems,
     cartItemsLen: count,
   };
 };
@@ -30,8 +26,6 @@ const mapDispatchToProps = (dispatch) => {
   return {
     requestAllProducts: () => dispatch(requestAllProducts()),
     addCartItem: (cartItem) => dispatch(addCartItem(cartItem)),
-    updateCartItem: (id, cartItem, increase) =>
-      dispatch(updateCartItem(id, cartItem, increase)),
     logout: () => dispatch(logout()),
   };
 };

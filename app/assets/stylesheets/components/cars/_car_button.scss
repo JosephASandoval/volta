@@ -79,11 +79,22 @@
   border-radius: 100%;
   cursor: pointer;
   outline: none;
-  transition: all 0.2s;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .carButton__paint > button > img:hover {
   border: solid 2px #3457b1;
+}
+
+.carButton__paint > button > img:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.carButton__paint > button > img:active {
+    transform: scale(0.99);
 }
 
 // wheels
@@ -112,11 +123,22 @@
   border-radius: 100%;
   cursor: pointer;
   outline: none;
-  transition: all 0.2s;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .carButton__wheels > button > img:hover {
   border: solid 2px #3457b1;
+}
+
+.carButton__wheels > button > img:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.carButton__wheels > button > img:active {
+    transform: scale(0.99);
 }
 
 // interior
@@ -145,11 +167,22 @@
   border-radius: 100%;
   cursor: pointer;
   outline: none;
-  transition: all 0.2s;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .carButton__interior > button > img:hover {
   border: solid 2px #3457b1;
+}
+
+.carButton__interior > button > img:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.carButton__interior > button > img:active {
+    transform: scale(0.99);
 }
 
 // self driving

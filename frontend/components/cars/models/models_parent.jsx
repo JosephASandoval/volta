@@ -26,8 +26,6 @@ class ModelsParent extends React.Component {
           : "",
     };
 
-    // this.checkCartItem = this.checkCartItem.bind(this);
-
     this.updateExterior = this.updateExterior.bind(this);
     this.updateInterior = this.updateInterior.bind(this);
     this.updateWheelType = this.updateWheelType.bind(this);
@@ -44,17 +42,6 @@ class ModelsParent extends React.Component {
       });
     }
   }
-
-  // checkCartItem(allCartItems, productId) {
-  //   let cartItemId;
-
-  //   Object.values(allCartItems).forEach((item) => {
-  //     if (item.product_id === productId) {
-  //       cartItemId = item.id;
-  //     }
-  //   });
-  //   return cartItemId;
-  // }
 
   // update exterior
   updateExterior(exterior) {
@@ -267,11 +254,9 @@ class ModelsParent extends React.Component {
           updateWheelType={this.updateWheelType}
           updateSelfDriving={this.updateSelfDriving}
           addCartItem={this.props.addCartItem}
-          updateCartItem={this.props.updateCartItem}
           currentUser={this.props.currentUser}
           userId={this.props.userId}
           product={this.props.allProducts[this.state.id]}
-          cartItemId={this.cartItemId}
           productId={this.state.id}
         />
       </div>
