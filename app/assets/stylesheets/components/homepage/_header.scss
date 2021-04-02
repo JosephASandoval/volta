@@ -3,7 +3,7 @@
   position: fixed;
   background-color: transparent;
   background: none;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;
@@ -45,7 +45,7 @@
   color: black;
   font-weight: 500;
   font-size: 14px;
-  z-index: 0;
+  z-index: 3;
   position: relative;
 }
 
@@ -55,6 +55,6 @@
 
 .header__menu > .MuiSvgIcon-root {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
 }

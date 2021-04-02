@@ -200,7 +200,11 @@ class ModelyParent extends React.Component {
     return (
       <div>
         <div>
-          <ModelyHeader />
+          <ModelyHeader
+            currentUser={this.props.currentUser}
+            logout={this.props.logout}
+            cartItemsLen={this.props.cartItemsLen}
+          />
         </div>
 
         {/* update view */}

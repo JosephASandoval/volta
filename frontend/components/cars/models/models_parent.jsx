@@ -200,7 +200,11 @@ class ModelsParent extends React.Component {
     return (
       <div>
         <div>
-          <ModelsHeader />
+          <ModelsHeader
+            currentUser={this.props.currentUser}
+            logout={this.props.logout}
+            cartItemsLen={this.props.cartItemsLen}
+          />
         </div>
 
         {/* update view */}

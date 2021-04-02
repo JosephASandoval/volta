@@ -200,7 +200,11 @@ class Model3Parent extends React.Component {
     return (
       <div>
         <div>
-          <Model3Header />
+          <Model3Header
+            currentUser={this.props.currentUser}
+            logout={this.props.logout}
+            cartItemsLen={this.props.cartItemsLen}
+          />
         </div>
 
         {/* update view */}
