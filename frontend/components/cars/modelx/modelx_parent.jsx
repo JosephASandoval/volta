@@ -24,6 +24,7 @@ class ModelxParent extends React.Component {
         this.props.products && this.props.products.length !== 0
           ? this.props.products[300].photoUrl
           : "",
+      isMenuOpen: false,
     };
 
     this.updateExterior = this.updateExterior.bind(this);
@@ -33,6 +34,8 @@ class ModelxParent extends React.Component {
     this.updateView = this.updateView.bind(this);
 
     this.handleView = this.handleView.bind(this);
+
+    this.setIsMenuOpen = this.setIsMenuOpen.bind(this);
   }
 
   componentDidMount() {
@@ -41,6 +44,12 @@ class ModelxParent extends React.Component {
         this.setState({ photoUrl: this.props.products[300].photoUrl });
       });
     }
+  }
+
+  setIsMenuOpen() {
+    this.setState({
+      isMenuOpen: !this.state.isMenuOpen,
+    });
   }
 
   // update exterior
@@ -191,74 +200,77 @@ class ModelxParent extends React.Component {
             currentUser={this.props.currentUser}
             logout={this.props.logout}
             cartItemsLen={this.props.cartItemsLen}
+            isMenuOpen={this.state.isMenuOpen}
+            setIsMenuOpen={this.setIsMenuOpen}
           />
         </div>
+        <div className={this.state.isMenuOpen ? "background-dim" : ""}>
+          {/* update view */}
+          <div className="carParent">
+            <div
+              className="carParent__item"
+              style={{
+                backgroundImage:
+                  this.props.products && this.props.products.length !== 0
+                    ? `url(${this.state.photoUrl})`
+                    : `url(${window.model_x_firstURL})`,
+              }}
+            >
+              <div className="carParent__itemActions">
+                <button
+                  className="carParent__button"
+                  type="submit"
+                  value="left"
+                  onClick={this.handleView}
+                >
+                  <ArrowBackIosIcon />
+                </button>
 
-        {/* update view */}
-        <div className="carParent">
-          <div
-            className="carParent__item"
-            style={{
-              backgroundImage:
-                this.props.products && this.props.products.length !== 0
-                  ? `url(${this.state.photoUrl})`
-                  : `url(${window.model_x_firstURL})`,
-            }}
-          >
-            <div className="carParent__itemActions">
-              <button
-                className="carParent__button"
-                type="submit"
-                value="left"
-                onClick={this.handleView}
-              >
-                <ArrowBackIosIcon />
-              </button>
-
-              <button
-                className="carParent__button"
-                type="submit"
-                value="right"
-                onClick={this.handleView}
-              >
-                <ArrowForwardIosIcon />
-              </button>
+                <button
+                  className="carParent__button"
+                  type="submit"
+                  value="right"
+                  onClick={this.handleView}
+                >
+                  <ArrowForwardIosIcon />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="carParent__price">
-          <NumberFormat
-            value={this.state.price}
-            displayType={"text"}
-            thousandSeparator={true}
-            prefix={"$"}
-          />
-          <div className="carParent__priceDesc">
-            <span className="carParent__purch">Purchase price</span>
-            <span className="carParent__purchSecond">
-              <NumberFormat
-                value={this.state.price - 5500}
-                displayType={"text"}
-                thousandSeparator={true}
-                prefix={"$"}
-              />
-            </span>
-            <span className="input">After potential savings</span>
+          <div className="carParent__price">
+            <NumberFormat
+              value={this.state.price}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"$"}
+            />
+            <div className="carParent__priceDesc">
+              <span className="carParent__purch">Purchase price</span>
+              <span className="carParent__purchSecond">
+                <NumberFormat
+                  value={this.state.price - 5500}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"$"}
+                />
+              </span>
+              <span className="input">After potential savings</span>
+            </div>
           </div>
-        </div>
 
-        <ModelxButton
-          updateExterior={this.updateExterior}
-          updateInterior={this.updateInterior}
-          updateWheelType={this.updateWheelType}
-          updateSelfDriving={this.updateSelfDriving}
-          addCartItem={this.props.addCartItem}
-          currentUser={this.props.currentUser}
-          userId={this.props.userId}
-          product={this.props.allProducts[this.state.id]}
-          productId={this.state.id}
-        />
+          <ModelxButton
+            updateExterior={this.updateExterior}
+            updateInterior={this.updateInterior}
+            updateWheelType={this.updateWheelType}
+            updateSelfDriving={this.updateSelfDriving}
+            addCartItem={this.props.addCartItem}
+            currentUser={this.props.currentUser}
+            userId={this.props.userId}
+            product={this.props.allProducts[this.state.id]}
+            productId={this.state.id}
+          />
+        </div>
       </div>
     );
   }

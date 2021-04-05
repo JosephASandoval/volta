@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Menu from "../homepage/menu";
+import DarkMenu from "../homepage/dark_menu";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import NoCar from "./no_car";
@@ -64,37 +64,40 @@ const UserProfile = ({ currentUser, logout, cartItemsLen }) => {
           </div>
         </div>
       </div>
-      {isMenuOpen && <Menu />}
-      <div className="userProfile__info">
-        <div className="userProfile__photo">
-          <img src={currentUser.photoUrl} alt="Spaceman" />
+      {isMenuOpen && <DarkMenu />}
+
+      <div className={isMenuOpen ? "background-dim" : ""}>
+        <div className="userProfile__info">
+          <div className="userProfile__photo">
+            <img src={currentUser.photoUrl} alt="Spaceman" />
+          </div>
+          <div className="userProfile__person">
+            <h4>{currentUser.firstName + "'s"} Volta</h4>
+          </div>
+          <div className="userProfile__infoRight">
+            <Link to="/">Home</Link>
+            <Link to="/userProfile">Account</Link>
+            <Link to="/">History</Link>
+            <Link to="/" onClick={logout}>
+              Sign Out
+            </Link>
+          </div>
         </div>
-        <div className="userProfile__person">
-          <h4>{currentUser.firstName + "'s"} Volta</h4>
+        <div className="userProfile__car">
+          <NoCar
+            imgSrc={window.nocarSURL}
+            model="Model S"
+            testDrive
+            buyPreOwned
+            car
+          />
+          <NoCar imgSrc={window.nocarXURL} model="Model X" car />
+          <NoCar
+            imgSrc={window.powerwallBatteryURL}
+            model="Powerwall"
+            powerwall
+          />
         </div>
-        <div className="userProfile__infoRight">
-          <Link to="/">Home</Link>
-          <Link to="/userProfile">Account</Link>
-          <Link to="/">History</Link>
-          <Link to="/" onClick={logout}>
-            Sign Out
-          </Link>
-        </div>
-      </div>
-      <div className="userProfile__car">
-        <NoCar
-          imgSrc={window.nocarSURL}
-          model="Model S"
-          testDrive
-          buyPreOwned
-          car
-        />
-        <NoCar imgSrc={window.nocarXURL} model="Model X" car />
-        <NoCar
-          imgSrc={window.powerwallBatteryURL}
-          model="Powerwall"
-          powerwall
-        />
       </div>
     </div>
   );

@@ -7,8 +7,14 @@ class CartShow extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      isMenuOpen: false,
+    };
+
     this.sumQuantity = this.sumQuantity.bind(this);
+    this.setIsMenuOpen = this.setIsMenuOpen.bind(this);
   }
+
   componentDidMount() {
     this.props.fetchCartItems();
   }
@@ -23,17 +29,25 @@ class CartShow extends React.Component {
     return count;
   }
 
+  setIsMenuOpen() {
+    this.setState({
+      isMenuOpen: !this.state.isMenuOpen,
+    });
+  }
+
   render() {
     const items = this.props.items.map((item) => {
       return (
-        <div className="item-group">
-          <CartItem
-            key={item.id}
-            item={item}
-            updateCartItem={this.props.updateCartItem}
-            deleteCartItem={this.props.deleteCartItem}
-            products={this.props.products}
-          />
+        <div className={this.state.isMenuOpen ? "background-dim" : ""}>
+          <div className="item-group">
+            <CartItem
+              key={item.id}
+              item={item}
+              updateCartItem={this.props.updateCartItem}
+              deleteCartItem={this.props.deleteCartItem}
+              products={this.props.products}
+            />
+          </div>
         </div>
       );
     });
@@ -89,28 +103,32 @@ class CartShow extends React.Component {
     const cls = len === 0 ? "no-payment" : "payment-box";
 
     return (
-      <>
+      <div>
         <div>
           <CartHeader
             currentUser={this.props.currentUser}
             logout={this.props.logout}
             cartItemsLen={this.props.cartItemsLen}
+            isMenuOpen={this.state.isMenuOpen}
+            setIsMenuOpen={this.setIsMenuOpen}
           />
         </div>
-        <div className="cart-show-page clrfix">
-          <div className="cart-col content">
-            <div className="cart-title-msg">
-              <p>{headerMsg}</p>
+        <div className={this.state.isMenuOpen ? "background-dim" : ""}>
+          <div className="cart-show-page clrfix">
+            <div className="cart-col content">
+              <div className="cart-title-msg">
+                <p>{headerMsg}</p>
+              </div>
+              <div className="item-container">
+                <ul>{items}</ul>
+              </div>
             </div>
-            <div className="item-container">
-              <ul>{items}</ul>
+            <div className="cart-col payment">
+              <aside className={cls}>{checkout}</aside>
             </div>
-          </div>
-          <div className="cart-col payment">
-            <aside className={cls}>{checkout}</aside>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Menu from "../homepage/menu";
+import DarkMenu from "../homepage/dark_menu";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
@@ -71,22 +71,24 @@ const NotFound = ({ currentUser, logout, cartItemsLen }) => {
           </div>
         </div>
       </div>
-      {isMenuOpen && <Menu />}
-      <div className="notFound__container">
-        <div className="notFound__firstMessage">
-          <h1>404</h1>
-          <div className="notFound__secondMessage">
-            <p>I'm afraid I can't do that.</p>
+      {isMenuOpen && <DarkMenu />}
+      <div className={isMenuOpen ? "background-dim" : ""}>
+        <div className="notFound__container">
+          <div className="notFound__firstMessage">
+            <h1>404</h1>
+            <div className="notFound__secondMessage">
+              <p>I'm afraid I can't do that.</p>
+            </div>
+            <div className="notFound__thirdMessage">
+              <p>
+                Join Starman back at the <Link to="/">homepage</Link> or visit
+                Support for help.
+              </p>
+            </div>
           </div>
-          <div className="notFound__thirdMessage">
-            <p>
-              Join Starman back at the <Link to="/">homepage</Link> or visit
-              Support for help.
-            </p>
+          <div className="notFound__starman">
+            <img src={window.starmanURL} alt="starman" />
           </div>
-        </div>
-        <div className="notFound__starman">
-          <img src={window.starmanURL} alt="starman" />
         </div>
       </div>
     </div>

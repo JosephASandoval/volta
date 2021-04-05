@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Menu from "../../homepage/menu";
+import DarkMenu from "../../homepage/dark_menu";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
-const ModelyHeader = ({ currentUser, logout, cartItemsLen }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+const ModelyHeader = ({
+  currentUser,
+  logout,
+  cartItemsLen,
+  isMenuOpen,
+  setIsMenuOpen,
+}) => {
   let cartItemsNum;
   let clsName;
 
@@ -59,10 +63,7 @@ const ModelyHeader = ({ currentUser, logout, cartItemsLen }) => {
           ) : (
             <Link to="/">Log out</Link>
           )}
-          <div
-            className="notFound__menu"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          <div className="notFound__menu" onClick={() => setIsMenuOpen()}>
             {isMenuOpen ? (
               <CloseIcon className="notFound__closeMenu" />
             ) : (
@@ -71,7 +72,7 @@ const ModelyHeader = ({ currentUser, logout, cartItemsLen }) => {
           </div>
         </div>
       </div>
-      {isMenuOpen && <Menu />}
+      {isMenuOpen && <DarkMenu />}
     </div>
   );
 };
