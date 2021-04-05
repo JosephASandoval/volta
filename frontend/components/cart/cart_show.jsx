@@ -103,16 +103,14 @@ class CartShow extends React.Component {
     const cls = len === 0 ? "no-payment" : "payment-box";
 
     return (
-      <div>
-        <div>
-          <CartHeader
-            currentUser={this.props.currentUser}
-            logout={this.props.logout}
-            cartItemsLen={this.props.cartItemsLen}
-            isMenuOpen={this.state.isMenuOpen}
-            setIsMenuOpen={this.setIsMenuOpen}
-          />
-        </div>
+      <div className="hide-vert">
+        <CartHeader
+          currentUser={this.props.currentUser}
+          logout={this.props.logout}
+          cartItemsLen={this.props.cartItemsLen}
+          isMenuOpen={this.state.isMenuOpen}
+          setIsMenuOpen={this.setIsMenuOpen}
+        />
         <div className={this.state.isMenuOpen ? "background-dim" : ""}>
           <div className="cart-show-page clrfix">
             <div className="cart-col content">
