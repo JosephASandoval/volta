@@ -68,9 +68,6 @@ const UserProfile = ({ currentUser, logout, cartItemsLen }) => {
 
       <div className={isMenuOpen ? "background-dim" : ""}>
         <div className="userProfile__info">
-          <div className="userProfile__photo">
-            <img src={currentUser.photoUrl} alt="Spaceman" />
-          </div>
           <div className="userProfile__person">
             <h4>{currentUser.firstName + "'s"} Volta</h4>
           </div>

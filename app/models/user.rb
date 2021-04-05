@@ -30,8 +30,6 @@ class User < ApplicationRecord
     through: :cartitems,
     source: :product
 
-  has_one_attached :photo
-
   after_initialize :ensure_session_token
 
   attr_reader :password

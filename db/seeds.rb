@@ -19,10 +19,8 @@ ActiveRecord::Base.transaction do
   #   password: "password",
   #   email: "demouser@gmail.com",
   #   first_name: "demo",
-  #   last_name: "user"
+  #   last_name: "user",
   # )
-  # file = open("https://volta-seeds.s3-us-west-1.amazonaws.com/spaceman.jpg")
-  # demo.photo.attach(io: file, filename: 'spaceman.jpg')
 
   # puts "Creating Model S..."
 
