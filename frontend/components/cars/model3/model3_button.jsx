@@ -24,18 +24,23 @@ class Model3Button extends React.Component {
       addCartItem,
       productId,
       userId,
+      products,
     } = this.props;
 
+    let firstProductId = products[0].id;
+    let indexed = productId - firstProductId;
+    let correctedIndex = indexed + 5;
+
     let newProductId;
-    if (productId % 5 === 0) {
-      newProductId = productId;
-    } else if ((productId + 1) % 5 === 0) {
+    if (correctedIndex % 5 === 0) {
       newProductId = productId + 1;
-    } else if ((productId - 1) % 5 === 0) {
+    } else if ((correctedIndex - 1) % 5 === 0) {
+      newProductId = productId;
+    } else if ((correctedIndex - 2) % 5 === 0) {
       newProductId = productId - 1;
-    } else if ((productId - 2) % 5 === 0) {
+    } else if ((correctedIndex - 3) % 5 === 0) {
       newProductId = productId - 2;
-    } else if ((productId - 3) % 5 === 0) {
+    } else if ((correctedIndex - 4) % 5 === 0) {
       newProductId = productId - 3;
     }
 

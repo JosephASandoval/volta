@@ -267,6 +267,7 @@ class Model3Parent extends React.Component {
             addCartItem={this.props.addCartItem}
             currentUser={this.props.currentUser}
             userId={this.props.userId}
+            products={this.props.products}
             product={this.props.allProducts[this.state.id]}
             productId={this.state.id}
           />
