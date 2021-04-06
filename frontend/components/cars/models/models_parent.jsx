@@ -20,10 +20,7 @@ class ModelsParent extends React.Component {
       wheelType: '19" Tempest Wheels',
       selfDriving: false,
       view: 0,
-      photoUrl:
-        this.props.products && this.props.products.length !== 0
-          ? this.props.products[0].photoUrl
-          : "",
+      photoUrl: "",
       isMenuOpen: false,
     };
 
@@ -43,6 +40,8 @@ class ModelsParent extends React.Component {
       this.props.requestAllProducts().then(() => {
         this.setState({ photoUrl: this.props.products[0].photoUrl });
       });
+    } else {
+      this.setState({ photoUrl: this.props.products[0].photoUrl });
     }
   }
 
@@ -202,6 +201,18 @@ class ModelsParent extends React.Component {
           isMenuOpen={this.state.isMenuOpen}
           setIsMenuOpen={this.setIsMenuOpen}
         />
+        <ModelsButton
+          updateExterior={this.updateExterior}
+          updateInterior={this.updateInterior}
+          updateWheelType={this.updateWheelType}
+          updateSelfDriving={this.updateSelfDriving}
+          addCartItem={this.props.addCartItem}
+          currentUser={this.props.currentUser}
+          userId={this.props.userId}
+          products={this.props.products}
+          product={this.props.allProducts[this.state.id]}
+          productId={this.state.id}
+        />
         <div className={this.state.isMenuOpen ? "background-dim" : ""}>
           {/* update view */}
           <div className="carParent">
@@ -209,9 +220,9 @@ class ModelsParent extends React.Component {
               className="carParent__item"
               style={{
                 backgroundImage:
-                  this.props.products && this.props.products.length !== 0
+                  this.props.products.length !== 0
                     ? `url(${this.state.photoUrl})`
-                    : `url(${window.model_s_firstURL})`,
+                    : "",
               }}
             >
               <div className="carParent__itemActions">
@@ -235,7 +246,6 @@ class ModelsParent extends React.Component {
               </div>
             </div>
           </div>
-
           <div className="carParent__price">
             <NumberFormat
               value={this.state.price}
@@ -256,19 +266,6 @@ class ModelsParent extends React.Component {
               <span className="input">After potential savings</span>
             </div>
           </div>
-
-          <ModelsButton
-            updateExterior={this.updateExterior}
-            updateInterior={this.updateInterior}
-            updateWheelType={this.updateWheelType}
-            updateSelfDriving={this.updateSelfDriving}
-            addCartItem={this.props.addCartItem}
-            currentUser={this.props.currentUser}
-            userId={this.props.userId}
-            products={this.props.products}
-            product={this.props.allProducts[this.state.id]}
-            productId={this.state.id}
-          />
         </div>
       </div>
     );
