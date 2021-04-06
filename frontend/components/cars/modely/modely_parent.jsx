@@ -195,15 +195,13 @@ class ModelyParent extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <ModelyHeader
-            currentUser={this.props.currentUser}
-            logout={this.props.logout}
-            cartItemsLen={this.props.cartItemsLen}
-            isMenuOpen={this.state.isMenuOpen}
-            setIsMenuOpen={this.setIsMenuOpen}
-          />
-        </div>
+        <ModelyHeader
+          currentUser={this.props.currentUser}
+          logout={this.props.logout}
+          cartItemsLen={this.props.cartItemsLen}
+          isMenuOpen={this.state.isMenuOpen}
+          setIsMenuOpen={this.setIsMenuOpen}
+        />
         <div className={this.state.isMenuOpen ? "background-dim" : ""}>
           {/* update view */}
           <div className="carParent">
