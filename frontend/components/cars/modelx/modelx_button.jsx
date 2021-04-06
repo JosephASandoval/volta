@@ -87,10 +87,6 @@ class ModelxButton extends React.Component {
   }
 
   render() {
-    const { product } = this.props;
-    if (product === undefined) return null;
-    if (!product.photoUrl) return null;
-
     return (
       <div className="carButton">
         <div className="carButton__column">

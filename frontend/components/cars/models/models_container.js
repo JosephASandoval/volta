@@ -17,7 +17,6 @@ const mapStateToProps = ({
     products: Object.values(products),
     userId: session.id,
     currentUser: users[session.id],
-    allProducts: products,
     cartItemsLen: count,
   };
 };

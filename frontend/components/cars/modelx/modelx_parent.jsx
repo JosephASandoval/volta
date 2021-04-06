@@ -210,7 +210,6 @@ class ModelxParent extends React.Component {
           currentUser={this.props.currentUser}
           userId={this.props.userId}
           products={this.props.products}
-          product={this.props.allProducts[this.state.id]}
           productId={this.state.id}
         />
         <div className={this.state.isMenuOpen ? "background-dim" : ""}>
