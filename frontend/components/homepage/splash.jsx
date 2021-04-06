@@ -20,9 +20,9 @@ function Splash() {
             backgroundImg={window.modelSURL}
             alt="Model S"
             leftBtnTxt="Custom Order"
-            leftBtnLink=""
+            leftBtnLink="/models"
             rightBtnTxt="Existing Inventory"
-            rightBtnLink=""
+            rightBtnLink="/models"
             first
             car
           />
@@ -33,9 +33,9 @@ function Splash() {
             backgroundImg={window.modelYURL}
             alt="Model Y"
             leftBtnTxt="Custom Order"
-            leftBtnLink=""
+            leftBtnLink="/modely"
             rightBtnTxt="Learn More"
-            rightBtnLink=""
+            rightBtnLink="/modely"
             car
           />
           <Item
@@ -45,9 +45,9 @@ function Splash() {
             backgroundImg={window.model3URL}
             alt="Model 3"
             leftBtnTxt="Custom Order"
-            leftBtnLink=""
+            leftBtnLink="/model3"
             rightBtnTxt="Existing Inventory"
-            rightBtnLink=""
+            rightBtnLink="/model3"
             car
           />
           <Item
@@ -57,9 +57,9 @@ function Splash() {
             backgroundImg={window.modelXURL}
             alt="Model X"
             leftBtnTxt="Custom Order"
-            leftBtnLink=""
+            leftBtnLink="/modelx"
             rightBtnTxt="Existing Inventory"
-            rightBtnLink=""
+            rightBtnLink="/modelx"
             car
           />
           <Item

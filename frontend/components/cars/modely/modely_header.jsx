@@ -31,10 +31,10 @@ const ModelyHeader = ({
           </Link>
         </div>
         <div className="notFound__links">
-          <Link to="/">Model S</Link>
-          <Link to="/">Model 3</Link>
-          <Link to="/">Model X</Link>
-          <Link to="/">Model Y</Link>
+          <Link to="/models">Model S</Link>
+          <Link to="/model3">Model 3</Link>
+          <Link to="/modelx">Model X</Link>
+          <Link to="/modely">Model Y</Link>
           <Link to="/">Solar Roof</Link>
           <Link to="/">Solar Panels</Link>
         </div>

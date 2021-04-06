@@ -28,12 +28,12 @@ const UserProfile = ({ currentUser, logout, cartItemsLen }) => {
           </Link>
         </div>
         <div className="userProfile__links">
-          <Link to="/userProfile">Model S</Link>
-          <Link to="/userProfile">Model 3</Link>
-          <Link to="/userProfile">Model X</Link>
-          <Link to="/userProfile">Model Y</Link>
-          <Link to="/userProfile">Solar Roof</Link>
-          <Link to="/userProfile">Solar Panels</Link>
+          <Link to="/models">Model S</Link>
+          <Link to="/model3">Model 3</Link>
+          <Link to="/modelx">Model X</Link>
+          <Link to="/modely">Model Y</Link>
+          <Link to="/">Solar Roof</Link>
+          <Link to="/">Solar Panels</Link>
         </div>
 
         <div className="userProfile__right">

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./button";
+import { Link } from "react-router-dom";
 
 const Item = ({
   title,
@@ -21,12 +21,16 @@ const Item = ({
         <div className="item__infoText">
           <h1>{title}</h1>
           <h4>
-            {desc} <span>Touchless Delivery</span>
+            {desc} <Link to={leftBtnLink}>Touchless Delivery</Link>
           </h4>
         </div>
         <div className="item__actions">
-          <button className="item__buttonPrimary">{leftBtnTxt}</button>
-          <button className="item__buttonSecondary">{rightBtnTxt}</button>
+          <Link to={leftBtnLink} className="item__buttonPrimary">
+            {leftBtnTxt}
+          </Link>
+          <Link to={rightBtnLink} className="item__buttonSecondary">
+            {rightBtnTxt}
+          </Link>
         </div>
         {first && (
           <div className="item__downArrow">
@@ -46,12 +50,18 @@ const Item = ({
         </div>
         {!oneButton ? (
           <div className="item__actions">
-            <button className="item__buttonPrimary">{leftBtnTxt}</button>
-            <button className="item__buttonSecondary">{rightBtnTxt}</button>
+            <Link to={leftBtnLink} className="item__buttonPrimary">
+              {leftBtnTxt}
+            </Link>
+            <Link to={rightBtnLink} className="item__buttonSecondary">
+              {rightBtnTxt}
+            </Link>
           </div>
         ) : (
           <div className="item__actions">
-            <button className="item__oneButton">{leftBtnTxt}</button>
+            <Link to={leftBtnLink} className="item__oneButton">
+              {leftBtnTxt}
+            </Link>
           </div>
         )}
       </div>
