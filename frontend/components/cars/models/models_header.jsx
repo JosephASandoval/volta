@@ -35,8 +35,6 @@ const ModelsHeader = ({
           <Link to="/model3">Model 3</Link>
           <Link to="/modelx">Model X</Link>
           <Link to="/modely">Model Y</Link>
-          <Link to="/">Solar Roof</Link>
-          <Link to="/">Solar Panels</Link>
         </div>
 
         <div className="notFound__right">
