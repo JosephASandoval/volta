@@ -32,4 +32,13 @@ class Product < ApplicationRecord
   has_many :buyers,
     through: :carts,
     source: :user
+
+  has_many :reviews,
+    primary_key: :id,
+    foreign_key: :product_id,
+    class_name: :Review
+
+  def average_rating
+    reviews.average(:rating)
+  end
 end
