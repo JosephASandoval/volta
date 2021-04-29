@@ -44,16 +44,37 @@ const CartHeader = ({
           ) : (
             <Link to="/login">Volta Account</Link>
           )}
-          <Link to="/cart" className={isMenuOpen ? "header__link--hidden" : ""}>
-            <div className="shopping-cart-icon-container">
-              <span className={clsName}>{cartItemsNum}</span>
-              <img
-                src={window.shoppingCartInverseURL}
-                alt=""
-                className="shopping-cart-icon"
-              />
-            </div>
-          </Link>
+
+          {currentUser ? (
+            <Link
+              to="/cart"
+              className={isMenuOpen ? "header__link--hidden" : ""}
+            >
+              <div className="shopping-cart-icon-container">
+                <span className={clsName}>{cartItemsNum}</span>
+                <img
+                  src={window.shoppingCartInverseURL}
+                  alt=""
+                  className="shopping-cart-icon"
+                />
+              </div>
+            </Link>
+          ) : (
+            <Link
+              to="/login"
+              className={isMenuOpen ? "header__link--hidden" : ""}
+            >
+              <div className="shopping-cart-icon-container">
+                <span className={clsName}>{cartItemsNum}</span>
+                <img
+                  src={window.shoppingCartInverseURL}
+                  alt=""
+                  className="shopping-cart-icon"
+                />
+              </div>
+            </Link>
+          )}
+
           {currentUser ? (
             <Link to="/" onClick={logout}>
               Log out
@@ -61,6 +82,7 @@ const CartHeader = ({
           ) : (
             <Link to="/">Log out</Link>
           )}
+
           <div className="notFound__menu" onClick={() => setIsMenuOpen()}>
             {isMenuOpen ? (
               <CloseIcon className="notFound__closeMenu" />
