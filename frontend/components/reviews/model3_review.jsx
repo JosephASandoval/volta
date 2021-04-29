@@ -94,7 +94,10 @@ class Model3Review extends React.Component {
               {ownReview && ownReview.length === 1 ? (
                 <ReviewShow review={ownReview[0]} key={ownReview[0].id} />
               ) : (
-                <ReviewForm productId={product.id} />
+                <ReviewForm
+                  history={this.props.history}
+                  productId={product.id}
+                />
               )}
               {othersReviews.map((review, key) => (
                 <ReviewShow review={review} key={key} />

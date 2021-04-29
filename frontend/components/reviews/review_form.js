@@ -1,5 +1,5 @@
 import React from "react";
-import { createReview } from "../../actions/review_actions";
+import { createReview, removeErrors } from "../../actions/review_actions";
 import StarRatingComponent from "react-star-rating-component";
 import { connect } from "react-redux";
 
@@ -20,6 +20,7 @@ class ReviewForm extends React.Component {
     this.setState({
       productId: this.props.productId,
     });
+    this.props.removeErrors();
   }
 
   update(field) {
@@ -41,7 +42,7 @@ class ReviewForm extends React.Component {
         rating: 0,
       });
     } else {
-      // this.props.history.push("/login");
+      this.props.history.push("/login");
     }
   }
 
@@ -99,6 +100,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     createReview: (review) => dispatch(createReview(review)),
+    removeErrors: () => dispatch(removeErrors()),
   };
 };
 

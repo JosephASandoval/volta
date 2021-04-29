@@ -4,6 +4,7 @@ export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
 export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 export const DELETE_REVIEW = "DELETE_REVIEW";
 export const RECEIVE_REVIEW_ERRORS = "RECEIVE_REVIEW_ERRORS";
+export const REMOVE_SESSION_ERRORS = "REMOVE_SESSION_ERRORS";
 
 const receiveReviews = (reviews) => ({
   type: RECEIVE_REVIEWS,
@@ -28,6 +29,12 @@ const receiveErrors = (errors) => ({
   type: RECEIVE_REVIEW_ERRORS,
   errors,
 });
+
+export const removeErrors = () => {
+  return {
+    type: REMOVE_SESSION_ERRORS,
+  };
+};
 
 // Thunk action creators
 
