@@ -1,6 +1,6 @@
 import React from "react";
 
-function NoCar({ imgSrc, model, testDrive, buyPreOwned, car, powerwall }) {
+function NoCar({ imgSrc, model, testDrive, buyPreOwned, car }) {
   return (
     <div className="noCar">
       {car && (
@@ -34,22 +34,6 @@ function NoCar({ imgSrc, model, testDrive, buyPreOwned, car, powerwall }) {
           your trade-in or apply for leasing
         </p>
       )}
-
-      <div className="noCar__powerWall">
-        {powerwall && (
-          <div className="noCar__powerWallImage">
-            <img src={imgSrc} alt="" />
-          </div>
-        )}
-        <div className="noCar__powerWallAction">
-          {powerwall && <h2 className="noCar__powerWallModel">{model}</h2>}
-          {powerwall && (
-            <button className="buttonPrimary" type="submit">
-              Order
-            </button>
-          )}
-        </div>
-      </div>
     </div>
   );
 }

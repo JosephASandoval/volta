@@ -37,16 +37,37 @@ const UserProfile = ({ currentUser, logout, cartItemsLen }) => {
         <div className="userProfile__right">
           <Link to="/">Shop</Link>
           <Link to="/userProfile">Volta Account</Link>
-          <Link to="/cart" className={isMenuOpen ? "header__link--hidden" : ""}>
-            <div className="shopping-cart-icon-container">
-              <span className={clsName}>{cartItemsNum}</span>
-              <img
-                src={window.shoppingCartInverseURL}
-                alt=""
-                className="shopping-cart-icon"
-              />
-            </div>
-          </Link>
+
+          {currentUser ? (
+            <Link
+              to="/cart"
+              className={isMenuOpen ? "header__link--hidden" : ""}
+            >
+              <div className="shopping-cart-icon-container">
+                <span className={clsName}>{cartItemsNum}</span>
+                <img
+                  src={window.shoppingCartInverseURL}
+                  alt=""
+                  className="shopping-cart-icon"
+                />
+              </div>
+            </Link>
+          ) : (
+            <Link
+              to="/login"
+              className={isMenuOpen ? "header__link--hidden" : ""}
+            >
+              <div className="shopping-cart-icon-container">
+                <span className={clsName}>{cartItemsNum}</span>
+                <img
+                  src={window.shoppingCartInverseURL}
+                  alt=""
+                  className="shopping-cart-icon"
+                />
+              </div>
+            </Link>
+          )}
+
           <Link to="/" onClick={logout}>
             Log out
           </Link>
@@ -72,7 +93,7 @@ const UserProfile = ({ currentUser, logout, cartItemsLen }) => {
           <div className="userProfile__infoRight">
             <Link to="/">Home</Link>
             <Link to="/userProfile">Account</Link>
-            <Link to="/">History</Link>
+            <Link to="/cart">Shopping Cart</Link>
             <Link to="/" onClick={logout}>
               Sign Out
             </Link>
@@ -87,11 +108,6 @@ const UserProfile = ({ currentUser, logout, cartItemsLen }) => {
             car
           />
           <NoCar imgSrc={window.nocarXURL} model="Model X" car />
-          <NoCar
-            imgSrc={window.powerwallBatteryURL}
-            model="Powerwall"
-            powerwall
-          />
         </div>
       </div>
     </div>
