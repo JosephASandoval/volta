@@ -16,9 +16,9 @@ import CartShowContainer from "./cart/cart_show_container";
 
 // Reviews
 import Model3Review from "./reviews/model3_review";
-// import ModelsReview from "./reviews/models_review";
-// import ModelxReview from "./reviews/modelx_review";
-// import ModelyReview from "./reviews/modely_review";
+import ModelsReview from "./reviews/models_review";
+import ModelxReview from "./reviews/modelx_review";
+import ModelyReview from "./reviews/modely_review";
 
 const App = () => {
   return (
@@ -48,12 +48,11 @@ const App = () => {
 
         <Route exact path="/model3/reviews" component={Model3Review} />
         
-        {/* 
         <Route exact path="/models/reviews" component={ModelsReview} />
 
         <Route exact path="/modelx/reviews" component={ModelxReview} />
 
-        <Route exact path="/modely/reviews" component={ModelyReview} /> */}
+        <Route exact path="/modely/reviews" component={ModelyReview} />
 
         <Route path="*" component={NotFoundContainer} />
       </Switch>

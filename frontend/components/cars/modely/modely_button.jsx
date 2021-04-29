@@ -8,12 +8,19 @@ class ModelyButton extends React.Component {
     this.state = { value: 1 };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.handleReviews = this.handleReviews.bind(this);
 
     this.handleExterior = this.handleExterior.bind(this);
     this.handleInterior = this.handleInterior.bind(this);
     this.handleWheelType = this.handleWheelType.bind(this);
     this.handleSelfDriving = this.handleSelfDriving.bind(this);
     this.handleView = this.handleView.bind(this);
+  }
+
+  handleReviews(e) {
+    e.preventDefault();
+
+    this.props.history.push("/modely/reviews");
   }
 
   handleClick(e) {
@@ -240,6 +247,13 @@ class ModelyButton extends React.Component {
           <div className="carButton__selfDrivingButton">
             <button className="carButton__primary" onClick={this.handleClick}>
               Add to cart
+            </button>
+
+            <button
+              className="carButton__secondary"
+              onClick={this.handleReviews}
+            >
+              See Reviews
             </button>
           </div>
         </div>
