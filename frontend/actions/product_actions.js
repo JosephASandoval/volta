@@ -10,10 +10,12 @@ export const receiveAllProducts = (products) => {
   };
 };
 
-export const receiveProduct = (product) => {
+export const receiveProduct = ({ product, reviews, authors }) => {
   return {
     type: RECEIVE_PRODUCT,
     product,
+    reviews,
+    authors,
   };
 };
 
@@ -30,4 +32,3 @@ export const requestProduct = (productId) => (dispatch) => {
     dispatch(receiveProduct(product));
   });
 };
-

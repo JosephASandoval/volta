@@ -224,7 +224,7 @@ class ModelxParent extends React.Component {
                     : "",
               }}
             >
-              <div className="carParent__itemActions">
+              <div className="carParent__back">
                 <button
                   className="carParent__button"
                   type="submit"
@@ -233,7 +233,9 @@ class ModelxParent extends React.Component {
                 >
                   <ArrowBackIosIcon />
                 </button>
+              </div>
 
+              <div className="carParent__forward">
                 <button
                   className="carParent__button"
                   type="submit"
@@ -244,25 +246,25 @@ class ModelxParent extends React.Component {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="carParent__price">
-            <NumberFormat
-              value={this.state.price}
-              displayType={"text"}
-              thousandSeparator={true}
-              prefix={"$"}
-            />
-            <div className="carParent__priceDesc">
-              <span className="carParent__purch">Purchase price</span>
-              <span className="carParent__purchSecond">
-                <NumberFormat
-                  value={this.state.price - 5500}
-                  displayType={"text"}
-                  thousandSeparator={true}
-                  prefix={"$"}
-                />
-              </span>
-              <span className="input">After potential savings</span>
+            <div className="carParent__price">
+              <NumberFormat
+                value={this.state.price}
+                displayType={"text"}
+                thousandSeparator={true}
+                prefix={"$"}
+              />
+              <div className="carParent__priceDesc">
+                <span className="carParent__purch">Purchase price</span>
+                <span className="carParent__purchSecond">
+                  <NumberFormat
+                    value={this.state.price - 5500}
+                    displayType={"text"}
+                    thousandSeparator={true}
+                    prefix={"$"}
+                  />
+                </span>
+                <span className="input">After potential savings</span>
+              </div>
             </div>
           </div>
         </div>

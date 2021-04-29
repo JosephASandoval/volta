@@ -38,7 +38,12 @@ class Product < ApplicationRecord
     foreign_key: :product_id,
     class_name: :Review
 
-  def average_rating
-    reviews.average(:rating)
+  def review_count
+    reviews.size
+  end
+
+  def avg_rating
+    return 0 unless reviews.size.positive?
+    reviews.average(:rating).round(1).to_f
   end
 end

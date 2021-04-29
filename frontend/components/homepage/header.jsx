@@ -6,6 +6,7 @@ import CloseIcon from "@material-ui/icons/Close";
 const Header = ({
   products,
   requestAllProducts,
+  fetchReviews,
   currentUser,
   isMenuOpen,
   setIsMenuOpen,
@@ -15,6 +16,7 @@ const Header = ({
     if (products.length === 0) {
       requestAllProducts();
     }
+    fetchReviews();
   }, []);
 
   let cartItemsNum;
@@ -66,7 +68,11 @@ const Header = ({
         <Link to="/cart" className={isMenuOpen ? "header__link--hidden" : ""}>
           <div className="shopping-cart-icon-container">
             <span className={clsName}>{cartItemsNum}</span>
-            <img src={window.shoppingCartURL} alt="" className="shopping-cart-icon" />
+            <img
+              src={window.shoppingCartURL}
+              alt=""
+              className="shopping-cart-icon"
+            />
           </div>
         </Link>
 

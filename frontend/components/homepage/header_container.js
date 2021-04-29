@@ -1,10 +1,11 @@
 import { connect } from "react-redux";
 import { requestAllProducts } from "../../actions/product_actions";
+import { fetchReviews } from "../../actions/review_actions";
 import Header from "./header";
 
 const mapStateToProps = ({
   session,
-  entities: { users, products, cartItems },
+  entities: { users, products, reviews, cartItems },
 }) => {
   let count = 0;
   Object.values(cartItems).forEach((obj) => {
@@ -21,6 +22,7 @@ const mapStateToProps = ({
 const mapDispatchToProps = (dispatch) => {
   return {
     requestAllProducts: () => dispatch(requestAllProducts()),
+    fetchReviews: () => dispatch(fetchReviews()),
   };
 };
 

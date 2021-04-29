@@ -13,6 +13,26 @@
   padding-top: 15px;
 }
 
+.header__parent {
+  position: relative;
+  z-index: 5;
+}
+
+.header__nonStick {
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  background: none;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  padding-top: 15px;
+}
+
 .header__logo {
   object-fit: contain;
   width: 100px;

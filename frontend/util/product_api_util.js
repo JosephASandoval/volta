@@ -7,7 +7,7 @@ export const fetchAllProducts = () => {
 
 export const fetchProduct = (productId) => {
   return $.ajax({
-    method: `GET`,
+    method: "GET",
     url: `/api/products/${productId}`,
   });
 };
