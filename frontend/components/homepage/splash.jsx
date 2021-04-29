@@ -19,8 +19,8 @@ function Splash() {
             backgroundImg={window.modelSURL}
             leftBtnTxt="Custom Order"
             leftBtnLink="/models"
-            rightBtnTxt="Existing Inventory"
-            rightBtnLink="/models"
+            rightBtnTxt="See Reviews"
+            rightBtnLink="/models/reviews"
             first
           />
           <Item
@@ -29,8 +29,8 @@ function Splash() {
             backgroundImg={window.modelYURL}
             leftBtnTxt="Custom Order"
             leftBtnLink="/modely"
-            rightBtnTxt="Learn More"
-            rightBtnLink="/modely"
+            rightBtnTxt="See Reviews"
+            rightBtnLink="/modely/reviews"
           />
           <Item
             title="Model 3"
@@ -38,8 +38,8 @@ function Splash() {
             backgroundImg={window.model3URL}
             leftBtnTxt="Custom Order"
             leftBtnLink="/model3"
-            rightBtnTxt="Existing Inventory"
-            rightBtnLink="/model3"
+            rightBtnTxt="See Reviews"
+            rightBtnLink="/model3/reviews"
           />
           <Item
             title="Model X"
@@ -47,8 +47,8 @@ function Splash() {
             backgroundImg={window.modelXURL}
             leftBtnTxt="Custom Order"
             leftBtnLink="/modelx"
-            rightBtnTxt="Existing Inventory"
-            rightBtnLink="/modelx"
+            rightBtnTxt="See Reviews"
+            rightBtnLink="/modelx/reviews"
           />
         </div>
       </div>
