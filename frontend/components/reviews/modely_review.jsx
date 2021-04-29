@@ -34,11 +34,11 @@ class ModelYReview extends React.Component {
     if (!product || !productReviews) return null;
 
     const ownReview = productReviews.filter(
-      (review) => review && review.reviewerId === sessionId
+      (review) => review && review.authorId === sessionId
     );
 
     const othersReviews = productReviews.filter(
-      (review) => review && review.reviewerId !== sessionId
+      (review) => review && review.authorId !== sessionId
     );
 
     let avgRate;
