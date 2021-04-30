@@ -9,18 +9,153 @@ require 'open-uri'
 #   Character.create(name: 'Luke', movie: movies.first)
 
 ActiveRecord::Base.transaction do
-  # User.destroy_all
+  User.destroy_all
+  Review.destroy_all
   # Product.destroy_all
 
-  # puts "Creating Users..."
+  puts "Creating Users..."
 
-  # demo = User.create!(
-  #   username: "demouser",
-  #   password: "password",
-  #   email: "demouser@gmail.com",
-  #   first_name: "demo",
-  #   last_name: "user",
-  # )
+  demo = User.create!(
+    username: "demouser",
+    password: "password",
+    email: "demouser@gmail.com",
+    first_name: "demo",
+    last_name: "user",
+  )
+
+  u1 = User.create!(
+    username: "ShawnLiu",
+    password: "password",
+    email: "ShawnLiu@gmail.com",
+    first_name: "Shawn",
+    last_name: "Liu",
+  )
+
+  u2 = User.create!(
+    username: "JosephSandoval",
+    password: "password",
+    email: "JosephSandoval@gmail.com",
+    first_name: "Joseph",
+    last_name: "Sandoval",
+  )
+
+  u3 = User.create!(
+    username: "FavianHo",
+    password: "password",
+    email: "FavianHo@gmail.com",
+    first_name: "Favian",
+    last_name: "Ho",
+  )
+
+  u4 = User.create!(
+    username: "MichaelMa",
+    password: "password",
+    email: "MichaelMa@gmail.com",
+    first_name: "Michael",
+    last_name: "Ma",
+  )
+
+  u5 = User.create!(
+    username: "LouisChen",
+    password: "password",
+    email: "LouisChen@gmail.com",
+    first_name: "Louis",
+    last_name: "Chen",
+  )
+
+  u6 = User.create!(
+    username: "DavidYan",
+    password: "password",
+    email: "DavidYan@gmail.com",
+    first_name: "David",
+    last_name: "Yan",
+  )
+
+	puts "Creating Reviews..."
+
+	r_1 = Review.create!(
+		content: "I love this car! It goes really fast and has saved me so much money by switching to electric.",
+		rating: 5,
+		product_id: 3129,
+		author_id: demo.id,
+	)
+
+	r_2 = Review.create!(
+		content: "Not impressed, will be returning it soon.",
+		rating: 1,
+		product_id: 3129,
+		author_id: u1.id,
+	)
+
+	r_3 = Review.create!(
+		content: "It's definitely a great car, just a bit to expensive for what you get. Overall, I'm happy with my purchase.",
+		rating: 4,
+		product_id: 3129,
+		author_id: u2.id,
+	)
+
+	r_4 = Review.create!(
+		content: "My kids love riding in this car. There is so much room to fit all of my families needs. Will continue to take this car out on every family trip!",
+		rating: 5,
+		product_id: 3429,
+		author_id: u3.id,
+	)
+	
+	r_5 = Review.create!(
+		content: "A bit too pricey, wish I went with the Model Y instead.",
+		rating: 3,
+		product_id: 3429,
+		author_id: u4.id,
+	)
+
+	r_6 = Review.create!(
+		content: "Off road is not very comfortable. Go with a cheaper SUV alternative. Will try returning or selling it at the very least.",
+		rating: 1,
+		product_id: 3429,
+		author_id: u5.id,
+	)
+
+	r_7 = Review.create!(
+		content: "Just pay the extra money for a Model S instead. This car is too compact. Not enough room to fit all of my friends.",
+		rating: 2,
+		product_id: 3729,
+		author_id: u6.id,
+	)
+
+	r_8 = Review.create!(
+		content: "Really affordable and the built in tech is amazing. Highly recommend that you pay the extra money for the self-driving feature. Really cool and useful after a long and tiring day after work during my commute back home.",
+		rating: 5,
+		product_id: 3729,
+		author_id: demo.id,
+	)
+
+	r_9 = Review.create!(
+		content: "Buy one now! You won't regret it.",
+		rating: 5,
+		product_id: 3729,
+		author_id: u1.id,
+	)
+
+	r_10 = Review.create!(
+		content: "Best bang for your buck! You get plenty of room if you're looking to take it out on a family trip. Also, it is small enough to drive around the city. Very much enjoying my Model Y.",
+		rating: 4,
+		product_id: 3929,
+		author_id: u2.id,
+	)
+
+	r_11 = Review.create!(
+		content: "Needs a few improvements. The stearing and handling isn't perfect. I do like the car. Volta just needs to make the neccessary changes before I can give it anything more than 3 stars.",
+		rating: 3,
+		product_id: 3929,
+		author_id: u3.id,
+	)
+
+	r_12 = Review.create!(
+		content: "The best Model in my opinion. The Model Y is sleek and stylish to take on a night out, but also very family friendly and has plenty of storage space. Highly recommend buying this one!",
+		rating: 5,
+		product_id: 3929,
+		author_id: u4.id,
+	)
 
   # puts "Creating Model S..."
 
