@@ -4,8 +4,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
 const Header = ({
-  products,
-  requestAllProducts,
   fetchReviews,
   currentUser,
   isMenuOpen,
@@ -13,9 +11,6 @@ const Header = ({
   cartItemsLen,
 }) => {
   useEffect(() => {
-    if (products.length === 0) {
-      requestAllProducts();
-    }
     fetchReviews();
   }, []);
 

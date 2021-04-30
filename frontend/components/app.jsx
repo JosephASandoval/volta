@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { requestAllProducts } from "../actions/product_actions";
 import { Route, Switch } from "react-router-dom";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
+import UseFullPageLoader from "./loading/use_full_page_loader";
 
 // Components
 import Splash from "./homepage/splash";
@@ -20,44 +23,70 @@ import ModelsReview from "./reviews/models_review";
 import ModelxReview from "./reviews/modelx_review";
 import ModelyReview from "./reviews/modely_review";
 
-const App = () => {
+const App = ({ products, requestAllProducts }) => {
+  const [loader, showLoader, hideLoader] = UseFullPageLoader();
+
+  useEffect(() => {
+    if (products.length === 0) {
+      showLoader();
+      requestAllProducts().then(() => {
+        hideLoader();
+      });
+    }
+  }, []);
+
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={Splash} />
+    <>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Splash} />
 
-        <Route path="/cart" component={CartShowContainer} />
+          <Route path="/cart" component={CartShowContainer} />
 
-        <AuthRoute exact path="/signup" component={SignupContainer} />
+          <AuthRoute exact path="/signup" component={SignupContainer} />
 
-        <AuthRoute exact path="/login" component={LoginContainer} />
+          <AuthRoute exact path="/login" component={LoginContainer} />
 
-        <ProtectedRoute
-          exact
-          path="/userProfile"
-          component={UserProfileContainer}
-        />
+          <ProtectedRoute
+            exact
+            path="/userProfile"
+            component={UserProfileContainer}
+          />
 
-        <Route exact path="/models" component={ModelsContainer} />
+          <Route exact path="/models" component={ModelsContainer} />
 
-        <Route exact path="/model3" component={Model3Container} />
+          <Route exact path="/model3" component={Model3Container} />
 
-        <Route exact path="/modelx" component={ModelxContainer} />
+          <Route exact path="/modelx" component={ModelxContainer} />
 
-        <Route exact path="/modely" component={ModelyContainer} />
+          <Route exact path="/modely" component={ModelyContainer} />
 
-        <Route exact path="/model3/reviews" component={Model3Review} />
-        
-        <Route exact path="/models/reviews" component={ModelsReview} />
+          <Route exact path="/model3/reviews" component={Model3Review} />
 
-        <Route exact path="/modelx/reviews" component={ModelxReview} />
+          <Route exact path="/models/reviews" component={ModelsReview} />
 
-        <Route exact path="/modely/reviews" component={ModelyReview} />
+          <Route exact path="/modelx/reviews" component={ModelxReview} />
 
-        <Route path="*" component={NotFoundContainer} />
-      </Switch>
-    </div>
+          <Route exact path="/modely/reviews" component={ModelyReview} />
+
+          <Route path="*" component={NotFoundContainer} />
+        </Switch>
+      </div>
+      {loader}
+    </>
   );
 };
 
-export default App;
+const mapStateToProps = ({ entities: { products } }) => {
+  return {
+    products: Object.values(products),
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    requestAllProducts: () => dispatch(requestAllProducts()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
