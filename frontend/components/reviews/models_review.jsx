@@ -117,7 +117,8 @@ const mapStateToProps = (state) => {
     };
   }
 
-  const productId = 3129;
+  const productsArray = Object.values(state.entities.products);
+  const productId = productsArray[0].id;
   const product = selectProduct(state.entities.products, productId);
   const productReviews = selectReviewsForProduct(state.entities, product);
 
