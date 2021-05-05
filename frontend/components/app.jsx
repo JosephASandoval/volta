@@ -61,9 +61,9 @@ const App = ({ products, requestAllProducts }) => {
 
           <Route exact path="/modely" component={ModelyContainer} />
 
-          <Route exact path="/model3/reviews" component={Model3Review} />
-
           <Route exact path="/models/reviews" component={ModelsReview} />
+
+          <Route exact path="/model3/reviews" component={Model3Review} />
 
           <Route exact path="/modelx/reviews" component={ModelxReview} />
 
