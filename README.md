@@ -6,51 +6,61 @@
 
 ## Description
 
-Volta, a Tesla clone, is an eCommerce web application that allows users to search for products, add them to their shopping cart, and "purchase" Volta electric vehicles. Users can also write reviews for all Volta products that can be viewed by other users.
+Volta, a Tesla clone, is an eCommerce web application that allows users to search for products, add them to their shopping cart, and "purchase" Volta electric vehicles. Users can also write reviews for all Volta products, which then can be viewed publicly.
 
 
-## Volta Live
 
-[Live Site](https://sandoval-volta.herokuapp.com/#/)
+## Demo
 
-
-## **Technologies Used:**
-
-**Database**: **PostgreSQL**.
-
-**Backend**: **Ruby on Rails** (web application framework).
-
-**Frontend**: **React**, **Redux**.
-
-**Image storage**: **AWS**
+[Volta Live](https://sandoval-volta.herokuapp.com/#/)
 
 
-## Features:
 
-1. #### User Authentication
+## Technologies
 
-* Users can sign up, sign in, and logout to an existing account
-* Users can use a demo login to try the site
-* Users can't use certain features without logging in (i.e. creating reviews and adding products to their shopping cart)
+**Database: PostgreSQL**
+
+**Backend: Ruby on Rails**
+
+**Frontend: JavaScript, React, Redux**
+
+**Image Storage: AWS S3**
 
 
-2. ### Product Listing and Customization
+
+## Features
+
+1. #### Product Listing and Customization
 
 * All Products are listed on the homepage
 * Homepage also includes links at the top for each individual product
 * Product show page allows the user to customize their vehicle and see those chages in real time
 
+<img src="https://github.com/JosephASandoval/volta/blob/main/app/assets/images/shopping_cart_demo.gif" alt="shopping cart" width="700" />
 
-3. #### Shopping Cart
+
+2. #### User Authentication
+
+* Users can sign up, sign in, and logout to an existing account
+* Users can use a demo login to try the site
+* Users cannot use certain features without logging in (i.e. creating reviews and adding products to their shopping cart)
+
+
+3. #### User Profile
+
+* Users are navigated here after logging in
+
+<img src="https://github.com/JosephASandoval/volta/blob/main/app/assets/images/profile_demo.png" alt="profile" />
+
+
+4. #### Shopping Cart
 
 * Logged in users can add and remove items to and from their shopping cart
 * Logged in users can update the number of items in their shopping cart and that number is displayed in the page header
 * The total price is calculated base on the number of items in the user's shopping cart
 
-<img src="https://github.com/JosephASandoval/volta/blob/main/app/assets/images/shopping_cart_demo.gif" alt="shopping cart" width="700" />
 
-
-4. #### Reviews
+5. #### Reviews
 
 * Logged in users can write reviews for products
 * Logged in users can delete their own review and resubmit a review
@@ -58,12 +68,6 @@ Volta, a Tesla clone, is an eCommerce web application that allows users to searc
 
 <img src="https://github.com/JosephASandoval/volta/blob/main/app/assets/images/reviews_demo.gif" alt="reviews" width="700"/>
 
-
-5. ### User Profile
-
-* Users are navigated here after logging in
-
-<img src="https://github.com/JosephASandoval/volta/blob/main/app/assets/images/profile_demo.png" alt="profile" />
 
 
 ## Challenges
@@ -183,7 +187,8 @@ class ModelsParent extends React.Component {
 Overall, I am very proud of the end result because Volta is now able to provide the user with that desired real-time visual of their own customizations. Through this problem-solving process, I realized that there were a few gaps in my knowledge of React. I had to study React hooks in order to help solve a few inefficiencies and loading delays when retrieving my products from the backend. Specifically, the use of useEffect within a function component allowed me to mimic the behavior of the React lifecycle method componentDidMount so that I would be able to retrieve all products immediately when a user visits Volta as opposed to doing this only after a user visits the product show page. Please demo this customization feature yourself.
 
 
-#### To run Locally, run the following commands:
+
+#### To run locally please use the following commands:
 
 \> bundle install  
 \> bundle exec rails db:setup  
@@ -191,4 +196,4 @@ Overall, I am very proud of the end result because Volta is now able to provide 
 \> npm run webpack  
 \> rails s
 
-Then you can navigate to localhost:3000 in the browser to view the site.
+Then you can navigate to localhost:3000 in the browser to view the site. Thank you!
