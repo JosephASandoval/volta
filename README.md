@@ -34,14 +34,14 @@ Volta, a Tesla clone, is an eCommerce web application that allows users to searc
 
 * All Products are listed on the homepage
 * Homepage also includes links at the top for each individual product
-* Product show page allows the user to customize their vehicle and see those chages in real time
+* Product show page allows the user to customize their vehicle and see those changes in real-time
 
 <img src="https://github.com/JosephASandoval/volta/blob/main/app/assets/images/shopping_cart_demo.gif" alt="shopping cart" width="700" />
 
 
 2. #### User Authentication
 
-* Users can sign up, sign in, and logout to an existing account
+* Users can sign up, sign in, and log out into an existing account
 * Users can use a demo login to try the site
 * Users cannot use certain features without logging in (i.e. creating reviews and adding products to their shopping cart)
 
