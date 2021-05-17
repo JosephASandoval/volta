@@ -4,7 +4,6 @@ import { requestAllProducts } from "../actions/product_actions";
 import { Route, Switch } from "react-router-dom";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import UseFullPageLoader from "./loading/use_full_page_loader";
-
 // Components
 import Splash from "./homepage/splash";
 import UserProfileContainer from "./user_profile/user_profile_container";
@@ -16,7 +15,6 @@ import Model3Container from "./cars/model3/model3_container";
 import ModelxContainer from "./cars/modelx/modelx_container";
 import ModelyContainer from "./cars/modely/modely_container";
 import CartShowContainer from "./cart/cart_show_container";
-
 // Reviews
 import Model3Review from "./reviews/model3_review";
 import ModelsReview from "./reviews/models_review";
